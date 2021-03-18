@@ -16,9 +16,6 @@
  */
 package com.sun.syndication.feed.impl;
 
-import com.sun.syndication.feed.impl.CloneableBean;
-import com.sun.syndication.feed.impl.EqualsBean;
-
 import java.io.Serializable;
 import java.util.Set;
 

@@ -17,7 +17,6 @@
 package com.sun.syndication.feed.impl;
 
 import com.sun.syndication.feed.CopyFrom;
-import com.sun.syndication.feed.impl.BeanIntrospector;
 
 import com.escape.proxy.PropertyDescriptor;
 

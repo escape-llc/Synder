@@ -20,7 +20,6 @@ import java.lang.reflect.Method;
 import java.util.Map;
 
 import com.escape.synder.ParseContext;
-import com.escape.synder.setters.Setter;
 
 /**
  * Setter for map property types.
