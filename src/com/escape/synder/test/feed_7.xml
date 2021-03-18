@@ -1,0 +1,1227 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="http://www.blogger.com/styles/atom.css" type="text/css"?>
+<feed xmlns='http://www.w3.org/2005/Atom' xmlns:openSearch='http://a9.com/-/spec/opensearchrss/1.0/'
+xmlns:georss='http://www.georss.org/georss'>
+<id>tag:blogger.com,1999:blog-6839704277656129776</id>
+<updated>2010-02-22T08:05:00.868-05:00</updated>
+<title type='text'>The Ever-Expanding Gas!</title>
+<subtitle type='html'>Thoughts of a typist, er, software designer.</subtitle>
+<link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml' href='http://flatulenza-per-tutti.blogspot.com/feeds/posts/default'/>
+<link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default'/>
+<link rel='alternate' type='text/html' href='http://flatulenza-per-tutti.blogspot.com/'/>
+<link rel='hub' href='http://pubsubhubbub.appspot.com/'/>
+<link rel='next' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default?start-index=26&amp;max-results=25'/>
+<author><name>The Gassy One</name>
+<uri>http://www.blogger.com/profile/14799233915551512512</uri>
+<email>noreply@blogger.com</email>
+</author>
+<generator version='7.00' uri='http://www.blogger.com'>Blogger</generator>
+<openSearch:totalResults>98</openSearch:totalResults>
+<openSearch:startIndex>1</openSearch:startIndex><openSearch:itemsPerPage>25</openSearch:itemsPerPage>
+<entry><id>tag:blogger.com,1999:blog-6839704277656129776.post-2290449087863501081</id>
+<published>2010-02-22T07:37:00.005-05:00</published>
+<updated>2010-02-22T08:05:00.884-05:00</updated>
+<category scheme='http://www.blogger.com/atom/ns#' term='multi-threading'/>
+<category scheme='http://www.blogger.com/atom/ns#' term='finalization'/>
+<category scheme='http://www.blogger.com/atom/ns#' term='design reality'/>
+<category scheme='http://www.blogger.com/atom/ns#' term='failure'/>
+<category scheme='http://www.blogger.com/atom/ns#' term='horror'/>
+<title type='text'>Dude I Just Pwned Your this...</title>
+<content type='html'>&lt;script type="text/javascript" src="http://oopstudios.com/dlink/dlink.js"&gt;&lt;/script&gt;
+&lt;style type="text/css"&gt;
+a.internal {color: #D47700;}a.external {color: #0074D4;}a.subdomain {color: #D43500;}a.email {color: #00B235;}
+&lt;/style&gt;
+&lt;style type='text/css'&gt;
+p { margin-top:3pt;margin-bottom:3pt }
+.flash { margin-left:2em;margin-right:1em;margin-top:3pt;background:#ddeeff;font-size:85%; }
+&lt;/style&gt;
+&lt;div class="dlink"&gt;
+&lt;p&gt;
+... with a really nifty &lt;a href="http://en.wikipedia.org/wiki/Finalizer"&gt;finalizer&lt;/a&gt; attack!
+&lt;/p&gt;
+&lt;p class="flash"&gt;
+Sweet Creamy Goodness!
+&lt;/p&gt;
+&lt;p&gt;
+I've been reading on &lt;a href="https://www.securecoding.cert.org/confluence/display/java/The+CERT+Sun+Microsystems+Secure+Coding+Standard+for+Java"&gt;this set of pages&lt;/a&gt; and &lt;b&gt;wahoo&lt;/b&gt;!
+&lt;/p&gt;
+&lt;p&gt;
+If you are coming into contact with &lt;a href="http://en.wikipedia.org/wiki/Multithreading"&gt;threading&lt;/a&gt;, and more-often than not, that's the case, you better become &lt;i&gt;really really educated&lt;/i&gt; about stuff like &lt;a href="http://www.javapractices.com/topic/TopicAction.do?Id=15"&gt;defensive copying&lt;/a&gt;, &lt;a href="http://en.wikipedia.org/wiki/Time-of-check-to-time-of-use"&gt;TOCTOU&lt;/a&gt;, and other delicious topics that if ignored, you eventually end up with &lt;a href="http://en.wikipedia.org/wiki/Race_condition"&gt;data races&lt;/a&gt; or even &lt;a href="http://en.wikipedia.org/wiki/Deadlock"&gt;deadlock&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+There's still a ton to learn, and the topics are only going to get more-advanced.
+&lt;/p&gt;
+&lt;p&gt;
+Always prefer designs that only share immutable state, if that's even necessary.  Using &lt;code&gt;&lt;a href="http://java.sun.com/j2se/1.5.0/docs/api/java/util/concurrent/Future.html"&gt;Futures&lt;/a&gt;&lt;/code&gt; facilitates this, because the input to it can be immutable, and creation of the result is totally private to the future, and "returned" in a controlled way to the caller.  The only synchronization point is on obtaining the result.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+digg_url = 'http://flatulenza-per-tutti.blogspot.com/2010/02/dude-i-just-pwned-your-this.html';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http://flatulenza-per-tutti.blogspot.com/2010/02/dude-i-just-pwned-your-this.html';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;div class="blogger-post-footer"&gt;&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http%3A%2F%2Fflatulenza-per-tutti.blogspot.com%2F';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/6839704277656129776-2290449087863501081?l=flatulenza-per-tutti.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://flatulenza-per-tutti.blogspot.com/feeds/2290449087863501081/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='https://www.blogger.com/comment.g?blogID=6839704277656129776&amp;postID=2290449087863501081&amp;isPopup=true' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/2290449087863501081'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/2290449087863501081'/><link rel='alternate' type='text/html' href='http://flatulenza-per-tutti.blogspot.com/2010/02/dude-i-just-pwned-your-this.html' title='Dude I Just Pwned Your this...'/><author><name>The Gassy One</name><uri>http://www.blogger.com/profile/14799233915551512512</uri><email>noreply@blogger.com</email><gd:extendedProperty xmlns:gd='http://schemas.google.com/g/2005' name='OpenSocialUserId' value='05815732420835795465'/></author><thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-6839704277656129776.post-3945262698384823760</id><published>2010-01-22T13:29:00.003-05:00</published><updated>2010-01-22T13:31:48.301-05:00</updated><category scheme='http://www.blogger.com/atom/ns#' term='rant'/><category scheme='http://www.blogger.com/atom/ns#' term='design reality'/><category scheme='http://www.blogger.com/atom/ns#' term='failure'/><title type='text'>More From "Are You Effin' Kidding Me!?"</title><content type='html'>&lt;script type="text/javascript" src="http://oopstudios.com/dlink/dlink.js"&gt;&lt;/script&gt;
+&lt;style type="text/css"&gt;
+a.internal {color: #D47700;}a.external {color: #0074D4;}a.subdomain {color: #D43500;}a.email {color: #00B235;}
+&lt;/style&gt;
+&lt;style type='text/css'&gt;
+p { margin-top:3pt;margin-bottom:3pt }
+.flash { margin-left:2em;margin-right:1em;margin-top:3pt;background:#ddeeff;font-size:85%; }
+&lt;/style&gt;
+&lt;div class="dlink"&gt;
+&lt;p&gt;
+&lt;a href="http://www.lessonsoffailure.com/software/military-software-sucks/"&gt;Military Software Sucks&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Just add it to the pile of incompetence.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+digg_url = 'http://flatulenza-per-tutti.blogspot.com/2010/01/more-from-are-you-effin-kidding-me.html';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http://flatulenza-per-tutti.blogspot.com/2010/01/more-from-are-you-effin-kidding-me.html';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;div class="blogger-post-footer"&gt;&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http%3A%2F%2Fflatulenza-per-tutti.blogspot.com%2F';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/6839704277656129776-3945262698384823760?l=flatulenza-per-tutti.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://flatulenza-per-tutti.blogspot.com/feeds/3945262698384823760/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='https://www.blogger.com/comment.g?blogID=6839704277656129776&amp;postID=3945262698384823760&amp;isPopup=true' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/3945262698384823760'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/3945262698384823760'/><link rel='alternate' type='text/html' href='http://flatulenza-per-tutti.blogspot.com/2010/01/more-from-are-you-effin-kidding-me.html' title='More From &quot;Are You Effin&apos; Kidding Me!?&quot;'/><author><name>The Gassy One</name><uri>http://www.blogger.com/profile/14799233915551512512</uri><email>noreply@blogger.com</email><gd:extendedProperty xmlns:gd='http://schemas.google.com/g/2005' name='OpenSocialUserId' value='05815732420835795465'/></author><thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-6839704277656129776.post-1085526419966976701</id><published>2010-01-18T07:23:00.004-05:00</published><updated>2010-01-18T07:30:36.847-05:00</updated><category scheme='http://www.blogger.com/atom/ns#' term='rant'/><category scheme='http://www.blogger.com/atom/ns#' term='design reality'/><category scheme='http://www.blogger.com/atom/ns#' term='failure'/><category scheme='http://www.blogger.com/atom/ns#' term='horror'/><title type='text'>Are You Effin Kidding Me!!?  btw happynewyear...</title><content type='html'>&lt;script type="text/javascript" src="http://oopstudios.com/dlink/dlink.js"&gt;&lt;/script&gt;
+&lt;style type="text/css"&gt;
+a.internal {color: #D47700;}a.external {color: #0074D4;}a.subdomain {color: #D43500;}a.email {color: #00B235;}
+&lt;/style&gt;
+&lt;style type='text/css'&gt;
+p { margin-top:3pt;margin-bottom:3pt }
+.flash { margin-left:2em;margin-right:1em;margin-top:3pt;background:#ddeeff;font-size:85%; }
+&lt;/style&gt;
+&lt;div class="dlink"&gt;
+&lt;p&gt;
+&lt;b&gt;Oh My Fucking Deity!!!!!!&lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="http://www.cbsnews.com/stories/2010/01/07/60minutes/main6067598.shtml"&gt;Watching the Border: The Virtual Fence - 60 Minutes - CBS News&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Since this is a blog, I'll wait for you to get back....
+&lt;/p&gt;
+&lt;p&gt;
+Now, repeat it with me:
+&lt;/p&gt;
+&lt;p style="font-size:120%"&gt;
+Are You Fucking Kidding Me!!!?
+&lt;/p&gt;
+&lt;p&gt;
+Here is the paragraph that really got me ranting (emphasis &lt;b&gt;mine&lt;/b&gt;):
+&lt;/p&gt;
+&lt;blockquote&gt;
+But the biggest problem - and you may find this hard to fathom - was that &lt;b&gt;no one at the Department of Homeland Security or the engineers at Boeing bothered to ask the people who would actually be using the surveillance system what they wanted or how they wanted the system to work&lt;/b&gt;.
+&lt;/blockquote&gt;
+&lt;p&gt;
+Jesus Christ, is this still the 1970s?
+&lt;/p&gt;
+&lt;p&gt;
+Of course, there's lots to be disappointed about regarding Virtual Fence, after reading the article.  Boeing played that one pretty fucking stupid, but sucked in the cash nonetheless.  &lt;i&gt;Maybe not so stupid&lt;/i&gt;....
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+digg_url = 'http://flatulenza-per-tutti.blogspot.com/2010/01/are-you-effin-kidding-me-btw.html';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http://flatulenza-per-tutti.blogspot.com/2010/01/are-you-effin-kidding-me-btw.html';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;div class="blogger-post-footer"&gt;&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http%3A%2F%2Fflatulenza-per-tutti.blogspot.com%2F';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/6839704277656129776-1085526419966976701?l=flatulenza-per-tutti.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://flatulenza-per-tutti.blogspot.com/feeds/1085526419966976701/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='https://www.blogger.com/comment.g?blogID=6839704277656129776&amp;postID=1085526419966976701&amp;isPopup=true' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/1085526419966976701'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/1085526419966976701'/><link rel='alternate' type='text/html' href='http://flatulenza-per-tutti.blogspot.com/2010/01/are-you-effin-kidding-me-btw.html' title='Are You Effin Kidding Me!!?  btw happynewyear...'/><author><name>The Gassy One</name><uri>http://www.blogger.com/profile/14799233915551512512</uri><email>noreply@blogger.com</email><gd:extendedProperty xmlns:gd='http://schemas.google.com/g/2005' name='OpenSocialUserId' value='05815732420835795465'/></author><thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-6839704277656129776.post-5493412453392518442</id><published>2009-12-21T13:40:00.003-05:00</published><updated>2009-12-21T14:08:39.131-05:00</updated><category scheme='http://www.blogger.com/atom/ns#' term='rant'/><category scheme='http://www.blogger.com/atom/ns#' term='uncertainty'/><category scheme='http://www.blogger.com/atom/ns#' term='review'/><category scheme='http://www.blogger.com/atom/ns#' term='failure'/><category scheme='http://www.blogger.com/atom/ns#' term='horror'/><title type='text'>Short</title><content type='html'>&lt;script type="text/javascript" src="http://oopstudios.com/dlink/dlink.js"&gt;&lt;/script&gt;
+&lt;style type="text/css"&gt;
+a.internal {color: #D47700;}a.external {color: #0074D4;}a.subdomain {color: #D43500;}a.email {color: #00B235;}
+&lt;/style&gt;
+&lt;style type='text/css'&gt;
+p { margin-top:3pt;margin-bottom:3pt }
+.flash { margin-left:2em;margin-right:1em;margin-top:3pt;background:#ddeeff;font-size:85%; }
+&lt;/style&gt;
+&lt;div class="dlink"&gt;
+&lt;p&gt;
+I am looking at the total posts for 2009 and finding myself behind, compared to last year.  I really expected to meet-or-exceed last-year's count.
+&lt;/p&gt;
+&lt;p&gt;
+Let's blame it on Employment and Other Outside Forces cutting into quality blogging time.
+&lt;/p&gt;
+&lt;p&gt;
+Here are some other Real Life Adventures that stole time and/or money (All True) in relative order:
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Crashed replacement car on the day-of-purchase (it was a nasty blizzard).&lt;/li&gt;
+&lt;li&gt;Severe weather felled huge tree, which crushed part of the house (it was an even-nastier thunderstorm).&lt;/li&gt;
+&lt;li&gt;Lost 6% of base pay due to Our Glorious Economy (thanks sub-prime assfucks)!&lt;/li&gt;
+&lt;li&gt;Coffeemaker failed (cheap and inconvenient; thanks &lt;a href="http://www.mrcoffeestore.com/index.asp"&gt;Mr. Crappy&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Refrigerator failed (not cheap and more inconvenient).&lt;/li&gt;
+&lt;li&gt;The Cat died (he was 18).&lt;/li&gt;
+&lt;li&gt;The Sump Pump failed (again).&lt;/li&gt;
+&lt;li&gt;Hard drive on my main development workstation failed (thank you &lt;a href="http://shop.symantecstore.com/store/symnahho/en_US/DisplayProductDetailsPage/ThemeID.106300/productID.166539400/pgm.20404600/cjid.2721230?resid=Sy-GXQoBAkgAAE3XIuUAAAAe&amp;rests=1261422172736"&gt;Ghost&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Upstairs toilet failed (soooo not cheap, see next item).&lt;/li&gt;
+&lt;li&gt;Water damage due to failed toilet.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+That covers the highlights and lowlights for 2009.
+&lt;/p&gt;
+&lt;p&gt;
+It won't be missed....
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+digg_url = 'http://flatulenza-per-tutti.blogspot.com/2009/12/short.html';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http://flatulenza-per-tutti.blogspot.com/2009/12/short.html';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;div class="blogger-post-footer"&gt;&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http%3A%2F%2Fflatulenza-per-tutti.blogspot.com%2F';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/6839704277656129776-5493412453392518442?l=flatulenza-per-tutti.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://flatulenza-per-tutti.blogspot.com/feeds/5493412453392518442/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='https://www.blogger.com/comment.g?blogID=6839704277656129776&amp;postID=5493412453392518442&amp;isPopup=true' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/5493412453392518442'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/5493412453392518442'/><link rel='alternate' type='text/html' href='http://flatulenza-per-tutti.blogspot.com/2009/12/short.html' title='Short'/><author><name>The Gassy One</name><uri>http://www.blogger.com/profile/14799233915551512512</uri><email>noreply@blogger.com</email><gd:extendedProperty xmlns:gd='http://schemas.google.com/g/2005' name='OpenSocialUserId' value='05815732420835795465'/></author><thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-6839704277656129776.post-6798388734600596936</id><published>2009-11-16T07:45:00.006-05:00</published><updated>2009-11-16T08:25:55.725-05:00</updated><category scheme='http://www.blogger.com/atom/ns#' term='rant'/><category scheme='http://www.blogger.com/atom/ns#' term='functional programming'/><category scheme='http://www.blogger.com/atom/ns#' term='code nazi'/><title type='text'>Tales From the Lambda</title><content type='html'>&lt;script type="text/javascript" src="http://oopstudios.com/dlink/dlink.js"&gt;&lt;/script&gt;
+&lt;style type="text/css"&gt;
+a.internal {color: #D47700;}a.external {color: #0074D4;}a.subdomain {color: #D43500;}a.email {color: #00B235;}
+&lt;/style&gt;
+&lt;style type='text/css'&gt;
+p { margin-top:3pt;margin-bottom:3pt }
+.flash { margin-left:2em;margin-right:1em;margin-top:3pt;background:#ddeeff;font-size:85%; }
+&lt;/style&gt;
+&lt;div class="dlink"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+&lt;i&gt;Head spinning, eyes rolling into back of the head...&lt;/i&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;b&gt;&lt;a href="http://en.wikipedia.org/wiki/The_matrix"&gt;Neo&lt;/a&gt;:&lt;/b&gt; Whoa! I know Script-fu....
+&lt;/p&gt;
+&lt;p&gt;
+&lt;b&gt;Morpheus (played by &lt;a href="http://www.gimp.org/"&gt;GIMP&lt;/a&gt;):&lt;/b&gt; Show me....
+&lt;/p&gt;
+&lt;p&gt;
+&lt;b&gt;Operator:&lt;/b&gt; I think he likes it....
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Well, not quite as good as the scene from the movie, but that was exactly what I was thinking, when I realized I needed to script some image exporting.
+&lt;/p&gt;
+&lt;p&gt;
+I've been assimilating GIMP for a while, and I knew that Script-Fu was the scripting language, but I didn't know, until I looked, is that Script-Fu is &lt;a href="http://www.schemers.org/"&gt;Scheme&lt;/a&gt;!
+&lt;/p&gt;
+&lt;p class="flash"&gt;
+Well how ironically wonderful!
+&lt;/p&gt;
+&lt;p&gt;
+Yes!  I have been embracing the &lt;a href="http://en.wikipedia.org/wiki/Functional_programming"&gt;FP&lt;/a&gt; &lt;a href="http://en.wikipedia.org/wiki/Mojo_(African_American_culture)"&gt;mojo&lt;/a&gt; more-and-more, and what better dialect than one of the original FP dinosaurs!?
+&lt;/p&gt;
+&lt;p&gt;
+Looking around for examples (they are plentiful) was quite an education, mostly in how &lt;b&gt;not&lt;/b&gt; to do it.  No Offense to anyone personally, but if you are using &lt;code&gt;begin&lt;/code&gt; and &lt;code&gt;while&lt;/code&gt; and &lt;code&gt;set!&lt;/code&gt; all over the place, that is just &lt;i&gt;fighting the language&lt;/i&gt;!  Leave that &lt;i&gt;shoehorn-procedural-crap-into-FP&lt;/i&gt; nonsense where it belongs!
+&lt;/p&gt;
+&lt;p&gt;
+I was ready.  I know how to use &lt;code&gt;for-each&lt;/code&gt; and &lt;code&gt;lambda&lt;/code&gt; and &lt;code&gt;let*&lt;/code&gt;, and that's pretty much all anyone needs to &lt;a href="http://en.wikipedia.org/wiki/Git-R-Done"&gt;get-R-done&lt;/a&gt;, and I did-do.
+&lt;/p&gt;
+&lt;p&gt;
+But not without some scars &lt;span style="font-size:80%"&gt;er, learning&lt;/span&gt;.  Here are my main take-aways from the whole thing.
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It's all about &lt;b&gt;lists&lt;/b&gt;.  You are either building a list to traverse later, or traversing a list you built earlier.
+&lt;/li&gt;
+&lt;li&gt;I hate &lt;a href="http://en.wikipedia.org/wiki/S-expression"&gt;S-expression&lt;/a&gt;s!&lt;/li&gt;
+&lt;li&gt;Scheme is powerful, if you embrace it!
+&lt;/li&gt;
+&lt;li&gt;I wanted to use commas, but it wouldn't let me.  It produces wonderfully vague syntax error messages instead.
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://en.wikipedia.org/wiki/Closure_(computer_science)"&gt;Closures&lt;/a&gt; (&lt;code&gt;lambda&lt;/code&gt; plus &lt;code&gt;let*&lt;/code&gt;) make Scheme powerful.
+&lt;/li&gt;
+&lt;li&gt;Error messages in GIMP are &lt;i&gt;way vague&lt;/i&gt;.  Does that suck, or should we just be grateful we get any kind of message?  How 1970s!
+&lt;/li&gt;
+&lt;li&gt;Debugging in GIMP is &lt;b&gt;way painful&lt;/b&gt;!  Can you say &lt;code&gt;&lt;a href="http://en.wikipedia.org/wiki/Printf"&gt;printf&lt;/a&gt;&lt;/code&gt;?  Again, how 1970s!
+&lt;/li&gt;
+&lt;li&gt;Did I mention:  I hate &lt;a href="http://en.wikipedia.org/wiki/S-expression"&gt;S-expression&lt;/a&gt;s!  Simple tasks like arithmetic become a &lt;a href="http://en.wikipedia.org/wiki/Reverse_Polish_notation"&gt;postfix&lt;/a&gt; adventure in parentheses!
+&lt;/li&gt;
+&lt;li&gt;It kicks ass anyway!
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+digg_url = 'http://flatulenza-per-tutti.blogspot.com/2009/11/tales-from-lambda.html';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http://flatulenza-per-tutti.blogspot.com/2009/11/tales-from-lambda.html';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;div class="blogger-post-footer"&gt;&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http%3A%2F%2Fflatulenza-per-tutti.blogspot.com%2F';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/6839704277656129776-6798388734600596936?l=flatulenza-per-tutti.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://flatulenza-per-tutti.blogspot.com/feeds/6798388734600596936/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='https://www.blogger.com/comment.g?blogID=6839704277656129776&amp;postID=6798388734600596936&amp;isPopup=true' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/6798388734600596936'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/6798388734600596936'/><link rel='alternate' type='text/html' href='http://flatulenza-per-tutti.blogspot.com/2009/11/tales-from-lambda.html' title='Tales From the Lambda'/><author><name>The Gassy One</name><uri>http://www.blogger.com/profile/14799233915551512512</uri><email>noreply@blogger.com</email><gd:extendedProperty xmlns:gd='http://schemas.google.com/g/2005' name='OpenSocialUserId' value='05815732420835795465'/></author><thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-6839704277656129776.post-5190238211935075117</id><published>2009-11-02T11:05:00.006-05:00</published><updated>2009-11-02T11:33:25.545-05:00</updated><category scheme='http://www.blogger.com/atom/ns#' term='functional programming'/><category scheme='http://www.blogger.com/atom/ns#' term='.net'/><title type='text'>Functional argv</title><content type='html'>&lt;script type="text/javascript" src="http://oopstudios.com/dlink/dlink.js"&gt;&lt;/script&gt;
+&lt;style type="text/css"&gt;
+a.internal {color: #D47700;}a.external {color: #0074D4;}a.subdomain {color: #D43500;}a.email {color: #00B235;}
+&lt;/style&gt;
+&lt;style type='text/css'&gt;
+p { margin-top:3pt;margin-bottom:3pt }
+.flash { margin-left:2em;margin-right:1em;margin-top:3pt;background:#ddeeff;font-size:85%; }
+&lt;/style&gt;
+&lt;div class="dlink"&gt;
+&lt;p&gt;
+I've been mostly chatter lately, so I figure it's time to &lt;a href="http://en.wikipedia.org/wiki/Muffin_Man_(song)"&gt;poot forth&lt;/a&gt; some code!
+&lt;/p&gt;
+&lt;p&gt;
+I've been increasingly trying to incorporate &lt;a href="http://en.wikipedia.org/wiki/Functional_programming"&gt;Functional Programming&lt;/a&gt; into my everyday coding, and with &lt;a href="http://msdn.microsoft.com/netframework/"&gt;.NET Framework&lt;/a&gt; that means &lt;a href="http://en.wikipedia.org/wiki/Anonymous_delegate"&gt;anonymous delegates&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+My current project produced a command-line tool as part of the infrastructure.  As usual, command-line tools require command-line arguments with the associated parsing.  How many times does that get re-written?  Pretty much every time.
+&lt;/p&gt;
+&lt;p&gt;
+I've coded this task many times before.  I wanted something simple, but reusable.  My disadvantage from previous implementations was lack of &lt;a href="http://en.wikipedia.org/wiki/Closure_(computer_science)"&gt;closures&lt;/a&gt; to bridge the scopes between my tool's option parsing, and the argument-traversal algorithm.
+&lt;/p&gt;
+&lt;p&gt;
+Here is what I ended up with:
+&lt;/p&gt;
+&lt;code&gt;&lt;pre&gt;static void processArgs(
+  string[] args,
+  Converter&amp;lt;String, int&amp;gt; argcount,
+  Action&amp;lt;String[]&amp;gt; argproc
+)
+{
+  int ix = 0;
+  while (ix &amp;lt; args.Length) {
+    String argx = args[ix];
+    ix++;
+    if (argx.StartsWith("-")) {
+      int ac = argcount(argx);
+      List&amp;lt;String&gt; collect = new List&amp;lt;String&gt;();
+      collect.Add(argx);
+      while (ac &gt; 0 &amp;&amp; ix &amp;lt; args.Length) {
+        collect.Add(args[ix]);
+        ix++;
+        ac--;
+      }
+      argproc(collect.ToArray());
+    }
+  }
+}&lt;/pre&gt;&lt;/code&gt;
+&lt;p&gt;
+So &lt;code&gt;argcount&lt;/code&gt; takes a string (starting with &lt;code&gt;-&lt;/code&gt;) and returns how many additional "arguments" should follow it, for stuff like &lt;code&gt;-dir &lt;i&gt;directory&lt;/i&gt;&lt;/code&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+The &lt;code&gt;argproc&lt;/code&gt; takes the collected items and processes them.
+&lt;/p&gt;
+&lt;p&gt;
+Let's take a look at the call-site to get a better picture:
+&lt;/p&gt;
+&lt;code&gt;&lt;pre&gt;bool wait = false;
+String outputf = null;
+String template = null;
+List&lt;String&gt; comppath = new List&lt;string&gt;();
+processArgs(args,
+  (parg) =&gt; {
+    if (String.Equals(parg, "-dir", StringComparison.InvariantCultureIgnoreCase) ||
+      String.Equals(parg, "-out", StringComparison.InvariantCultureIgnoreCase) ||
+      String.Equals(parg, "-template", StringComparison.InvariantCultureIgnoreCase)) {
+      return 1;
+    }
+    return 0;
+  },
+  (pargs) =&gt; {
+    if (String.Equals(pargs[0], "-dir", StringComparison.InvariantCultureIgnoreCase)) {
+      if (pargs.Length &lt; 2)
+        throw new NotSupportedException(pargs[0] + ": missing argument");
+      comppath.Add(pargs[1]);
+    }
+    else if (String.Equals(pargs[0], "-out", StringComparison.InvariantCultureIgnoreCase)) {
+      if (pargs.Length &lt; 2)
+        throw new NotSupportedException(pargs[0] + ": missing argument");
+      outputf = pargs[1];
+    }
+    else if (String.Equals(pargs[0], "-template", StringComparison.InvariantCultureIgnoreCase)) {
+      if (pargs.Length &lt; 2)
+        throw new NotSupportedException(pargs[0] + ": missing argument");
+      template = pargs[1];
+    }
+    else if (String.Equals(pargs[0], "-defdir", StringComparison.InvariantCultureIgnoreCase)) {
+      comppath.Add(Settings.Default.ComponentsPath);
+    }
+    else if (String.Equals(pargs[0], "-wait", StringComparison.InvariantCultureIgnoreCase)) {
+      wait = true;
+    }
+    else {
+      throw new NotSupportedException("Unrecognized option: " + pargs[0]);
+    }
+  }
+);&lt;/pre&gt;&lt;/code&gt;
+&lt;p&gt;
+Without mixing of contexts or storing the results of all the processing, it becomes easy to tweak the command-line option handling from the point in the source code that makes the most sense.
+&lt;/p&gt;
+&lt;p&gt;
+Now if you're not down with &lt;code&gt;if/else&lt;/code&gt; chains, you could refactor (hint: use &lt;code&gt;Dictionary&lt;/code&gt;s), but the good news is, that doesn't affect the core algorithm, only your call-site.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;i&gt;qed.&lt;/i&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+digg_url = 'http://flatulenza-per-tutti.blogspot.com/2009/11/functional-argv.html';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http://flatulenza-per-tutti.blogspot.com/2009/11/functional-argv.html';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;div class="blogger-post-footer"&gt;&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http%3A%2F%2Fflatulenza-per-tutti.blogspot.com%2F';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/6839704277656129776-5190238211935075117?l=flatulenza-per-tutti.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://flatulenza-per-tutti.blogspot.com/feeds/5190238211935075117/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='https://www.blogger.com/comment.g?blogID=6839704277656129776&amp;postID=5190238211935075117&amp;isPopup=true' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/5190238211935075117'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/5190238211935075117'/><link rel='alternate' type='text/html' href='http://flatulenza-per-tutti.blogspot.com/2009/11/functional-argv.html' title='Functional argv'/><author><name>The Gassy One</name><uri>http://www.blogger.com/profile/14799233915551512512</uri><email>noreply@blogger.com</email><gd:extendedProperty xmlns:gd='http://schemas.google.com/g/2005' name='OpenSocialUserId' value='05815732420835795465'/></author><thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-6839704277656129776.post-2919564263096690341</id><published>2009-10-21T10:46:00.004-04:00</published><updated>2009-11-02T11:39:22.844-05:00</updated><category scheme='http://www.blogger.com/atom/ns#' term='comments'/><category scheme='http://www.blogger.com/atom/ns#' term='internet'/><category scheme='http://www.blogger.com/atom/ns#' term='design reality'/><category scheme='http://www.blogger.com/atom/ns#' term='failure'/><category scheme='http://www.blogger.com/atom/ns#' term='dogma'/><title type='text'>(Don't Go Back To) Zzzzzzzsville</title><content type='html'>&lt;script type="text/javascript" src="http://oopstudios.com/dlink/dlink.js"&gt;&lt;/script&gt;
+&lt;style type="text/css"&gt;
+a.internal {color: #D47700;}a.external {color: #0074D4;}a.subdomain {color: #D43500;}a.email {color: #00B235;}
+&lt;/style&gt;
+&lt;style type='text/css'&gt;
+p { margin-top:3pt;margin-bottom:3pt }
+.flash { margin-left:2em;margin-right:1em;margin-top:3pt;background:#ddeeff;font-size:85%; }
+&lt;/style&gt;
+&lt;div class="dlink"&gt;
+&lt;p&gt;
+Not much interesting going on, hence nothing bloggable.
+&lt;/p&gt;
+&lt;p&gt;
+Until now.
+&lt;/p&gt;
+&lt;p&gt;
+I love it when an author is so pissed off they don't hold anything back.  Imagine my surprise to find this gem:
+&lt;/p&gt;
+&lt;a href="http://www.quirksmode.org/blog/archives/2009/09/the_html5_drag.html"&gt;The HTML5 drag and drop disaster&lt;/a&gt;
+&lt;p&gt;
+Due to my high number of blogs followed, I regularly keep updated on the saga that is &lt;a href="http://dev.w3.org/html5/spec/Overview.html"&gt;HTML5&lt;/a&gt;.  But I won't digress here; there are plenty of authors for that.
+&lt;/p&gt;
+&lt;p&gt;
+When you see &lt;b&gt;fuck&lt;/b&gt; in the headings, now it's got to be good....
+&lt;/p&gt;
+&lt;p&gt;
+Go have a read, and share the pain!  That will be us soon enough.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+digg_url = 'http://flatulenza-per-tutti.blogspot.com/2009/10/zzzzzzzsville.html';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http://flatulenza-per-tutti.blogspot.com/2009/10/zzzzzzzsville.html';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;div class="blogger-post-footer"&gt;&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http%3A%2F%2Fflatulenza-per-tutti.blogspot.com%2F';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/6839704277656129776-2919564263096690341?l=flatulenza-per-tutti.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://flatulenza-per-tutti.blogspot.com/feeds/2919564263096690341/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='https://www.blogger.com/comment.g?blogID=6839704277656129776&amp;postID=2919564263096690341&amp;isPopup=true' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/2919564263096690341'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/2919564263096690341'/><link rel='alternate' type='text/html' href='http://flatulenza-per-tutti.blogspot.com/2009/10/zzzzzzzsville.html' title='(Don&apos;t Go Back To) Zzzzzzzsville'/><author><name>The Gassy One</name><uri>http://www.blogger.com/profile/14799233915551512512</uri><email>noreply@blogger.com</email><gd:extendedProperty xmlns:gd='http://schemas.google.com/g/2005' name='OpenSocialUserId' value='05815732420835795465'/></author><thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-6839704277656129776.post-6388926704892524692</id><published>2009-09-01T07:11:00.004-04:00</published><updated>2009-09-01T07:32:53.930-04:00</updated><category scheme='http://www.blogger.com/atom/ns#' term='comments'/><category scheme='http://www.blogger.com/atom/ns#' term='office'/><category scheme='http://www.blogger.com/atom/ns#' term='humor'/><category scheme='http://www.blogger.com/atom/ns#' term='language'/><title type='text'>Get Yer 9ers Together</title><content type='html'>&lt;script type="text/javascript" src="http://oopstudios.com/dlink/dlink.js"&gt;&lt;/script&gt;
+&lt;style type="text/css"&gt;
+a.internal {color: #D47700;}a.external {color: #0074D4;}a.subdomain {color: #D43500;}a.email {color: #00B235;}
+&lt;/style&gt;
+&lt;style type='text/css'&gt;
+p { margin-top:3pt;margin-bottom:3pt }
+.flash { margin-left:2em;margin-right:1em;margin-top:3pt;background:#ddeeff;font-size:85%; }
+&lt;/style&gt;
+&lt;div class="dlink"&gt;
+&lt;p&gt;
+With the approachment of September 9, 2009, this would be a good time to post something remotely relevant.
+&lt;/p&gt;
+&lt;p&gt;
+As you know, this date translates into 09.09.09 or if you like, 09/09/09.  Since it's symmetric, we &lt;a href="http://tools.ietf.org/html/rfc4646"&gt;en-US&lt;/a&gt;ers cannot fuck it up for the rest of you!
+&lt;/p&gt;
+&lt;p&gt;
+Anyway, the story revolves around the English word "nine" (9) and the German word "nein" (no), which are obviously &lt;a href="http://en.wikipedia.org/wiki/Homophone"&gt;homophones&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+We were using "nein" a bunch, and confusing people, since they couldn't figure out why were were nine-ing, when we were actually nein-ing!  We even found ourselves &lt;a href="http://en.wikipedia.org/wiki/9-ball"&gt;9-ball&lt;/a&gt; ("nein" ball) key chains, What Luck!!
+&lt;/p&gt;
+&lt;p&gt;
+To add to the fun, I constructed a command line application that checked for unread mail, and played the indicated &lt;a href="http://en.wikipedia.org/wiki/WAV_file"&gt;audio file&lt;/a&gt; if there was any.  I had this on a scheduled task, at the bottom of the hour, mostly because I hated having &lt;a href="http://www.microsoft.com/outlook"&gt;Outlook&lt;/a&gt; running all-the-time (this was the 1990s).
+&lt;/p&gt;
+&lt;p&gt;
+I didn't have a microphone, but my lab-mate "Al" did, and he recorded one of our favorite phrases at-the-time:
+&lt;/p&gt;
+&lt;blockquote&gt;
+Nein! Nein! Nein!
+&lt;/blockquote&gt;
+&lt;p class="flash"&gt;
+That was the punchline, wasn't it....
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="http://en.wikipedia.org/wiki/Yellow_Submarine_(film)"&gt;Huh-huh, yea...&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+digg_url = 'http://flatulenza-per-tutti.blogspot.com/2009/09/get-yer-9ers-together.html';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http://flatulenza-per-tutti.blogspot.com/2009/09/get-yer-9ers-together.html';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;div class="blogger-post-footer"&gt;&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http%3A%2F%2Fflatulenza-per-tutti.blogspot.com%2F';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/6839704277656129776-6388926704892524692?l=flatulenza-per-tutti.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://flatulenza-per-tutti.blogspot.com/feeds/6388926704892524692/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='https://www.blogger.com/comment.g?blogID=6839704277656129776&amp;postID=6388926704892524692&amp;isPopup=true' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/6388926704892524692'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/6388926704892524692'/><link rel='alternate' type='text/html' href='http://flatulenza-per-tutti.blogspot.com/2009/09/get-yer-9ers-together.html' title='Get Yer 9ers Together'/><author><name>The Gassy One</name><uri>http://www.blogger.com/profile/14799233915551512512</uri><email>noreply@blogger.com</email><gd:extendedProperty xmlns:gd='http://schemas.google.com/g/2005' name='OpenSocialUserId' value='05815732420835795465'/></author><thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-6839704277656129776.post-5688672788786763880</id><published>2009-08-20T14:26:00.004-04:00</published><updated>2009-08-20T15:16:45.708-04:00</updated><category scheme='http://www.blogger.com/atom/ns#' term='rant'/><category scheme='http://www.blogger.com/atom/ns#' term='java'/><category scheme='http://www.blogger.com/atom/ns#' term='code nazi'/><title type='text'>The Final Countdown</title><content type='html'>&lt;script type="text/javascript" src="http://oopstudios.com/dlink/dlink.js"&gt;&lt;/script&gt;
+&lt;style type="text/css"&gt;
+a.internal {color: #D47700;}a.external {color: #0074D4;}a.subdomain {color: #D43500;}a.email {color: #00B235;}
+&lt;/style&gt;
+&lt;style type='text/css'&gt;
+p { margin-top:3pt;margin-bottom:3pt }
+.flash { margin-left:2em;margin-right:1em;margin-top:3pt;background:#ddeeff;font-size:85%; }
+&lt;/style&gt;
+&lt;div class="dlink"&gt;
+&lt;p&gt;
+Here are a couple links to read-up on:
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="http://www.alittlemadness.com/2009/08/21/functional-vs-java-style/"&gt;Functional vs "Java" Style&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="http://codemonkeyism.com/generation-java-programming-style/"&gt;Go Ahead: Next Generation Java Programming Style&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="http://beust.com/weblog/archives/000517.html"&gt;Next Generation Java is not very different from today's Java&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+Some interesting points all around, but I was very concerned with the condescending  &lt;i&gt;dismissal&lt;/i&gt; of using the &lt;code&gt;final&lt;/code&gt; keyword, especially on local variables, making lame arguments about &lt;b&gt;readability&lt;/b&gt; and &lt;b&gt;clutter&lt;/b&gt;.  If you want to talk about some &lt;b&gt;actual clutter problems&lt;/b&gt;, start using more anonymous inner classes in functional style; now &lt;b&gt;that is clutter&lt;/b&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Well, their (bloated) opinions (of themselves) are &lt;b&gt;incorrect&lt;/b&gt; (after all this is a &lt;b&gt;rant&lt;/b&gt; and &lt;i&gt;My Opinion&lt;/i&gt;), because &lt;code&gt;final&lt;/code&gt; is telling you important things about your code, namely that you believe in &lt;b&gt;immutability&lt;/b&gt;, and don't just pay &lt;i&gt;lip service&lt;/i&gt; to it.  Just because &lt;a href="http://beust.com/weblog/"&gt;Cedric&lt;/a&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+can't even remember last time I was bitten by a bug involving the reassignment of a variable to a different value within a code block.
+&lt;/blockquote&gt;
+&lt;p&gt;
+doesn't mean &lt;b&gt;Dick&lt;/b&gt; to us, but I'm sure it's good for his Ego!  I guess we should all be so effin perfect as that, and &lt;code&gt;final&lt;/code&gt; is the &lt;i&gt;dirty little secret&lt;/i&gt; to take us there!
+&lt;/p&gt;
+&lt;p&gt;
+Thankfully, the comments sections bear this out, as I was delighted to see others extolling the virtues of &lt;code&gt;final&lt;/code&gt; for the same reasons I endorse:
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Method parameters and previously-assigned local variables &lt;b&gt;are not scratch-buffers&lt;/b&gt; to play reuse/optimization games with.&lt;/li&gt;
+&lt;li&gt;Your code/dataflow are &lt;i&gt;moving forward&lt;/i&gt; (literally down-the-page) and there's no need to look back and see if anything is getting re-used, or determining whether variables "magically" change meaning 10 lines into the method.&lt;/li&gt;
+&lt;li&gt;The perceived &lt;i&gt;noise&lt;/i&gt; claim is actually a &lt;a href="http://en.wikipedia.org/wiki/Monty_Python_and_the_Holy_Grail"&gt;&lt;b&gt;Grail-shaped Beacon&lt;/b&gt;&lt;/a&gt; illuminating the locked-down nature of the data, which means visual scanning is rapid.  If I see &lt;code&gt;final&lt;/code&gt; I don't bother reading the rest of the line, because I know it's an &lt;i&gt;immutable assignment guaranteed by the compiler&lt;/i&gt;.&lt;/li&gt;
+&lt;li&gt;The converse of this is that &lt;b&gt;missing&lt;/b&gt; &lt;code&gt;final&lt;/code&gt; is now a &lt;a href="http://en.wikipedia.org/wiki/Code_smell"&gt;Bad Code Smell&lt;/a&gt;, and warrants closer examination.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+The only part where it weighs down for me, is the conditional assignment initialization scenario, where you start down the &lt;i&gt;jumping through hoops&lt;/i&gt; path to maintain &lt;code&gt;final&lt;/code&gt;ity:
+&lt;/p&gt;
+&lt;code&gt;
+final Blah theThing =
+&amp;nbsp;&amp;nbsp;&lt;i&gt;big-fat-conditional&lt;/i&gt; ?
+&amp;nbsp;&amp;nbsp;&lt;i&gt;value1&lt;/i&gt; :
+&amp;nbsp;&amp;nbsp;&lt;i&gt;value2&lt;/i&gt;;
+&lt;/code&gt;
+&lt;p&gt;
+Depending on how hard you feel like working, and the complexity of the three terms, and any number of other (emotional) factors, you may punt on this scenario at some threshold; I've been there.  Eventually the urge to rectify things takes over, typically after stopping at the code enough times triggered by the non-&lt;code&gt;final&lt;/code&gt; "Smell".
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+digg_url = 'http://flatulenza-per-tutti.blogspot.com/2009/08/final-countdown.html';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http://flatulenza-per-tutti.blogspot.com/2009/08/final-countdown.html';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;div class="blogger-post-footer"&gt;&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http%3A%2F%2Fflatulenza-per-tutti.blogspot.com%2F';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/6839704277656129776-5688672788786763880?l=flatulenza-per-tutti.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://flatulenza-per-tutti.blogspot.com/feeds/5688672788786763880/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='https://www.blogger.com/comment.g?blogID=6839704277656129776&amp;postID=5688672788786763880&amp;isPopup=true' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/5688672788786763880'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/5688672788786763880'/><link rel='alternate' type='text/html' href='http://flatulenza-per-tutti.blogspot.com/2009/08/final-countdown.html' title='The Final Countdown'/><author><name>The Gassy One</name><uri>http://www.blogger.com/profile/14799233915551512512</uri><email>noreply@blogger.com</email><gd:extendedProperty xmlns:gd='http://schemas.google.com/g/2005' name='OpenSocialUserId' value='05815732420835795465'/></author><thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-6839704277656129776.post-3832785680845225847</id><published>2009-08-13T09:46:00.004-04:00</published><updated>2009-10-21T10:57:51.580-04:00</updated><category scheme='http://www.blogger.com/atom/ns#' term='pledge drive'/><title type='text'>Pledge Drive II</title><content type='html'>&lt;script type="text/javascript" src="http://oopstudios.com/dlink/dlink.js"&gt;&lt;/script&gt;
+&lt;style type="text/css"&gt;
+a.internal {color: #D47700;}a.external {color: #0074D4;}a.subdomain {color: #D43500;}a.email {color: #00B235;}
+&lt;/style&gt;
+&lt;div class="dlink"&gt;
+&lt;p&gt;
+It's that time again!  We are asking for &lt;b&gt;Your Support&lt;/b&gt; as a &lt;i&gt;TEEG Follower&lt;/i&gt;!
+&lt;/p&gt;
+&lt;p&gt;
+The last Pledge Drive was 9 Months ago, and it &lt;i&gt;basically blew&lt;/i&gt;.  So, rather than torment you like the &lt;a href="http://www.npr.org/"&gt;Public Radio Stations&lt;/a&gt; do, I will simply &lt;a href="http://flatulenza-per-tutti.blogspot.com/2008/10/pledge-drive.html"&gt;link to the previous Pledge Drive&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Now, wasn't that painless?  See, it's already over!
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+digg_url = 'http://flatulenza-per-tutti.blogspot.com/2009/08/pledge-drive-ii.html';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http://flatulenza-per-tutti.blogspot.com/2009/08/pledge-drive-ii.html';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;div class="blogger-post-footer"&gt;&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http%3A%2F%2Fflatulenza-per-tutti.blogspot.com%2F';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/6839704277656129776-3832785680845225847?l=flatulenza-per-tutti.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://flatulenza-per-tutti.blogspot.com/feeds/3832785680845225847/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='https://www.blogger.com/comment.g?blogID=6839704277656129776&amp;postID=3832785680845225847&amp;isPopup=true' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/3832785680845225847'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/3832785680845225847'/><link rel='alternate' type='text/html' href='http://flatulenza-per-tutti.blogspot.com/2009/08/pledge-drive-ii.html' title='Pledge Drive II'/><author><name>The Gassy One</name><uri>http://www.blogger.com/profile/14799233915551512512</uri><email>noreply@blogger.com</email><gd:extendedProperty xmlns:gd='http://schemas.google.com/g/2005' name='OpenSocialUserId' value='05815732420835795465'/></author><thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-6839704277656129776.post-5731692158459940208</id><published>2009-08-10T10:01:00.006-04:00</published><updated>2009-08-10T10:13:34.604-04:00</updated><category scheme='http://www.blogger.com/atom/ns#' term='rant'/><category scheme='http://www.blogger.com/atom/ns#' term='.net'/><category scheme='http://www.blogger.com/atom/ns#' term='code nazi'/><title type='text'>COBOL.NET!!!?</title><content type='html'>&lt;script type="text/javascript" src="http://oopstudios.com/dlink/dlink.js"&gt;&lt;/script&gt;
+&lt;style type="text/css"&gt;
+a.internal {color: #D47700;}a.external {color: #0074D4;}a.subdomain {color: #D43500;}a.email {color: #00B235;}
+&lt;/style&gt;
+&lt;div class="dlink"&gt;
+&lt;p style="font-size:150%"&gt;
+Are you fucking kidding me?
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="http://www.c-sharpcorner.com/UploadFile/rickmalek/dialconv12052005002746AM/dialconv.aspx"&gt;Converting C# to COBOL&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+And I'm actually old enough that I learned it in college!  Fortunately, I never had to actually &lt;i&gt;create any&lt;/i&gt; as a professional.  However, I did have to analyze a &lt;a href="http://en.wikipedia.org/wiki/Cobol"&gt;COBOL&lt;/a&gt; program listing (from an active system) for a consulting gig I was on in 2006.
+&lt;/p&gt;
+&lt;p class="flash"&gt;
+Back to the rant then?
+&lt;/p&gt;
+&lt;p&gt;
+I'm sorry, but aren't we already typing enough characters already?  I'm tired of wiring up Java &lt;a href="http://en.wikipedia.org/wiki/Comparison_of_Java_and_C_Sharp#Inner_classes"&gt;anonymous inner classes&lt;/a&gt; that pretend to be closures.  We just finally got &lt;a href="http://en.wikipedia.org/wiki/Closure_(computer_science)"&gt;closure&lt;/a&gt; syntax in &lt;a href="http://en.wikipedia.org/wiki/C_Sharp_(programming_language)"&gt;C#&lt;/a&gt; boiled down to something reasonable!  What the fuck will that look like in COBOL?  There wasn't an example, thankfully.
+&lt;/p&gt;
+&lt;p&gt;
+So will the dinosaurs be building stunning &lt;a href="http://en.wikipedia.org/wiki/Graphical_user_interface"&gt;GUI&lt;/a&gt; applications on their &lt;a href="http://en.wikipedia.org/wiki/IBM_System_360"&gt;old mainframes&lt;/a&gt;?  &lt;a href="http://en.wikipedia.org/wiki/Rofl"&gt;ROFL&lt;/a&gt;!!!
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+digg_url = 'http://flatulenza-per-tutti.blogspot.com/2009/08/cobolnet.html';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http://flatulenza-per-tutti.blogspot.com/2009/08/cobolnet.html';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;div class="blogger-post-footer"&gt;&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http%3A%2F%2Fflatulenza-per-tutti.blogspot.com%2F';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/6839704277656129776-5731692158459940208?l=flatulenza-per-tutti.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://flatulenza-per-tutti.blogspot.com/feeds/5731692158459940208/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='https://www.blogger.com/comment.g?blogID=6839704277656129776&amp;postID=5731692158459940208&amp;isPopup=true' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/5731692158459940208'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/5731692158459940208'/><link rel='alternate' type='text/html' href='http://flatulenza-per-tutti.blogspot.com/2009/08/cobolnet.html' title='COBOL.NET!!!?'/><author><name>The Gassy One</name><uri>http://www.blogger.com/profile/14799233915551512512</uri><email>noreply@blogger.com</email><gd:extendedProperty xmlns:gd='http://schemas.google.com/g/2005' name='OpenSocialUserId' value='05815732420835795465'/></author><thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-6839704277656129776.post-1787620099074995938</id><published>2009-07-29T09:10:00.003-04:00</published><updated>2009-08-13T09:56:18.467-04:00</updated><category scheme='http://www.blogger.com/atom/ns#' term='comments'/><category scheme='http://www.blogger.com/atom/ns#' term='humor'/><category scheme='http://www.blogger.com/atom/ns#' term='review'/><category scheme='http://www.blogger.com/atom/ns#' term='free speech'/><title type='text'>Music Critic: Rating the Podcasts</title><content type='html'>&lt;script type="text/javascript" src="http://oopstudios.com/dlink/dlink.js"&gt;&lt;/script&gt;
+&lt;style type="text/css"&gt;
+a.internal {color: #D47700;}a.external {color: #0074D4;}a.subdomain {color: #D43500;}a.email {color: #00B235;}
+&lt;/style&gt;
+&lt;div class="dlink"&gt;
+&lt;p style="font-size:110%"&gt;
+This post has been sitting in &lt;i&gt;edit mode&lt;/i&gt; for several months, so I'm just turning it loose.
+&lt;/p&gt;
+&lt;p&gt;
+I've been thinking about this for a long time, so I'm just going for it.
+&lt;/p&gt;
+&lt;p&gt;
+I listen to &lt;b&gt;a lot&lt;/b&gt; of podcasts.  Enough that I have content playing pretty much 6-8 hours every work day.  Sometimes the backlog takes several days of concentrated listening to get through.
+&lt;/p&gt;
+&lt;p&gt;
+Most podcasts have lead-in and lead-out music.  I'm a musician.  It's only natural that I have an opinion on everyone's choices of music.
+&lt;/p&gt;
+&lt;h3&gt;Disclaimer&lt;/h3&gt;
+&lt;p&gt;
+I'm trying to cite musical sources where possible.  I tried to use &lt;a href="http://en.wikipedia.org/wiki/Due_diligence"&gt;Due Diligence&lt;/a&gt; there, namely I could not locate a citing of the artists or titles on the relevant web site by using the Home Page, and any pages directly accessible from that, e.g. Legal, About, etc.  Feel free to correct me in the &lt;b&gt;Comments&lt;/b&gt;.
+&lt;/p&gt;
+&lt;h3&gt;Further Disclaimer&lt;/h3&gt;
+&lt;p&gt;
+Also note that I &lt;b&gt;like&lt;/b&gt; all of these podcasts, or I wouldn't even be listening to them or blogging to you about them or &lt;i&gt;*cough*&lt;/i&gt; encouraging you to listen to them.  Take any criticism as &lt;i&gt;tongue-in-cheek&lt;/i&gt;, and &lt;b&gt;applying to the music only&lt;/b&gt;, not the content!
+&lt;/p&gt;
+&lt;p&gt;
+So without further &lt;b&gt;disclaimers&lt;/b&gt;, let's launch into it.
+&lt;/p&gt;
+&lt;p&gt;
+First thing to notice, is that &lt;b&gt;pretty much no one cares to cite&lt;/b&gt; the music they are using, and I doubt these are all &lt;i&gt;original works&lt;/i&gt;.
+&lt;/p&gt;
+&lt;h3&gt;&lt;a href="http://javaposse.com/"&gt;The Java Posse&lt;/a&gt;&lt;/h3&gt;
+&lt;h4&gt;&lt;i&gt;Java&lt;/i&gt; (Loose Bruce Kerr)&lt;/h4&gt;
+&lt;h4&gt;&lt;i&gt;In the House&lt;/i&gt; (Juan Carlos Jimenez)&lt;/h4&gt;
+&lt;p&gt;
+The lead-in music is well-known to their followers, a parody of a classic tune, poking fun at the whole &lt;a href="http://en.wikipedia.org/wiki/Java"&gt;Java&lt;/a&gt; phenomenon, and espcially jabbing at &lt;a href="http://en.wikipedia.org/wiki/M$#.22.24.22_replacing_.22S.22.3B_.22.E2.82.AC.22_replacing_.22E.22"&gt;M$&lt;/a&gt;, as the Javanistas like to do.
+&lt;/p&gt;
+&lt;p&gt;
+The lead-out music is a bouncy little tune with silvery guitar, plus voice-over.
+&lt;/p&gt;
+&lt;h3&gt;&lt;a href="http://www.cincomsmalltalk.com"&gt;Cincom Smalltalk&lt;/a&gt;&lt;/h3&gt;
+&lt;h4&gt;"Effortless" (Josh Woodward)&lt;/h4&gt;
+&lt;p style="background:yellow;margin:0;padding:0;margin-left:2em;margin-right:2em"&gt;
+2009-08-13: Thanks to an actual Reader Comment, this was corrected!  Thank you.
+&lt;/p&gt;
+&lt;p&gt;
+The lead-in and lead-out music on this one are about my all-time favorites.  Some kind of drop-D zhingmania, very very groovy.  Makes me dance in my chair.
+&lt;/p&gt;
+&lt;p class="flash"&gt;
+Scheeeeeeemiiiiiiiiiiiiing, hang me out to dry....
+&lt;/p&gt;
+&lt;p&gt;
+Anyway, even if you don't give-a-shit about &lt;a href="http://en.wikipedia.org/wiki/Smalltalk"&gt;Smalltalk&lt;/a&gt;, listen to the first and last minute of one of these podcasts!
+&lt;/p&gt;
+&lt;h3&gt;&lt;a href="http://www.stackoverflow.com/"&gt;Stack Overflow&lt;/a&gt;&lt;/h3&gt;
+&lt;h4&gt;Unknown (Unknown)&lt;/h4&gt;
+&lt;p&gt;
+Sounds like porno music, no offense.  Maybe that's what they were going for, then in that case, &lt;b&gt;well done mates&lt;/b&gt;!
+&lt;/p&gt;
+&lt;h3&gt;&lt;a href="http://www.hanselminutes.com/"&gt;Hanselminutes&lt;/a&gt;&lt;/h3&gt;
+&lt;h4&gt;Unknown (Unknown)&lt;/h4&gt;
+&lt;p&gt;
+Some kind of horn-sectioned jazzy number with latin rhythm instruments supplying the beat.  Not too offensive, except for the voice-over.
+&lt;/p&gt;
+&lt;h3&gt;&lt;a href="http://www.seradio.com/"&gt;Software Engineering Radio&lt;/a&gt;&lt;/h3&gt;
+&lt;h4&gt;Unknown (Unknown)&lt;/h4&gt;
+&lt;p&gt;
+Since these guys are obviously German, it's surprising the lead-in music doesn't sound like something off &lt;a href="http://www.kraftwerk.com/"&gt;Trans-Europa Express&lt;/a&gt;, but is in fact a high-energy rock guitar tune.  Lots of good interviews on wide-ranging topics.  They have pages where it would be appropriate to post the info, but none was obviously present.
+&lt;/p&gt;
+&lt;h3&gt;&lt;a href="http://www.cnet.com/"&gt;CNET&lt;/a&gt;&lt;/h3&gt;
+&lt;h4&gt;Unknown (Unknown)&lt;/h4&gt;
+&lt;p&gt;
+News jingle, and thank God it's very short.  Maybe they could lengthen that and cut the commercial crap they use for lead-in and lead-out instead.
+&lt;/p&gt;
+&lt;h3&gt;&lt;a href="http://www.cnn.com/"&gt;Open Sources&lt;/a&gt;&lt;/h3&gt;
+&lt;h4&gt;Fix up, look sharp (Dizzee Rascal)&lt;/h4&gt;
+&lt;h4&gt;Drinkin' and Gamblin' (Barbecue Bob and the Spareribs)&lt;/h4&gt;
+&lt;p&gt;
+These guys are right out there; a really fun listen with liberal use of adult language, and the song credits are right up front, where you expect to see them!
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+digg_url = 'http://flatulenza-per-tutti.blogspot.com/2009/03/music-critic-rating-podcasts.html';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http://flatulenza-per-tutti.blogspot.com/2009/03/music-critic-rating-podcasts.html';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;div class="blogger-post-footer"&gt;&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http%3A%2F%2Fflatulenza-per-tutti.blogspot.com%2F';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/6839704277656129776-1787620099074995938?l=flatulenza-per-tutti.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://flatulenza-per-tutti.blogspot.com/feeds/1787620099074995938/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='https://www.blogger.com/comment.g?blogID=6839704277656129776&amp;postID=1787620099074995938&amp;isPopup=true' title='2 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/1787620099074995938'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/1787620099074995938'/><link rel='alternate' type='text/html' href='http://flatulenza-per-tutti.blogspot.com/2009/03/music-critic-rating-podcasts.html' title='Music Critic: Rating the Podcasts'/><author><name>The Gassy One</name><uri>http://www.blogger.com/profile/14799233915551512512</uri><email>noreply@blogger.com</email><gd:extendedProperty xmlns:gd='http://schemas.google.com/g/2005' name='OpenSocialUserId' value='05815732420835795465'/></author><thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>2</thr:total></entry><entry><id>tag:blogger.com,1999:blog-6839704277656129776.post-6163107383434374407</id><published>2009-07-17T10:06:00.005-04:00</published><updated>2009-07-17T10:21:46.652-04:00</updated><category scheme='http://www.blogger.com/atom/ns#' term='open source'/><category scheme='http://www.blogger.com/atom/ns#' term='death'/><category scheme='http://www.blogger.com/atom/ns#' term='success'/><category scheme='http://www.blogger.com/atom/ns#' term='finalization'/><category scheme='http://www.blogger.com/atom/ns#' term='symbian'/><category scheme='http://www.blogger.com/atom/ns#' term='android'/><category scheme='http://www.blogger.com/atom/ns#' term='failure'/><category scheme='http://www.blogger.com/atom/ns#' term='horror'/><title type='text'>Symbian To Be Crushed By Linux-Powered Juggernaut</title><content type='html'>&lt;script type="text/javascript" src="http://oopstudios.com/dlink/dlink.js"&gt;&lt;/script&gt;
+&lt;style type="text/css"&gt;
+a.internal {color: #D47700;}a.external {color: #0074D4;}a.subdomain {color: #D43500;}a.email {color: #00B235;}
+&lt;/style&gt;
+&lt;div class="dlink"&gt;
+&lt;p&gt;
+Ja, for sure, from Sweden....
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="http://en.wikipedia.org/wiki/Trading_Places"&gt;But you're wearing Lederhosen!&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Not sure what triggered that, probably someone mentioned &lt;a href="http://www.sweden.se/"&gt;Sweden&lt;/a&gt;, maybe something about &lt;a href="http://www.nokia.com/"&gt;Nokia&lt;/a&gt;.  Nowadays that would probably trigger a &lt;a href="http://www.tsa.gov/"&gt;TSA&lt;/a&gt; passenger take-down!
+&lt;/p&gt;
+&lt;p&gt;
+Speaking of Nokia, &lt;a href="http://www.symbian.org/"&gt;Symbian&lt;/a&gt; is going to go down hard; I think all their open-source posturing is too-little-too-late.  &lt;a href="http://www.android.com/"&gt;Android&lt;/a&gt; and &lt;a href="http://www.apple.com/"&gt;iPhone&lt;/a&gt; will crush them like the &lt;a href="http://www.linux.org/"&gt;Linux&lt;/a&gt;-powered juggernaut that they are.  The good news for Nokia is they can just switch over to Android at the &lt;a href="http://en.wikipedia.org/wiki/Inflection_point"&gt;inflection point&lt;/a&gt;; Symbian is just an albatross for them, which is why they pushed it into &lt;a href="http://opensource.org/"&gt;Open Source&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p class="flash"&gt;
+An impressive amount of non-&lt;a href="http://www.wikipedia.org"&gt;Wikipedia&lt;/a&gt; anchors!
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+digg_url = 'http://flatulenza-per-tutti.blogspot.com/2009/07/symbian-to-be-crushed-by-linux-powered.html';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http://flatulenza-per-tutti.blogspot.com/2009/07/symbian-to-be-crushed-by-linux-powered.html';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;div class="blogger-post-footer"&gt;&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http%3A%2F%2Fflatulenza-per-tutti.blogspot.com%2F';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/6839704277656129776-6163107383434374407?l=flatulenza-per-tutti.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://flatulenza-per-tutti.blogspot.com/feeds/6163107383434374407/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='https://www.blogger.com/comment.g?blogID=6839704277656129776&amp;postID=6163107383434374407&amp;isPopup=true' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/6163107383434374407'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/6163107383434374407'/><link rel='alternate' type='text/html' href='http://flatulenza-per-tutti.blogspot.com/2009/07/symbian-to-be-crushed-by-linux-powered.html' title='Symbian To Be Crushed By Linux-Powered Juggernaut'/><author><name>The Gassy One</name><uri>http://www.blogger.com/profile/14799233915551512512</uri><email>noreply@blogger.com</email><gd:extendedProperty xmlns:gd='http://schemas.google.com/g/2005' name='OpenSocialUserId' value='05815732420835795465'/></author><thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-6839704277656129776.post-4482521093094194460</id><published>2009-07-09T08:40:00.000-04:00</published><updated>2009-07-09T08:41:04.389-04:00</updated><category scheme='http://www.blogger.com/atom/ns#' term='gui'/><title type='text'>Theme Change</title><content type='html'>&lt;script type="text/javascript" src="http://oopstudios.com/dlink/dlink.js"&gt;&lt;/script&gt;
+&lt;style type="text/css"&gt;
+a.internal {color: #D47700;}a.external {color: #0074D4;}a.subdomain {color: #D43500;}a.email {color: #00B235;}
+&lt;/style&gt;
+&lt;div class="dlink"&gt;
+&lt;p&gt;
+Enjoy the new visuals.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http%3A%2F%2Fflatulenza-per-tutti.blogspot.com%2F';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;div class="blogger-post-footer"&gt;&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http%3A%2F%2Fflatulenza-per-tutti.blogspot.com%2F';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/6839704277656129776-4482521093094194460?l=flatulenza-per-tutti.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://flatulenza-per-tutti.blogspot.com/feeds/4482521093094194460/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='https://www.blogger.com/comment.g?blogID=6839704277656129776&amp;postID=4482521093094194460&amp;isPopup=true' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/4482521093094194460'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/4482521093094194460'/><link rel='alternate' type='text/html' href='http://flatulenza-per-tutti.blogspot.com/2009/07/theme-change.html' title='Theme Change'/><author><name>The Gassy One</name><uri>http://www.blogger.com/profile/14799233915551512512</uri><email>noreply@blogger.com</email><gd:extendedProperty xmlns:gd='http://schemas.google.com/g/2005' name='OpenSocialUserId' value='05815732420835795465'/></author><thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-6839704277656129776.post-5897673353397210054</id><published>2009-07-06T07:29:00.006-04:00</published><updated>2009-07-06T08:02:14.971-04:00</updated><category scheme='http://www.blogger.com/atom/ns#' term='dynamic construction'/><category scheme='http://www.blogger.com/atom/ns#' term='social network'/><category scheme='http://www.blogger.com/atom/ns#' term='dependency injection'/><category scheme='http://www.blogger.com/atom/ns#' term='uncertainty'/><category scheme='http://www.blogger.com/atom/ns#' term='humor'/><category scheme='http://www.blogger.com/atom/ns#' term='factory'/><category scheme='http://www.blogger.com/atom/ns#' term='design reality'/><category scheme='http://www.blogger.com/atom/ns#' term='horror'/><title type='text'>Why You Should Be Using Factories</title><content type='html'>&lt;script type="text/javascript" src="http://oopstudios.com/dlink/dlink.js"&gt;&lt;/script&gt;
+&lt;style type="text/css"&gt;
+a.internal {color: #D47700;}a.external {color: #0074D4;}a.subdomain {color: #D43500;}a.email {color: #00B235;}
+&lt;/style&gt;
+&lt;div class="dlink"&gt;
+&lt;p&gt;
+Before I hit you with the punchline, let's set everything up.
+&lt;/p&gt;
+&lt;p&gt;
+Read up on &lt;a href="http://en.wikipedia.org/wiki/Factory_pattern"&gt;Factory Pattern&lt;/a&gt; and &lt;a href="http://en.wikipedia.org/wiki/Dependency_injection"&gt;Dependency Injection&lt;/a&gt;, so you will get the punchline.  If you are already cool with these techniques, please still read the story, and have a good laugh (I did)!
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="http://en.wikipedia.org/wiki/Will_smith"&gt;Okay, here's the situation: parents went away on a week's vacation&lt;/a&gt;...  Oh wait, not quite.
+&lt;/p&gt;
+&lt;p&gt;
+The &lt;b&gt;real situation&lt;/b&gt; was: I had to leave work by a specific time to be home by a specific time, etc.  Meanwhile, a coworker calls and asks me if I'm ready to demonstrate that &lt;a href="http://en.wikipedia.org/wiki/Graphical_user_interface"&gt;User Interface&lt;/a&gt; Prototype hitting the &lt;a href="http://en.wikipedia.org/wiki/Web_service"&gt;Web Service&lt;/a&gt; for that 4 o'clock meeting!  I was way ready, but I'm like, "Was this on my &lt;a href="http://www.microsoft.com/outlook"&gt;Calendar&lt;/a&gt;?" and of course &lt;b&gt;it was not on there&lt;/b&gt;; &lt;a href="http://en.wikipedia.org/wiki/Pee-wee%27s_Big_Adventure"&gt;Nobody hipped me to that meeting, dude&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p class="flash"&gt;
+Are we there yet?
+&lt;/p&gt;
+&lt;p&gt;
+So, no problem.  I will take my rig home and get on VPN access and we are golden.
+&lt;/p&gt;
+&lt;p&gt;
+Except for one thing....
+&lt;/p&gt;
+&lt;p&gt;
+It was so fucking slow on the &lt;a href="http://en.wikipedia.org/wiki/Vpn"&gt;VPN&lt;/a&gt; link to the &lt;a href="http://www.vmware.com/"&gt;virtual&lt;/a&gt; hosting my remote service that everything was &lt;b&gt;timing out all over the fucking place&lt;/b&gt;!
+&lt;/p&gt;
+&lt;p&gt;
+On the upside, I'm glad I was able to test for latency; put timeouts at the top of the list for The Very Next Day.
+&lt;/p&gt;
+&lt;p&gt;
+On the (very) downside, there was only 15 minutes before the start of a 21-person conference call!  Out go the "I'm Panicking!" emails to my teammates, as I look into searching for some help with the settings, then determine I'm too panicked to try to deal with it, since the actual timeout would still need to be discovered, and the default 60 seconds was already timing-out.
+&lt;/p&gt;
+&lt;p class="flash"&gt;
+&lt;i&gt;Are we there &lt;b&gt;now&lt;/b&gt;&lt;/i&gt;?
+&lt;/p&gt;
+&lt;p&gt;
+We are here &lt;b&gt;now&lt;/b&gt;.  That's when I remembered the main parts were &lt;a href="http://en.wikipedia.org/wiki/Interface_(computer_science)"&gt;interface-based&lt;/a&gt;, and the class name of the implementation was specified in the configuration file. I simply switched to my &lt;b&gt;debug&lt;/b&gt; implementation, with 5 minutes to spare, then sailed through the Demo!  You all have one of those, right? &lt;span style="font-size:120%"&gt;Right?&lt;/span&gt; &lt;span style="font-size:200%"&gt;Right?&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Obviously, the punchline is: &lt;span style="font-size:120%"&gt;It will save your ass in a demo!&lt;/span&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+digg_url = 'http://flatulenza-per-tutti.blogspot.com/2009/07/why-you-should-be-using-factories.html';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http://flatulenza-per-tutti.blogspot.com/2009/07/why-you-should-be-using-factories.html';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;div class="blogger-post-footer"&gt;&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http%3A%2F%2Fflatulenza-per-tutti.blogspot.com%2F';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/6839704277656129776-5897673353397210054?l=flatulenza-per-tutti.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://flatulenza-per-tutti.blogspot.com/feeds/5897673353397210054/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='https://www.blogger.com/comment.g?blogID=6839704277656129776&amp;postID=5897673353397210054&amp;isPopup=true' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/5897673353397210054'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/5897673353397210054'/><link rel='alternate' type='text/html' href='http://flatulenza-per-tutti.blogspot.com/2009/07/why-you-should-be-using-factories.html' title='Why You Should Be Using Factories'/><author><name>The Gassy One</name><uri>http://www.blogger.com/profile/14799233915551512512</uri><email>noreply@blogger.com</email><gd:extendedProperty xmlns:gd='http://schemas.google.com/g/2005' name='OpenSocialUserId' value='05815732420835795465'/></author><thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-6839704277656129776.post-7965637741697742138</id><published>2009-06-29T12:18:00.004-04:00</published><updated>2009-06-29T12:33:59.627-04:00</updated><category scheme='http://www.blogger.com/atom/ns#' term='rant'/><category scheme='http://www.blogger.com/atom/ns#' term='death'/><category scheme='http://www.blogger.com/atom/ns#' term='uncertainty'/><category scheme='http://www.blogger.com/atom/ns#' term='failure'/><category scheme='http://www.blogger.com/atom/ns#' term='horror'/><title type='text'>Another Modest Proposal: Ending Drug Violence</title><content type='html'>&lt;script type="text/javascript" src="http://oopstudios.com/dlink/dlink.js"&gt;&lt;/script&gt;
+&lt;style type="text/css"&gt;
+a.internal {color: #D47700;}a.external {color: #0074D4;}a.subdomain {color: #D43500;}a.email {color: #00B235;}
+&lt;/style&gt;
+&lt;div class="dlink"&gt;
+&lt;p&gt;
+Simply &lt;i&gt;kill all of them&lt;/i&gt;!
+&lt;/p&gt;
+&lt;p&gt;
+Dear CIA:  What the fuck are you waiting for?  You know who they are, and you have a &lt;a href="http://en.wikipedia.org/wiki/Black_ops"&gt;Black Ops&lt;/a&gt; division.  Don't make me connect the fucking dots for you!
+&lt;/p&gt;
+&lt;p&gt;
+Ok, don't want to do that one, how about this:
+&lt;/p&gt;
+&lt;p&gt;
+Dear CIA:  Get your asses down there, and &lt;a href="http://en.wikipedia.org/wiki/Threat"&gt;"explain"&lt;/a&gt; to these people that they are &lt;a href="http://en.wikipedia.org/wiki/Extortion"&gt;now paying tax to US&lt;/a&gt;, or they will start &lt;a href="http://en.wikipedia.org/wiki/Contract_killing"&gt;mysteriously disappearing&lt;/a&gt;.  Again, Black Ops to the rescue!
+&lt;/p&gt;
+&lt;p&gt;
+You can be sure we are doing similar things with &lt;a href="http://en.wikipedia.org/wiki/Terrorists"&gt;Other Bad People&lt;/a&gt;, how about focusing the laser on &lt;a href="http://en.wikipedia.org/wiki/Drug_cartel"&gt;on people who can cross our borders &lt;b&gt;by walking over&lt;/b&gt;&lt;/a&gt;!
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+digg_url = 'http://flatulenza-per-tutti.blogspot.com/2009/06/another-modest-proposal-ending-drug.html';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http://flatulenza-per-tutti.blogspot.com/2009/06/another-modest-proposal-ending-drug.html';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;div class="blogger-post-footer"&gt;&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http%3A%2F%2Fflatulenza-per-tutti.blogspot.com%2F';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/6839704277656129776-7965637741697742138?l=flatulenza-per-tutti.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://flatulenza-per-tutti.blogspot.com/feeds/7965637741697742138/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='https://www.blogger.com/comment.g?blogID=6839704277656129776&amp;postID=7965637741697742138&amp;isPopup=true' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/7965637741697742138'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/7965637741697742138'/><link rel='alternate' type='text/html' href='http://flatulenza-per-tutti.blogspot.com/2009/06/another-modest-proposal-ending-drug.html' title='Another Modest Proposal: Ending Drug Violence'/><author><name>The Gassy One</name><uri>http://www.blogger.com/profile/14799233915551512512</uri><email>noreply@blogger.com</email><gd:extendedProperty xmlns:gd='http://schemas.google.com/g/2005' name='OpenSocialUserId' value='05815732420835795465'/></author><thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-6839704277656129776.post-8216191098510702926</id><published>2009-06-16T10:30:00.005-04:00</published><updated>2009-06-16T10:35:46.690-04:00</updated><category scheme='http://www.blogger.com/atom/ns#' term='office'/><category scheme='http://www.blogger.com/atom/ns#' term='humor'/><title type='text'>Who's Got Balls?</title><content type='html'>&lt;script type="text/javascript" src="http://oopstudios.com/dlink/dlink.js"&gt;&lt;/script&gt;
+&lt;style type="text/css"&gt;
+a.internal {color: #D47700;}a.external {color: #0074D4;}a.subdomain {color: #D43500;}a.email {color: #00B235;}
+&lt;/style&gt;
+&lt;div class="dlink"&gt;
+&lt;p&gt;
+I'm sorry but this was spontaneously funny, and I'm behind on posts....
+&lt;/p&gt;
+&lt;p&gt;
+Our company has some software that we demonstrate at trade shows, and the demo's theme is Golf-based; it makes use of golf equipment to lead prospects through our software's features.
+&lt;/p&gt;
+&lt;p&gt;
+Show Time is approaching, and our Sales Lead was in the office across-the-hall, and exclaimed&lt;br/&gt; &lt;span style="font-size:250%"&gt;We Need More Balls!&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Of course he meant Golf Balls, but the innuendo was so good, my office-mate and I burst out-loud laughing.  Our Sales Team does need More Balls (sales is down)!
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+digg_url = 'http://flatulenza-per-tutti.blogspot.com/2009/06/whos-got-balls.html';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http://flatulenza-per-tutti.blogspot.com/2009/06/whos-got-balls.html';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;div class="blogger-post-footer"&gt;&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http%3A%2F%2Fflatulenza-per-tutti.blogspot.com%2F';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/6839704277656129776-8216191098510702926?l=flatulenza-per-tutti.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://flatulenza-per-tutti.blogspot.com/feeds/8216191098510702926/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='https://www.blogger.com/comment.g?blogID=6839704277656129776&amp;postID=8216191098510702926&amp;isPopup=true' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/8216191098510702926'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/8216191098510702926'/><link rel='alternate' type='text/html' href='http://flatulenza-per-tutti.blogspot.com/2009/06/whos-got-balls.html' title='Who&apos;s Got Balls?'/><author><name>The Gassy One</name><uri>http://www.blogger.com/profile/14799233915551512512</uri><email>noreply@blogger.com</email><gd:extendedProperty xmlns:gd='http://schemas.google.com/g/2005' name='OpenSocialUserId' value='05815732420835795465'/></author><thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-6839704277656129776.post-5820629942014203774</id><published>2009-06-08T13:01:00.006-04:00</published><updated>2009-06-08T13:28:55.944-04:00</updated><category scheme='http://www.blogger.com/atom/ns#' term='rant'/><category scheme='http://www.blogger.com/atom/ns#' term='.net'/><category scheme='http://www.blogger.com/atom/ns#' term='unmanaged code'/><category scheme='http://www.blogger.com/atom/ns#' term='horror'/><title type='text'>A Journey into The Depths of Hell, aka Interop</title><content type='html'>&lt;script type="text/javascript" src="http://oopstudios.com/dlink/dlink.js"&gt;&lt;/script&gt;
+&lt;style type="text/css"&gt;
+a.internal {color: #D47700;}a.external {color: #0074D4;}a.subdomain {color: #D43500;}a.email {color: #00B235;}
+&lt;/style&gt;
+&lt;div class="dlink"&gt;
+&lt;p&gt;
+By way of a current project, I have had to revisit territories that I hoped were long since Gone and Forgotten.
+&lt;/p&gt;
+&lt;p&gt;
+A land of explicit lifetime management, raw pointers to &lt;i&gt;everything&lt;/i&gt;, pointer arithmetic, and variable-length structure layouts that &lt;b&gt;make your head spin off its axis&lt;/b&gt;!
+&lt;/p&gt;
+&lt;p&gt;
+Of course, I am talking specifically about &lt;a href="http://en.wikipedia.org/wiki/C%2B%2B"&gt;C++&lt;/a&gt; and &lt;a href="http://en.wikipedia.org/wiki/Unmanaged_code"&gt;unmanaged code&lt;/a&gt; interop ala &lt;a href="http://en.wikipedia.org/wiki/Visual_studio"&gt;Visual Studio .NET&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+It's been a looonnnng several weeks of dual heaps, pinning pointers and accessing other arcane &lt;a href="http://en.wikipedia.org/wiki/Compiler_directive"&gt;compiler directives&lt;/a&gt; and keywords that can only exist in This Universe.
+&lt;/p&gt;
+&lt;p&gt;
+Want to convert a managed Unicode string to an unmanaged buffer of ANSI characters? &lt;b&gt;Good fucking luck&lt;/b&gt;!  Obviously possible, but for some reason, there's no one-liner to call for this exteremely common interop task.  Just for reference, here is what I ended up with:
+&lt;/p&gt;
+&lt;pre&gt;
+void convertStringTo(System::String^ str, char buf[], size_t buflen) {
+  if(str != nullptr) {
+    pin_ptr&lt;const wchar_t&gt; wch = PtrToStringChars(str);
+    size_t convertedChars = 0;
+    wcstombs_s(&amp;convertedChars, buf, buflen, wch, _TRUNCATE);
+  }
+}
+&lt;/pre&gt;
+&lt;p&gt;
+Many "published" solutions used a scheme that allocated a buffer for the ANSI part using &lt;code&gt;Marshal.StringToWhatever()&lt;/code&gt;, but this is just one more piece of &lt;a href="http://en.wikipedia.org/wiki/Platform_Invocation_Services"&gt;&lt;code&gt;IntPtr&lt;/code&gt;&lt;/a&gt; &lt;b&gt;lifecycle bullshit&lt;/b&gt; to manage, and you are &lt;i&gt;shit out-of-luck&lt;/i&gt; if you want to just put them into a &lt;code&gt;char[]&lt;/code&gt; buffer, aside from a stomach-turning extra buffer copy.
+&lt;/p&gt;
+&lt;p&gt;
+The good news is the other primative types box and unbox like butter, once you know the secret:
+&lt;/p&gt;
+&lt;pre&gt;
+Object^ value = ....;
+Double^ sx = (Double^)value;
+double dx = *sx;
+&lt;/pre&gt;
+&lt;p&gt;
+Much less painful.  Here is how you can use a managed buffer with unmanaged code:
+&lt;/p&gt;
+&lt;pre&gt;
+array&lt;unsigned char, 1&gt;^ bufx = gcnew array&lt;unsigned char,1&gt;(BUFSIZE);
+...
+pin_ptr&lt;unsigned char&gt; buf_p = &amp;bufx[0];
+&lt;/pre&gt;
+&lt;p&gt;
+That's some &lt;a href="http://en.wikipedia.org/wiki/Managed_Extensions_for_C%2B%2B"&gt;awfully strange-looking C++&lt;/a&gt;, if'n you ask me; but then again, look at the universe we are working in!
+&lt;/p&gt;
+&lt;p class="flash"&gt;
+So this is only a pseudo-rant, then?
+&lt;/p&gt;
+&lt;p&gt;
+So don't forget to keep your power dry, and all of your punctuation in order!  If you can do that, this stuff will get you back on the Long Road Home in no time....
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+digg_url = 'http://flatulenza-per-tutti.blogspot.com/2009/06/journey-into-depths-of-hell-aka-interop.html';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http://flatulenza-per-tutti.blogspot.com/2009/06/journey-into-depths-of-hell-aka-interop.html';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;div class="blogger-post-footer"&gt;&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http%3A%2F%2Fflatulenza-per-tutti.blogspot.com%2F';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/6839704277656129776-5820629942014203774?l=flatulenza-per-tutti.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://flatulenza-per-tutti.blogspot.com/feeds/5820629942014203774/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='https://www.blogger.com/comment.g?blogID=6839704277656129776&amp;postID=5820629942014203774&amp;isPopup=true' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/5820629942014203774'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/5820629942014203774'/><link rel='alternate' type='text/html' href='http://flatulenza-per-tutti.blogspot.com/2009/06/journey-into-depths-of-hell-aka-interop.html' title='A Journey into The Depths of Hell, aka Interop'/><author><name>The Gassy One</name><uri>http://www.blogger.com/profile/14799233915551512512</uri><email>noreply@blogger.com</email><gd:extendedProperty xmlns:gd='http://schemas.google.com/g/2005' name='OpenSocialUserId' value='05815732420835795465'/></author><thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-6839704277656129776.post-3511283385277986520</id><published>2009-06-03T15:12:00.003-04:00</published><updated>2009-06-03T15:17:33.652-04:00</updated><title type='text'>Welcome Blogged Followers</title><content type='html'>&lt;script type="text/javascript" src="http://oopstudios.com/dlink/dlink.js"&gt;&lt;/script&gt;
+&lt;style type="text/css"&gt;
+a.internal {color: #D47700;}a.external {color: #0074D4;}a.subdomain {color: #D43500;}a.email {color: #00B235;}
+&lt;/style&gt;
+&lt;div class="dlink"&gt;
+&lt;p&gt;
+I almost forgot I registered over at &lt;a href="http://www.blogged.com"&gt;Blogged&lt;/a&gt;.  I say almost, because now I am getting emails from them indicating I have people following this blog from there.
+&lt;/p&gt;
+&lt;p&gt;
+The more the merrier!  Tell your friends.  Then they'll tell two friends, and so on, &lt;span style="font-size:80%"&gt;and so on&lt;/span&gt;, &lt;span style="font-size:60%"&gt;and so on&lt;/span&gt;, &lt;span style="font-size:40%"&gt;and so on&lt;/span&gt;.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+digg_url = 'http://flatulenza-per-tutti.blogspot.com/2009/06/welcome-blogged-followers.html';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http://flatulenza-per-tutti.blogspot.com/2009/06/welcome-blogged-followers.html';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;div class="blogger-post-footer"&gt;&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http%3A%2F%2Fflatulenza-per-tutti.blogspot.com%2F';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/6839704277656129776-3511283385277986520?l=flatulenza-per-tutti.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://flatulenza-per-tutti.blogspot.com/feeds/3511283385277986520/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='https://www.blogger.com/comment.g?blogID=6839704277656129776&amp;postID=3511283385277986520&amp;isPopup=true' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/3511283385277986520'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/3511283385277986520'/><link rel='alternate' type='text/html' href='http://flatulenza-per-tutti.blogspot.com/2009/06/welcome-blogged-followers.html' title='Welcome Blogged Followers'/><author><name>The Gassy One</name><uri>http://www.blogger.com/profile/14799233915551512512</uri><email>noreply@blogger.com</email><gd:extendedProperty xmlns:gd='http://schemas.google.com/g/2005' name='OpenSocialUserId' value='05815732420835795465'/></author><thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-6839704277656129776.post-6127486138825609217</id><published>2009-05-13T11:46:00.005-04:00</published><updated>2009-05-13T12:04:13.972-04:00</updated><category scheme='http://www.blogger.com/atom/ns#' term='rant'/><category scheme='http://www.blogger.com/atom/ns#' term='uncertainty'/><category scheme='http://www.blogger.com/atom/ns#' term='review'/><category scheme='http://www.blogger.com/atom/ns#' term='free speech'/><category scheme='http://www.blogger.com/atom/ns#' term='dogma'/><title type='text'>Yo Miss Skanklifornia</title><content type='html'>&lt;script type="text/javascript" src="http://oopstudios.com/dlink/dlink.js"&gt;&lt;/script&gt;
+&lt;style type="text/css"&gt;
+a.internal {color: #D47700;}a.external {color: #0074D4;}a.subdomain {color: #D43500;}a.email {color: #00B235;}
+&lt;/style&gt;
+&lt;div class="dlink"&gt;
+&lt;p&gt;
+We &lt;b&gt;do&lt;/b&gt; have &lt;a href="http://en.wikipedia.org/wiki/First_amendment"&gt;Free Speech&lt;/a&gt; in the United States, however that &lt;b&gt;does not&lt;/b&gt; mean:
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Anyone will &lt;i&gt;agree with&lt;/i&gt; what you say,&lt;/li&gt;
+&lt;li&gt;Anyone will &lt;i&gt;like&lt;/i&gt; what you say,&lt;/li&gt;
+&lt;li&gt;Anyone will &lt;i&gt;listen to&lt;/i&gt; what you say &lt;b&gt;without reacting&lt;/b&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+Do those all say the same thing?  Probably so, albeit true, no matter who anyone is talking to.  Sorry no one hipped you to that, dudette.
+&lt;/p&gt;
+&lt;p&gt;
+Miss California Carrie Prejean, running your mouth, like I am right now, (aka &lt;b&gt;Free Speech&lt;/b&gt;) does not occur in a vaccuum; you can be sure there are people listening, and they will react, &lt;b&gt;no matter what you or anyone else is blathering on about&lt;/b&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+You just woke up the &lt;a href="http://en.wikipedia.org/wiki/Skinhead"&gt;Skinhead&lt;/a&gt;-equivalent of Same-Sex Marriage fanatics.
+&lt;/p&gt;
+&lt;p&gt;
+You said it on Television, so what did you think would happen?  I am saying it in my blog, where no one looks, ROFL!  However I am ready to take the heat if anyone should come by and criticise, instead of &lt;b&gt;bitching&lt;/b&gt; that everyone didn't &lt;i&gt;Just Leave Me Alone&lt;/i&gt; for &lt;i&gt;Speaking My Mind&lt;/i&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+You are just as annoying as anyone else who speaks up about views.  That is America.  That is how you get heard around these parts.
+&lt;/p&gt;
+&lt;p&gt;
+And as for your risque photos, I have regular Internet Porn at my house, so &lt;span style="font-size:120%"&gt;a big fat yawn to you!&lt;/span&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+digg_url = 'http://flatulenza-per-tutti.blogspot.com/2009/05/yo-miss-skanklifornia.html';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http://flatulenza-per-tutti.blogspot.com/2009/05/yo-miss-skanklifornia.html';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;div class="blogger-post-footer"&gt;&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http%3A%2F%2Fflatulenza-per-tutti.blogspot.com%2F';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/6839704277656129776-6127486138825609217?l=flatulenza-per-tutti.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://flatulenza-per-tutti.blogspot.com/feeds/6127486138825609217/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='https://www.blogger.com/comment.g?blogID=6839704277656129776&amp;postID=6127486138825609217&amp;isPopup=true' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/6127486138825609217'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/6127486138825609217'/><link rel='alternate' type='text/html' href='http://flatulenza-per-tutti.blogspot.com/2009/05/yo-miss-skanklifornia.html' title='Yo Miss Skanklifornia'/><author><name>The Gassy One</name><uri>http://www.blogger.com/profile/14799233915551512512</uri><email>noreply@blogger.com</email><gd:extendedProperty xmlns:gd='http://schemas.google.com/g/2005' name='OpenSocialUserId' value='05815732420835795465'/></author><thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-6839704277656129776.post-7607260439097349309</id><published>2009-04-23T07:36:00.004-04:00</published><updated>2009-04-23T07:48:53.151-04:00</updated><category scheme='http://www.blogger.com/atom/ns#' term='rant'/><category scheme='http://www.blogger.com/atom/ns#' term='sun'/><category scheme='http://www.blogger.com/atom/ns#' term='smartphone'/><category scheme='http://www.blogger.com/atom/ns#' term='humor'/><category scheme='http://www.blogger.com/atom/ns#' term='javame'/><category scheme='http://www.blogger.com/atom/ns#' term='android'/><title type='text'>I Have Services In My Pocket</title><content type='html'>&lt;script type="text/javascript" src="http://oopstudios.com/dlink/dlink.js"&gt;&lt;/script&gt;
+&lt;style type="text/css"&gt;
+a.internal {color: #D47700;}a.external {color: #0074D4;}a.subdomain {color: #D43500;}a.email {color: #00B235;}
+&lt;/style&gt;
+&lt;div class="dlink"&gt;
+&lt;p&gt;
+And I wrote them myself!
+&lt;/p&gt;
+&lt;p&gt;
+I have to say that as a Software Developer, things have never been better.  Even more, as a Mobile Software Developer.  It is fucking great!  As FZ said during a monologue in &lt;i&gt;Call Any Vegetable&lt;/i&gt;:
+&lt;/p&gt;
+&lt;blockquote&gt;
+If there's anybody here who doesn't believe that it is fucking great to be alive, I wish they would go now, because This Show will bring them down so much....
+&lt;/blockquote&gt;
+&lt;p&gt;
+Then they kick into a line from &lt;i&gt;God Bless America&lt;/i&gt;, but that's another story.
+&lt;/p&gt;
+&lt;p&gt;
+Anyway, to all you iPhone developers, good luck Sucking Apple's Dick to get that going on their platform.  I'm sure They think you are &lt;b&gt;Not Good Enough&lt;/b&gt; to be allowed the hallowed privilege of getting &lt;i&gt;down in the system&lt;/i&gt; to do something all-the-time.
+&lt;/p&gt;
+&lt;p&gt;
+And by-the-by, I am talking about stuff in Java, not &lt;a href="http://en.wikipedia.org/wiki/Objective-c"&gt;obscure whateverness&lt;/a&gt;.  I am happy to live in the managed code &lt;a href="http://en.wikipedia.org/wiki/The_matrix"&gt;Matrix&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+You can't see, but I'm sticking my tongue out at y'all and flipping you the bird.  I have my own services running my pocket, and you don't, and just fuck off!  Unless, of course, you want the same thing, then &lt;b&gt;Welcome Aboard&lt;/b&gt;!
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+digg_url = 'http://flatulenza-per-tutti.blogspot.com/2009/04/i-have-services-in-my-pocket.html';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http://flatulenza-per-tutti.blogspot.com/2009/04/i-have-services-in-my-pocket.html';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;div class="blogger-post-footer"&gt;&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http%3A%2F%2Fflatulenza-per-tutti.blogspot.com%2F';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/6839704277656129776-7607260439097349309?l=flatulenza-per-tutti.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://flatulenza-per-tutti.blogspot.com/feeds/7607260439097349309/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='https://www.blogger.com/comment.g?blogID=6839704277656129776&amp;postID=7607260439097349309&amp;isPopup=true' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/7607260439097349309'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/7607260439097349309'/><link rel='alternate' type='text/html' href='http://flatulenza-per-tutti.blogspot.com/2009/04/i-have-services-in-my-pocket.html' title='I Have Services In My Pocket'/><author><name>The Gassy One</name><uri>http://www.blogger.com/profile/14799233915551512512</uri><email>noreply@blogger.com</email><gd:extendedProperty xmlns:gd='http://schemas.google.com/g/2005' name='OpenSocialUserId' value='05815732420835795465'/></author><thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-6839704277656129776.post-1452740971307722584</id><published>2009-04-22T08:26:00.005-04:00</published><updated>2009-04-22T08:45:27.877-04:00</updated><category scheme='http://www.blogger.com/atom/ns#' term='java'/><category scheme='http://www.blogger.com/atom/ns#' term='braveheart'/><category scheme='http://www.blogger.com/atom/ns#' term='javame'/><title type='text'>Braveheart</title><content type='html'>&lt;script type="text/javascript" src="http://oopstudios.com/dlink/dlink.js"&gt;&lt;/script&gt;
+&lt;style type="text/css"&gt;
+a.internal {color: #D47700;}a.external {color: #0074D4;}a.subdomain {color: #D43500;}a.email {color: #00B235;}
+&lt;/style&gt;
+&lt;div class="dlink"&gt;
+&lt;p&gt;
+I love one particular scene from &lt;a href="http://en.wikipedia.org/wiki/Braveheart"&gt;this movie&lt;/a&gt;, and now that Oracle is acquiring Sun, I just played this back in my head:
+&lt;/p&gt;
+&lt;h4&gt;Java The Language:&lt;/h4&gt;
+&lt;blockquote&gt;
+What's that Lord?
+&lt;/blockquote&gt;
+&lt;h4&gt;to Java Mobile Edition:&lt;/h4&gt;
+&lt;blockquote&gt;
+He says I'm going to be Okay, but He's pretty sure &lt;i&gt;You're Fucked&lt;/i&gt;!
+&lt;/blockquote&gt;
+&lt;p&gt;
+I am totally convinced, since I now have a revenue stream, thanks to &lt;a href="http://market.android.com/"&gt;Google Android Market&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+If I was in shit-hole Java Mobile-land, I would still be saving up for a &lt;a href="http://en.wikipedia.org/wiki/Certificate_authority"&gt;CA Certificate&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Thanks Sun!  You gave us Java, now get the fuck out and enjoy your slow death at the hands of your &lt;a href="http://en.wikipedia.org/wiki/The_Spanish_Inquisition"&gt;Spanish Acquisition&lt;/a&gt;.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+digg_url = 'http://flatulenza-per-tutti.blogspot.com/2009/04/braveheart.html';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http://flatulenza-per-tutti.blogspot.com/2009/04/braveheart.html';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;div class="blogger-post-footer"&gt;&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http%3A%2F%2Fflatulenza-per-tutti.blogspot.com%2F';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/6839704277656129776-1452740971307722584?l=flatulenza-per-tutti.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://flatulenza-per-tutti.blogspot.com/feeds/1452740971307722584/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='https://www.blogger.com/comment.g?blogID=6839704277656129776&amp;postID=1452740971307722584&amp;isPopup=true' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/1452740971307722584'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/1452740971307722584'/><link rel='alternate' type='text/html' href='http://flatulenza-per-tutti.blogspot.com/2009/04/braveheart.html' title='Braveheart'/><author><name>The Gassy One</name><uri>http://www.blogger.com/profile/14799233915551512512</uri><email>noreply@blogger.com</email><gd:extendedProperty xmlns:gd='http://schemas.google.com/g/2005' name='OpenSocialUserId' value='05815732420835795465'/></author><thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-6839704277656129776.post-2935192154028677148</id><published>2009-03-27T08:30:00.000-04:00</published><updated>2009-03-27T08:30:00.816-04:00</updated><category scheme='http://www.blogger.com/atom/ns#' term='design reality'/><category scheme='http://www.blogger.com/atom/ns#' term='android'/><category scheme='http://www.blogger.com/atom/ns#' term='logic'/><title type='text'>Are You On The Right Track...</title><content type='html'>&lt;script type="text/javascript" src="http://oopstudios.com/dlink/dlink.js"&gt;&lt;/script&gt;
+&lt;style type="text/css"&gt;
+a.internal {color: #D47700;}a.external {color: #0074D4;}a.subdomain {color: #D43500;}a.email {color: #00B235;}
+&lt;/style&gt;
+&lt;div class="dlink"&gt;
+&lt;p&gt;
+On my &lt;a href="http://escape-mobile.ning.com/"&gt;latest side project&lt;/a&gt;, I have found myself using some classical data structures and algorithms, ala The 1970s:
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://en.wikipedia.org/wiki/Finite_state_automata"&gt;Finite State Automata&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://en.wikipedia.org/wiki/Directed_acyclic_graph"&gt;Directed Acyclic Graph&lt;/a&gt; (also makes a good FSA)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://en.wikipedia.org/wiki/Topological_sort"&gt;Topological Sort&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+This is on top of the usual assortment of &lt;a href="http://java.sun.com/j2se/1.5.0/docs/api/java/util/ArrayList.html"&gt;&lt;code&gt;ArrayList&lt;/code&gt;s&lt;/a&gt; and &lt;a href="http://java.sun.com/j2se/1.4.2/docs/api/java/util/HashMap.html"&gt;&lt;code&gt;HashMap&lt;/code&gt;s&lt;/a&gt; that are now ubiquitous, but back-in-the-day, we had to build that shit ourselves.
+&lt;/p&gt;
+&lt;p&gt;
+I'm taking liberty there, because &lt;b&gt;I was A Child during The 1970s&lt;/b&gt;.  I didn't know what a &lt;a href="http://en.wikipedia.org/wiki/Hash_function"&gt;hash function&lt;/a&gt; was yet, but I was tinkering with &lt;a href="http://en.wikipedia.org/wiki/BASIC"&gt;BASIC&lt;/a&gt; on some old &lt;a href="http://en.wikipedia.org/wiki/Teletypewriter"&gt;TTY&lt;/a&gt;s with the &lt;a href="http://en.wikipedia.org/wiki/Acoustic_coupler"&gt;acoustic-coupled&lt;/a&gt; &lt;a href="http://en.wikipedia.org/wiki/Modem"&gt;modems&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p class="flash"&gt;
+Takes you back to a simpler time, doesn't it?
+&lt;/p&gt;
+&lt;p&gt;
+I just hope it means I'm on the right track....
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http%3A%2F%2Fflatulenza-per-tutti.blogspot.com%2F';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;div class="blogger-post-footer"&gt;&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http%3A%2F%2Fflatulenza-per-tutti.blogspot.com%2F';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/6839704277656129776-2935192154028677148?l=flatulenza-per-tutti.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://flatulenza-per-tutti.blogspot.com/feeds/2935192154028677148/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='https://www.blogger.com/comment.g?blogID=6839704277656129776&amp;postID=2935192154028677148&amp;isPopup=true' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/2935192154028677148'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/2935192154028677148'/><link rel='alternate' type='text/html' href='http://flatulenza-per-tutti.blogspot.com/2009/03/are-you-on-right-track.html' title='Are You On The Right Track...'/><author><name>The Gassy One</name><uri>http://www.blogger.com/profile/14799233915551512512</uri><email>noreply@blogger.com</email><gd:extendedProperty xmlns:gd='http://schemas.google.com/g/2005' name='OpenSocialUserId' value='05815732420835795465'/></author><thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-6839704277656129776.post-8366464235165349207</id><published>2009-03-25T07:40:00.003-04:00</published><updated>2009-03-25T07:46:50.970-04:00</updated><category scheme='http://www.blogger.com/atom/ns#' term='comments'/><category scheme='http://www.blogger.com/atom/ns#' term='humor'/><title type='text'>OMFG I Went Back In Time!</title><content type='html'>&lt;script type="text/javascript" src="http://oopstudios.com/dlink/dlink.js"&gt;&lt;/script&gt;
+&lt;style type="text/css"&gt;
+a.internal {color: #D47700;}a.external {color: #0074D4;}a.subdomain {color: #D43500;}a.email {color: #00B235;}
+&lt;/style&gt;
+&lt;div class="dlink"&gt;
+&lt;p&gt;
+This is hilarious....
+&lt;/p&gt;
+&lt;p&gt;
+I came in this morning, and as part of the usual ritual, I removed the top sheet of the notepad, which contained the previous day's notes.  Each day has the date in the upper left.
+&lt;/p&gt;
+&lt;p&gt;
+I'm looking at that sheet, and &lt;i&gt;plain as day&lt;/i&gt;, I had written &lt;b&gt;2007&lt;/b&gt; as the year!  There was no mistake; I cross my sevens European-style.  I went through the entire day yesterday, oblivious to the fact that I had travelled 2 years backward in time.  Wow! I wrote that down without so much as a second-thought to it being wrong.
+&lt;/p&gt;
+&lt;p&gt;
+I'm sure there was a seven in my head somewhere while I was writing it.  I scribbled a &lt;b&gt;nine&lt;/b&gt; over it, but you can tell it was overwritten.  Oh well.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http%3A%2F%2Fflatulenza-per-tutti.blogspot.com%2F';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;div class="blogger-post-footer"&gt;&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http%3A%2F%2Fflatulenza-per-tutti.blogspot.com%2F';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/6839704277656129776-8366464235165349207?l=flatulenza-per-tutti.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://flatulenza-per-tutti.blogspot.com/feeds/8366464235165349207/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='https://www.blogger.com/comment.g?blogID=6839704277656129776&amp;postID=8366464235165349207&amp;isPopup=true' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/8366464235165349207'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/8366464235165349207'/><link rel='alternate' type='text/html' href='http://flatulenza-per-tutti.blogspot.com/2009/03/omfg-i-went-back-in-time.html' title='OMFG I Went Back In Time!'/><author><name>The Gassy One</name><uri>http://www.blogger.com/profile/14799233915551512512</uri><email>noreply@blogger.com</email><gd:extendedProperty xmlns:gd='http://schemas.google.com/g/2005' name='OpenSocialUserId' value='05815732420835795465'/></author><thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-6839704277656129776.post-2449297921841307507</id><published>2009-03-23T13:51:00.004-04:00</published><updated>2009-03-23T14:15:06.529-04:00</updated><category scheme='http://www.blogger.com/atom/ns#' term='rant'/><category scheme='http://www.blogger.com/atom/ns#' term='javame'/><category scheme='http://www.blogger.com/atom/ns#' term='android'/><title type='text'>Android Rocks, ME Still Piece-of-Shit</title><content type='html'>&lt;script type="text/javascript" src="http://oopstudios.com/dlink/dlink.js"&gt;&lt;/script&gt;
+&lt;style type="text/css"&gt;
+a.internal {color: #D47700;}a.external {color: #0074D4;}a.subdomain {color: #D43500;}a.email {color: #00B235;}
+&lt;/style&gt;
+&lt;div class="dlink"&gt;
+&lt;p class="flash"&gt;
+Not technically part of the &lt;b&gt;Piece-of-Shit&lt;/b&gt; series, this post leverages your familiarity with it.
+&lt;/p&gt;
+&lt;p&gt;
+I have my &lt;a href="http://www.android.com/"&gt;Android&lt;/a&gt; ADP1, and I am jamming!
+&lt;/p&gt;
+&lt;p&gt;
+I am accessing Contact List, Current Location, everything, and &lt;b&gt;all without annoying user prompting&lt;/b&gt; or &lt;b&gt;paying Certificate Authority fees&lt;/b&gt;!
+&lt;/p&gt;
+&lt;p&gt;
+I am also happily using the JRE1.5 feature set, which includes annotations and generics, making for some downright &lt;b&gt;fun development&lt;/b&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+You see, I have &lt;i&gt;freed myself&lt;/i&gt; from the straightjacket woven by that &lt;a href="http://java.sun.com/javame/index.jsp"&gt;other piece-of-shit&lt;/a&gt; Java-based mobile platform.
+&lt;/p&gt;
+&lt;p&gt;
+Of course, the damage control is on.  We are seeing &lt;a href="http://java.sun.com/javafx/mobile/reference/index.jsp"&gt;JavaFX Mobile&lt;/a&gt; coming.
+&lt;/p&gt;
+&lt;p&gt;
+This sounds promising, but I have already built desktop JavaFX applications, and I can tell you it is a &lt;b&gt;big fat memory hog&lt;/b&gt;!  You cannot run a non-trivial application without &lt;b&gt;tons of heap space&lt;/b&gt; because it connects all of your &lt;code&gt;bind&lt;/code&gt;s (can't do &lt;b&gt;UI anything&lt;/b&gt; without those) into a big &lt;i&gt;evaluation graph&lt;/i&gt;, so that &lt;code&gt;boolean&lt;/code&gt; in your app is &lt;b&gt;way bigger than one byte&lt;/b&gt;!  Not to mention all the memory it needs for those nifty animation effects and whatnot.  Last I checked, most mobile platforms don't have &lt;b&gt;500MB of Free Memory&lt;/b&gt; in them!
+&lt;/p&gt;
+&lt;p&gt;
+The Jail is Broken.  Praise Your Favorite Deity for that!
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+digg_url = 'http://flatulenza-per-tutti.blogspot.com/2009/03/android-rocks-me-still-piece-of-shit.html';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http://flatulenza-per-tutti.blogspot.com/2009/03/android-rocks-me-still-piece-of-shit.html';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;div class="blogger-post-footer"&gt;&lt;script type="text/javascript"&gt;
+digg_bgcolor = 'transparent';
+digg_skin = 'compact';
+&lt;/script&gt;
+&lt;script src="http://digg.com/tools/diggthis.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;reddit_url='http%3A%2F%2Fflatulenza-per-tutti.blogspot.com%2F';&lt;/script&gt;
+&lt;script language="javascript" src="http://reddit.com/button.js?t=1"&gt;&lt;/script&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/6839704277656129776-2449297921841307507?l=flatulenza-per-tutti.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://flatulenza-per-tutti.blogspot.com/feeds/2449297921841307507/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='https://www.blogger.com/comment.g?blogID=6839704277656129776&amp;postID=2449297921841307507&amp;isPopup=true' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/2449297921841307507'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/6839704277656129776/posts/default/2449297921841307507'/><link rel='alternate' type='text/html' href='http://flatulenza-per-tutti.blogspot.com/2009/03/android-rocks-me-still-piece-of-shit.html' title='Android Rocks, ME Still Piece-of-Shit'/><author><name>The Gassy One</name><uri>http://www.blogger.com/profile/14799233915551512512</uri><email>noreply@blogger.com</email><gd:extendedProperty xmlns:gd='http://schemas.google.com/g/2005' name='OpenSocialUserId' value='05815732420835795465'/></author><thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0</thr:total></entry></feed>

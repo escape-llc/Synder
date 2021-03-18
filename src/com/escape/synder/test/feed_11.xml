@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rdf:RDF 
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns="http://purl.org/rss/1.0/"
+ xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:syn="http://purl.org/rss/1.0/modules/syndication/"
+ xmlns:admin="http://webns.net/mvcb/"
+> 
+ 
+<channel rdf:about="http://www.oed.com/"> 
+<title>Oxford English Dictionary</title> 
+<link>http://www.oed.com/</link> 
+<description></description> 
+<pubDate>Wed, 21 May 2003 19:53:10 -0500</pubDate>
+<items> 
+ <rdf:Seq> 
+  <rdf:li rdf:resource="http://www.oed.com/cgi/display/50243025?rss=1" /> 
+ </rdf:Seq> 
+</items> 
+</channel> 
+ 
+<item rdf:about="http://www.oed.com/cgi/display/50243025?rss=1"> 
+<title>supposition:  OED Word of the Day</title> 
+<link>http://www.oed.com/cgi/display/50243025?rss=1</link> 
+<description>Today's word from the OED has the following earliest quotation:  c1449 PECOCK Repr. II. viii. 186 Wherfore, alle thingis seen, this..reule or supposicion is trewe.</description> 
+<pubDate>Wed, 21 May 2003 19:53:10 -0500</pubDate>
+<dc:creator>Oxford English Dictionary</dc:creator> 
+<dc:date>2010-07-13</dc:date> 
+<dc:subject>Word of the Day</dc:subject> 
+<dc:identifier>50243025</dc:identifier> 
+<dc:title>supposition:  OED Word of the Day</dc:title> 
+</item> 
+ 
+</rdf:RDF>

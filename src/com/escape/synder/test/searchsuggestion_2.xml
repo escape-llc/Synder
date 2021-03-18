@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<SearchSuggestion xmlns="http://schemas.microsoft.com/Search/2008/suggestions">
+	<Query>xbox</Query>
+	<Section>
+		<Separator title="My Text Suggestions" />
+		<Item>
+			<Text>Xbox 360 Game Consoles</Text>
+			<Description>Game console systems and packages at a great deal.</Description>
+			<Image source="http://www.example.com/xboxconsole.jpg" alt="Xbox 360 Consoles" width="75" height="75" />
+			<Url>http://www.example.com/</Url>
+		</Item>
+		<Item>
+			<Text>Xbox 360 Wireless Controller</Text>
+			<Description>Game console systems and packages at a great deal.</Description>
+			<Image source="http://www.example.com/xboxcontroller.jpg" alt="Xbox 360 Wireless Controller" width="75" height="75" />
+			<Url>http://www.example.com/</Url>
+		</Item>
+		<Item>
+			<Text>Xbox 360 Live Games</Text>
+			<Description>Game console systems and packages at a great deal.</Description>
+			<Image source="http://www.example.com/live.jpg" alt="Xbox 360 Live Games" width="75" height="75" />
+			<Url>http://www.example.com/games.aspx?q="Xbox 360"</Url>
+		</Item>
+	</Section>
+</SearchSuggestion>

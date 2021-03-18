@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<rss version="0.91">
+
+<channel>
+<title>Web Design/HTML</title>
+<link>http://webdesign.about.com/blog/</link>
+<description>Web Design/HTML</description>
+<language>en-us</language>
+<pubDate>Wed, 21 May 2003 19:53:10 -0500</pubDate>
+
+<image>
+<title>About.com</title>
+<url>http://z.about.com/d/lg/rss.gif</url>
+<link>http://about.com/</link>
+<width>88</width>
+<height>31</height>
+</image>
+
+<item>
+<title>What is a Font?</title>
+<link>http://webdesign.about.com/blog/a/000024.htm</link>
+
+<description>
+Font families can be hard to understand, especially when trying to develop a decent style sheet for a Web site. Once you understand what the fonts are, you can better use them to style your pages. What is a...
+</description>
+</item>
+
+<item>
+<title>People Photos</title>
+<link>http://webdesign.about.com/blog/a/000023.htm</link>
+
+<description>
+Do you put photos of people on your site? This how to by Jacci Bear (Desktop Publishing Guide) explains some great tips for using photos of people both online and off. How to Use Pictures of People...
+</description>
+</item>
+
+<item>
+<title>W3C Approves Patent Policy</title>
+<link>http://webdesign.about.com/blog/a/000004.htm</link>
+
+<description>
+On May 21, 2003, the W3C approved the patent policy that requires that any new standards added to the W3C must be in the public domain, or the company must agree not to require royalties from users. What is...
+</description>
+</item>
+</channel>
+</rss>

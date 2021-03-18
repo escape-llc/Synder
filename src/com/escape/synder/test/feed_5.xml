@@ -1,0 +1,557 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+
+<channel>
+	<title>This Week in Android (Audio Only)</title>
+	<atom:link href="http://www.twiandroid.com/?feed=podcast&#038;format=audio-only" rel="self" type="application/rss+xml" />
+	<link>http://www.twiandroid.com</link>
+	<description>Covering all things Android</description>
+	<pubDate>Fri, 26 Mar 2010 21:46:53 +0000</pubDate>
+	<lastBuildDate>Fri, 26 Mar 2010 21:46:53 +0000</lastBuildDate>
+	<generator>http://wordpress.org/?v=2.9.2</generator>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<itunes:summary>\&#039;This Week In Android\&#039; covers everything related to the Android mobile platform.  From apps to key companies and people to \&#039;under-the-hood\&#039; looks at the technology itself, TWIA has it all.    Hosted by technologist and podcast pioneer Mark Jeffrey, you\&#039;ll get the latest information and opinion presented in frank and fun fashion.</itunes:summary>
+	<itunes:subtitle>Covering all things Android</itunes:subtitle>
+	<itunes:author>This Week in Android</itunes:author>
+	<itunes:image href="http://vod01.netdna.com/vod/twiapodcast.twist/twia.jpg" />
+	<image><url>http://vod01.netdna.com/vod/twiapodcast.twist/twia.jpg</url><title>This Week in Android</title><link>http://www.twiandroid.com</link></image>
+	<itunes:category text="Technology" />
+	<itunes:category text="Technology">
+		<itunes:category text="Gadgets" />
+	</itunes:category>
+	<itunes:category text="Technology">
+		<itunes:category text="Tech News" />
+	</itunes:category>
+	<itunes:keywords>This Week in Android, Android, TWiAndroid, Mahalo</itunes:keywords>
+	<itunes:explicit>no</itunes:explicit>
+	<itunes:owner>
+		<itunes:name>Mark Jeffrey</itunes:name>
+		<itunes:email>mark.jeffrey@gmail.com</itunes:email>
+	</itunes:owner>
+			<item>
+		<title>TWiA #8 with Itamar Weisbrod and John Shiple</title>
+		<link>http://www.twiandroid.com/?p=196</link>
+		<comments>http://www.twiandroid.com/?p=196#comments</comments>
+		<pubDate>Fri, 19 Mar 2010 19:21:37 +0000</pubDate>
+		<dc:creator>Mark</dc:creator>
+				<category><![CDATA[Episodes]]></category>
+	<itunes:keywords>This Week in Android, Android, TWiAndroid, Mahalo</itunes:keywords>
+<itunes:author>TWiA</itunes:author>
+
+		<guid isPermaLink="false">http://www.twiandroid.com/?p=196</guid>
+		<description><![CDATA[Download the MP3 Here!
+The co-hosts and guests included Ashley Esqueda, Itamar Weisbrod, CEO of Cellogic and the co-founder of FlyScreen and John Shiple of Startup Army.
+The big news this week included the big letdown with the Android 2.1 upgrade for Droid and that Slingbox is coming to Android this summer.
+The app of the week was [...]]]></description>
+			<content:encoded><![CDATA[<p><br />
+<br />
+<a href='http://vod01.netdna.com/vod/twiapodcast.twist/TWiA-Episode_8_ItamarWeisbrodandJohnShiple.mp3' >Download the MP3 Here!</a></p>
+<p>The <strong>co-hosts and guests</strong> included <a href="http://twitter.com/heartlessjez">Ashley Esqueda</a>, <a href="http://itamarweisbrod.com/">Itamar Weisbrod</a>, CEO of Cellogic and the co-founder of <a href="http://www.myflyscreen.com">FlyScreen</a> and <a href="http://www.google.com/profiles/jjjooooohhnnn">John Shiple</a> of <a href="http://startuparmy.com/">Startup Army</a>.</p>
+<p>The <strong>big news</strong> this week included the <a href="http://androidandme.com/2010/03/news/the-latest-on-the-droid-ota-update-delay/">big letdown with the Android 2.1 upgrade</a> for Droid and that <a href="http://androidandme.com/2010/03/applications/sling-shoots-onto-android-devices-this-summer/">Slingbox is coming to Android this summer</a>.</p>
+<p>The <strong>app of the week</strong> was <a href="http://www.myflyscreen.com">FlyScreen</a>, an application that puts the content you choose on your lock screen for easy access. <a href="http://itamarweisbrod.com/">Itamar Weisbrod</a>, CEO of Cellogic, told us about this app, which he co-created. He also discussed the frustrations in developing for Android.</p>
+<p>The panel discussed the desire for and <a href="http://phandroid.com/2010/03/18/google-tv-based-on-android/">future of a Google TV</a>. They also gave a quick plug to the newly created <a href="http://ThisWeekIn.com">ThisWeekIn.com</a>, the umbrella network over This Week in Android.</p>
+<p>News:</p>
+<ul>
+<li><a href="http://googlemobile.blogspot.com/2010/03/introducing-google-buzz-widget-for.html">Google Buzz gets its own widget on Android.</a> <a href="http://phandroid.com/2010/03/18/google-buzz-widget-hits-hides-on-android-market/">Could this signal the beginning of the growth of Buzz?</a></li>
+<li><a href="http://www.engadget.com/2010/03/18/android-powered-roewe-350-motorcar-hits-production-line-we-rese/">A new car, the Roewe 350 is the first car to hit production this week running the Android OS.</a></li>
+<li><a href="http://androidandme.com/2010/03/news/sprint-joins-the-nexus-one-party/">The Nexus One has been released for AT&amp;T and Sprint</a>, <a href="http://www.theinquirer.net/inquirer/news/1597275/nexus-one-us-telcos">completing the list for the major US wireless carriers</a>.</li>
+<li><a href="http://androidandme.com/2010/03/news/android-will-have-ps3-graphics-in-3-years/">PSP graphics may soon (3 years) be comparable to the Nexus One&#8217;s</a> says the chip makers.</li>
+<li><a href="http://www.androidcentral.com/google-maps-update-version-41-brings-acct-switching">Google Maps on Android devices 1.6+ has been updated</a> to a version that has a new search page, a Latitude widget and the ability to make Google Maps your phone&#8217;s live wallpaper.</li>
+<li><a href="http://phandroid.com/2010/03/16/canada-gets-paid-apps-in-android-market/">Users in Canada can now purchase paid Android applications.</a></li>
+<li><a href="http://phandroid.com/2010/03/16/iphone-is-a-sterile-disney-fied-walled-garden-surrounded-by-sharp-toothed-lawyers/">Tim Bray, of Oracle, has left and has now joined the Android team.</a></li>
+<li><a href="http://techcrunch.com/2010/03/16/facebook-qr-code/">Facebook implements QR codes?</a></li>
+<li><a href="http://www.androidcentral.com/android-market-has-30000-apps">The Android app marketplace has reached 30,000 applications.</a></li>
+<li><a href="http://blog.laptopmag.com/alex-ereader-available-for-pre-order-today">A new Android based e-reader, the Alex eReader is available for pre-order.</a></li>
+<li><a href="http://phandroid.com/2010/03/16/droid-outsells-iphone/">Did the Motorola Droid outsell the iPhone? Perhaps.</a></li>
+<li><a href="http://www.mobilecrunch.com/2010/03/17/google-denied-nexus-one-trademark/">Is the Google Nexus One a trademark infringement? The courts say they can&#8217;t trademark the name.</a></li>
+<li><a href="http://www.engadget.com/2010/03/16/samsung-acquires-android-trademark-for-mobile-hardware-sales-i/">Samsung has trademarked &#8220;Android&#8221; in Korea.</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>http://www.twiandroid.com/?feed=rss2&amp;p=196</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+<enclosure url="http://vod01.netdna.com/vod/twiapodcast.twist/TWiA-Episode_8_ItamarWeisbrodandJohnShiple.mp3" length="49683168" type="audio/mpeg" />
+	<itunes:summary>&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href=&#039;http://vod01.netdna.com/vod/twiapodcast.twist/TWiA-Episode_8_ItamarWeisbrodandJohnShiple.mp3&#039; &gt;Download the MP3 Here!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;co-hosts and guests&lt;/strong&gt; included &lt;a href=&quot;http://twitter.com/heartlessjez&quot;&gt;Ashley Esqueda&lt;/a&gt;, &lt;a href=&quot;http://itamarweisbrod.com/&quot;&gt;Itamar Weisbrod&lt;/a&gt;, CEO of Cellogic and the co-founder of &lt;a href=&quot;http://www.myflyscreen.com&quot;&gt;FlyScreen&lt;/a&gt; and &lt;a href=&quot;http://www.google.com/profiles/jjjooooohhnnn&quot;&gt;John Shiple&lt;/a&gt; of &lt;a href=&quot;http://startuparmy.com/&quot;&gt;Startup Army&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;big news&lt;/strong&gt; this week included the &lt;a href=&quot;http://androidandme.com/2010/03/news/the-latest-on-the-droid-ota-update-delay/&quot;&gt;big letdown with the Android 2.1 upgrade&lt;/a&gt; for Droid and that &lt;a href=&quot;http://androidandme.com/2010/03/applications/sling-shoots-onto-android-devices-this-summer/&quot;&gt;Slingbox is coming to Android this summer&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;app of the week&lt;/strong&gt; was &lt;a href=&quot;http://www.myflyscreen.com&quot;&gt;FlyScreen&lt;/a&gt;, an application that puts the content you choose on your lock screen for easy access. &lt;a href=&quot;http://itamarweisbrod.com/&quot;&gt;Itamar Weisbrod&lt;/a&gt;, CEO of Cellogic, told us about this app, which he co-created. He also discussed the frustrations in developing for Android.&lt;/p&gt;
+&lt;p&gt;The panel discussed the desire for and &lt;a href=&quot;http://phandroid.com/2010/03/18/google-tv-based-on-android/&quot;&gt;future of a Google TV&lt;/a&gt;. They also gave a quick plug to the newly created &lt;a href=&quot;http://ThisWeekIn.com&quot;&gt;ThisWeekIn.com&lt;/a&gt;, the umbrella network over This Week in Android.&lt;/p&gt;
+&lt;p&gt;News:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://googlemobile.blogspot.com/2010/03/introducing-google-buzz-widget-for.html&quot;&gt;Google Buzz gets its own widget on Android.&lt;/a&gt; &lt;a href=&quot;http://phandroid.com/2010/03/18/google-buzz-widget-hits-hides-on-android-market/&quot;&gt;Could this signal the beginning of the growth of Buzz?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.engadget.com/2010/03/18/android-powered-roewe-350-motorcar-hits-production-line-we-rese/&quot;&gt;A new car, the Roewe 350 is the first car to hit production this week running the Android OS.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://androidandme.com/2010/03/news/sprint-joins-the-nexus-one-party/&quot;&gt;The Nexus One has been released for AT&amp;T and Sprint&lt;/a&gt;, &lt;a href=&quot;http://www.theinquirer.net/inquirer/news/1597275/nexus-one-us-telcos&quot;&gt;completing the list for the major US wireless carriers&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://androidandme.com/2010/03/news/android-will-have-ps3-graphics-in-3-years/&quot;&gt;PSP graphics may soon (3 years) be comparable to the Nexus One’s&lt;/a&gt; says the chip makers.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.androidcentral.com/google-maps-update-version-41-brings-acct-switching&quot;&gt;Google Maps on Android devices 1.6+ has been updated&lt;/a&gt; to a version that has a new search page, a Latitude widget and the ability to make Google Maps your phone’s live wallpaper.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://phandroid.com/2010/03/16/canada-gets-paid-apps-in-android-market/&quot;&gt;Users in Canada can now purchase paid Android applications.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://phandroid.com/2010/03/16/iphone-is-a-sterile-disney-fied-walled-garden-surrounded-by-sharp-toothed-lawyers/&quot;&gt;Tim Bray, of Oracle, has left and has now joined the Android team.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a [...]</itunes:summary>
+<itunes:subtitle>Download the MP3 Here!
+The co-hosts and guests included Ashley Esqueda, Itamar Weisbrod, CEO of Cellogic and the co-founder of FlyScreen and John Shiple of Startup Army.
+The big news this week included the big letdown with the Android 2.1 upgrade [...]</itunes:subtitle>
+	</item>
+		<item>
+		<title>TWiA #7 with Eddie Kim</title>
+		<link>http://www.twiandroid.com/?p=180</link>
+		<comments>http://www.twiandroid.com/?p=180#comments</comments>
+		<pubDate>Sat, 06 Mar 2010 04:48:34 +0000</pubDate>
+		<dc:creator>Max</dc:creator>
+				<category><![CDATA[Episodes]]></category>
+
+		<guid isPermaLink="false">http://www.twiandroid.com/?p=180</guid>
+		<description><![CDATA[Download the MP3 Here!
+The co-hosts and guests included Ashley Esqueda, Barb Dybwad, senior editor of Mashable and Eddie Kim, co-founder of Picwing.com.
+The big news this week was the Apple vs. HTC lawsuit, and the possible repercussions if Apple won.
+The app of the week was Car Locator. Car Locator, as the name implies, assistes you in the finding of [...]]]></description>
+			<content:encoded><![CDATA[<p><br />
+<br />
+<a href='http://vod01.netdna.com/vod/twiapodcast.twist/TWiA%20-%20Episode%207%20(Eddie%20Kim).mp3' class="broken_link"  >Download the MP3 Here!</a></p>
+<p>The <strong>co-hosts and guests</strong> included <a href="http://twitter.com/heartlessjez">Ashley Esqueda</a>, <a href="http://twitter.com/doctorparadox">Barb Dybwad</a>, senior editor of <a href="http://mashable.com/">Mashable</a> and <a href="http://eddiekim.posterous.com/">Eddie Kim</a>, co-founder of <a href="http://Picwing.com">Picwing.com</a>.</p>
+<p>The <strong>big news</strong> this week was the <a href="http://bits.blogs.nytimes.com/2010/03/02/what-apple-vs-htc-could-mean/">Apple vs. HTC lawsuit</a>, and the possible repercussions if Apple won.</p>
+<p>The <strong>app of the week</strong> was <a href="http://androidcommunity.com/car-locator-android-app-makes-13000-a-month-20100302/">Car Locator</a>. Car Locator, as the name implies, assistes you in the finding of your car, in a parking lot or otherwise. The creator of the application, <a href="http://twitter.com/edawerd">Eddie Kim</a>, talked about his success with it. Kim had tremendous success with his application after being featured by Google, making at the application&#8217;s height, $13,000 each month.</p>
+<p><a href="http://mashable.com/2010/02/28/android-apps-drop-iphone/">6 Free Android Apps That Will Make You Drop Your iPhone</a> was also discussed.</p>
+<p>News:</p>
+<ul>
+<li>The issues on the 3G network with the Droid have been fixed.</li>
+<li><a href="http://www.iphone-scoop.com/2010/03/apple-sues-htc/">Apple sues HTC</a>, <a href="http://phandroid.com/2010/03/03/google-defends-htc-in-clash-with-apple/">Google backs HTC</a>, Caesar gets murdered. Whoops, sorry, wrong epic. ; )</li>
+<li><a href="http://phandroid.com/2010/03/04/microsoft-launches-android-app-microsoft-tag-reader/">Microsoft launched an application for Android</a>, Microsoft Tag which allows the ability to scan &#8220;tags&#8221;. The panel disscussed is &#8220;tags&#8221; would recieved widespread adoption.</li>
+<li><a href="http://www.phonearena.com/htmls/Red-accented-HTC-Incredible---Nexus-One-being-delayed-by-Verizon-article-a_10005.html">The HTC Incredible release on Verizon might be delayed.</a></li>
+<li><a href="http://blog.searchenginewatch.com/100305-144649">Google has release Google Gesture Search for Android</a>, an app that allows you to find something by drawing on your screen.</li>
+<li><a href="http://phandroid.com/2010/03/03/att-bumps-google-adds-yahoo-to-motorola-backflip/">AT&amp;T changes the default search engine on Motorola Backflip from Google to Yahoo.</a></li>
+<li>Many have reported having <a href="http://www.neowin.net/news/nexus-one-has-a-major-multitouch-problem">multi-touch issues with the Nexus One.</a></li>
+<li><a href="http://phandroid.com/2010/03/03/us-too-google-giving-top-devs-free-phones/">Google is giving top developers a free Nexus One.</a></li>
+<li><a href="http://phandroid.com/2010/03/03/motorola-launching-android-home-phone-this-summer-hs1001/">An Android based landline phone may be coming soon.</a></li>
+<li><a href="http://mashable.com/2010/02/27/android-2-1-upgrade-rumor/">Rumor has it that Android 2.1 will be coming to all U.S. Android phones.</a></li>
+<li><a href="http://www.slashgear.com/entourage-edge-dual-screen-android-ebook-reader-gets-video-hands-on-0264880/">Another Android based e-book reader is out there: the Entourage eDGe.</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>http://www.twiandroid.com/?feed=rss2&amp;p=180</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://vod01.netdna.com/vod/twiapodcast.twist/TWiA%20-%20Episode%207%20(Eddie%20Kim).mp3" length="48391488" type="audio/mpeg" />
+	<itunes:summary>&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href=&#039;http://vod01.netdna.com/vod/twiapodcast.twist/TWiA%20-%20Episode%207%20(Eddie%20Kim).mp3&#039; class=&quot;broken_link&quot;  &gt;Download the MP3 Here!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;co-hosts and guests&lt;/strong&gt; included &lt;a href=&quot;http://twitter.com/heartlessjez&quot;&gt;Ashley Esqueda&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/doctorparadox&quot;&gt;Barb Dybwad&lt;/a&gt;, senior editor of &lt;a href=&quot;http://mashable.com/&quot;&gt;Mashable&lt;/a&gt; and &lt;a href=&quot;http://eddiekim.posterous.com/&quot;&gt;Eddie Kim&lt;/a&gt;, co-founder of &lt;a href=&quot;http://Picwing.com&quot;&gt;Picwing.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;big news&lt;/strong&gt; this week was the &lt;a href=&quot;http://bits.blogs.nytimes.com/2010/03/02/what-apple-vs-htc-could-mean/&quot;&gt;Apple vs. HTC lawsuit&lt;/a&gt;, and the possible repercussions if Apple won.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;app of the week&lt;/strong&gt; was &lt;a href=&quot;http://androidcommunity.com/car-locator-android-app-makes-13000-a-month-20100302/&quot;&gt;Car Locator&lt;/a&gt;. Car Locator, as the name implies, assistes you in the finding of your car, in a parking lot or otherwise. The creator of the application, &lt;a href=&quot;http://twitter.com/edawerd&quot;&gt;Eddie Kim&lt;/a&gt;, talked about his success with it. Kim had tremendous success with his application after being featured by Google, making at the application’s height, $13,000 each month.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mashable.com/2010/02/28/android-apps-drop-iphone/&quot;&gt;6 Free Android Apps That Will Make You Drop Your iPhone&lt;/a&gt; was also discussed.&lt;/p&gt;
+&lt;p&gt;News:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The issues on the 3G network with the Droid have been fixed.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.iphone-scoop.com/2010/03/apple-sues-htc/&quot;&gt;Apple sues HTC&lt;/a&gt;, &lt;a href=&quot;http://phandroid.com/2010/03/03/google-defends-htc-in-clash-with-apple/&quot;&gt;Google backs HTC&lt;/a&gt;, Caesar gets murdered. Whoops, sorry, wrong epic. ; )&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://phandroid.com/2010/03/04/microsoft-launches-android-app-microsoft-tag-reader/&quot;&gt;Microsoft launched an application for Android&lt;/a&gt;, Microsoft Tag which allows the ability to scan “tags”. The panel disscussed is “tags” would recieved widespread adoption.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.phonearena.com/htmls/Red-accented-HTC-Incredible---Nexus-One-being-delayed-by-Verizon-article-a_10005.html&quot;&gt;The HTC Incredible release on Verizon might be delayed.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.searchenginewatch.com/100305-144649&quot;&gt;Google has release Google Gesture Search for Android&lt;/a&gt;, an app that allows you to find something by drawing on your screen.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://phandroid.com/2010/03/03/att-bumps-google-adds-yahoo-to-motorola-backflip/&quot;&gt;AT&amp;T changes the default search engine on Motorola Backflip from Google to Yahoo.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Many have reported having &lt;a href=&quot;http://www.neowin.net/news/nexus-one-has-a-major-multitouch-problem&quot;&gt;multi-touch issues with the Nexus One.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://phandroid.com/2010/03/03/us-too-google-giving-top-devs-free-phones/&quot;&gt;Google is giving top developers a free Nexus One.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://phandroid.com/2010/03/03/motorola-launching-android-home-phone-this-summer-hs1001/&quot;&gt;An Android based landline phone may be coming soon.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://mashable.com/2010/02/27/android-2-1-upgrade-rumor/&quot;&gt;Rumor has it that Android 2.1 will be coming to all U.S. Android phones.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a [...]</itunes:summary>
+<itunes:subtitle>Download the MP3 Here!
+The co-hosts and guests included Ashley Esqueda, Barb Dybwad, senior editor of Mashable and Eddie Kim, co-founder of Picwing.com.
+The big news this week was the Apple vs. HTC lawsuit, and the possible repercussions if Apple [...]</itunes:subtitle>
+<itunes:author>TWiA</itunes:author>
+<itunes:duration>1:07:12</itunes:duration>
+<itunes:keywords>TWiandroid, mahalo, this week in android, android, iphone</itunes:keywords>
+	</item>
+		<item>
+		<title>TWiA #6 with Barb Dybwad</title>
+		<link>http://www.twiandroid.com/?p=158</link>
+		<comments>http://www.twiandroid.com/?p=158#comments</comments>
+		<pubDate>Sat, 27 Feb 2010 03:04:45 +0000</pubDate>
+		<dc:creator>Max</dc:creator>
+				<category><![CDATA[Episodes]]></category>
+
+		<guid isPermaLink="false">http://www.twiandroid.com/?p=158</guid>
+		<description><![CDATA[Download the MP3 Here!
+The co-hosts and guests included Ashley Esqueda, Barb Dybwad of Mashable and Drew Olanoff of TextPlus.
+The big news this week included new app store statistics, and an interesting statistic discussed later in this post.
+The app of the week was TextPlus. Drew Olanoff talked about the application. On the app, you can text for free and [...]]]></description>
+			<content:encoded><![CDATA[<p><br />
+<br />
+<a href='http://twia.twist.netdna-cdn.com/TWiA%20-%20Episode%206%20(Drew%20Olanoff)_audio_only.mp3' >Download the MP3 Here!</a></p>
+<p>The <strong>co-hosts and guests</strong> included <a href="http://twitter.com/heartlessjez">Ashley Esqueda</a>, <a href="http://twitter.com/doctorparadox">Barb Dybwad</a> of <a href="http://mashable.com/">Mashable</a> and <a href="http://www.thatdrew.com/">Drew Olanoff</a> of <a href="http://textplus.gogii.com/">TextPlus</a>.</p>
+<p>The <strong>big news</strong> this week included new app store statistics, and an interesting statistic discussed later in this post.</p>
+<p>The <strong>app of the week</strong> was <a href="http://textplus.gogii.com/">TextPlus</a>. Drew Olanoff talked about the application. On the app, you can text for free and have group conversations. If someone responds, the rest of the group receives the message. You can find Drew on Twitter <a href="http://twitter.com/thatdrew">here</a>.</p>
+<p>The panel discussed the security of Android. Mark had talked to someone who said that her Hero was rooted by a rogue app that started creating havoc on her Android device. In addition, Nooks, which run Android, are apparently easily rooted. Barb talked about how she liked out of her Nexus One, iPhone and Droid, her Nexus One that she got at TED the most. She also discussed the appeal of e-readers and more.</p>
+<p>News:</p>
+<ul>
+<li>Barb talked about indications for the Nexus One on Verizon.</li>
+<li>SugarSync, a service that syncs your files, now supports the Android platform.</li>
+<li><a href="http://www.distimo.com/" target="_blank">Distimo</a> has the latest statistics on app sales, including a comparison of Android and iPhone sales and more.</li>
+<li>The panel discussed why the price of Android mobile units were dropping so quickly.</li>
+<li><a href="http://techcrunch.com/2010/02/25/iphone-webos/">Recent statistics show that 91 percent of iPhone users would recommend the iPhone versus the 84 percent of <strong>Android</strong></a> users who would recommend their phones.</li>
+<li><a href="http://www.mobilecrunch.com/2010/02/23/is-the-nexus-ones-display-inferior-to-the-iphones/">The Nexus One&#8217;s screen may be inferior to the iPhone&#8217;s gorgeous display. </a></li>
+<li><a href="http://phandroid.com/2010/02/24/facial-regonition-app-recognizr-coming-soon/">A new application by The Astonishing Tribe may be ground breaking in facial recognition.</a></li>
+<li><a href="http://gizmodo.com/5423467/opera-mobile-browser-is-finally-coming-to-android">Opera&#8217;s mobile browser will be coming to Android soon.</a></li>
+<li>Farmville will be coming to Android as well with the addition of Flash to Android.</li>
+<li><a href="http://www.tomsguide.com/us/quake-3-android-arena-live,news-5943.html">Quake 3 is able to run on Android. </a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>http://www.twiandroid.com/?feed=rss2&amp;p=158</wfw:commentRss>
+		<slash:comments>9</slash:comments>
+<enclosure url="http://twia.twist.netdna-cdn.com/TWiA%20-%20Episode%206%20(Drew%20Olanoff)_audio_only.mp3" length="148111360" type="audio/mpeg" />
+	<itunes:summary>&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href=&#039;http://twia.twist.netdna-cdn.com/TWiA%20-%20Episode%206%20(Drew%20Olanoff)_audio_only.mp3&#039; &gt;Download the MP3 Here!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;co-hosts and guests&lt;/strong&gt; included &lt;a href=&quot;http://twitter.com/heartlessjez&quot;&gt;Ashley Esqueda&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/doctorparadox&quot;&gt;Barb Dybwad&lt;/a&gt; of &lt;a href=&quot;http://mashable.com/&quot;&gt;Mashable&lt;/a&gt; and &lt;a href=&quot;http://www.thatdrew.com/&quot;&gt;Drew Olanoff&lt;/a&gt; of &lt;a href=&quot;http://textplus.gogii.com/&quot;&gt;TextPlus&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;big news&lt;/strong&gt; this week included new app store statistics, and an interesting statistic discussed later in this post.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;app of the week&lt;/strong&gt; was &lt;a href=&quot;http://textplus.gogii.com/&quot;&gt;TextPlus&lt;/a&gt;. Drew Olanoff talked about the application. On the app, you can text for free and have group conversations. If someone responds, the rest of the group receives the message. You can find Drew on Twitter &lt;a href=&quot;http://twitter.com/thatdrew&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The panel discussed the security of Android. Mark had talked to someone who said that her Hero was rooted by a rogue app that started creating havoc on her Android device. In addition, Nooks, which run Android, are apparently easily rooted. Barb talked about how she liked out of her Nexus One, iPhone and Droid, her Nexus One that she got at TED the most. She also discussed the appeal of e-readers and more.&lt;/p&gt;
+&lt;p&gt;News:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Barb talked about indications for the Nexus One on Verizon.&lt;/li&gt;
+&lt;li&gt;SugarSync, a service that syncs your files, now supports the Android platform.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.distimo.com/&quot; target=&quot;_blank&quot;&gt;Distimo&lt;/a&gt; has the latest statistics on app sales, including a comparison of Android and iPhone sales and more.&lt;/li&gt;
+&lt;li&gt;The panel discussed why the price of Android mobile units were dropping so quickly.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://techcrunch.com/2010/02/25/iphone-webos/&quot;&gt;Recent statistics show that 91 percent of iPhone users would recommend the iPhone versus the 84 percent of &lt;strong&gt;Android&lt;/strong&gt;&lt;/a&gt; users who would recommend their phones.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.mobilecrunch.com/2010/02/23/is-the-nexus-ones-display-inferior-to-the-iphones/&quot;&gt;The Nexus One’s screen may be inferior to the iPhone’s gorgeous display. &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://phandroid.com/2010/02/24/facial-regonition-app-recognizr-coming-soon/&quot;&gt;A new application by The Astonishing Tribe may be ground breaking in facial recognition.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://gizmodo.com/5423467/opera-mobile-browser-is-finally-coming-to-android&quot;&gt;Opera’s mobile browser will be coming to Android soon.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Farmville will be coming to Android as well with the addition of Flash to Android.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.tomsguide.com/us/quake-3-android-arena-live,news-5943.html&quot;&gt;Quake 3 is able to run on Android. &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</itunes:summary>
+<itunes:subtitle>Download the MP3 Here!
+The co-hosts and guests included Ashley Esqueda, Barb Dybwad of Mashable and Drew Olanoff of TextPlus.
+The big news this week included new app store statistics, and an interesting statistic discussed later in this [...]</itunes:subtitle>
+<itunes:author>TWiA</itunes:author>
+<itunes:duration>1:11:48</itunes:duration>
+<itunes:keywords>Twiandroid, mahalo, this week in android, android, iphone</itunes:keywords>
+	</item>
+		<item>
+		<title>TWiA #5 with Kevin Marks</title>
+		<link>http://www.twiandroid.com/?p=131</link>
+		<comments>http://www.twiandroid.com/?p=131#comments</comments>
+		<pubDate>Sat, 20 Feb 2010 03:25:52 +0000</pubDate>
+		<dc:creator>Max</dc:creator>
+				<category><![CDATA[Episodes]]></category>
+
+		<guid isPermaLink="false">http://www.twiandroid.com/?p=131</guid>
+		<description><![CDATA[Download the MP3 Here!
+The co-hosts and guests included Ashley Esqueda, Dave Buchanan and Lane Montgomery from The Android App Show and The iPad Show, John Shiple of Startup Army and Kevin Marks, the VP of the British Telecom, and of ribbit and TummelVision, formerly of Google.
+The big news this week included the Mobile World Conference in Barcelona, the HTC Legend and [...]]]></description>
+			<content:encoded><![CDATA[
+<p><br />
+<a href='http://twia.twist.netdna-cdn.com/TWiA%20-%20Episode%205%20(Kevin%20Marks).mp3' >Download the MP3 Here!</a></p>
+<p>The <strong>co-hosts and guests</strong> included <a href="http://twitter.com/heartlessjez">Ashley Esqueda</a>, <a href="http://www.twitter.com/audiocollective">Dave Buchanan</a> and <a href="http://twitter.com/14n3">Lane Montgomery</a> from <a href="http://www.theappshow.com/android/">The Android App Show </a>and <a href="http://www.ipadshow.com/">The iPad Show</a>, <a href="http://www.google.com/profiles/jjjooooohhnnn">John Shiple</a> of <a href="http://startuparmy.com/">Startup Army</a> and <a href="http://twitter.com/kevinmarks">Kevin Marks</a>, the VP of the British Telecom, and of <a href="http://www.ribbit.com/">ribbit</a> and <a href="http://tummelvision.tv/">TummelVision</a>, <a href="http://epeus.blogspot.com/">formerly of Google</a>.</p>
+<p>The <strong>big news</strong> this week included the Mobile World Conference in Barcelona, the HTC Legend and more.</p>
+<p>The <strong>app of the week</strong> was <a href="http://Qik.com">Qik</a>. Mark had some fun doing a <a href="http://qik.com/video/5026868">quick video stream of the studio</a>. Qik allows you to live stream video from your phone.</p>
+<p>Kevin Marks talked about <a href="http://www.ribbit.com/">ribbit</a>, something he is working on, that allows &#8220;virtual telephony&#8221;, which allows you to use your phone on other networks. Dave and Lane discussed the possibilities of  Netflix Instant Streaming on Android and more.</p>
+<p>News:</p>
+<ul>
+<li><a href="http://www.engadget.com/2010/02/18/sony-ericsson-ceo-google-asked-us-to-build-the-nexus-one-we-re/">Sony Ericsson turned down the opportunity to produce the Google Nexus One phone. </a></li>
+<li>AT&amp;T will begin selling its first Android device, <a href="http://mashable.com/2010/01/07/motorola-backflip/">the Motorola BACKFLIP</a>, March 7th.</li>
+<li>The panel discussed whether Google was oversaturating the market with its OS.</li>
+<li>AT&amp;T has banded together with other networks including Orange and Telefonica to create a Apple App Store rival. Dave and Lane thought that this move would be a headache for all.</li>
+<li>60,000 Android based handsets are shipping daily.</li>
+<li>A new Google Goggles feature was showed that allows using OCR and Translate, to take a picture of text in another language, and translate the text into English.</li>
+<li>Flash has announced a Flash version and Air for Android. Mark thought that it could be the solution to coding different versions of an application for different platforms.</li>
+<li>Microsoft announced a mobile OS, Windows Phone 7, that was well received. Ashley thought that if the integration with Xbox Live worked well, it would be amazing.</li>
+<li>The HTC Legend was announced. Everyone on the panel loved the new optical trackpad, and that HTC brought back the lip on the phone.</li>
+<li>A new eBook application for Android was announced, made by PacketVideo partnered with millmo. It is set to arrive in the Japanese market in spring 2010.</li>
+<li>Layar anounced a move that would allow developers to monetize their work. By selling developer made &#8220;layers&#8221; inside of the application, developers can earn money. Layar puts a layer of information over the camera viewer on your phone.</li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>http://www.twiandroid.com/?feed=rss2&amp;p=131</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+<enclosure url="http://twia.twist.netdna-cdn.com/TWiA%20-%20Episode%205%20(Kevin%20Marks).mp3" length="55651823" type="audio/mpeg" />
+	<itunes:summary>
+&lt;p&gt;&lt;br /&gt;
+&lt;a href=&#039;http://twia.twist.netdna-cdn.com/TWiA%20-%20Episode%205%20(Kevin%20Marks).mp3&#039; &gt;Download the MP3 Here!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;co-hosts and guests&lt;/strong&gt; included &lt;a href=&quot;http://twitter.com/heartlessjez&quot;&gt;Ashley Esqueda&lt;/a&gt;, &lt;a href=&quot;http://www.twitter.com/audiocollective&quot;&gt;Dave Buchanan&lt;/a&gt; and &lt;a href=&quot;http://twitter.com/14n3&quot;&gt;Lane Montgomery&lt;/a&gt; from &lt;a href=&quot;http://www.theappshow.com/android/&quot;&gt;The Android App Show &lt;/a&gt;and &lt;a href=&quot;http://www.ipadshow.com/&quot;&gt;The iPad Show&lt;/a&gt;, &lt;a href=&quot;http://www.google.com/profiles/jjjooooohhnnn&quot;&gt;John Shiple&lt;/a&gt; of &lt;a href=&quot;http://startuparmy.com/&quot;&gt;Startup Army&lt;/a&gt; and &lt;a href=&quot;http://twitter.com/kevinmarks&quot;&gt;Kevin Marks&lt;/a&gt;, the VP of the British Telecom, and of &lt;a href=&quot;http://www.ribbit.com/&quot;&gt;ribbit&lt;/a&gt; and &lt;a href=&quot;http://tummelvision.tv/&quot;&gt;TummelVision&lt;/a&gt;, &lt;a href=&quot;http://epeus.blogspot.com/&quot;&gt;formerly of Google&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;big news&lt;/strong&gt; this week included the Mobile World Conference in Barcelona, the HTC Legend and more.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;app of the week&lt;/strong&gt; was &lt;a href=&quot;http://Qik.com&quot;&gt;Qik&lt;/a&gt;. Mark had some fun doing a &lt;a href=&quot;http://qik.com/video/5026868&quot;&gt;quick video stream of the studio&lt;/a&gt;. Qik allows you to live stream video from your phone.&lt;/p&gt;
+&lt;p&gt;Kevin Marks talked about &lt;a href=&quot;http://www.ribbit.com/&quot;&gt;ribbit&lt;/a&gt;, something he is working on, that allows “virtual telephony”, which allows you to use your phone on other networks. Dave and Lane discussed the possibilities of  Netflix Instant Streaming on Android and more.&lt;/p&gt;
+&lt;p&gt;News:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.engadget.com/2010/02/18/sony-ericsson-ceo-google-asked-us-to-build-the-nexus-one-we-re/&quot;&gt;Sony Ericsson turned down the opportunity to produce the Google Nexus One phone. &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;AT&amp;T will begin selling its first Android device, &lt;a href=&quot;http://mashable.com/2010/01/07/motorola-backflip/&quot;&gt;the Motorola BACKFLIP&lt;/a&gt;, March 7th.&lt;/li&gt;
+&lt;li&gt;The panel discussed whether Google was oversaturating the market with its OS.&lt;/li&gt;
+&lt;li&gt;AT&amp;T has banded together with other networks including Orange and Telefonica to create a Apple App Store rival. Dave and Lane thought that this move would be a headache for all.&lt;/li&gt;
+&lt;li&gt;60,000 Android based handsets are shipping daily.&lt;/li&gt;
+&lt;li&gt;A new Google Goggles feature was showed that allows using OCR and Translate, to take a picture of text in another language, and translate the text into English.&lt;/li&gt;
+&lt;li&gt;Flash has announced a Flash version and Air for Android. Mark thought that it could be the solution to coding different versions of an application for different platforms.&lt;/li&gt;
+&lt;li&gt;Microsoft announced a mobile OS, Windows Phone 7, that was well received. Ashley thought that if the integration with Xbox Live worked well, it would be amazing.&lt;/li&gt;
+&lt;li&gt;The HTC Legend was announced. Everyone on the panel loved the new optical trackpad, and that HTC brought back the lip on the phone.&lt;/li&gt;
+&lt;li&gt;A new eBook application for Android was announced, made by PacketVideo partnered with millmo. It is set to arrive in the Japanese market in spring 2010.&lt;/li&gt;
+&lt;li&gt;Layar anounced a move that would allow developers to monetize their work. By selling developer made “layers” inside of the application, developers can earn money. Layar puts a layer of information over the camera viewer on your phone.&lt;/li&gt;
+&lt;/ul&gt;
+</itunes:summary>
+<itunes:subtitle>Download the MP3 Here!
+The co-hosts and guests included Ashley Esqueda, Dave Buchanan and Lane Montgomery from The Android App Show and The iPad Show, John Shiple of Startup Army and Kevin Marks, the VP of the British Telecom, and of ribbit [...]</itunes:subtitle>
+<itunes:author>TWiA</itunes:author>
+<itunes:duration>1:14:33</itunes:duration>
+<itunes:keywords>Twiandroid, mahalo, this week in android, android, iphone</itunes:keywords>
+	</item>
+		<item>
+		<title>TWiA #4 with Mary Ann Cotter</title>
+		<link>http://www.twiandroid.com/?p=84</link>
+		<comments>http://www.twiandroid.com/?p=84#comments</comments>
+		<pubDate>Sat, 13 Feb 2010 04:10:18 +0000</pubDate>
+		<dc:creator>Max</dc:creator>
+				<category><![CDATA[Episodes]]></category>
+
+		<guid isPermaLink="false">http://www.twiandroid.com/?p=84</guid>
+		<description><![CDATA[Download the MP3 Here!
+The co-hosts and guests included Ashley Esqueda, Dave Buchanan and Lane Montgomery from The Android App Show and The iPad Show, and Mary Ann Cotter CEO and Founder of Smart Capsules, the company behind Cooking Capsules.
+The big news this week was Google Buzz and what it means for Android. Read on for [...]]]></description>
+			<content:encoded><![CDATA[<p><br />
+<br />
+<a href='http://twia.twist.netdna-cdn.com/TWiA%20-%20Episode%204%20(CookingCapsules).mp3' >Download the MP3 Here!</a></p>
+<p>The <strong>co-hosts and guests</strong> included <a href="http://twitter.com/heartlessjez">Ashley Esqueda</a>, <a href="http://twitter.com/androidappshow">Dave Buchanan and Lane Montgomery</a> from <a href="http://www.theappshow.com/android/">The Android App Show </a>and <a href="http://www.ipadshow.com/">The iPad Show</a>, and <a href="http://twitter.com/cookingcapsules">Mary Ann Cotter</a> CEO and Founder of <a href="http://www.cookingcapsules.com/">Smart Capsules,</a> the company behind <a href="http://www.cookingcapsules.com/">Cooking Capsules</a>.</p>
+<p>The <strong>big news</strong> this week was Google Buzz and what it means for Android. Read on for the rest of the news.</p>
+<p>The <strong>app of the week</strong> was <a href="http://www.cookingcapsules.com/">Cooking Capsules</a>, an Android application that provides three steps to the cooking experience: Watch a short cooking show, create a shopping list, and and go through the steps of a recipe (Watch, Shop and Make). Mary Ann Cotter, the CEO and Founder of <a href="http://www.cookingcapsules.com/">Smart Capsules</a> was on the show to talk about it. Cooking Capsules is great for people who can&#8217;t cook and people who love to cook alike. This application was in top twenty in the <a href="http://code.google.com/android/adc/adc_gallery/">Android Developer Challenge 1.</a></p>
+<p>The panel talked about the future of Android, exploring the possibilities of regular appliances integrated with Android. In addition, Dave and Lane discussed Google&#8217;s experimental fiber network.</p>
+<p><strong>News:</strong></p>
+<ul>
+<li>The discussion began with Buzz, the big Google news of the week, which was touted heavily by Google as an excellent tool for mobile. While mobile applications have not been released yet, one can use the web application or <a href="http://www.engadget.com/2010/02/09/google-maps-4-0-with-buzz-support-now-available-in-android-marke/">maps applications</a> on certain phones with a layer for Buzz. Buzz works similarly to Foursquare, in the sense that location is very important and well integrated. Lane and Dave thought that the integration with maps was innovative, and a new way to experience a social network.</li>
+<li>The <a href="http://www.ciozone.com/index.php?option=com_myblog&amp;show=Google-Working-to-Avert-Nexus-One-Disaster.html&amp;Itemid=713&amp;newsletter=02092010_update">Nexus One gained phone support</a>, a missing feature that received a lot of attention. Nexus One owners can call 888-48-NEXUS (63987), available daily from 7:00 am EST to 10:00 pm EST. Previously, Google only offered forum only support.</li>
+<li>The equipment recovery fee for the Nexus One was lowered from $350 to $150.</li>
+<li>Buzz also aims to create a network of &#8220;buzzers&#8221;, shown on a map for easy integration with businesses, events and other locations. The move to mobile social networking was also discussed.</li>
+<li><a href="http://www.kolbysoft.com/">Steel, an Android browser application</a>, was bought by <a href="http://www.skyfire.com/">Skyfire</a>. Steel will remain in production until Skyfire can release their own browser.</li>
+<li>According to Distimo, the iPhone app store is comprised of 75% paid applications and 25% free applications in contrast to the Android app store which has 60% free applications. In addition, more than 27,000 of iPhone applications are book applications.</li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>http://www.twiandroid.com/?feed=rss2&amp;p=84</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://twia.twist.netdna-cdn.com/TWiA%20-%20Episode%204%20(CookingCapsules).mp3" length="58879460" type="audio/mpeg" />
+	<itunes:summary>&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href=&#039;http://twia.twist.netdna-cdn.com/TWiA%20-%20Episode%204%20(CookingCapsules).mp3&#039; &gt;Download the MP3 Here!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;co-hosts and guests&lt;/strong&gt; included &lt;a href=&quot;http://twitter.com/heartlessjez&quot;&gt;Ashley Esqueda&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/androidappshow&quot;&gt;Dave Buchanan and Lane Montgomery&lt;/a&gt; from &lt;a href=&quot;http://www.theappshow.com/android/&quot;&gt;The Android App Show &lt;/a&gt;and &lt;a href=&quot;http://www.ipadshow.com/&quot;&gt;The iPad Show&lt;/a&gt;, and &lt;a href=&quot;http://twitter.com/cookingcapsules&quot;&gt;Mary Ann Cotter&lt;/a&gt; CEO and Founder of &lt;a href=&quot;http://www.cookingcapsules.com/&quot;&gt;Smart Capsules,&lt;/a&gt; the company behind &lt;a href=&quot;http://www.cookingcapsules.com/&quot;&gt;Cooking Capsules&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;big news&lt;/strong&gt; this week was Google Buzz and what it means for Android. Read on for the rest of the news.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;app of the week&lt;/strong&gt; was &lt;a href=&quot;http://www.cookingcapsules.com/&quot;&gt;Cooking Capsules&lt;/a&gt;, an Android application that provides three steps to the cooking experience: Watch a short cooking show, create a shopping list, and and go through the steps of a recipe (Watch, Shop and Make). Mary Ann Cotter, the CEO and Founder of &lt;a href=&quot;http://www.cookingcapsules.com/&quot;&gt;Smart Capsules&lt;/a&gt; was on the show to talk about it. Cooking Capsules is great for people who can’t cook and people who love to cook alike. This application was in top twenty in the &lt;a href=&quot;http://code.google.com/android/adc/adc_gallery/&quot;&gt;Android Developer Challenge 1.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The panel talked about the future of Android, exploring the possibilities of regular appliances integrated with Android. In addition, Dave and Lane discussed Google’s experimental fiber network.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;News:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The discussion began with Buzz, the big Google news of the week, which was touted heavily by Google as an excellent tool for mobile. While mobile applications have not been released yet, one can use the web application or &lt;a href=&quot;http://www.engadget.com/2010/02/09/google-maps-4-0-with-buzz-support-now-available-in-android-marke/&quot;&gt;maps applications&lt;/a&gt; on certain phones with a layer for Buzz. Buzz works similarly to Foursquare, in the sense that location is very important and well integrated. Lane and Dave thought that the integration with maps was innovative, and a new way to experience a social network.&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&quot;http://www.ciozone.com/index.php?option=com_myblog&amp;show=Google-Working-to-Avert-Nexus-One-Disaster.html&amp;Itemid=713&amp;newsletter=02092010_update&quot;&gt;Nexus One gained phone support&lt;/a&gt;, a missing feature that received a lot of attention. Nexus One owners can call 888-48-NEXUS (63987), available daily from 7:00 am EST to 10:00 pm EST. Previously, Google only offered forum only support.&lt;/li&gt;
+&lt;li&gt;The equipment recovery fee for the Nexus One was lowered from $350 to $150.&lt;/li&gt;
+&lt;li&gt;Buzz also aims to create a network of “buzzers”, shown on a map for easy integration with businesses, events and other locations. The move to mobile social networking was also discussed.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.kolbysoft.com/&quot;&gt;Steel, an Android browser application&lt;/a&gt;, was bought by &lt;a href=&quot;http://www.skyfire.com/&quot;&gt;Skyfire&lt;/a&gt;. Steel will remain in production until Skyfire can release their own browser.&lt;/li&gt;
+&lt;li&gt;According to Distimo, the iPhone app store is comprised of 75% paid applications and 25% free applications in contrast to the Android app store which has 60% free [...]</itunes:summary>
+<itunes:subtitle>Download the MP3 Here!
+The co-hosts and guests included Ashley Esqueda, Dave Buchanan and Lane Montgomery from The Android App Show and The iPad Show, and Mary Ann Cotter CEO and Founder of Smart Capsules, the company behind Cooking Capsules.
+The [...]</itunes:subtitle>
+<itunes:author>TWiA</itunes:author>
+<itunes:duration>1:19:46</itunes:duration>
+<itunes:keywords>Twiandroid, mahalo, this week in android, android, iphone</itunes:keywords>
+	</item>
+		<item>
+		<title>TWiA #3 with Jeremy Almond</title>
+		<link>http://www.twiandroid.com/?p=29</link>
+		<comments>http://www.twiandroid.com/?p=29#comments</comments>
+		<pubDate>Fri, 05 Feb 2010 23:10:48 +0000</pubDate>
+		<dc:creator>Max</dc:creator>
+				<category><![CDATA[Episodes]]></category>
+
+		<guid isPermaLink="false">http://www.twiandroid.com/?p=29</guid>
+		<description><![CDATA[Download the MP3 Here!
+The co-hosts and guests included Amanda Coolong of TechZulu, Nicole Cozma of Android Guys, Aaron Brazell of the WordPress Bible, Jeff Ammons and Jeremy Almond of Socialguides.
+The big news this week included some talk on Android 2.1, which is out, only on the Nexus One for now. Read on for the rest [...]]]></description>
+			<content:encoded><![CDATA[<p><br />
+<br />
+<a href='http://twia.twist.netdna-cdn.com/TWiA%20-%20Episode%203%20(Socialguides).mp3' >Download the MP3 Here!</a></p>
+<p>The <strong>co-hosts and guests</strong> included <a href="http://twitter.com/acoolong">Amanda Coolong</a> of <a href="http://www.techzulu.com/">TechZulu</a>, <a href="http://twitter.com/c0z">Nicole Cozma</a> of <a href="http://www.androidguys.com/">Android Guys</a>, <a href="http://twitter.com/technosailor">Aaron Brazell</a> of the <a href="http://technosailor.com/">WordPress Bible</a>, Jeff Ammons and <a href="http://twitter.com/jeremyalmond">Jeremy Almond</a> of <a href="http://www.socialguides.com/">Socialguides</a>.</p>
+<p>The <strong>big news</strong> this week included some talk on <a href="http://www.pcworld.com/article/186768/googles_android_21_how_itll_change_your_phone.html">Android 2.1</a>, which is out, only on the Nexus One for now. Read on for the rest of the news.</p>
+<p>The <strong>app of the week</strong> was <a href="http://www.socialguides.com/">Socialguides</a>, an Android app that, simply put by Jeremy Almond, the CEO of Socialguides, is a &#8220;Twitter meets Yelp&#8221; application. He showed us around the application, a location based client which uses Twitter, which will come out within the coming weeks. You can tweet #TWIAndroid with the word socialguides for a preview of the application.</p>
+<p>The panel had plenty of fun using the new &#8220;Android Cam&#8221;, a camera angle that allowed the viewing of an Android phone&#8217;s screen.</p>
+<p><strong>News:</strong></p>
+<ul>
+<li>The discussion turned to <a href="http://www.techcrunch.com/2010/02/02/apple-google-multi-touch-android/">how important multi-touch was</a>, with some saying that the audience for Android may not be as driven to see multi-touch.</li>
+<li>Mark wondered why <a href="http://www.pocketgamer.biz/r/PG.Biz/Distimo+news/feature.asp?c=18036">European applications were on average 49% more in price</a>.</li>
+<li><a href="http://www.ilounge.com/index.php/news/comments/apple-forces-removal-of-android-mention-from-app-store/">Apple asks developer to remove all Android references from the application description</a>.</li>
+<li>The Wordpress application for Android came out this week, which is good for blogging on the go. However, most will still want to use a computer to blog.</li>
+<li>The Nook, Barns and Noble&#8217;s E-Book reader, which runs on Android, got a OS update. The new update, among other things, speeds up the process of opening a book on the device.</li>
+<li>Samsung announced that the M100 will run Android 2.1.</li>
+<li>Nicole and others discussed how the sales of the Nexus One are not improving. Nicole talked about how this might be due to the fact that customers can&#8217;t get their hands on the phone before they buy it. <a href="http://www.boygeniusreport.com/2010/01/13/nexus-one-sells-20000-units-in-first-week/">According to some</a>, the Nexus One sells 20,000 units per week.</li>
+<li>A topic talked about was Flash, and the competition between the iPhone, which does not have Flash, to Android, which does. Mark mentioned <a href="http://scobleizer.com/2010/01/30/google-will-save-flash-a-developer-who-uses-it-says/">Robert Scoble&#8217;s article on this</a> and asked the question &#8220;Will Google save Flash?&#8221;</li>
+<li>In addition, Nokia, which runs the Symbian OS, made the<a href="http://blogs.zdnet.com/hardware/?p=7161"> Symbian OS open source</a>. This lead to a brief discussion wondering if the OS was a threat to Google.</li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>http://www.twiandroid.com/?feed=rss2&amp;p=29</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+<enclosure url="http://twia.twist.netdna-cdn.com/TWiA%20-%20Episode%203%20(Socialguides).mp3" length="141592320" type="audio/mpeg" />
+	<itunes:summary>&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href=&#039;http://twia.twist.netdna-cdn.com/TWiA%20-%20Episode%203%20(Socialguides).mp3&#039; &gt;Download the MP3 Here!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;co-hosts and guests&lt;/strong&gt; included &lt;a href=&quot;http://twitter.com/acoolong&quot;&gt;Amanda Coolong&lt;/a&gt; of &lt;a href=&quot;http://www.techzulu.com/&quot;&gt;TechZulu&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/c0z&quot;&gt;Nicole Cozma&lt;/a&gt; of &lt;a href=&quot;http://www.androidguys.com/&quot;&gt;Android Guys&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/technosailor&quot;&gt;Aaron Brazell&lt;/a&gt; of the &lt;a href=&quot;http://technosailor.com/&quot;&gt;WordPress Bible&lt;/a&gt;, Jeff Ammons and &lt;a href=&quot;http://twitter.com/jeremyalmond&quot;&gt;Jeremy Almond&lt;/a&gt; of &lt;a href=&quot;http://www.socialguides.com/&quot;&gt;Socialguides&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;big news&lt;/strong&gt; this week included some talk on &lt;a href=&quot;http://www.pcworld.com/article/186768/googles_android_21_how_itll_change_your_phone.html&quot;&gt;Android 2.1&lt;/a&gt;, which is out, only on the Nexus One for now. Read on for the rest of the news.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;app of the week&lt;/strong&gt; was &lt;a href=&quot;http://www.socialguides.com/&quot;&gt;Socialguides&lt;/a&gt;, an Android app that, simply put by Jeremy Almond, the CEO of Socialguides, is a “Twitter meets Yelp” application. He showed us around the application, a location based client which uses Twitter, which will come out within the coming weeks. You can tweet #TWIAndroid with the word socialguides for a preview of the application.&lt;/p&gt;
+&lt;p&gt;The panel had plenty of fun using the new “Android Cam”, a camera angle that allowed the viewing of an Android phone’s screen.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;News:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The discussion turned to &lt;a href=&quot;http://www.techcrunch.com/2010/02/02/apple-google-multi-touch-android/&quot;&gt;how important multi-touch was&lt;/a&gt;, with some saying that the audience for Android may not be as driven to see multi-touch.&lt;/li&gt;
+&lt;li&gt;Mark wondered why &lt;a href=&quot;http://www.pocketgamer.biz/r/PG.Biz/Distimo+news/feature.asp?c=18036&quot;&gt;European applications were on average 49% more in price&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.ilounge.com/index.php/news/comments/apple-forces-removal-of-android-mention-from-app-store/&quot;&gt;Apple asks developer to remove all Android references from the application description&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The Wordpress application for Android came out this week, which is good for blogging on the go. However, most will still want to use a computer to blog.&lt;/li&gt;
+&lt;li&gt;The Nook, Barns and Noble’s E-Book reader, which runs on Android, got a OS update. The new update, among other things, speeds up the process of opening a book on the device.&lt;/li&gt;
+&lt;li&gt;Samsung announced that the M100 will run Android 2.1.&lt;/li&gt;
+&lt;li&gt;Nicole and others discussed how the sales of the Nexus One are not improving. Nicole talked about how this might be due to the fact that customers can’t get their hands on the phone before they buy it. &lt;a href=&quot;http://www.boygeniusreport.com/2010/01/13/nexus-one-sells-20000-units-in-first-week/&quot;&gt;According to some&lt;/a&gt;, the Nexus One sells 20,000 units per week.&lt;/li&gt;
+&lt;li&gt;A topic talked about was Flash, and the competition between the iPhone, which does not have Flash, to Android, which does. Mark mentioned &lt;a href=&quot;http://scobleizer.com/2010/01/30/google-will-save-flash-a-developer-who-uses-it-says/&quot;&gt;Robert Scoble’s article on this&lt;/a&gt; and asked the question “Will Google save Flash?”&lt;/li&gt;
+&lt;li&gt;In addition, Nokia, which runs the Symbian OS, made the&lt;a [...]</itunes:summary>
+<itunes:subtitle>Download the MP3 Here!
+The co-hosts and guests included Amanda Coolong of TechZulu, Nicole Cozma of Android Guys, Aaron Brazell of the WordPress Bible, Jeff Ammons and Jeremy Almond of Socialguides.
+The big news this week included some talk on [...]</itunes:subtitle>
+<itunes:author>TWiA</itunes:author>
+<itunes:duration>58:59</itunes:duration>
+<itunes:keywords>Twiandroid, mahalo, this week in android, android, iphone</itunes:keywords>
+	</item>
+		<item>
+		<title>TWiA #2 with Snaptic</title>
+		<link>http://www.twiandroid.com/?p=20</link>
+		<comments>http://www.twiandroid.com/?p=20#comments</comments>
+		<pubDate>Fri, 29 Jan 2010 19:08:45 +0000</pubDate>
+		<dc:creator>Mark</dc:creator>
+				<category><![CDATA[Episodes]]></category>
+
+		<guid isPermaLink="false">http://www.twiandroid.com/?p=20</guid>
+		<description><![CDATA[Download the MP3 Here!
+CoHosts Ray Slakinski and Jeff Ammons
+Skype CoHost: Nicole Cozma is the Associate Editor at AndroidGuys.com. She is also the grammar hammer at Tmonews (T-Mobile news), contributing editor to KnowYourCell.com,
+The Big News This Week?  The Apple iPad &#8212; and what it means for Android Tablets, including devices like Barnes &#038; Noble Nook [...]]]></description>
+			<content:encoded><![CDATA[<p><br />
+<br />
+<a href='http://twia.twist.netdna-cdn.com/TWiA%20-%20Episode%202%20(Snaptic).mp3' >Download the MP3 Here!</a></p>
+<p>CoHosts Ray Slakinski and Jeff Ammons<br />
+Skype CoHost: Nicole Cozma is the Associate Editor at AndroidGuys.com. She is also the grammar hammer at Tmonews (T-Mobile news), contributing editor to KnowYourCell.com,</p>
+<p>The Big News This Week?  The Apple iPad &#8212; and what it means for Android Tablets, including devices like Barnes &#038; Noble Nook ebook reader (an Android device a<br />
+lso) And it turns out there IS porn in the Android store   The issue of Android&#8217;s apparent lack of multi-touch support was discussed.  @cyanogens was talked about: a developer who has managed to 3x the speed of Android 2.1 and created a neat hack to allow multi-touch support.</p>
+<p>Android Open Lines<br />
+Barb Dybwad, Senior Editor of Mashable.com, took us through the various Android Tablets that debuted at CES this year an opined on what she thought was best and what the apps were.</p>
+<p>App of the Week<br />
+Snaptic CTO Andreas Schobel showed 3Banana, a simple but very popular note-taking app.   He also took us through the process of what it takes to build an android app.</p>
+<p>News<br />
+Read by Amanda Coolong<br />
+1)  Back in August, Samsung claimed there would Android handsets for under $100.  At the time, the claim seemed far-fetched.  However, there&#8217;s now a rumor that a new Qualcomm processor powering Motorola&#8217;s yet-to-be-announced Devour handset may be low-cost enough to make this a reality.  Will we see Android phones for less than $100 or even $50 in 2010?</p>
+<p>2) One of the big gripes about the new Apple tablet is that it is missing a camera.  Augmented reality fans in particular felt snubbed.  However, the new Archos 7 Android-based tablet is rumored to have a front-facing camera.  Does a camera matter in tablet device?</p>
+<p>3)  Is Apple organizing a media attack on Google?<br />
+An article on AndroidGuys this week speculates that Apple may actually be manipulating coverage of Android.  Listen to these two quotes:<br />
+USA Today says:<br />
+&#8220;This is an epic failure for Google,&#8221; says Rob Enderle, an independent analyst at the Enderle Group. &#8220;It tried to create an Apple-like experience, but it&#8217;s so far off from the Apple experience, it&#8217;s not even on the same planet.&#8221;<br />
+ABC News said:<br />
+&#8220;&#8230; The Android strategy was compared to that of Microsoft Windows, which broke the market hegemony of Apple&#8217;s non-open OS. This time around, the new Android phones were supposed to break the hegemony of the Apple iPhone. So far, it hasn&#8217;t quite worked out that way with Android.&#8221;<br />
+IS Apple behind these attacks?</p>
+<p>4) Walmart / Nexus One?<br />
+Earlier this week, the Walmart ‘Coming Soon’ page featured the Nexus One, suggested that soon consumers would be able to purchase Nexus One handsets at Walmart stores across the country.  Then, mysteriously, the Nexus One reference was removed and Walmart issued this statement:</p>
+<p> “Due to a technical error, this item erroneously was displayed on our site. We have no plans to carry Nexus One in Walmart stores or online at Walmart.com at this time.” &#8211; Walmart spokesman Ravi Jariwala</p>
+<p>What happened here?  Was this a premature announcement of something real?  Or just a mistake?</p>
+<p>5)  Doubletwist Partners With T-Mobile<br />
+Doubletwist – last week’s App of the Week here on this show – just announced a major partnership with T-Mobile.  The new myTouch 3G Fender Edition now includes a custom installer for multimedia sync.   So does the Android platform now have the equivalent of iTunes?</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.twiandroid.com/?feed=rss2&amp;p=20</wfw:commentRss>
+		<slash:comments>10</slash:comments>
+<enclosure url="http://twia.twist.netdna-cdn.com/TWiA%20-%20Episode%202%20(Snaptic).mp3" length="142884480" type="audio/mpeg" />
+	<itunes:summary>&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href=&#039;http://twia.twist.netdna-cdn.com/TWiA%20-%20Episode%202%20(Snaptic).mp3&#039; &gt;Download the MP3 Here!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;CoHosts Ray Slakinski and Jeff Ammons&lt;br /&gt;
+Skype CoHost: Nicole Cozma is the Associate Editor at AndroidGuys.com. She is also the grammar hammer at Tmonews (T-Mobile news), contributing editor to KnowYourCell.com,&lt;/p&gt;
+&lt;p&gt;The Big News This Week?  The Apple iPad — and what it means for Android Tablets, including devices like Barnes &amp; Noble Nook ebook reader (an Android device a&lt;br /&gt;
+lso) And it turns out there IS porn in the Android store   The issue of Android’s apparent lack of multi-touch support was discussed.  @cyanogens was talked about: a developer who has managed to 3x the speed of Android 2.1 and created a neat hack to allow multi-touch support.&lt;/p&gt;
+&lt;p&gt;Android Open Lines&lt;br /&gt;
+Barb Dybwad, Senior Editor of Mashable.com, took us through the various Android Tablets that debuted at CES this year an opined on what she thought was best and what the apps were.&lt;/p&gt;
+&lt;p&gt;App of the Week&lt;br /&gt;
+Snaptic CTO Andreas Schobel showed 3Banana, a simple but very popular note-taking app.   He also took us through the process of what it takes to build an android app.&lt;/p&gt;
+&lt;p&gt;News&lt;br /&gt;
+Read by Amanda Coolong&lt;br /&gt;
+1)  Back in August, Samsung claimed there would Android handsets for under $100.  At the time, the claim seemed far-fetched.  However, there’s now a rumor that a new Qualcomm processor powering Motorola’s yet-to-be-announced Devour handset may be low-cost enough to make this a reality.  Will we see Android phones for less than $100 or even $50 in 2010?&lt;/p&gt;
+&lt;p&gt;2) One of the big gripes about the new Apple tablet is that it is missing a camera.  Augmented reality fans in particular felt snubbed.  However, the new Archos 7 Android-based tablet is rumored to have a front-facing camera.  Does a camera matter in tablet device?&lt;/p&gt;
+&lt;p&gt;3)  Is Apple organizing a media attack on Google?&lt;br /&gt;
+An article on AndroidGuys this week speculates that Apple may actually be manipulating coverage of Android.  Listen to these two quotes:&lt;br /&gt;
+USA Today says:&lt;br /&gt;
+“This is an epic failure for Google,” says Rob Enderle, an independent analyst at the Enderle Group. “It tried to create an Apple-like experience, but it’s so far off from the Apple experience, it’s not even on the same planet.”&lt;br /&gt;
+ABC News said:&lt;br /&gt;
+“… The Android strategy was compared to that of Microsoft Windows, which broke the market hegemony of Apple’s non-open OS. This time around, the new Android phones were supposed to break the hegemony of the Apple iPhone. So far, it hasn’t quite worked out that way with Android.”&lt;br /&gt;
+IS Apple behind these attacks?&lt;/p&gt;
+&lt;p&gt;4) Walmart / Nexus One?&lt;br /&gt;
+Earlier this week, the Walmart ‘Coming Soon’ page featured the Nexus One, suggested that soon consumers would be able to purchase Nexus One handsets at Walmart stores across the country.  Then, mysteriously, the Nexus One reference was removed and Walmart issued this statement:&lt;/p&gt;
+&lt;p&gt; “Due to a technical error, this item erroneously was displayed on our site. We have no plans to carry Nexus One in Walmart stores or online at Walmart.com at this time.” – Walmart spokesman Ravi Jariwala&lt;/p&gt;
+&lt;p&gt;What happened here?  Was this a premature announcement of something real?  Or just a mistake?&lt;/p&gt;
+&lt;p&gt;5)  Doubletwist Partners With T-Mobile&lt;br /&gt;
+Doubletwist – last week’s App of the Week here on this show – just announced a major partnership with T-Mobile.  The new myTouch 3G Fender Edition now includes a custom installer for multimedia sync.   So does the Android platform now have the equivalent of iTunes?&lt;/p&gt;
+</itunes:summary>
+<itunes:subtitle>Download the MP3 Here!
+CoHosts Ray Slakinski and Jeff Ammons
+Skype CoHost: Nicole Cozma is the Associate Editor at AndroidGuys.com. She is also the grammar hammer at Tmonews (T-Mobile news), contributing editor to KnowYourCell.com,
+The Big News [...]</itunes:subtitle>
+<itunes:author>TWiA</itunes:author>
+<itunes:duration>59:32</itunes:duration>
+<itunes:keywords>Twiandroid, mahalo, this week in android, android, iphone</itunes:keywords>
+	</item>
+		<item>
+		<title>TWiA #1 &#8211; Premiere Show!</title>
+		<link>http://www.twiandroid.com/?p=5</link>
+		<comments>http://www.twiandroid.com/?p=5#comments</comments>
+		<pubDate>Thu, 21 Jan 2010 22:23:16 +0000</pubDate>
+		<dc:creator>Mark</dc:creator>
+				<category><![CDATA[Episodes]]></category>
+
+		<guid isPermaLink="false">http://www.twiandroid.com/?p=5</guid>
+		<description><![CDATA[Download the MP3 Here!
+The Premiere Episode of &#8216;This Week In Android&#8217;!
+Host Mark Jeffrey started the show with co-hosts Lon Harris and Jeff Ammons walking through the basics of the Android mobile open platform:
+It&#8217;s a stack of Mobile devices including an operating system, middleware and key applications.  It is based on the Linux kernal, and [...]]]></description>
+			<content:encoded><![CDATA[<p><br />
+<br />
+<a href='http://twia.twist.netdna-cdn.com/TWiA%20-%20Episode%201%20(Premiere).mp3' >Download the MP3 Here!</a></p>
+<p>The Premiere Episode of &#8216;This Week In Android&#8217;!</p>
+<p>Host Mark Jeffrey started the show with co-hosts Lon Harris and Jeff Ammons walking through the basics of the Android mobile open platform:</p>
+<p>It&#8217;s a stack of Mobile devices including an operating system, middleware and key applications.  It is based on the Linux kernal, and applications are written using Java via a special set of Google-developed Java libraries.  Anyone can make an Android phone.  It is an open platform.  Open = good.  Also you can have a variety of carriers, you&#8217;re not just locked to AT&amp;T like the iPhone.  If you use Google Voice, your number is unbelievably transportable &#8212; which spooks carriers.  Android allows applications to run simultaneously &#8212;  you can have music going while checking your email, etc.  Lastly, Android is not necessarily a phone OS.  Tablets at CES this year were running Android.  People have Android running on microwaves and washing machines.</p>
+<p>Next, they discussed the Nexus One: Google-spec&#8217;d hardware made specifically for Android OS.  Manufactured by HTC Corp.  The Android Market for apps does not require an approval process for applications, referring to the notoriously obscure approval that developers face when posting to the App Store.  There was a discussion sparked by Lon about whether &#8216;red light&#8217; applications should be controlled by platform-makers.  Mark believed there was a reasonable case for some clear cut porn apps whereas Lon believed everything should be entirely open.</p>
+<p>App of the Week was doubleTwist.  Vidya Ravella VP of Marketing filled in for Jon Lech Johansen, co-founder and CTO.  doubleTwist is an desktop app that allows the user to seamlessly import media purchased on Amazon (or anywhere else) and upload it your mobile device.</p>
+<p>Next on Android Open Lines, Chris Soyars, Android Addict and developer described two utilities he was building: one to help users install modified or upgraded versions of Android on their device and another to enable push notification without polling.</p>
+<p>Highlights from Android News, Guest Host Melissa Rowley said that Venture capitalist Bill Gurley said in a recent post on his blog, &#8216;Above The Crowd&#8217;, that asking &#8216;iPhone or Android&#8217; was the wrong question.  It doesn&#8217;t matter if Android is better than iPhone, it just has to be better than everything else &#8212; and it is.  He went on to say that over time, Android will own the vastly large lower-end market and Apple will own the high-end: exactly the same scenario as PC&#8217;s versus Mac&#8217;s in the early 90&#8217;s.</p>
+<p>Question:  Is Gurley right?  Mark believed he was by and large, citing the Billshrink &#8216;total cost of ownership&#8217; chart that showed Android devices cost roughly half of what the iPhone costs.  Lon wasn&#8217;t so sure.</p>
+<p>Google Free Wifi: Trojan Horse?<br />
+Over the Holidays Google generously provided free Wi-Fi to travelers at airports across the country, ostensibly as a goodwill gesture. But then, there were reports that Google’s free Wi-Fi service suddenly began immediately forwarding users to Google.com/Phone, the new webstore that sells the Nexus One.<br />
+Question: Was this a dirty trick?   Not at all, Mark believed.  Lon fully agreed, saying he basically got a lot more out of the deal than was taken from him.</p>
+<p>Trefis.com estimates that it will add $20 billion to Google’s market cap.<br />
+Question: DOES it really?  Lon says no, Mark says probably.</p>
+<p>Follow show host Mark Jeffrey: @markjeffrey.</p>
+<p>If you would like to be on the next show, email twiandroid@thisweekin.com</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.twiandroid.com/?feed=rss2&amp;p=5</wfw:commentRss>
+		<slash:comments>10</slash:comments>
+<enclosure url="http://twia.twist.netdna-cdn.com/TWiA%20-%20Episode%201%20(Premiere).mp3" length="30179328" type="audio/mpeg" />
+	<itunes:summary>&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href=&#039;http://twia.twist.netdna-cdn.com/TWiA%20-%20Episode%201%20(Premiere).mp3&#039; &gt;Download the MP3 Here!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The Premiere Episode of ‘This Week In Android’!&lt;/p&gt;
+&lt;p&gt;Host Mark Jeffrey started the show with co-hosts Lon Harris and Jeff Ammons walking through the basics of the Android mobile open platform:&lt;/p&gt;
+&lt;p&gt;It’s a stack of Mobile devices including an operating system, middleware and key applications.  It is based on the Linux kernal, and applications are written using Java via a special set of Google-developed Java libraries.  Anyone can make an Android phone.  It is an open platform.  Open = good.  Also you can have a variety of carriers, you’re not just locked to AT&amp;T like the iPhone.  If you use Google Voice, your number is unbelievably transportable — which spooks carriers.  Android allows applications to run simultaneously —  you can have music going while checking your email, etc.  Lastly, Android is not necessarily a phone OS.  Tablets at CES this year were running Android.  People have Android running on microwaves and washing machines.&lt;/p&gt;
+&lt;p&gt;Next, they discussed the Nexus One: Google-spec’d hardware made specifically for Android OS.  Manufactured by HTC Corp.  The Android Market for apps does not require an approval process for applications, referring to the notoriously obscure approval that developers face when posting to the App Store.  There was a discussion sparked by Lon about whether ‘red light’ applications should be controlled by platform-makers.  Mark believed there was a reasonable case for some clear cut porn apps whereas Lon believed everything should be entirely open.&lt;/p&gt;
+&lt;p&gt;App of the Week was doubleTwist.  Vidya Ravella VP of Marketing filled in for Jon Lech Johansen, co-founder and CTO.  doubleTwist is an desktop app that allows the user to seamlessly import media purchased on Amazon (or anywhere else) and upload it your mobile device.&lt;/p&gt;
+&lt;p&gt;Next on Android Open Lines, Chris Soyars, Android Addict and developer described two utilities he was building: one to help users install modified or upgraded versions of Android on their device and another to enable push notification without polling.&lt;/p&gt;
+&lt;p&gt;Highlights from Android News, Guest Host Melissa Rowley said that Venture capitalist Bill Gurley said in a recent post on his blog, ‘Above The Crowd’, that asking ‘iPhone or Android’ was the wrong question.  It doesn’t matter if Android is better than iPhone, it just has to be better than everything else — and it is.  He went on to say that over time, Android will own the vastly large lower-end market and Apple will own the high-end: exactly the same scenario as PC’s versus Mac’s in the early 90’s.&lt;/p&gt;
+&lt;p&gt;Question:  Is Gurley right?  Mark believed he was by and large, citing the Billshrink ‘total cost of ownership’ chart that showed Android devices cost roughly half of what the iPhone costs.  Lon wasn’t so sure.&lt;/p&gt;
+&lt;p&gt;Google Free Wifi: Trojan Horse?&lt;br /&gt;
+Over the Holidays Google generously provided free Wi-Fi to travelers at airports across the country, ostensibly as a goodwill gesture. But then, there were reports that Google’s free Wi-Fi service suddenly began immediately forwarding users to Google.com/Phone, the new webstore that sells the Nexus One.&lt;br /&gt;
+Question: Was this a dirty trick?   Not at all, Mark believed.  Lon fully agreed, saying he basically got a lot more out of the deal than was taken from him.&lt;/p&gt;
+&lt;p&gt;Trefis.com estimates that it will add $20 billion to Google’s market cap.&lt;br /&gt;
+Question: DOES it really?  Lon says no, Mark says probably.&lt;/p&gt;
+&lt;p&gt;Follow show host Mark Jeffrey: @markjeffrey.&lt;/p&gt;
+&lt;p&gt;If you would like to be on the next show, email twiandroid@thisweekin.com&lt;/p&gt;
+</itunes:summary>
+<itunes:subtitle>Download the MP3 Here!
+The Premiere Episode of ‘This Week In Android’!
+Host Mark Jeffrey started the show with co-hosts Lon Harris and Jeff Ammons walking through the basics of the Android mobile open platform:
+It’s a stack of Mobile devices [...]</itunes:subtitle>
+<itunes:author>TWiA</itunes:author>
+<itunes:duration>55:44</itunes:duration>
+<itunes:keywords>Twiandroid, mahalo, this week in android, android, iphone</itunes:keywords>
+	</item>
+	</channel>
+</rss>

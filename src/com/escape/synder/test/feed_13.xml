@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:georss="http://www.georss.org/georss"
+    xmlns="http://www.w3.org/2005/Atom" >
+
+    <id>
+tag:blogger.com,1999:blog-6839704277656129776
+    </id>
+
+    <updated>
+2010-02-22T08:05:00.868-05:00
+    </updated>
+
+    <title type="text" >
+The Ever-Expanding Gas!
+    </title>
+
+    <subtitle type="html" >
+Thoughts of a typist, er, software designer.
+    </subtitle>
+
+    <link
+        href="http://flatulenza-per-tutti.blogspot.com/feeds/posts/default"
+        rel="http://schemas.google.com/g/2005#feed"
+        type="application/atom+xml" />
+
+    <link
+        href="http://www.blogger.com/feeds/6839704277656129776/posts/default"
+        rel="self"
+        type="application/atom+xml" />
+
+    <link
+        href="http://flatulenza-per-tutti.blogspot.com/"
+        rel="alternate"
+        type="text/html" />
+
+    <link
+        href="http://pubsubhubbub.appspot.com/"
+        rel="hub" />
+
+    <link
+        href="http://www.blogger.com/feeds/6839704277656129776/posts/default?start-index=26&amp;max-results=25"
+        rel="next"
+        type="application/atom+xml" />
+
+    <author>
+
+        <name>
+The Gassy One
+        </name>
+
+        <uri>
+http://www.blogger.com/profile/14799233915551512512
+        </uri>
+
+        <email>
+noreply@blogger.com
+        </email>
+    </author>
+
+    <generator
+        uri="http://www.blogger.com"
+        version="7.00" >
+Blogger
+    </generator>
+    <dc:title>This is the feed test subject.</dc:title>
+    <dc:description>This is the feed test description.</dc:description>
+    <dc:language>en-US</dc:language>
+    <dc:creator>The Author</dc:creator>
+    <entry>
+        <id>tag:blogger.com,1999:blog-6839704277656129776.post-2290449087863501081</id>
+        <title>This is the Test Title</title>
+        <published>2010-02-22T08:05:00.868-05:00</published>
+        <dc:title>This is the entry test subject.</dc:title>
+        <dc:description>This is the entry test description.</dc:description>
+        <dc:creator>The Author</dc:creator>
+        <content type='text'>This is the test content.</content>
+    </entry>
+</feed>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SearchSuggestion xmlns="http://opensearch.org/searchsuggest2" version="2.0">
+<Query xml:space="preserve">boots</Query>
+<Section>
+<Item>
+<Image source="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/AGM_Ancient_Greek_Pair_of_Terracotta_Boots.jpg/50px-AGM_Ancient_Greek_Pair_of_Terracotta_Boots.jpg" width="50" height="41"/>
+<Text xml:space="preserve">Boot</Text>
+<Description xml:space="preserve">
+A boot is a type of footwear and a specific type of shoe. Most boots mainly cover the foot and the ankle and extend up the leg, sometimes as far as the knee or even the hip.
+</Description>
+<Url xml:space="preserve">http://en.wikipedia.org/wiki/Boot</Url>
+</Item>
+<Item>
+<Image source="http://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Bootsy_Collins.jpg/46px-Bootsy_Collins.jpg" width="46" height="50"/>
+<Text xml:space="preserve">Bootsy Collins</Text>
+<Description xml:space="preserve">
+William Earl "Bootsy" Collins (born October 26, 1951 in Cincinnati, Ohio, USA) is an American musician, and singer-songwriter.
+</Description>
+<Url xml:space="preserve">http://en.wikipedia.org/wiki/Bootsy_Collins</Url>
+</Item>
+<Item>
+<Image source="http://upload.wikimedia.org/wikipedia/en/thumb/0/08/Boots.svg/50px-Boots.svg.png" width="50" height="30"/>
+<Text xml:space="preserve">Boots UK</Text>
+<Description xml:space="preserve">
+Boots UK Limited (formerly Boots the Chemist) is a pharmacy chain in the United Kingdom, with outlets in most high streets throughout the country and also in the Republic of Ireland.
+</Description>
+<Url xml:space="preserve">http://en.wikipedia.org/wiki/Boots_UK</Url>
+</Item>
+<Item>
+<Image source="http://upload.wikimedia.org/wikipedia/commons/thumb/4/47/WIKI_BOOTS_RANDOLPH_2.jpg/38px-WIKI_BOOTS_RANDOLPH_2.jpg" width="38" height="50"/>
+<Text xml:space="preserve">Boots Randolph</Text>
+<Description xml:space="preserve">
+Homer Louis "Boots" Randolph III (June 3, 1927 – July 3, 2007) was an American musician best known for his 1963 saxophone hit "Yakety Sax" (Benny Hill's signature tune).
+</Description>
+<Url xml:space="preserve">http://en.wikipedia.org/wiki/Boots_Randolph</Url>
+</Item>
+<Item>
+<Image source="http://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Dr_Martens%2C_black%2C_old.jpg/50px-Dr_Martens%2C_black%2C_old.jpg" width="50" height="35"/>
+<Text xml:space="preserve">Bootstrapping</Text>
+<Description xml:space="preserve">
+In general parlance, bootstrapping usually refers to the starting of a self-sustaining process that is supposed to proceed without external input.
+</Description>
+<Url xml:space="preserve">http://en.wikipedia.org/wiki/Bootstrapping</Url>
+</Item>
+<Item>
+<Image source="http://upload.wikimedia.org/wikipedia/en/thumb/a/a2/Jack_Sparrow_In_Pirates_of_the_Caribbean-_At_World%27s_End.JPG/22px-Jack_Sparrow_In_Pirates_of_the_Caribbean-_At_World%27s_End.JPG" width="22" height="50"/>
+<Text xml:space="preserve">Bootstrapping (statistics)</Text>
+<Description xml:space="preserve">
+In statistics, bootstrapping is a method for assigning measures of accuracy (defined in terms of bias, variance, confidence intervals, prediction error or some other such measure) to sample estimates.
+</Description>
+<Url xml:space="preserve">
+http://en.wikipedia.org/wiki/Bootstrapping_(statistics)
+</Url>
+</Item>
+<Item>
+<Image source="http://upload.wikimedia.org/wikipedia/en/thumb/a/a2/Jack_Sparrow_In_Pirates_of_the_Caribbean-_At_World%27s_End.JPG/22px-Jack_Sparrow_In_Pirates_of_the_Caribbean-_At_World%27s_End.JPG" width="22" height="50"/>
+<Text xml:space="preserve">Boots Anson-Roa</Text>
+<Description xml:space="preserve">
+María Elisa Cristóbal-Anson or Boots Anson-Roa (born January 30, 1945) is an award-winning actress, columnist, editor, and lecturer.
+</Description>
+<Url xml:space="preserve">http://en.wikipedia.org/wiki/Boots_Anson-Roa</Url>
+</Item>
+<Item>
+<Image source="http://upload.wikimedia.org/wikipedia/en/thumb/a/a2/Jack_Sparrow_In_Pirates_of_the_Caribbean-_At_World%27s_End.JPG/22px-Jack_Sparrow_In_Pirates_of_the_Caribbean-_At_World%27s_End.JPG" width="22" height="50"/>
+<Text xml:space="preserve">Bootstrap paradox</Text>
+<Description xml:space="preserve">
+The bootstrap paradox, or ontological paradox, is a paradox of time travel in which information or objects can exist without having been created.
+</Description>
+<Url xml:space="preserve">http://en.wikipedia.org/wiki/Bootstrap_paradox</Url>
+</Item>
+<Item>
+<Image source="http://upload.wikimedia.org/wikipedia/en/thumb/a/a2/Jack_Sparrow_In_Pirates_of_the_Caribbean-_At_World%27s_End.JPG/22px-Jack_Sparrow_In_Pirates_of_the_Caribbean-_At_World%27s_End.JPG" width="22" height="50"/>
+<Text xml:space="preserve">List of Pirates of the Caribbean characters</Text>
+<Description xml:space="preserve">
+This is a list of characters appearing in the Pirates of the Caribbean film series.
+</Description>
+<Url xml:space="preserve">
+http://en.wikipedia.org/wiki/List_of_Pirates_of_the_Caribbean_characters#Bootstrap_Bill_Turner
+</Url>
+</Item>
+<Item>
+<Image source="http://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Schmidt-Brin-Page-20080520.jpg/50px-Schmidt-Brin-Page-20080520.jpg" width="50" height="38"/>
+<Text xml:space="preserve">Entrepreneurship</Text>
+<Description xml:space="preserve">
+In political economics, entrepreneurship is a process of identifying and starting a business venture, sourcing and organizing the required resources and taking both the risks and rewards associated with the venture.
+</Description>
+<Url xml:space="preserve">http://en.wikipedia.org/wiki/Entrepreneurship</Url>
+</Item>
+</Section>
+</SearchSuggestion>

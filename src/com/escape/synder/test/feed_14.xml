@@ -1,0 +1,126 @@
+<feed xmlns:dcterms="http://purl.org/dc/terms/" xmlns:opds="http://opds-spec.org/" xmlns="http://www.w3.org/2005/Atom">
+  <title>Internet Archive Catalog - 1 to 50 of 275 search results for boots</title>
+  <id>urn:x-internet-archive:bookserver:catalog:search:boots:0</id>
+  <updated>2015-12-02T00:00:00Z</updated>
+  <generator uri="http://somewhere.com" version="0.0">Some Bogus Generator</generator>
+  <rights>You have none!</rights>
+  <icon>http://somewhere.com/image-icon.jpg</icon>
+  <logo>http://somewhere.com/image-logo.jpg</logo>
+  <dcterms:language>English</dcterms:language>
+  <link rel="self" type="application/atom+xml" href="http://bookserver.archive.org/catalog/"/>
+  <author>
+    <name>Internet Archive</name>
+    <uri>http://www.archive.org</uri>
+  </author>
+  <link rel="search" type="application/opensearchdescription+xml" href="http://bookserver.archive.org/catalog/opensearch.xml"/>
+  <link rel="next" type="application/atom+xml" href="opensearch?q=boots&amp;start=1" title="Next results"/>
+  <entry>
+    <title>Analysis of the Personality of Adolph Hitler</title>
+    <id>urn:x-internet-archive:bookserver:catalog:item:AnalysisOfThePersonalityOfAdolphHitler_240</id>
+    <updated>2008-01-30T23:58:19Z</updated>
+    <published>2010-02-22T08:05:00.868-05:00</published>
+  	<rights>You have none!</rights>
+    <link href="http://www.archive.org/download/AnalysisOfThePersonalityOfAdolphHitler_240/AnalysisOfThePersonalityOfAdolphHitler_240.pdf" type="application/pdf" rel="http://opds-spec.org/acquisition"/>
+    <link href="http://www.archive.org/download/AnalysisOfThePersonalityOfAdolphHitler_240/AnalysisOfThePersonalityOfAdolphHitler_240.epub" type="application/epub+zip" rel="http://opds-spec.org/acquisition"/>
+    <link href="http://www.archive.org/download/AnalysisOfThePersonalityOfAdolphHitler_240/page/cover_medium.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="http://www.archive.org/download/AnalysisOfThePersonalityOfAdolphHitler_240/page/cover_thumb.jpg" type="image/jpeg" rel="http://opds-spec.org/image/thumbnail"/>
+    <dcterms:issued>1943</dcterms:issued>
+    <author>
+      <name>Murray, Henry A.</name>
+    </author>
+    <category term="nazism"/>
+    <category term="world war II"/>
+    <category term="hitler"/>
+    <dcterms:publisher>Washington, D.C., Office of Strategic Services.</dcterms:publisher>
+    <dcterms:language>English</dcterms:language>
+    <content type="html">&lt;b&gt;Author: &lt;/b&gt;Murray, Henry A.&lt;br/&gt;&lt;b&gt;Subject &lt;/b&gt;nazism, world war II, hitler&lt;br/&gt;&lt;b&gt;Publisher: &lt;/b&gt;Washington, D.C., Office of Strategic Services.&lt;br/&gt;&lt;b&gt;Year published: &lt;/b&gt;1943&lt;br/&gt;&lt;b&gt;Book contributor: &lt;/b&gt;dudeman5685&lt;br/&gt;&lt;b&gt;Language: &lt;/b&gt;English&lt;br/&gt;247 downloads in the last month&lt;br/&gt;&lt;b&gt;Download Ebook: &lt;/b&gt;(&lt;a href="http://www.archive.org/download/AnalysisOfThePersonalityOfAdolphHitler_240/AnalysisOfThePersonalityOfAdolphHitler_240.pdf"&gt;PDF&lt;/a&gt;) (&lt;a href="http://www.archive.org/download/AnalysisOfThePersonalityOfAdolphHitler_240/AnalysisOfThePersonalityOfAdolphHitler_240.epub"&gt;EPUB&lt;/a&gt;) </content>
+  </entry>
+  <entry>
+    <title>Designing, cutting and grading boot and shoe patterns, and complete manual for the stitching room, by an expert of thirty years</title>
+    <id>urn:x-internet-archive:bookserver:catalog:item:designingcutting00hatf</id>
+    <updated>2009-09-04T14:43:47Z</updated>
+    <published>2010-02-22T08:05:00.868-05:00</published>
+  	<rights>You have none!</rights>
+    <link href="http://www.archive.org/download/designingcutting00hatf/designingcutting00hatf.pdf" type="application/pdf" rel="http://opds-spec.org/acquisition"/>
+    <link href="http://www.archive.org/download/designingcutting00hatf/designingcutting00hatf.epub" type="application/epub+zip" rel="http://opds-spec.org/acquisition"/>
+    <link href="http://www.archive.org/download/designingcutting00hatf/page/cover_medium.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="http://www.archive.org/download/designingcutting00hatf/page/cover_thumb.jpg" type="image/jpeg" rel="http://opds-spec.org/image/thumbnail"/>
+    <dcterms:issued>1899</dcterms:issued>
+    <author>
+      <name>Hatfield, Charles B</name>
+    </author>
+    <category term="Boots and shoes industry"/>
+    <dcterms:publisher>Boston, Press of Superintendent and foreman</dcterms:publisher>
+    <dcterms:language>en</dcterms:language>
+    <content type="html">&lt;b&gt;Author: &lt;/b&gt;Hatfield, Charles B&lt;br/&gt;&lt;b&gt;Subject &lt;/b&gt;Boots and shoes industry&lt;br/&gt;&lt;b&gt;Publisher: &lt;/b&gt;Boston, Press of Superintendent and foreman&lt;br/&gt;&lt;b&gt;Year published: &lt;/b&gt;1899&lt;br/&gt;&lt;b&gt;Book contributor: &lt;/b&gt;The Library of Congress&lt;br/&gt;&lt;b&gt;Language: &lt;/b&gt;en&lt;br/&gt;109 downloads in the last month&lt;br/&gt;&lt;b&gt;Download Ebook: &lt;/b&gt;(&lt;a href="http://www.archive.org/download/designingcutting00hatf/designingcutting00hatf.pdf"&gt;PDF&lt;/a&gt;) (&lt;a href="http://www.archive.org/download/designingcutting00hatf/designingcutting00hatf.epub"&gt;EPUB&lt;/a&gt;) </content>
+  </entry>
+  <entry>
+    <title>The fairy tales of Charles Perrault</title>
+    <id>urn:x-internet-archive:bookserver:catalog:item:fairytalesofchar00perr</id>
+    <updated>2007-06-25T15:33:48Z</updated>
+    <published>2010-02-22T08:05:00.868-05:00</published>
+  	<rights>You have none!</rights>
+    <link href="http://www.archive.org/download/fairytalesofchar00perr/fairytalesofchar00perr.pdf" type="application/pdf" rel="http://opds-spec.org/acquisition"/>
+    <link href="http://www.archive.org/download/fairytalesofchar00perr/fairytalesofchar00perr.epub" type="application/epub+zip" rel="http://opds-spec.org/acquisition"/>
+    <link href="http://www.archive.org/download/fairytalesofchar00perr/page/cover_medium.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="http://www.archive.org/download/fairytalesofchar00perr/page/cover_thumb.jpg" type="image/jpeg" rel="http://opds-spec.org/image/thumbnail"/>
+    <dcterms:issued>1922</dcterms:issued>
+    <author>
+      <name>Perrault, Charles, 1628-1703</name>
+    </author>
+    <author>
+      <name>Clarke, Harry, 1889-1931, ill</name>
+    </author>
+    <category term="Fairy tales"/>
+    <category term="Folklore -- France"/>
+    <dcterms:publisher>London : Harrap</dcterms:publisher>
+    <dcterms:language>en</dcterms:language>
+    <content type="html">&lt;b&gt;Authors: &lt;/b&gt;Perrault, Charles, 1628-1703, Clarke, Harry, 1889-1931, ill&lt;br/&gt;&lt;b&gt;Subject &lt;/b&gt;Fairy tales, Folklore -- France&lt;br/&gt;&lt;b&gt;Publisher: &lt;/b&gt;London : Harrap&lt;br/&gt;&lt;b&gt;Year published: &lt;/b&gt;1922&lt;br/&gt;&lt;b&gt;Book contributor: &lt;/b&gt;New York Public Library&lt;br/&gt;&lt;b&gt;Language: &lt;/b&gt;en&lt;br/&gt;81 downloads in the last month&lt;br/&gt;&lt;b&gt;Download Ebook: &lt;/b&gt;(&lt;a href="http://www.archive.org/download/fairytalesofchar00perr/fairytalesofchar00perr.pdf"&gt;PDF&lt;/a&gt;) (&lt;a href="http://www.archive.org/download/fairytalesofchar00perr/fairytalesofchar00perr.epub"&gt;EPUB&lt;/a&gt;) </content>
+  </entry>
+  <entry>
+    <title>Puss in boots</title>
+    <id>urn:x-internet-archive:bookserver:catalog:item:pussinboots00londiala</id>
+    <updated>2006-12-20T09:03:51Z</updated>
+    <published>2010-02-22T08:05:00.868-05:00</published>
+  	<rights>You have none!</rights>
+    <link href="http://www.archive.org/download/pussinboots00londiala/pussinboots00londiala.pdf" type="application/pdf" rel="http://opds-spec.org/acquisition"/>
+    <link href="http://www.archive.org/download/pussinboots00londiala/pussinboots00londiala.epub" type="application/epub+zip" rel="http://opds-spec.org/acquisition"/>
+    <link href="http://www.archive.org/download/pussinboots00londiala/page/cover_medium.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="http://www.archive.org/download/pussinboots00londiala/page/cover_thumb.jpg" type="image/jpeg" rel="http://opds-spec.org/image/thumbnail"/>
+    <dcterms:issued>1703</dcterms:issued>
+    <category term="Cats"/>
+    <dcterms:publisher>London : Orlando Hodgson, 111, Fleet Street</dcterms:publisher>
+    <dcterms:language>en</dcterms:language>
+    <content type="html">&lt;b&gt;Subject &lt;/b&gt;Cats&lt;br/&gt;&lt;b&gt;Publisher: &lt;/b&gt;London : Orlando Hodgson, 111, Fleet Street&lt;br/&gt;&lt;b&gt;Book contributor: &lt;/b&gt;University of California Libraries&lt;br/&gt;&lt;b&gt;Language: &lt;/b&gt;en&lt;br/&gt;61 downloads in the last month&lt;br/&gt;&lt;b&gt;Download Ebook: &lt;/b&gt;(&lt;a href="http://www.archive.org/download/pussinboots00londiala/pussinboots00londiala.pdf"&gt;PDF&lt;/a&gt;) (&lt;a href="http://www.archive.org/download/pussinboots00londiala/pussinboots00londiala.epub"&gt;EPUB&lt;/a&gt;) </content>
+  </entry>
+  <entry>
+    <title>Handbook of German literature : containing : Schiller's Maid of Orleans, Goethe's Iphigenia in Tauris, Tieck's Puss in boots, The Xenia by Goethe and Schiller : with critical introductions and explanatory notes : to which is added an appendix of specimens of German prose from the middle of the sixteenth to the middle of the nineteenth centuries</title>
+    <id>urn:x-internet-archive:bookserver:catalog:item:handbookgermanl00tiecgoog</id>
+    <updated>2009-07-25T16:07:05Z</updated>
+    <published>2010-02-22T08:05:00.868-05:00</published>
+  	<rights>You have none!</rights>
+    <link href="http://www.archive.org/download/handbookgermanl00tiecgoog/handbookgermanl00tiecgoog.pdf" type="application/pdf" rel="http://opds-spec.org/acquisition"/>
+    <link href="http://www.archive.org/download/handbookgermanl00tiecgoog/handbookgermanl00tiecgoog.epub" type="application/epub+zip" rel="http://opds-spec.org/acquisition"/>
+    <link href="http://www.archive.org/download/handbookgermanl00tiecgoog/page/cover_medium.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="http://www.archive.org/download/handbookgermanl00tiecgoog/page/cover_thumb.jpg" type="image/jpeg" rel="http://opds-spec.org/image/thumbnail"/>
+    <dcterms:issued>1854</dcterms:issued>
+    <author>
+      <name>Adler, G. J. (George J.), 1821-1868</name>
+    </author>
+    <author>
+      <name>Schiller, Friedrich, 1759-1805</name>
+    </author>
+    <author>
+      <name>Goethe, Johann Wolfgang von, 1749-1832</name>
+    </author>
+    <author>
+      <name>Tieck, Ludwig, 1773-1853</name>
+    </author>
+    <category term="German literature"/>
+    <category term="German literature"/>
+    <dcterms:publisher>New York : D. Appleton &amp; Co.</dcterms:publisher>
+    <dcterms:language>de</dcterms:language>
+    <dcterms:language>en</dcterms:language>
+    <content type="html">&lt;b&gt;Authors: &lt;/b&gt;Adler, G. J. (George J.), 1821-1868, Schiller, Friedrich, 1759-1805, Goethe, Johann Wolfgang von, 1749-1832, Tieck, Ludwig, 1773-1853&lt;br/&gt;&lt;b&gt;Subject &lt;/b&gt;German literature, German literature&lt;br/&gt;&lt;b&gt;Publisher: &lt;/b&gt;New York : D. Appleton &amp; Co.&lt;br/&gt;&lt;b&gt;Year published: &lt;/b&gt;1854&lt;br/&gt;&lt;b&gt;Book contributor: &lt;/b&gt;University of Michigan&lt;br/&gt;&lt;b&gt;Language: &lt;/b&gt;de, en&lt;br/&gt;35 downloads in the last month&lt;br/&gt;&lt;b&gt;Download Ebook: &lt;/b&gt;(&lt;a href="http://www.archive.org/download/handbookgermanl00tiecgoog/handbookgermanl00tiecgoog.pdf"&gt;PDF&lt;/a&gt;) (&lt;a href="http://www.archive.org/download/handbookgermanl00tiecgoog/handbookgermanl00tiecgoog.epub"&gt;EPUB&lt;/a&gt;) </content>
+  </entry>
+</feed>

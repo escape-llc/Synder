@@ -1,0 +1,1113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" xmlns:re="http://purl.org/atompub/rank/1.0">
+    <title type="text">User escape-llc - Stack Overflow</title>
+    <link rel="self" href="http://stackoverflow.com/feeds/user/650049" type="application/atom+xml" />
+    <link rel="alternate" href="http://stackoverflow.com/users/650049" type="text/html" />
+    <subtitle>most recent 30 from stackoverflow.com</subtitle>
+    <updated>2012-02-21T17:27:41Z</updated>
+    <id>http://stackoverflow.com/feeds/user/650049</id>
+    <creativeCommons:license>http://www.creativecommons.org/licenses/by-sa/3.0/rdf</creativeCommons:license> 
+    <entry>
+        <id>http://stackoverflow.com/questions/6343962/asp-net-mvc3-webgrid-and-paging/7042585#7042585</id>
+        <re:rank scheme="http://stackoverflow.com">2</re:rank>
+        <title type="text">Answer by escape-llc for Asp.net Mvc3 webgrid and paging</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>    
+        <link rel="alternate" href="http://stackoverflow.com/questions/6343962/asp-net-mvc3-webgrid-and-paging/7042585#7042585" />
+        <published>2011-08-12T15:37:50Z</published>   
+        <updated>2012-02-17T16:35:03Z</updated>
+        <summary type="html">&lt;p&gt;Here is a workaround that doesn&#39;t use JavaScript.&lt;/p&gt;
+
+&lt;p&gt;The problem as I see it, the paging links do not receive any route information that must be preserved, like a search filter.  IMO this is a blatant oversight!  A little extra thought here would have saved lots of headache!&lt;/p&gt;
+
+&lt;p&gt;This technique &quot;throws away&quot; the WebGrid&#39;s built-in paging, and uses a Helper to generate the paging links, along with the precious route data we want.&lt;/p&gt;
+
+&lt;p&gt;Once completed, you simply render the WebGrid as the grid only, and use the Helper to make the paging links.  One advantage here is you can put those at the top and bottom, which we like to do.&lt;/p&gt;
+
+&lt;p&gt;I attempted to use similar CSS to what is provided in the Pager.css that NuGet puts into your solution.  The helper should be complete enough for some of you, but it is easily extended.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;New New New&lt;/strong&gt; I just updated the helper with an Ajax version.  I am a little n00b with Razor helpers, so i couldn&#39;t figure out how to re-factor it to use a common template; anyone please?  The important extra detail there is to pass in the &lt;code&gt;AjaxOptions&lt;/code&gt; and make sure to use &lt;code&gt;POST&lt;/code&gt; as the verb, otherwise you may not end up in the correct controller method.&lt;/p&gt;
+
+&lt;p&gt;Helper (App_Code/LocalHelpers.cshtml):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@helper DoPager(System.Web.Mvc.HtmlHelper hh, string pageActionName, WebGrid grid, int maxPageLinks, object rvd) {
+&amp;lt;div class=&quot;pager&quot;&amp;gt;
+&amp;lt;div class=&quot;pageof&quot;&amp;gt;Page &amp;lt;b&amp;gt;@(grid.PageIndex + 1)&amp;lt;/b&amp;gt; of &amp;lt;b&amp;gt;@grid.PageCount&amp;lt;/b&amp;gt;&amp;lt;/div&amp;gt;
+@if (grid.PageCount &amp;gt; 1) {
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;
+@{ RouteValueDictionary rvdp1 = new RouteValueDictionary(rvd);
+   rvdp1.Add(&quot;Page&quot;, 1);
+}
+@hh.ActionLink(&quot;&amp;lt;&amp;lt;&quot;, pageActionName, rvdp1)
+&amp;lt;/li&amp;gt;
+@{ int start = Math.Max(0, grid.PageIndex - maxPageLinks / 2); }
+@for (int ix = 0; ix + start &amp;lt; grid.PageCount; ix++) {
+    int pageno = start + ix + 1;
+    var css = hh.Raw(pageno - 1 == grid.PageIndex ? &quot; class=\&quot;highlighted\&quot;&quot; : &quot;&quot;);
+    RouteValueDictionary rvdp = new RouteValueDictionary(rvd);
+    rvdp.Add(&quot;Page&quot;, pageno);
+&amp;lt;li@css&amp;gt;
+@hh.ActionLink(pageno.ToString(), pageActionName, rvdp)
+&amp;lt;/li&amp;gt;
+    if (ix &amp;gt;= maxPageLinks) { break; }
+}
+&amp;lt;li&amp;gt;
+@{ RouteValueDictionary rvdpX = new RouteValueDictionary(rvd);
+   rvdpX.Add(&quot;Page&quot;, grid.PageCount);
+}
+@hh.ActionLink(&quot;&amp;gt;&amp;gt;&quot;, pageActionName, rvdpX)
+&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+}
+&amp;lt;/div&amp;gt;
+}
+@helper DoAjaxPager(System.Web.Mvc.AjaxHelper aa, System.Web.Mvc.Ajax.AjaxOptions aopts, System.Web.Mvc.HtmlHelper hh, string pageActionName, WebGrid grid, int maxPageLinks, object rvd) {
+&amp;lt;div class=&quot;pager&quot;&amp;gt;
+&amp;lt;div class=&quot;pageof&quot;&amp;gt;Page &amp;lt;b&amp;gt;@(grid.PageIndex + 1)&amp;lt;/b&amp;gt; of &amp;lt;b&amp;gt;@grid.PageCount&amp;lt;/b&amp;gt;&amp;lt;/div&amp;gt;
+@if (grid.PageCount &amp;gt; 1) {
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;
+@{ RouteValueDictionary rvdp1 = new RouteValueDictionary(rvd);
+   rvdp1.Add(&quot;Page&quot;, 1);
+}
+@aa.ActionLink(&quot;&amp;lt;&amp;lt;&quot;, pageActionName, rvdp1, aopts)
+&amp;lt;/li&amp;gt;
+@{ int start = Math.Max(0, grid.PageIndex - maxPageLinks / 2); }
+@for (int ix = 0; ix + start &amp;lt; grid.PageCount; ix++) {
+    int pageno = start + ix + 1;
+    var css = hh.Raw(pageno - 1 == grid.PageIndex ? &quot; class=\&quot;highlighted\&quot;&quot; : &quot;&quot;);
+    RouteValueDictionary rvdp = new RouteValueDictionary(rvd);
+    rvdp.Add(&quot;Page&quot;, pageno);
+&amp;lt;li@css&amp;gt;
+@aa.ActionLink(pageno.ToString(), pageActionName, rvdp, aopts)
+&amp;lt;/li&amp;gt;
+    if (ix &amp;gt;= maxPageLinks) { break; }
+}
+&amp;lt;li&amp;gt;
+@{ RouteValueDictionary rvdpX = new RouteValueDictionary(rvd);
+   rvdpX.Add(&quot;Page&quot;, grid.PageCount);
+}
+@aa.ActionLink(&quot;&amp;gt;&amp;gt;&quot;, pageActionName, rvdpX, aopts)
+&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+}
+&amp;lt;/div&amp;gt;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;View:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;center&amp;gt;
+@LocalHelpers.DoPager(Html, &quot;Index&quot;, grid, 10, new { CurrentFilter = ViewBag.CurrentFilter })
+&amp;lt;/center&amp;gt;
+@grid.Table(
+    tableStyle: &quot;centerit&quot;,
+    columns: grid.Columns(
+        grid.Column(format: @&amp;lt;span&amp;gt;@Html.ActionLink(&quot;Edit&quot;, &quot;Edit&quot;, new { id = item.ID }) | @Html.ActionLink(&quot;Details&quot;, &quot;Details&quot;, new { id = item.ID }) | @Html.ActionLink(&quot;Delete&quot;, &quot;Delete&quot;, new { id = item.ID })&amp;lt;/span&amp;gt;),
+            grid.Column(&quot;PartNumber&quot;, &quot;Part Number&quot;),
+            grid.Column(&quot;Description&quot;, &quot;Description&quot;),
+            grid.Column(&quot;Regex&quot;, &quot;Regex&quot;)
+            )
+        )
+&amp;lt;center&amp;gt;
+@LocalHelpers.DoPager(Html, &quot;Index&quot;, grid, 10, new { CurrentFilter = ViewBag.CurrentFilter })
+&amp;lt;/center&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In my view, I am recycling the &quot;CurrentFilter&quot; to know what to filter on.  This connects to the Controller Action (not pictured).&lt;/p&gt;
+</summary>
+    </entry>    <entry>
+        <id>http://stackoverflow.com/questions/8981844/-/8987110#8987110</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Answer by escape-llc for Android null pointer exception on some phones, not others, same API level</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>    
+        <link rel="alternate" href="http://stackoverflow.com/questions/8981844/android-null-pointer-exception-on-some-phones-not-others-same-api-level/8987110#8987110" />
+        <published>2012-01-24T12:51:14Z</published>   
+        <updated>2012-01-24T12:51:14Z</updated>
+        <summary type="html">&lt;p&gt;Since you are purposely setting up a race condition, you must be prepared for your control, etc. to not exist yet.  Timing is everything, and that&#39;s why it &quot;works on my machine&quot;.&lt;/p&gt;
+
+&lt;p&gt;You &lt;strong&gt;should not start threads&lt;/strong&gt; in &lt;code&gt;onCreate&lt;/code&gt; since you are racing with the activiy start up sequence.  Using an &lt;code&gt;AsyncTask&lt;/code&gt; would be a better way to go; the system manages the threading for you!&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;onPause&lt;/code&gt; and &lt;code&gt;onResume&lt;/code&gt; methods are where you should be doing thread management.  These are the lifecycle events that occur when your activity is being obscured and un-obscured.  For non-UI processing you could use &lt;code&gt;onStart&lt;/code&gt; and &lt;code&gt;onStop&lt;/code&gt; so you can get more processing in, but not for UI-related stuff.&lt;/p&gt;
+
+&lt;p&gt;The &quot;check for &lt;code&gt;null&lt;/code&gt;&quot; advice still applies.&lt;/p&gt;
+</summary>
+    </entry>    <entry>
+        <id>http://stackoverflow.com/questions/5755355/-/8898809#8898809</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Answer by escape-llc for Android: Is there a way to get the size of a RemoteViews object?</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>    
+        <link rel="alternate" href="http://stackoverflow.com/questions/5755355/android-is-there-a-way-to-get-the-size-of-a-remoteviews-object/8898809#8898809" />
+        <published>2012-01-17T17:13:22Z</published>   
+        <updated>2012-01-17T17:13:22Z</updated>
+        <summary type="html">&lt;p&gt;The app widget meta data XML file determines the overall size of your widget; you must design your layouts with that size in mind.  If you are implementing multiple size widgets, you will need a separate meta data and layout for each one.&lt;/p&gt;
+
+&lt;p&gt;The app widget system uses an abstract &quot;grid units&quot; that you can turn into DP, see &lt;a href=&quot;http://developer.android.com/guide/practices/ui_guidelines/widget_design.html#anatomy_determining_size&quot; rel=&quot;nofollow&quot;&gt;this page&lt;/a&gt; for details.  If you set the size incorrectly, it will just &quot;truncate&quot; to the nearest grid size on your behalf (and your layout will look &quot;bad&quot;).&lt;/p&gt;
+
+&lt;p&gt;Android 3 and 4 give you more possibility for sizing.&lt;/p&gt;
+</summary>
+    </entry>    <entry>
+        <id>http://stackoverflow.com/questions/6648177/how-to-handle-the-paste-event-in-android-3-0honeycomb/8727030#8727030</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Answer by escape-llc for How to handle the &quot;paste&quot; event in Android 3.0(Honeycomb)?</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>    
+        <link rel="alternate" href="http://stackoverflow.com/questions/6648177/how-to-handle-the-paste-event-in-android-3-0honeycomb/8727030#8727030" />
+        <published>2012-01-04T12:41:01Z</published>   
+        <updated>2012-01-04T12:41:01Z</updated>
+        <summary type="html">&lt;p&gt;To cover all bases, this has to be API-specific, so you must commit to doing it two different ways anyway.&lt;/p&gt;
+
+&lt;p&gt;For new APIs, the new &lt;code&gt;android.content.ClipboardManager&lt;/code&gt; interface provides everything you need to transfer any MIME type you want.&lt;/p&gt;
+
+&lt;p&gt;For old APIs, you must be tricksy if you expect to play with the old &lt;code&gt;android.text.ClipboardManager&lt;/code&gt;.  Just base-64 encode the data of your Image (or whatever) and send that as text.  On the receiving side, just reverse the process.&lt;/p&gt;
+
+&lt;p&gt;You can even &quot;auto-detect&quot; by determining whether you have &lt;code&gt;android.text.ClipboardManager&lt;/code&gt; or &lt;code&gt;android.content.ClipboardManager&lt;/code&gt; and act accordingly!&lt;/p&gt;
+
+&lt;p&gt;Also, your handler method should be returning &lt;code&gt;super.onTextContextMenuItem(id)&lt;/code&gt; if you don&#39;t process anything.  Maybe an editing artifact?&lt;/p&gt;
+
+&lt;p&gt;As far as the Paste Widget, that&#39;s not present in old APIs, or may be present on certain OEM UIs, and you are probably left with implementing that yourself, or using a degraded method of interaction.  Once you put text on the clipboard, the Paste command shows up in the &quot;normal&quot; context menus.&lt;/p&gt;
+</summary>
+    </entry>    <entry>
+        <id>http://stackoverflow.com/questions/8711150/-/8711860#8711860</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Answer by escape-llc for How to reference text file for use with Scanner in Android</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>    
+        <link rel="alternate" href="http://stackoverflow.com/questions/8711150/how-to-reference-text-file-for-use-with-scanner-in-android/8711860#8711860" />
+        <published>2012-01-03T11:49:50Z</published>   
+        <updated>2012-01-03T11:49:50Z</updated>
+        <summary type="html">&lt;p&gt;Put your file in the &lt;strong&gt;raw&lt;/strong&gt; folder, and use &lt;code&gt;getResources().openRawResource(R.raw.the_file)&lt;/code&gt; to get an &lt;code&gt;InputStream&lt;/code&gt; to it.&lt;/p&gt;
+
+&lt;p&gt;It is &quot;seeing it as an int&quot; because everything in the &lt;strong&gt;res&lt;/strong&gt; folder is converted into a resource that is referenced by identifier (integers).  The &lt;code&gt;R&lt;/code&gt; class is auto-generated.&lt;/p&gt;
+</summary>
+    </entry>    <entry>
+        <id>http://stackoverflow.com/questions/8707414/-/8711812#8711812</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Answer by escape-llc for How to pass data from date picker and spinner to another activity</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>    
+        <link rel="alternate" href="http://stackoverflow.com/questions/8707414/how-to-pass-data-from-date-picker-and-spinner-to-another-activity/8711812#8711812" />
+        <published>2012-01-03T11:46:13Z</published>   
+        <updated>2012-01-03T11:46:13Z</updated>
+        <summary type="html">&lt;p&gt;Use the &lt;code&gt;long&lt;/code&gt; value that &lt;code&gt;Date&lt;/code&gt; gives you, and put it in the extras, along with everything else you are sending to the activity.&lt;/p&gt;
+</summary>
+    </entry>    <entry>
+        <id>http://stackoverflow.com/questions/8696178/-/8702636#8702636</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Answer by escape-llc for Which TTS is google translate using? Is there a way to use this TTS in android app too?</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>    
+        <link rel="alternate" href="http://stackoverflow.com/questions/8696178/which-tts-is-google-translate-using-is-there-a-way-to-use-this-tts-in-android-a/8702636#8702636" />
+        <published>2012-01-02T15:40:11Z</published>   
+        <updated>2012-01-02T15:40:11Z</updated>
+        <summary type="html">&lt;p&gt;Android uses TTS engine, but the engine is determined by the firmware provider.  The most-commonly seen one is Pico.&lt;/p&gt;
+
+&lt;p&gt;Here is the Android documentation on using TTS:
+&lt;a href=&quot;http://developer.android.com/reference/android/speech/tts/TextToSpeech.html&quot; rel=&quot;nofollow&quot;&gt;android.speech.tts.TextToSpeech&lt;/a&gt;&lt;/p&gt;
+</summary>
+    </entry>    <entry>
+        <id>http://stackoverflow.com/questions/8693359/-/8696929#8696929</id>
+        <re:rank scheme="http://stackoverflow.com">1</re:rank>
+        <title type="text">Answer by escape-llc for Guidance on using a SynchronousQueue</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>    
+        <link rel="alternate" href="http://stackoverflow.com/questions/8693359/guidance-on-using-a-synchronousqueue/8696929#8696929" />
+        <published>2012-01-02T02:18:02Z</published>   
+        <updated>2012-01-02T15:22:21Z</updated>
+        <summary type="html">&lt;p&gt;Use a &lt;code&gt;java.util.concurrent.SingleThreadExecutor&lt;/code&gt; and make a &lt;code&gt;Runnable&lt;/code&gt; out of each HTTP operation and result-handler.  You can submit subsequent tasks to it as you determine whether you need to continue progress.&lt;/p&gt;
+
+&lt;p&gt;For example, the HTTP &quot;task&quot; would run and submit the Result &quot;task&quot; on success, or the Error &quot;task&quot; on failure.  The Result task would in-turn submit another HTTP task when it was done processing.  Using &lt;code&gt;SingleThreadExecutor&lt;/code&gt; ensures only one task runs at-a-time.&lt;/p&gt;
+
+&lt;p&gt;You could use a &lt;code&gt;ThreadPoolExecutor&lt;/code&gt; if you can handle multiple operations in-flight at once.&lt;/p&gt;
+
+&lt;p&gt;Take all that, and wrap it in an &lt;code&gt;AsyncTask&lt;/code&gt; that manages the top-level &quot;kick-off&quot; and waits for everything to complete.  It would probably be useful to have a &lt;code&gt;ConditionVariable&lt;/code&gt; or something to synchronize the &quot;end&quot; signal (using a Done &quot;task&quot;) so you can safely tear down the &lt;code&gt;Executor&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;A &lt;code&gt;SynchronousQueue&lt;/code&gt; doesn&#39;t do anything helpful for you here, because it leaves you to do all the tread management.  If you use an &lt;code&gt;Executor&lt;/code&gt; that is all handled and all you deal with is &lt;code&gt;Runnable&lt;/code&gt;s and &lt;code&gt;Future&lt;/code&gt;s.  That&#39;s probably why you are not finding any tutorials.  Anyway, the &lt;code&gt;Executor&lt;/code&gt;s all use one of those queue implementations underneath!&lt;/p&gt;
+
+&lt;p&gt;As requested, here is some skeleton Java code.  Unsupported untested as-is.  This should get you started.  You can use a different synchronization object if you don&#39;t like &lt;code&gt;ConditionVariable&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;This is a generic technique, not specific to Android, feel free to use it in other contexts.&lt;/p&gt;
+
+&lt;p&gt;This functions as a State Machine, with &lt;code&gt;HttpTask&lt;/code&gt; et al forming the states, and the transitions are hard-coded by submitting the Next State to the &lt;code&gt;ExecutorService&lt;/code&gt;.  There&#39;s even a &quot;Big Bang at the end, so everyone knows when to clap&quot; in the form of the &lt;code&gt;ConditionVariable&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Some may consider &lt;code&gt;DoneTask&lt;/code&gt; and &lt;code&gt;FailedTask&lt;/code&gt; overkill, but it keeps the Next State mechanism consistent, and lets &lt;code&gt;Future&amp;lt;? extends ResultTask&amp;gt;&lt;/code&gt; function as a somewhat type-safe container for the results, and certainly keeps you from mis-assigning to it.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;abstract class BasicTask {
+    final ExecutorService es;
+    final ConditionVariable cv;
+    public BasicTask(ExecutorService es, ConditionVariable cv) {
+        this.es = es;
+        this.cv = cv;
+    }
+}
+abstract class HttpTask extends BasicTask {
+// source omitted.
+// you should make a class to prepare e.g. Apache HTTP resources for specific tasks (see below).
+}
+abstract class ResultTask implements Runnable {
+    final ConditionVariable cv;
+    public ResultTask(ConditionVariable cv) {
+        this.cv = cv;
+    }
+    public void run() {
+        cv.open();
+    }
+}
+final class FailedTask extends ResultTask {
+    final Exception ex;
+    public FailedTask(ConditionVariable cv, Exception ex) {
+        super(cv);
+        this.ex = ex;
+    }
+    public Exception getError() { return ex; }
+}
+final class DoneTask&amp;lt;T&amp;gt; extends ResultTask {
+    final T results;
+    public DoneTask(ConditionVariable cv, T results) {
+        super(cv);
+        this.results = results;
+    }
+    public T getResults() { return results; }
+}
+
+class HttpSequence extends AsyncTask&amp;lt;Void,Void,Object&amp;gt; {
+    // this will capture the ending task
+    Future&amp;lt;? extends ResultTask&amp;gt; result;
+    // this is an inner class, in order to set Result. Refactor so these are small.
+    // if you don&#39;t like inner classes, you still need to arrange for capturing the &quot;answer&quot;
+    final class SomeHttpTask extends HttpTask implements Runnable {
+        public void run() {
+            try {
+                final SomeType thisStep = doTheStuff(lastStep);
+                if(thisStep.isDone()) {
+                    // we are done here
+                    result = es.submit(new DoneTask&amp;lt;SomeType&amp;gt;(cv, thisStep));
+                }
+                else if(thisStep.isFailed()) {
+                    // not done: we can&#39;t proceed because of something in the response
+                    throw thisStep.getError();
+                }
+                else {
+                    // not done, everything is ok for next step
+                    es.submit(new NextHttpTask(es, cv, thisStep));
+                }
+            }
+            catch(Exception ex) {
+                result = es.submit(new FailedTask(cv, ex));
+            }
+        }
+    }
+    final class TheFirstTask extends HttpTask implements Runnable {
+    // source omitted.  just emphasizing you need one of these for each &quot;step&quot;.
+    // if you don&#39;t need to set Result, this could be a static inner class.
+    }
+
+@Override
+public Object doInBackground(Void...) {
+    final ExecutorService es = Executors.newSingleThreadExecutor();
+    final ConditionVariable cv = new ConditionVariable(false);
+    try {
+        es.submit(new TheFirstTask(es, cv));
+        // you can choose not to timeout at this level and simply block until something happens...
+        final boolean done = cv.block(timeout);
+        if(!done) {
+            // you will need to account for unfinished threads, see finally section!
+            return new IllegalStateException(&quot;timed out waiting on completion!&quot;);
+        }
+        if(result != null) {
+            final ResultTask done = result.get();
+            if(done instanceof DoneTask) {
+                // pass SomeType to onPostExecute()
+                return ((DoneTask&amp;lt;SomeTYpe&amp;gt;)done).getResults();
+            }
+            else if(done instanceof FailedTask) {
+                // pass Exception to onPostExecute()
+                return ((FailedTask)done).getError();
+            }
+            else {
+                // something bad happened, pass it to onPostExecute()
+                return new IllegalStateException(&quot;something unexpected signalled CV!&quot;);
+            }
+        }
+        else {
+            // something bad happened, pass it to onPostExecute()
+            return new IllegalStateException(&quot;something signalled CV without setting result!&quot;);
+        }
+    }
+    catch(Exception ex) {
+        // something outside workflow failed, pass it to onPostExecute()
+        return ex;
+    }
+    finally {
+        // naive shutdown (doesn&#39;t interrupt running tasks): read JavaDoc on ExecutorService for details
+        es.shutdown();
+    }
+}
+@Override
+public void onPostExecute(Object result) {
+    if(result instanceof SomeType) {
+        // success UI
+    }
+    else if(result instanceof Exception) {
+        // error UI
+    }
+}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</summary>
+    </entry>    <entry>
+        <id>http://stackoverflow.com/questions/6609659/-/8682295#8682295</id>
+        <re:rank scheme="http://stackoverflow.com">1</re:rank>
+        <title type="text">Answer by escape-llc for How to differentiate between a missed call and an refuse to answer?</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>    
+        <link rel="alternate" href="http://stackoverflow.com/questions/6609659/how-to-differentiate-between-a-missed-call-and-an-refuse-to-answer/8682295#8682295" />
+        <published>2011-12-30T17:46:10Z</published>   
+        <updated>2011-12-30T17:53:05Z</updated>
+        <summary type="html">&lt;p&gt;You are lacking some details; please advise.&lt;/p&gt;
+
+&lt;p&gt;Are you referring to the Call Log provider &lt;code&gt;android.provider.CallLog.Calls&lt;/code&gt;?  There are only 3 call types defined.  Can you provide the data of all the fields for such a Call Log entry?&lt;/p&gt;
+
+&lt;p&gt;The only other way (we know of) to tell is to watch the Phone State (via &lt;code&gt;IntentReceiver&lt;/code&gt;) and track the transitions yourself.  Most likely, a transition of Ringing to Idle would indicate the call was refused instead of answered, in which case it would transition Ringing to Offhook.&lt;/p&gt;
+</summary>
+    </entry>    <entry>
+        <id>http://stackoverflow.com/questions/2712018/-/8576496#8576496</id>
+        <re:rank scheme="http://stackoverflow.com">1</re:rank>
+        <title type="text">Answer by escape-llc for Android listing design problem with cursors</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>    
+        <link rel="alternate" href="http://stackoverflow.com/questions/2712018/android-listing-design-problem-with-cursors/8576496#8576496" />
+        <published>2011-12-20T13:52:04Z</published>   
+        <updated>2011-12-22T13:39:29Z</updated>
+        <summary type="html">&lt;p&gt;Using cursors and adapters does not work out well for the most part. Our experience as led down a different technique.&lt;/p&gt;
+
+&lt;p&gt;Your best bet is to &quot;pump&quot; the cursors in an &lt;code&gt;AsyncTask&lt;/code&gt; into an &lt;code&gt;ArrayList&amp;lt;data-holding object&amp;gt;&lt;/code&gt;, then you can do processing and then sort that list as necessary with &lt;code&gt;Collections.sort()&lt;/code&gt; and the &lt;code&gt;Comparator&lt;/code&gt; of your own construction, and then use &lt;code&gt;ArrayAdapter&lt;/code&gt; to present the resulting list.  This releases cursors ASAP and stays off the UI thread while doing it and you can sort however you feel like.&lt;/p&gt;
+
+&lt;p&gt;Remember always process in the background and avoid ANR!&lt;/p&gt;
+
+&lt;p&gt;We use this in all of our apps (14 on The Market) and it works like Butter.&lt;/p&gt;
+</summary>
+    </entry>    <entry>
+        <id>http://stackoverflow.com/questions/7515309/-/7739005#7739005</id>
+        <re:rank scheme="http://stackoverflow.com">4</re:rank>
+        <title type="text">Answer by escape-llc for Widget for turning on/off camera flashlight in android</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>    
+        <link rel="alternate" href="http://stackoverflow.com/questions/7515309/widget-for-turning-on-off-camera-flashlight-in-android/7739005#7739005" />
+        <published>2011-10-12T11:00:02Z</published>   
+        <updated>2011-10-25T16:48:35Z</updated>
+        <summary type="html">&lt;p&gt;The &lt;strong&gt;best&lt;/strong&gt; technique for handling clicks from a &lt;code&gt;RemoteViews&lt;/code&gt; is to create a &lt;code&gt;PendingIntent&lt;/code&gt; that calls a service, and perform the &quot;stuff&quot; you want in the service, including any additional &lt;code&gt;RemoteViews&lt;/code&gt; updates for your widget.  You can send along the relevant data in the intent extras.  The service calls &lt;code&gt;stopSelf()&lt;/code&gt; at the end, so it shuts off.&lt;/p&gt;
+
+&lt;p&gt;You cannot maintain any state in an &lt;code&gt;BroadcastReceiver&lt;/code&gt;; the system runs those on any available thread, and doesn&#39;t maintain any reference to your instance after calling &lt;code&gt;onReceive()&lt;/code&gt;.  Your &lt;code&gt;mCamera&lt;/code&gt; variable is not guaranteed to be maintained between invocations of your &lt;code&gt;BroadcastReceiver&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you really need to maintain state, you must do it in the service, and don&#39;t use &lt;code&gt;stopSelf()&lt;/code&gt; (until an appropriate time).&lt;/p&gt;
+
+&lt;p&gt;You do not need a UI thread to use the &lt;code&gt;Camera&lt;/code&gt; class, unless you are doing image preview, which requires a &lt;code&gt;SurfaceHolder&lt;/code&gt; (and implies a UI).  You must, however, have an event loop active, or &lt;code&gt;Camera&lt;/code&gt; will not post callbacks to you, which is a problem since &lt;code&gt;Camera&lt;/code&gt; is primarily asynchronous.  You can do this within a service (see &lt;code&gt;HandlerThread&lt;/code&gt;) and keep your service running until it&#39;s time to &lt;code&gt;release()&lt;/code&gt; everything.  Whichever thread calls &lt;code&gt;Camera.open()&lt;/code&gt; will receive callbacks.&lt;/p&gt;
+
+&lt;p&gt;Did everyone actually read the section on App Widgets?
+&lt;a href=&quot;http://developer.android.com/guide/topics/appwidgets/index.html&quot; rel=&quot;nofollow&quot;&gt;http://developer.android.com/guide/topics/appwidgets/index.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Using the AppWidgetProvider Class&lt;/strong&gt; section says pretty much what I am saying here.&lt;/p&gt;
+</summary>
+    </entry>    <entry>
+        <id>http://stackoverflow.com/questions/7064803/-/7874606#7874606</id>
+        <re:rank scheme="http://stackoverflow.com">2</re:rank>
+        <title type="text">Answer by escape-llc for rails Devise http authenticating mobile</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>    
+        <link rel="alternate" href="http://stackoverflow.com/questions/7064803/rails-devise-http-authenticating-mobile/7874606#7874606" />
+        <published>2011-10-24T11:02:07Z</published>   
+        <updated>2011-10-24T11:02:07Z</updated>
+        <summary type="html">&lt;p&gt;If server is responding 200, it really sounds like server side configuration, so you should double-check your URLs are actually secured, using a desktop web browser and a tool like Fiddler so you can see everything.  Pay particular attention to the Authentication headers, and the Status codes; at the least you should see a 401 from the server to start things off.&lt;/p&gt;
+
+&lt;p&gt;You can also turn on diagnostics for Apache HTTP on your device, and it will also dump headers and content to LOGCAT, so you can make sure everything is proceeding.&lt;/p&gt;
+
+&lt;p&gt;Check the WWW-Autnenticate header&#39;s contents, it will specify which schemes are accepted.  The client side will re-request the URL, but it will put the Authorization header into its request.&lt;/p&gt;
+
+&lt;p&gt;In short, make sure your server side works outside of your application, in an environment that&#39;s easier to troubleshoot.&lt;/p&gt;
+
+&lt;p&gt;Client side, it looks like you are only activating BASIC authentication (everyone stop using it!), and your endpoint may only want DIGEST or NTLM or KERBEROS or &lt;em&gt;any other authentication scheme than BASIC&lt;/em&gt;.  Since it looks like you didn&#39;t set up for SSL, certainly use at least DIGEST or you have clear text issues!&lt;/p&gt;
+
+&lt;p&gt;Using form variables (for authentication) only works at the application level, and not the HTTP protocol level, which uses HTTP Headers (WWW-Autnenticate, Authorization) and Status codes (401, 403) for the authentication process. And again, if you aren&#39;t configuring your server (and client) for SSL-only, there will be clear text problems.&lt;/p&gt;
+</summary>
+    </entry>    <entry>
+        <id>http://stackoverflow.com/questions/4583219/-/7851638#7851638</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Answer by escape-llc for Problem running sample Voice Recognition application on Android emulator</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>    
+        <link rel="alternate" href="http://stackoverflow.com/questions/4583219/problem-running-sample-voice-recognition-application-on-android-emulator/7851638#7851638" />
+        <published>2011-10-21T15:24:56Z</published>   
+        <updated>2011-10-21T15:24:56Z</updated>
+        <summary type="html">&lt;p&gt;Speech Recognition does not work in the Emulator.&lt;/p&gt;
+
+&lt;p&gt;You must have a device, and one that has a Speech Recognition provider installed.&lt;/p&gt;
+</summary>
+    </entry>    <entry>
+        <id>http://stackoverflow.com/questions/4551747/-/7851589#7851589</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Answer by escape-llc for How to start application as par fix time in android mobile phone</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>    
+        <link rel="alternate" href="http://stackoverflow.com/questions/4551747/how-to-start-application-as-par-fix-time-in-android-mobile-phone/7851589#7851589" />
+        <published>2011-10-21T15:21:27Z</published>   
+        <updated>2011-10-21T15:21:27Z</updated>
+        <summary type="html">&lt;p&gt;The &lt;code&gt;AlarmManager&lt;/code&gt; class has everything you need to schedule events, and set up &lt;code&gt;Intent&lt;/code&gt;s to launch activities, start services, and send broadcasts.&lt;/p&gt;
+
+&lt;p&gt;It is not persistent, so you must configure your alarms at system start up, either from a service or &lt;code&gt;BroadcastReceiver&lt;/code&gt;.&lt;/p&gt;
+</summary>
+    </entry>    <entry>
+        <id>http://stackoverflow.com/questions/3252585/-/7851151#7851151</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Answer by escape-llc for Customize the Android contact picker</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>    
+        <link rel="alternate" href="http://stackoverflow.com/questions/3252585/customize-the-android-contact-picker/7851151#7851151" />
+        <published>2011-10-21T14:49:03Z</published>   
+        <updated>2011-10-21T14:49:03Z</updated>
+        <summary type="html">&lt;p&gt;If you want functionality beyond what the built-in activities do, you must build your own version, and specify &lt;code&gt;IntentFilter&lt;/code&gt;s that match those of the activity you wish to &quot;mimic&quot;.&lt;/p&gt;
+
+&lt;p&gt;Be advised, this does not simply &quot;replace&quot; any built-in activity&#39;s functionality.  The system will automatically present a Chooser to the user, who &lt;strong&gt;may or may not&lt;/strong&gt; pick your activity to complete the action.&lt;/p&gt;
+
+&lt;p&gt;Adding your own &quot;extras&quot; to a &quot;system-replacement&quot; activity has dubious value; everything else in the system will not know about your extras, and not send them!&lt;/p&gt;
+</summary>
+    </entry>    <entry>
+        <id>http://stackoverflow.com/questions/7009699/sqlitediskioexception-error-code-10-disk-i-o-error/7850999#7850999</id>
+        <re:rank scheme="http://stackoverflow.com">3</re:rank>
+        <title type="text">Answer by escape-llc for SQLiteDiskIOException: error code 10: disk I/O error</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>    
+        <link rel="alternate" href="http://stackoverflow.com/questions/7009699/sqlitediskioexception-error-code-10-disk-i-o-error/7850999#7850999" />
+        <published>2011-10-21T14:36:04Z</published>   
+        <updated>2011-10-21T14:36:04Z</updated>
+        <summary type="html">&lt;p&gt;Since you are using External Storage, your application must be aware of the External Storage state, which you can get via `Environment.getExternalStorageState()&#39;.&lt;/p&gt;
+
+&lt;p&gt;You must only access External Storage when the state is &lt;code&gt;MOUNTED&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you are trying to open a file (or SQLite DB; it&#39;s just a file!) during device startup, you will &lt;strong&gt;definately&lt;/strong&gt; have problems, because External Storage is &lt;strong&gt;not mounted&lt;/strong&gt; until well into device startup (after Home Screen is displayed).&lt;/p&gt;
+
+&lt;p&gt;The way out of this is to register an &lt;code&gt;IntentFilter&lt;/code&gt; to be notified of all changes in External Storage state, and behave accordingly.&lt;/p&gt;
+
+&lt;p&gt;It&#39;s always a good idea to read the documentation!  See the Android documentation for details: &lt;a href=&quot;http://developer.android.com/reference/android/os/Environment.html&quot; rel=&quot;nofollow&quot;&gt;http://developer.android.com/reference/android/os/Environment.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Using External Storage for this purpose is dubious, because you cannot control when it becomes unavailable!  For example, the user plugs their device into USB on their computer, and selects the &quot;Enable USB Mass Storage&quot; option, so they can access their device&#39;s External Storage from their computer.  Bad news!  Your app will be disconnected from External Storage, and most-likely without the opportunity to do any clean-up IO!&lt;/p&gt;
+
+&lt;p&gt;With this state of affairs, you are now left with What To Do with all the data you would be putting into your database, if only it were available.&lt;/p&gt;
+</summary>
+    </entry>    <entry>
+        <id>http://stackoverflow.com/questions/3436682/-/7850369#7850369</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Answer by escape-llc for Android: How to receive callback from Content Provider when Data Changes?</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>    
+        <link rel="alternate" href="http://stackoverflow.com/questions/3436682/android-how-to-receive-callback-from-content-provider-when-data-changes/7850369#7850369" />
+        <published>2011-10-21T13:51:39Z</published>   
+        <updated>2011-10-21T13:51:39Z</updated>
+        <summary type="html">&lt;p&gt;Use the &lt;code&gt;ContentResolver.registerContentObserver()&lt;/code&gt; method from each activity, and supply appropriate URI(s).&lt;/p&gt;
+
+&lt;p&gt;You can pass the base Content URI for the provider, and pass &lt;code&gt;true&lt;/code&gt; for &lt;code&gt;notifyForDescendents&lt;/code&gt; parameter, and your callback will get hit every time there&#39;s a change.&lt;/p&gt;
+
+&lt;p&gt;The Content Provider you are accessing must support this (most do).  If you are writing your own, you must call &lt;code&gt;ContentResolver.notifyChange()&lt;/code&gt; with the URI of modified row(s).&lt;/p&gt;
+</summary>
+    </entry>    <entry>
+        <id>http://stackoverflow.com/questions/3349464/-/7850293#7850293</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Answer by escape-llc for Rotate image in RemoteViews?</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>    
+        <link rel="alternate" href="http://stackoverflow.com/questions/3349464/rotate-image-in-remoteviews/7850293#7850293" />
+        <published>2011-10-21T13:45:40Z</published>   
+        <updated>2011-10-21T13:45:40Z</updated>
+        <summary type="html">&lt;p&gt;There is no direct way to do this for an &lt;code&gt;ImageView&lt;/code&gt; within a &lt;code&gt;RemoteViews&lt;/code&gt;.  &lt;code&gt;RemoteViews&lt;/code&gt; in general is very limiting.&lt;/p&gt;
+
+&lt;p&gt;If your images can be a static resource, you can make a &lt;code&gt;LevelListDrawable&lt;/code&gt; in resource, and set each rotation as a level, then use &lt;code&gt;RemoteViews&lt;/code&gt; to invoke &lt;code&gt;ImageView.setImageLevel()&lt;/code&gt; with the appropriate index for 0/90/180/270 whatever.&lt;/p&gt;
+
+&lt;p&gt;If you are in a situation where you are drawing the image, you must re-draw it and re-send it to the &lt;code&gt;RemoteViews&lt;/code&gt;.&lt;/p&gt;
+</summary>
+    </entry>    <entry>
+        <id>http://stackoverflow.com/questions/3320298/-/7850236#7850236</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Answer by escape-llc for How to move/drag an entire android view that contains a bunch of shapes inside?</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>    
+        <link rel="alternate" href="http://stackoverflow.com/questions/3320298/how-to-move-drag-an-entire-android-view-that-contains-a-bunch-of-shapes-inside/7850236#7850236" />
+        <published>2011-10-21T13:40:27Z</published>   
+        <updated>2011-10-21T13:40:27Z</updated>
+        <summary type="html">&lt;p&gt;Use the &lt;code&gt;Canvas.translate()&lt;/code&gt; method to offset everything being drawn within your &lt;code&gt;onDraw()&lt;/code&gt; handler.&lt;/p&gt;
+
+&lt;p&gt;Track the translation offsets based on cursor movement or whatever, and use those offsets in your call to &lt;code&gt;translate()&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can do a similar effect with &lt;code&gt;Canvas.scale()&lt;/code&gt; to handle pinch-zoom.&lt;/p&gt;
+
+&lt;p&gt;Don&#39;t forget to &lt;code&gt;save()&lt;/code&gt; and &lt;code&gt;restore()&lt;/code&gt; to put the &lt;code&gt;Canvas&lt;/code&gt; back to its original state!&lt;/p&gt;
+
+&lt;p&gt;If you just want to move a view around within another view, simply adjust the top/left properties and call &lt;code&gt;Invalidate()&lt;/code&gt;.  If it is a complex layout, do everything within a &lt;code&gt;RelativeLayout&lt;/code&gt; and use the &lt;code&gt;LayoutParams&lt;/code&gt; to position everything.&lt;/p&gt;
+</summary>
+    </entry>    <entry>
+        <id>http://stackoverflow.com/questions/3203721/account-preferences-in-android-2-2-per-account-not-account-type/7850154#7850154</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Answer by escape-llc for Account preferences in Android 2.2 per account, not account type</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>    
+        <link rel="alternate" href="http://stackoverflow.com/questions/3203721/account-preferences-in-android-2-2-per-account-not-account-type/7850154#7850154" />
+        <published>2011-10-21T13:33:50Z</published>   
+        <updated>2011-10-21T13:33:50Z</updated>
+        <summary type="html">&lt;p&gt;Do not use &lt;code&gt;Preferences&lt;/code&gt; for this purpose!&lt;/p&gt;
+
+&lt;p&gt;You should be using &lt;code&gt;AccountManager.setUserData()&lt;/code&gt; and &lt;code&gt;AccountManager.getUserData()&lt;/code&gt; to store your stuff; this makes your settings secure (&lt;code&gt;AccountManager&lt;/code&gt; is storing it) and you are passing the &lt;code&gt;Account&lt;/code&gt;, so everything is matched up correctly, and all the bookkeeping is done when the user deletes accounts.&lt;/p&gt;
+</summary>
+    </entry>    <entry>
+        <id>http://stackoverflow.com/questions/2846595/-/7850078#7850078</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Answer by escape-llc for Android: How to invalidate multiple parts of screen</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>    
+        <link rel="alternate" href="http://stackoverflow.com/questions/2846595/android-how-to-invalidate-multiple-parts-of-screen/7850078#7850078" />
+        <published>2011-10-21T13:27:38Z</published>   
+        <updated>2011-10-21T13:27:38Z</updated>
+        <summary type="html">&lt;p&gt;Invalidate one rect, then in the &lt;code&gt;onDraw()&lt;/code&gt; check your list and and call &lt;code&gt;Invalidate()&lt;/code&gt; with the next one, until the list is empty.&lt;/p&gt;
+
+&lt;p&gt;A better solution is to use &lt;code&gt;Drawable&lt;/code&gt;s and call &lt;code&gt;InvalidateDrawable()&lt;/code&gt; on those.&lt;/p&gt;
+</summary>
+    </entry>    <entry>
+        <id>http://stackoverflow.com/questions/2667324/-/7849955#7849955</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Answer by escape-llc for Question about passing data using intents</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>    
+        <link rel="alternate" href="http://stackoverflow.com/questions/2667324/question-about-passing-data-using-intents/7849955#7849955" />
+        <published>2011-10-21T13:18:14Z</published>   
+        <updated>2011-10-21T13:18:14Z</updated>
+        <summary type="html">&lt;p&gt;When using an &lt;code&gt;Intent&lt;/code&gt; to start another activity, the receiving activity must use the &lt;code&gt;getIntent()&lt;/code&gt; method to access it; there is no reason to use &lt;code&gt;savedInstanceState&lt;/code&gt; for this purpose; that&#39;s only useful when &quot;restoring&quot; an activity&#39;s current state because it was interrupted.&lt;/p&gt;
+
+&lt;p&gt;You can use the &quot;extras&quot; of the &lt;code&gt;Intent&lt;/code&gt; in the sending activity to transmit the data you want to send.  The receiving activity uses the same extra names to get to the data.  Also, never assume all the extras were sent (i.e. check for &lt;code&gt;null&lt;/code&gt;s!)&lt;/p&gt;
+
+&lt;p&gt;You should make all the decisions about what the activity&#39;s action is, in the &lt;code&gt;onCreate&lt;/code&gt; method of the receiving activity.&lt;/p&gt;
+
+&lt;p&gt;If an activity can be &quot;started&quot; multiple ways, you must use &lt;code&gt;Intent.setAction()&lt;/code&gt; in the &lt;code&gt;Intent&lt;/code&gt; and check for all valid actions, in the receiving activity.&lt;/p&gt;
+
+&lt;p&gt;Also, do not depend on the &lt;code&gt;id&lt;/code&gt; parameter in &lt;code&gt;onListItemClick&lt;/code&gt; it is often incorrect.  The &lt;code&gt;position&lt;/code&gt; parameter is always correct, and you can use it to get to the actual item from the adapter, and get the ID from the item. Usually, one sets the &lt;code&gt;Intent&lt;/code&gt;&#39;s data URI instead of sending the ID as an extra; this works better with the system&#39;s Activity resolution (see below).&lt;/p&gt;
+
+&lt;p&gt;In fact, &quot;data manipulation&quot; activities should support the standard actions for data editing, &lt;code&gt;INSERT&lt;/code&gt;, &lt;code&gt;EDIT&lt;/code&gt; and the like, and have intent filters that specify those actions and your data&#39;s MIME type.  I&#39;m pretty sure those are part of the example application.&lt;/p&gt;
+
+&lt;p&gt;In the receiving activity, you must call &lt;code&gt;Activity.setResult()&lt;/code&gt;, and you typically send back return data (e.g. new content URL) via another &lt;code&gt;Intent&lt;/code&gt;, which you then access from the sending activity in &lt;code&gt;onActivityResult()&lt;/code&gt;.  Also, you must call &lt;code&gt;setResult()&lt;/code&gt; at an appropriate time; e.g. calling it during lifecycle exit (&lt;code&gt;onPause()&lt;/code&gt; or &lt;code&gt;onStop()&lt;/code&gt;) is too late, and will not transmit your results back.&lt;/p&gt;
+</summary>
+    </entry>    <entry>
+        <id>http://stackoverflow.com/questions/7824387/-/7834958#7834958</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Answer by escape-llc for why does my mobile carrier re-encode a file when I download it?</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>    
+        <link rel="alternate" href="http://stackoverflow.com/questions/7824387/why-does-my-mobile-carrier-re-encode-a-file-when-i-download-it/7834958#7834958" />
+        <published>2011-10-20T11:02:50Z</published>   
+        <updated>2011-10-20T11:02:50Z</updated>
+        <summary type="html">&lt;p&gt;You didn&#39;t say, but let&#39;s assume this is an HTTP connection.&lt;/p&gt;
+
+&lt;p&gt;In short, they are doing it to save bandwidth.  3G isn&#39;t Free!&lt;/p&gt;
+
+&lt;p&gt;If you are directly requesting resources (GET), then you are at the mercy of all intermediaries that process the HTTP response (i.e. proxies, gateways), and you can be sure they can see the MIME type in the headers, and behave accordingly.&lt;/p&gt;
+
+&lt;p&gt;You can try using the HTTP &lt;code&gt;Accept&lt;/code&gt; header in your request, and use the &lt;code&gt;q&lt;/code&gt; parameter to &quot;hint&quot; that you want maximum fidelity.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html&quot; rel=&quot;nofollow&quot;&gt;http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Accept: image/png;q=1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;q&lt;/code&gt; ranges from 0 to 1.  You may be able to get away with a lower value (than 1).  Please read the linked section for more details.&lt;/p&gt;
+
+&lt;p&gt;You can also inspect the incoming &lt;code&gt;Content-Type&lt;/code&gt; header; it may reveal if there&#39;s a &quot;declared&quot; change in quality or even MIME type.  It may be telling you what it did!&lt;/p&gt;
+
+&lt;p&gt;It would be excellent if the &quot;standard&quot; does its job for you!&lt;/p&gt;
+
+&lt;p&gt;If that doesn&#39;t work, and you are in control of the server end already, use an alternate text-based encoding for it, like Base64, that intermediaries cannot &quot;compress&quot; for you.  SOAP has been doing that since ever!&lt;/p&gt;
+
+&lt;p&gt;If you really really need to bypass image compression, and &lt;code&gt;Accept&lt;/code&gt; doesn&#39;t work, you must proxy those kinds of requests yourself, and re-encode them with a non-image MIME type in the response.&lt;/p&gt;
+
+&lt;p&gt;If you are going the self-proxy route, you could probably get away with calling your images &lt;code&gt;application/octect-stream&lt;/code&gt; which is the MIME type for &quot;uninterpreted bytes&quot;.  This would allow for more-or-less pass-through of the data, and hopefully keep intermediaries &quot;helping hands&quot; off your stuff!&lt;/p&gt;
+</summary>
+    </entry>    <entry>
+        <id>http://stackoverflow.com/questions/3387556/-/7820301#7820301</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Answer by escape-llc for Incoming call dynamically override default ringtone</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>    
+        <link rel="alternate" href="http://stackoverflow.com/questions/3387556/incoming-call-dynamically-override-default-ringtone/7820301#7820301" />
+        <published>2011-10-19T11:01:28Z</published>   
+        <updated>2011-10-19T11:01:28Z</updated>
+        <summary type="html">&lt;p&gt;Starting with API 5 (Android 2.x), the Contacts database has a CUSTOM_RINGTONE field, see this page:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://developer.android.com/reference/android/provider/ContactsContract.ContactOptionsColumns.html#CUSTOM_RINGTONE&quot; rel=&quot;nofollow&quot;&gt;http://developer.android.com/reference/android/provider/ContactsContract.ContactOptionsColumns.html#CUSTOM_RINGTONE&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The value for this field must be a &lt;code&gt;content://&lt;/code&gt; URI to a media file.  You can obtain one from the &lt;code&gt;MedciaStore&lt;/code&gt; content provider:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://developer.android.com/reference/android/provider/MediaStore.MediaColumns.html&quot; rel=&quot;nofollow&quot;&gt;http://developer.android.com/reference/android/provider/MediaStore.MediaColumns.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;That may be enough to get you started.  This is all standard content provider stuff; lots of existing material for both tasks.&lt;/p&gt;
+</summary>
+    </entry>    <entry>
+        <id>http://stackoverflow.com/questions/7805899/setcolorfilterrelativefactor-porterduff-mode-multiply-with-relative-factor-0/7806562#7806562</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Answer by escape-llc for setColorFilter(relativeFactor, PorterDuff.Mode.MULTIPLY); with relative Factor 0-100%</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>    
+        <link rel="alternate" href="http://stackoverflow.com/questions/7805899/setcolorfilterrelativefactor-porterduff-mode-multiply-with-relative-factor-0/7806562#7806562" />
+        <published>2011-10-18T11:34:05Z</published>   
+        <updated>2011-10-18T11:42:50Z</updated>
+        <summary type="html">&lt;p&gt;Your original code is doing mixed-mode incorrectly, and you are getting overflow; you need to cast and use some &lt;code&gt;long&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;float x2 = x1 * (float)0x0FFFFFFFFL;
+long relativeFactor = (long) x2 &amp;amp; 0X0FFFFFFFFL;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here&#39;s a solution that doesn&#39;t resort to floating-point:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public static void main(String[] args) {
+    // TODO Auto-generated method stub
+    final long onepct = 0x0FFFFFFFFL/100L;
+    final long error = 0x0FFFFFFFFL-(100*onepct);
+    System.out.println(&quot;onepct=&quot; + Long.toString(onepct,16) + &quot;,error=&quot; + Long.toString(error,16));
+    for (int x = 0; x &amp;lt;= 100; x++) {
+        final long x2 = 0x0FFFFFFFFL - onepct*x;
+        final long relativeFactor = (long) x2 &amp;amp; 0xFFFFFFFF;
+        System.out.println(&quot;x=&quot; + x + &quot;, x2=&quot; + x2 + &quot;, rf=&quot; + Long.toString(relativeFactor, 16));
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It is off by 95 at the low end; you can test for that if you need zero.  Feel free to actually dump the values....&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;onepct=28f5c28,error=5f
+x=0, x2=4294967295, rf=ffffffff
+x=1, x2=4252017623, rf=fd70a3d7
+x=2, x2=4209067951, rf=fae147af
+x=3, x2=4166118279, rf=f851eb87
+x=4, x2=4123168607, rf=f5c28f5f
+x=5, x2=4080218935, rf=f3333337
+x=6, x2=4037269263, rf=f0a3d70f
+x=7, x2=3994319591, rf=ee147ae7
+x=8, x2=3951369919, rf=eb851ebf
+x=9, x2=3908420247, rf=e8f5c297
+x=10, x2=3865470575, rf=e666666f
+x=11, x2=3822520903, rf=e3d70a47
+x=12, x2=3779571231, rf=e147ae1f
+x=13, x2=3736621559, rf=deb851f7
+x=14, x2=3693671887, rf=dc28f5cf
+x=15, x2=3650722215, rf=d99999a7
+x=16, x2=3607772543, rf=d70a3d7f
+x=17, x2=3564822871, rf=d47ae157
+x=18, x2=3521873199, rf=d1eb852f
+x=19, x2=3478923527, rf=cf5c2907
+x=20, x2=3435973855, rf=ccccccdf
+x=21, x2=3393024183, rf=ca3d70b7
+x=22, x2=3350074511, rf=c7ae148f
+x=23, x2=3307124839, rf=c51eb867
+x=24, x2=3264175167, rf=c28f5c3f
+x=25, x2=3221225495, rf=c0000017
+x=26, x2=3178275823, rf=bd70a3ef
+x=27, x2=3135326151, rf=bae147c7
+x=28, x2=3092376479, rf=b851eb9f
+x=29, x2=3049426807, rf=b5c28f77
+x=30, x2=3006477135, rf=b333334f
+x=31, x2=2963527463, rf=b0a3d727
+x=32, x2=2920577791, rf=ae147aff
+x=33, x2=2877628119, rf=ab851ed7
+x=34, x2=2834678447, rf=a8f5c2af
+x=35, x2=2791728775, rf=a6666687
+x=36, x2=2748779103, rf=a3d70a5f
+x=37, x2=2705829431, rf=a147ae37
+x=38, x2=2662879759, rf=9eb8520f
+x=39, x2=2619930087, rf=9c28f5e7
+x=40, x2=2576980415, rf=999999bf
+x=41, x2=2534030743, rf=970a3d97
+x=42, x2=2491081071, rf=947ae16f
+x=43, x2=2448131399, rf=91eb8547
+x=44, x2=2405181727, rf=8f5c291f
+x=45, x2=2362232055, rf=8cccccf7
+x=46, x2=2319282383, rf=8a3d70cf
+x=47, x2=2276332711, rf=87ae14a7
+x=48, x2=2233383039, rf=851eb87f
+x=49, x2=2190433367, rf=828f5c57
+x=50, x2=2147483695, rf=8000002f
+x=51, x2=2104534023, rf=7d70a407
+x=52, x2=2061584351, rf=7ae147df
+x=53, x2=2018634679, rf=7851ebb7
+x=54, x2=1975685007, rf=75c28f8f
+x=55, x2=1932735335, rf=73333367
+x=56, x2=1889785663, rf=70a3d73f
+x=57, x2=1846835991, rf=6e147b17
+x=58, x2=1803886319, rf=6b851eef
+x=59, x2=1760936647, rf=68f5c2c7
+x=60, x2=1717986975, rf=6666669f
+x=61, x2=1675037303, rf=63d70a77
+x=62, x2=1632087631, rf=6147ae4f
+x=63, x2=1589137959, rf=5eb85227
+x=64, x2=1546188287, rf=5c28f5ff
+x=65, x2=1503238615, rf=599999d7
+x=66, x2=1460288943, rf=570a3daf
+x=67, x2=1417339271, rf=547ae187
+x=68, x2=1374389599, rf=51eb855f
+x=69, x2=1331439927, rf=4f5c2937
+x=70, x2=1288490255, rf=4ccccd0f
+x=71, x2=1245540583, rf=4a3d70e7
+x=72, x2=1202590911, rf=47ae14bf
+x=73, x2=1159641239, rf=451eb897
+x=74, x2=1116691567, rf=428f5c6f
+x=75, x2=1073741895, rf=40000047
+x=76, x2=1030792223, rf=3d70a41f
+x=77, x2=987842551, rf=3ae147f7
+x=78, x2=944892879, rf=3851ebcf
+x=79, x2=901943207, rf=35c28fa7
+x=80, x2=858993535, rf=3333337f
+x=81, x2=816043863, rf=30a3d757
+x=82, x2=773094191, rf=2e147b2f
+x=83, x2=730144519, rf=2b851f07
+x=84, x2=687194847, rf=28f5c2df
+x=85, x2=644245175, rf=266666b7
+x=86, x2=601295503, rf=23d70a8f
+x=87, x2=558345831, rf=2147ae67
+x=88, x2=515396159, rf=1eb8523f
+x=89, x2=472446487, rf=1c28f617
+x=90, x2=429496815, rf=199999ef
+x=91, x2=386547143, rf=170a3dc7
+x=92, x2=343597471, rf=147ae19f
+x=93, x2=300647799, rf=11eb8577
+x=94, x2=257698127, rf=f5c294f
+x=95, x2=214748455, rf=ccccd27
+x=96, x2=171798783, rf=a3d70ff
+x=97, x2=128849111, rf=7ae14d7
+x=98, x2=85899439, rf=51eb8af
+x=99, x2=42949767, rf=28f5c87
+x=100, x2=95, rf=5f
+&lt;/code&gt;&lt;/pre&gt;
+</summary>
+    </entry>    <entry>
+        <id>http://stackoverflow.com/questions/2043991/-/7792732#7792732</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Answer by escape-llc for Android ListView OnItemClickListner Vs. View OnClickListener</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>    
+        <link rel="alternate" href="http://stackoverflow.com/questions/2043991/android-listview-onitemclicklistner-vs-view-onclicklistener/7792732#7792732" />
+        <published>2011-10-17T10:55:44Z</published>   
+        <updated>2011-10-17T10:55:44Z</updated>
+        <summary type="html">&lt;p&gt;That is by design.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;ListView&lt;/code&gt; component is specifically built to trigger those events in that way.  I believe they are actually defined in &lt;code&gt;AdapterView&lt;/code&gt; abstract class.  Other &lt;code&gt;AdapterView&lt;/code&gt; descendants (&lt;code&gt;Gallery&lt;/code&gt;, &lt;code&gt;Spinner&lt;/code&gt;, etc.) will also behave the same way.&lt;/p&gt;
+
+&lt;p&gt;There is also an &lt;code&gt;ONItemLongClick&lt;/code&gt; as well.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;View.OnClick&lt;/code&gt; is only used by controls with simple semantics, e.g. &lt;code&gt;Button&lt;/code&gt; where there is only one &quot;kind&quot; of click.&lt;/p&gt;
+</summary>
+    </entry>    <entry>
+        <id>http://stackoverflow.com/questions/7657961/how-to-scroll-layout-which-have-3-list-view/7766644#7766644</id>
+        <re:rank scheme="http://stackoverflow.com">1</re:rank>
+        <title type="text">Answer by escape-llc for How to scroll layout which have 3 list view</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>    
+        <link rel="alternate" href="http://stackoverflow.com/questions/7657961/how-to-scroll-layout-which-have-3-list-view/7766644#7766644" />
+        <published>2011-10-14T10:58:04Z</published>   
+        <updated>2011-10-14T10:58:04Z</updated>
+        <summary type="html">&lt;p&gt;If you are presenting stuff in a vertical or horizontal stack, you should be using &lt;code&gt;LinearLayout&lt;/code&gt; and then use the &lt;code&gt;layout_weight&lt;/code&gt; attribute to control the proportions of the individual rows/columns within the container.&lt;/p&gt;
+
+&lt;p&gt;If you want screen-sized, set the &lt;code&gt;layout_width&lt;/code&gt; and &lt;code&gt;layout_height&lt;/code&gt; to &lt;code&gt;fill_parent&lt;/code&gt; otherwise you will not get all available screen dimension.  If you try to use &lt;code&gt;wrap_content&lt;/code&gt; for height, everything will collapse, unless you resort to additional layout constraints, e.g. &lt;code&gt;minHeight&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;We use this everywhere and it is quite reliable.  For three items, you can use &lt;code&gt;1/1/1&lt;/code&gt; or &lt;code&gt;3/3/3&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The weights also do not have to be equal!  You can divide up the proportions any way you wish; the weights are just relative ratios of the entire span (width/height).  E.g. if you want the middle element twice the size, use &lt;code&gt;1/2/1&lt;/code&gt;; if you want it 40% use &lt;code&gt;30/40/30&lt;/code&gt; or &lt;code&gt;3/4/3&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;A good &quot;trick&quot; is to use &lt;code&gt;layout_weight&lt;/code&gt;=1 on exactly one row/column (others default to zero), and it will &quot;fill-in&quot; any remaining space.  This is a common layout scenario.&lt;/p&gt;
+
+&lt;p&gt;If you need the stack to be scrollable, you can put it into a &lt;code&gt;ScrollView&lt;/code&gt;.  In this case, you must set the &lt;code&gt;layout_height&lt;/code&gt; of the &lt;code&gt;LinearLayout&lt;/code&gt; to &lt;code&gt;wrap_content&lt;/code&gt;, and you will be subject collapsing depending on the whim of the layout system (meaning you need to then use min/max constraints).&lt;/p&gt;
+</summary>
+    </entry>    <entry>
+        <id>http://stackoverflow.com/questions/4823992/-/7752964#7752964</id>
+        <re:rank scheme="http://stackoverflow.com">1</re:rank>
+        <title type="text">Answer by escape-llc for java.io.FileNotFoundException (Permission denied) When trying to write to the Android sdcard</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>    
+        <link rel="alternate" href="http://stackoverflow.com/questions/4823992/java-io-filenotfoundexception-permission-denied-when-trying-to-write-to-the-an/7752964#7752964" />
+        <published>2011-10-13T10:48:07Z</published>   
+        <updated>2011-10-14T10:34:56Z</updated>
+        <summary type="html">&lt;p&gt;You must also make sure that the External Storage subsystem is in the correct state; use &lt;code&gt;Environment.getExternalStorageState()&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;It&#39;s also a good idea to narrow exception handling to &lt;code&gt;IOException&lt;/code&gt; around those sections, so you don&#39;t over-recover from IO-specific issues, e.g. media unmounted.&lt;/p&gt;
+
+&lt;p&gt;If you need events, there are broadcast intents (&lt;code&gt;Intent.ACTION_MEDIA_xxx&lt;/code&gt;) with the same information you can register for with &lt;code&gt;IntentListener&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Also note that external storage may be &lt;strong&gt;disabled&lt;/strong&gt; when you are using USB for debugging!&lt;/p&gt;
+
+&lt;p&gt;There is also an extended period during device startup, where External Storage is not available.  If you do stuff in services on startup, this is an issue.&lt;/p&gt;
+
+&lt;p&gt;In general, your application must be aware of the External Storage state when accessing it, and handle cases where it is unavailable, or becomes unavailable while accessing it.&lt;/p&gt;
+</summary>
+    </entry>    <entry>
+        <id>http://stackoverflow.com/questions/4082757/android-1-x-contacts-extensions-for-a-custom-account-type/7753083#7753083</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Answer by escape-llc for Android 1.x Contacts.Extensions for a custom account type?</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>    
+        <link rel="alternate" href="http://stackoverflow.com/questions/4082757/android-1-x-contacts-extensions-for-a-custom-account-type/7753083#7753083" />
+        <published>2011-10-13T10:59:35Z</published>   
+        <updated>2011-10-13T10:59:35Z</updated>
+        <summary type="html">&lt;p&gt;To address the end of your question:&lt;/p&gt;
+
+&lt;p&gt;This infrastructure is only supported for 2.x contacts structure, that&#39;s when they introduced it.&lt;/p&gt;
+
+&lt;p&gt;OEM Contacts apps on 1.X devices may or may not work similarly.&lt;/p&gt;
+</summary>
+    </entry>    <entry>
+        <id>http://stackoverflow.com/questions/6605710/-/7740090#7740090</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Answer by escape-llc for App crashes after clicking button to load Tab layout</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>    
+        <link rel="alternate" href="http://stackoverflow.com/questions/6605710/app-crashes-after-clicking-button-to-load-tab-layout/7740090#7740090" />
+        <published>2011-10-12T12:30:55Z</published>   
+        <updated>2011-10-12T12:30:55Z</updated>
+        <summary type="html">&lt;p&gt;Be careful using &lt;code&gt;this&lt;/code&gt; inside of Inner Classes!  I make this mistake regularly, and usually in relation to passing a &lt;code&gt;Context&lt;/code&gt; to something!
+Make sure you use the correct syntax to get to the &quot;outer&quot; &lt;code&gt;this&lt;/code&gt;, e.g.&lt;code&gt;MyOuterClass.this&lt;/code&gt;.&lt;/p&gt;
+</summary>
+    </entry>    <entry>
+        <id>http://stackoverflow.com/questions/5103610/gdiplusdrawimage-stretches-image-after-i-have-edited-it-with-gimp?cid=10881994</id>
+        <title type="text">Comment by escape-llc on GdiPlus::DrawImage stretches image after I have edited it with GIMP?</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/5103610/gdiplusdrawimage-stretches-image-after-i-have-edited-it-with-gimp" />
+        <published>2012-01-05T03:17:31Z</published>   
+        <updated>2012-01-05T03:17:31Z</updated>
+        <summary type="html">check that you are not changing the DPI when you save from GIMP.  in general you should account for it in your code to &amp;quot;counter-scale&amp;quot; against the DPI of your device context.  for example there would be a difference between screen and print device contexts, and on printer your image would become tiny tiny.</summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/8718181/how-to-connect-ivio-de38-android-2-2-device-with-eclipse-for-debugging-purpose?cid=10864374</id>
+        <title type="text">Comment by escape-llc on How to connect IVIO DE38 android 2.2 device with eclipse for debugging purpose</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/8718181/how-to-connect-ivio-de38-android-2-2-device-with-eclipse-for-debugging-purpose" />
+        <published>2012-01-04T11:26:09Z</published>   
+        <updated>2012-01-04T11:26:09Z</updated>
+        <summary type="html">Actually, you are stuck!  Most devices require specific USB drivers that include ADB support, mass storage, etc.  You must troubleshoot the error or locate other drivers.  Are you sure you downloaded the correct USB drivers?  You didn&amp;#39;t say what OS, but obviously that and 32/64 bit must match what you are trying to install.</summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/8694637/android-app-not-reading-the-xml-file-from-large-screen-layout-folder?cid=10827882</id>
+        <title type="text">Comment by escape-llc on android app not reading the xml file from large screen layout folder</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/8694637/android-app-not-reading-the-xml-file-from-large-screen-layout-folder" />
+        <published>2012-01-02T15:34:17Z</published>   
+        <updated>2012-01-02T15:34:17Z</updated>
+        <summary type="html">Use the &lt;code&gt;Configuration&lt;/code&gt; class to confirm the system is using the expected screen size.  Also make sure you have the &lt;code&gt;supports-screens&lt;/code&gt; element in your manifest with the appropriate sizes specified, and that you have &lt;code&gt;uses-sdk&lt;/code&gt; with the appropriate API levels specified.</summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/8693359/guidance-on-using-a-synchronousqueue/8696929?cid=10827397#8696929</id>
+        <title type="text">Comment by escape-llc on Guidance on using a SynchronousQueue</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/8693359/guidance-on-using-a-synchronousqueue/8696929#8696929" />
+        <published>2012-01-02T15:05:17Z</published>   
+        <updated>2012-01-02T15:05:17Z</updated>
+        <summary type="html">As requested and you get some actual Java to work from!</summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/6778867/illegalargumentexception-while-rotating-device-in-live-wallpaper-picker-android?cid=10795510</id>
+        <title type="text">Comment by escape-llc on IllegalArgumentException while rotating device in Live Wallpaper picker Android 3.0</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/6778867/illegalargumentexception-while-rotating-device-in-live-wallpaper-picker-android" />
+        <published>2011-12-30T18:13:29Z</published>   
+        <updated>2011-12-30T18:13:29Z</updated>
+        <summary type="html">when the device changes orientation, all your stuff is destroyed and re-created.  you need to account for that in your naive drawing. the stack trace is indicating that &lt;code&gt;unlockCanvasAndPost&lt;/code&gt; is generating the illegal argument exception.  it is doing that because, as indicated in the very first line of your trace, the window you are trying to draw to is destroyed and no longer available, because of the orientation change.  you should be getting a surface holder callback for that, which you are probably ignoring.  you must be prepared for surface to go away at any time.</summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/8634239/why-my-application-keep-giving-outofmemory-exception/8634318?cid=10728107#8634318</id>
+        <title type="text">Comment by escape-llc on Why My application keep giving OutOfMemory Exception</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/8634239/why-my-application-keep-giving-outofmemory-exception/8634318#8634318" />
+        <published>2011-12-26T17:53:11Z</published>   
+        <updated>2011-12-26T17:53:11Z</updated>
+        <summary type="html">If you are launching an activity from a Service, Receiver, etc. you must add that flag to your intent.  It is a common &amp;quot;mistake&amp;quot; to forget.  Since you didn&amp;#39;t provide any code or stack trace or the length of your string, that is most-likely what you need.</summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/7236371/android-egl-opengl-es-frame-rate-stuttering?cid=10118475</id>
+        <title type="text">Comment by escape-llc on Android EGL/OpenGL ES Frame Rate Stuttering</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/7236371/android-egl-opengl-es-frame-rate-stuttering" />
+        <published>2011-11-22T14:02:02Z</published>   
+        <updated>2011-11-22T14:02:02Z</updated>
+        <summary type="html">watch logcat output for GC messages, that is a fact-of-life if you are building it in Java.  the newer versions of Android have concurrent GC but it is hard to avoid an occasional full GC and the accompaning pauses.  you should be happy with 40 fps and strive for concurrent GC.</summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/6343962/asp-net-mvc3-webgrid-and-paging/7042585?cid=9961383#7042585</id>
+        <title type="text">Comment by escape-llc on Asp.net Mvc3 webgrid and paging</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/6343962/asp-net-mvc3-webgrid-and-paging/7042585#7042585" />
+        <published>2011-11-14T11:37:19Z</published>   
+        <updated>2011-11-14T11:37:19Z</updated>
+        <summary type="html">It is set up to pass through any values you choose to &amp;quot;regenerate&amp;quot; like sorting parameters, filter parameters, etc. but you must put them in where you are adding the grid.  If you look at the last parameter, that is the place to put stuff you want to &amp;quot;come back&amp;quot; to your action.</summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/2917780/filenet-p8-workplace-token-issue-in-c-sharp?cid=9909416</id>
+        <title type="text">Comment by escape-llc on FileNet P8 workplace token issue in C#</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/2917780/filenet-p8-workplace-token-issue-in-c-sharp" />
+        <published>2011-11-10T19:17:08Z</published>   
+        <updated>2011-11-10T19:17:08Z</updated>
+        <summary type="html">Pretty sure the LTPA token is stored as a cookie on your HTTP session.  If the cookie is not found, it redirects to the login page.  The token is only good for a single HTTP session, and has a timeout on it.</summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/6683293/connecting-to-a-wifi-access-point-that-requires-web-authentication-through-a-cap?cid=9799270</id>
+        <title type="text">Comment by escape-llc on Connecting to a Wifi Access point that requires web authentication through a captive portal</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/6683293/connecting-to-a-wifi-access-point-that-requires-web-authentication-through-a-cap" />
+        <published>2011-11-04T11:23:31Z</published>   
+        <updated>2011-11-04T11:23:31Z</updated>
+        <summary type="html">I read that link, and it does answer your question!  &amp;quot;Web authentication&amp;quot; happens outside WiFi, at the HTTP level, which is why the WiFi is not secured.  You have to programatically hit a URL and detect if it is getting redirected to a &amp;quot;landing page&amp;quot;.  At this point it should be standard HTTP Forms Authentication, which you should be able to do.</summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/7346890/difference-between-preferences-oncreateview-and-onbindview-methods?cid=9687273</id>
+        <title type="text">Comment by escape-llc on Difference between Preference&#39;s onCreateView and onBindView methods</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/7346890/difference-between-preferences-oncreateview-and-onbindview-methods" />
+        <published>2011-10-28T13:23:23Z</published>   
+        <updated>2011-10-28T13:23:23Z</updated>
+        <summary type="html">&lt;code&gt;onCreateView&lt;/code&gt; you confine yourself to view construction and preparing for binding.  &lt;code&gt;onBindView&lt;/code&gt; you confine yourself to initializing the view based on the data; that is what binding is.  There are situations, otherwise they would not be separate methods, and the documentation would say something different.  Your code is working &amp;quot;by accident&amp;quot;.</summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/6625563/gallery-setselection-does-not-fires-image-selector?cid=9687116</id>
+        <title type="text">Comment by escape-llc on Gallery setSelection does not fires image selector</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/6625563/gallery-setselection-does-not-fires-image-selector" />
+        <published>2011-10-28T13:13:49Z</published>   
+        <updated>2011-10-28T13:13:49Z</updated>
+        <summary type="html">You should statically assign the background to your adapter view (in the layout).  It may be your code that sets the background is happening too late to &amp;quot;see&amp;quot; the selected state.  I have also had issues if the adapter view going into the gallery is not focusable; you may want to add states for that into your selector as well.  Did you try your suggestion, and did it work?  You can always examine the source code of &lt;code&gt;Gallery.setSelection()&lt;/code&gt; for reference!</summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/7515309/widget-for-turning-on-off-camera-flashlight-in-android/7671647?cid=9633866#7671647</id>
+        <title type="text">Comment by escape-llc on Widget for turning on/off camera flashlight in android</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/7515309/widget-for-turning-on-off-camera-flashlight-in-android/7671647#7671647" />
+        <published>2011-10-25T16:44:36Z</published>   
+        <updated>2011-10-25T16:44:36Z</updated>
+        <summary type="html">See my answer above!  That&amp;#39;s how the app widget system is intended to be used.  I&amp;#39;ve written plenty of widgets, all of which work that way.  The sooner you embrace it, the sooner you can be done!</summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/4485587/drawing-text-on-a-bitmap-rather-than-canvas?cid=9575104</id>
+        <title type="text">Comment by escape-llc on Drawing text on a Bitmap (rather than Canvas)</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/4485587/drawing-text-on-a-bitmap-rather-than-canvas" />
+        <published>2011-10-21T15:18:11Z</published>   
+        <updated>2011-10-21T15:18:11Z</updated>
+        <summary type="html">Don&amp;#39;t forget to turn on Anti-alias on your &lt;code&gt;Paint&lt;/code&gt; that you draw text with.  Available since API 1.</summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/3800951/android-not-sizing-custom-dialog-big-enough?cid=9574930</id>
+        <title type="text">Comment by escape-llc on Android not sizing Custom Dialog big enough</title>
+        <author>
+            <name>escape-llc</name>
+            <uri>http://stackoverflow.com/users/650049</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/3800951/android-not-sizing-custom-dialog-big-enough" />
+        <published>2011-10-21T15:09:04Z</published>   
+        <updated>2011-10-21T15:09:04Z</updated>
+        <summary type="html">It may be that the &lt;code&gt;style&lt;/code&gt; you selected has some size constraints in it, which is preventing your dialog from sizing.  Try without a style and see if there&amp;#39;s a difference.  A &lt;code&gt;LinearLayout&lt;/code&gt; with &lt;code&gt;layout_weight&lt;/code&gt; is easier than &lt;code&gt;TableLayout&lt;/code&gt;, and why are there two nested &lt;code&gt;LinearLayout&lt;/code&gt;s you only need one. Eliminate &amp;quot;extra&amp;quot; views like that where possible, they can interfere with layout.  I&amp;#39;ve also had trouble sizing &lt;code&gt;Button&lt;/code&gt;s when also setting the &lt;code&gt;textSize&lt;/code&gt;.  You can try removing padding from the &lt;code&gt;Button&lt;/code&gt;.  If your background is a 9-patch, there may also be issues with margin settings.</summary>
+    </entry>
+</feed>

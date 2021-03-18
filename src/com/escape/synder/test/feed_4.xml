@@ -1,0 +1,717 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+If you're seeing this, you've clicked on the link
+for a CBC RSS feed and Podcast.  
+This file is not meant to be read by a web 
+browser directly.  Instead you're meant to copy 
+the URL for the file, which is:
+
+http://www.cbcradio3.com/podcast/standard/
+
+and paste it into your RSS reader or podcast program.
+If you need to know more about how to do this, 
+please go to the following web pages to learn 
+about CBC Radio's RSS and Podcasting services.
+
+http://www.cbc.ca/rss/
+http://www.cbc.ca/podcasting/
+
+-->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <atom:link href="http://www.cbcradio3.com/podcast/standard/" rel="self" type="application/rss+xml" />
+    <title>CBC Radio 3 Podcast</title>
+    <link>http://radio3.cbc.ca/</link>
+    <language>en-ca</language>
+    <copyright>CBC Radio 3 2010</copyright>
+    <description>CBC Radio 3 is the part of Canada's public broadcaster that devotes itself entirely to new Canadian music. With the CBC Radio 3 Super Feed, you can catch every podcast we make and loads of amazing new tunes in just one place.</description>
+    <docs>http://radio3.cbc.ca/programs/</docs>
+    <lastBuildDate>Tue, 12 Jan 2010 17:08:16 PST</lastBuildDate>
+    <pubDate>Tue, 12 Jan 2010 17:08:16 PST</pubDate>
+    <managingEditor>feedback@cbcradio3.com (Feedback)</managingEditor>
+    <webMaster>webmaster@cbcradio3.com (Webmaster)</webMaster>
+    <category>Music</category>
+    <image>
+      <url>http://www.cbcradio3.com/podcast/images/CBCR3Super_144x144.jpg</url>
+      <title>CBC Radio 3 Podcast</title>
+      <link>http://radio3.cbc.ca/</link>
+    </image>
+    <itunes:subtitle>100% Independent Canadian Music</itunes:subtitle>
+    <itunes:summary>CBC Radio 3 is the part of Canada's public broadcaster that devotes itself entirely to new Canadian music. With the CBC Radio 3 Super Feed, you can catch every podcast we make and loads of amazing new tunes in just one place.</itunes:summary>
+    <itunes:owner>
+      <itunes:name>CBC Radio 3</itunes:name>
+      <itunes:email>feedback@cbcradio3.com (Feedback)</itunes:email>
+    </itunes:owner>
+    <itunes:author>CBC Radio 3</itunes:author>
+    <itunes:category text="Music" />
+    <itunes:category text="Government &amp; Organizations">
+      <itunes:category text="National" />
+      <itunes:category text="Non-Profit" />
+    </itunes:category>
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:image href="http://www.cbcradio3.com/podcast/images/CBCR3Super_300x300.jpg" />
+    <item>
+      <title>Highlights from Halifax Pop Explosion: Little Girls, Japandroids &amp; Zeus</title>
+      <description>Japandroids, Zeus and Little Girls stormed Halifax Pop Explosion and we’ve got some of the greatest moments on this week’s sessions podcast</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/sessions/CBCR3Sessions_2010-01-13.mp3" length="46071418" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/sessions/CBCR3Sessions_2010-01-20.mp3</guid>
+      <pubDate>Wed, 13 Jan 2010 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>Japandroids, Zeus and Little Girls stormed Halifax Pop Explosion and we’ve got some of the greatest moments on this week’s sessions podcast</itunes:subtitle>
+      <itunes:summary>Japandroids, Zeus and Little Girls stormed Halifax Pop Explosion and we’ve got some of the greatest moments on this week’s sessions podcast</itunes:summary>
+      <itunes:duration>00:47:56</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>Pathological Lovers - Storm Your Little</title>
+      <description>New Music Canada Track of the Day. Craig Norris: "In Tom Power's words: They're exploding in Newfoundland. Now, let's make it so elsewhere."</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2010-01-13.mp3" length="5504403" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2010-01-13.mp3</guid>
+      <pubDate>Wed, 13 Jan 2010 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>New Music Canada Track of the Day. Craig Norris: "In Tom Power's words: They're exploding in Newfoundland. Now, let's make it so elsewhere."</itunes:subtitle>
+      <itunes:summary>New Music Canada Track of the Day. Craig Norris: "In Tom Power's words: They're exploding in Newfoundland. Now, let's make it so elsewhere."</itunes:summary>
+      <itunes:duration>00:05:39</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>Treelines - Canadian Airlines</title>
+      <description>New Music Canada Track of the Day. Amanda Putz: "It says more about this country in a mere 3 minutes than a 3 hour throne speech ever could."</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2010-01-12.mp3" length="4317398" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2010-01-12.mp3</guid>
+      <pubDate>Tue, 12 Jan 2010 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>New Music Canada Track of the Day. Amanda Putz: "It says more about this country in a mere 3 minutes than a 3 hour throne speech ever could."</itunes:subtitle>
+      <itunes:summary>New Music Canada Track of the Day. Amanda Putz: "It says more about this country in a mere 3 minutes than a 3 hour throne speech ever could."</itunes:summary>
+      <itunes:duration>00:04:25</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>The Sunshine Show 29</title>
+      <description>This week, Mr. Johnson attempts to make amends for last weeks 'transgressions' and reads another entry into his Short Story Competition. 9 songs are also played.</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/thesunshineshow/CBCR3Sun_2010-01-11.mp3" length="42123263" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/thesunshineshow/CBCR3Sun_2010-01-11.mp3</guid>
+      <pubDate>Mon, 11 Jan 2010 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>This week, Mr. Johnson attempts to make amends for last weeks 'transgressions' and reads another entry into his Short Story Competition. 9 songs are also played.</itunes:subtitle>
+      <itunes:summary>This week, Mr. Johnson attempts to make amends for last weeks 'transgressions' and reads another entry into his Short Story Competition. 9 songs are also played.</itunes:summary>
+      <itunes:duration>00:43:48</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>Julie Fader - Goodbye Before Hello</title>
+      <description>New Music Canada Track of the Day. Guest Host, Brian Borcherdt from Holy F*ck: "I can request this one because I didn't produce it but a good friend of mine did..."</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2010-01-11.mp3" length="5203054" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2010-01-11.mp3</guid>
+      <pubDate>Mon, 11 Jan 2010 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>New Music Canada Track of the Day. Guest Host, Brian Borcherdt from Holy F*ck: "I can request this one because I didn't produce it but a good friend of mine did..."</itunes:subtitle>
+      <itunes:summary>New Music Canada Track of the Day. Guest Host, Brian Borcherdt from Holy F*ck: "I can request this one because I didn't produce it but a good friend of mine did..."</itunes:summary>
+      <itunes:duration>00:05:20</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>R3-30: Chart 173</title>
+      <description>The R3-30 3.0, or "The Chart of the Future" debuts, featuring Woodhands, We Are Wolves, the most "Searched For" and "Fanned" artist on cbcradio3.com and a Fun Club Pick of the Week.</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/r330/CBCR330_2010-01-09.mp3" length="60453581" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/r330/CBCR330_2010-01-09.mp3</guid>
+      <pubDate>Sat, 09 Jan 2010 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>The R3-30 3.0, or "The Chart of the Future" debuts, featuring Woodhands, We Are Wolves, the most "Searched For" and "Fanned" artist on cbcradio3.com and a Fun Club Pick of the Week.</itunes:subtitle>
+      <itunes:summary>The R3-30 3.0, or "The Chart of the Future" debuts, featuring Woodhands, We Are Wolves, the most "Searched For" and "Fanned" artist on cbcradio3.com and a Fun Club Pick of the Week.</itunes:summary>
+      <itunes:duration>01:02:54</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>#231 - Best Songs of the 2000s Part One</title>
+      <description>Need proof that the 2000s were Canada’s best music decade ever? Listen to this podcast, part one of Grant Lawrence’s Top 20 countdown of his favourite songs of the decade.</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/radio3/CBCR3_2010-01-08.mp3" length="47859177" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/radio3/CBCR3_2010-01-08.mp3</guid>
+      <pubDate>Fri, 08 Jan 2010 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>Need proof that the 2000s were Canada’s best music decade ever? Listen to this podcast, part one of Grant Lawrence’s Top 20 countdown of his favourite songs of the decade.</itunes:subtitle>
+      <itunes:summary>Need proof that the 2000s were Canada’s best music decade ever? Listen to this podcast, part one of Grant Lawrence’s Top 20 countdown of his favourite songs of the decade.</itunes:summary>
+      <itunes:duration>00:49:46</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>Ox - Sugar Cane</title>
+      <description>New Music Canada Track of the Day. Lisa Christiansen: "Really, you can't get enough of the good stuff"</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2010-01-08.mp3" length="4079998" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2010-01-08.mp3</guid>
+      <pubDate>Fri, 08 Jan 2010 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>New Music Canada Track of the Day. Lisa Christiansen: "Really, you can't get enough of the good stuff"</itunes:subtitle>
+      <itunes:summary>New Music Canada Track of the Day. Lisa Christiansen: "Really, you can't get enough of the good stuff"</itunes:summary>
+      <itunes:duration>00:04:10</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>Darrelle London - Understand</title>
+      <description>New Music Canada Track of the Day. Lana: "The shortforms seem to fit perfectly within the poppy piano and very sweet vocals."</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2010-01-07.mp3" length="3341464" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2010-01-07.mp3</guid>
+      <pubDate>Thu, 07 Jan 2010 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>New Music Canada Track of the Day. Lana: "The shortforms seem to fit perfectly within the poppy piano and very sweet vocals."</itunes:subtitle>
+      <itunes:summary>New Music Canada Track of the Day. Lana: "The shortforms seem to fit perfectly within the poppy piano and very sweet vocals."</itunes:summary>
+      <itunes:duration>00:03:24</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>Cuff the Duke in Session</title>
+      <description>This week features Oshawa Ontario band Cuff the Duke singing live off-the-floor songs from their latest album, Way Down Here, in session with Radio 3.</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/sessions/CBCR3Sessions_2010-01-06.mp3" length="18482350" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/sessions/CBCR3Sessions_2010-01-06.mp3</guid>
+      <pubDate>Wed, 06 Jan 2010 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>This week features Oshawa Ontario band Cuff the Duke singing live off-the-floor songs from their latest album, Way Down Here, in session with Radio 3.</itunes:subtitle>
+      <itunes:summary>This week features Oshawa Ontario band Cuff the Duke singing live off-the-floor songs from their latest album, Way Down Here, in session with Radio 3.</itunes:summary>
+      <itunes:duration>00:19:12</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>Moonshine Ramblers - Hit By Lightning</title>
+      <description>New Music Canada Track of the Day. Craig Norris: "I hope 2010 tour plans bring them west, because I need to see these guys live."</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2010-01-06.mp3" length="4519273" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2010-01-06.mp3</guid>
+      <pubDate>Wed, 06 Jan 2010 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>New Music Canada Track of the Day. Craig Norris: "I hope 2010 tour plans bring them west, because I need to see these guys live."</itunes:subtitle>
+      <itunes:summary>New Music Canada Track of the Day. Craig Norris: "I hope 2010 tour plans bring them west, because I need to see these guys live."</itunes:summary>
+      <itunes:duration>00:04:38</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>EP #2 - Has Technology Made Music Better?</title>
+      <description>On the second episode of Extended Play host Lisa Christiansen asks the question: has technology made music better? Featuring interviews with Buffy Sainte-Marie, The Russian Futurists and an educator and student of technology.</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/extendedplay/CBCR3EP_2010-01-05.mp3" length="30821255" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/extendedplay/CBCR3EP_2010-01-05.mp3</guid>
+      <pubDate>Tue, 05 Jan 2010 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>On the second episode of Extended Play host Lisa Christiansen asks the question: has technology made music better? Featuring interviews with Buffy Sainte-Marie, The Russian Futurists and an educator and student of technology.</itunes:subtitle>
+      <itunes:summary>On the second episode of Extended Play host Lisa Christiansen asks the question: has technology made music better? Featuring interviews with Buffy Sainte-Marie, The Russian Futurists and an educator and student of technology.</itunes:summary>
+      <itunes:duration>00:32:02</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>Women - Group Transport Hall</title>
+      <description>New Music Canada Track of the Day. Guest Host, Graham Walsh from Holy F*ck: "I think the band is amazing and our friend Chad VanGaalen produced it."</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2010-01-05.mp3" length="1891981" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2010-01-05.mp3</guid>
+      <pubDate>Tue, 05 Jan 2010 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>New Music Canada Track of the Day. Guest Host, Graham Walsh from Holy F*ck: "I think the band is amazing and our friend Chad VanGaalen produced it."</itunes:subtitle>
+      <itunes:summary>New Music Canada Track of the Day. Guest Host, Graham Walsh from Holy F*ck: "I think the band is amazing and our friend Chad VanGaalen produced it."</itunes:summary>
+      <itunes:duration>00:01:53</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>The Sunshine Show 28</title>
+      <description>This week. Mr. Johnson presents his New Year's Spectacular, with special guests Lyle Waggoner, Barbara Eden and Jim Boyd, featuring a musical tribute to Hoagy Carmichael.</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/thesunshineshow/CBCR3Sun_2010-01-04.mp3" length="42491067" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/thesunshineshow/CBCR3Sun_2010-01-04.mp3</guid>
+      <pubDate>Mon, 04 Jan 2010 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>This week. Mr. Johnson presents his New Year's Spectacular, with special guests Lyle Waggoner, Barbara Eden and Jim Boyd, featuring a musical tribute to Hoagy Carmichael.</itunes:subtitle>
+      <itunes:summary>This week. Mr. Johnson presents his New Year's Spectacular, with special guests Lyle Waggoner, Barbara Eden and Jim Boyd, featuring a musical tribute to Hoagy Carmichael.</itunes:summary>
+      <itunes:duration>00:44:11</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>Will Currie and The Country French - Surprising Me</title>
+      <description>New Music Canada Track of the Day. Guest Host, Noah Sawchuk: "Five seconds after you hit play, you are grinning, clapping along."</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2010-01-04.mp3" length="3239482" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2010-01-04.mp3</guid>
+      <pubDate>Mon, 04 Jan 2010 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>New Music Canada Track of the Day. Guest Host, Noah Sawchuk: "Five seconds after you hit play, you are grinning, clapping along."</itunes:subtitle>
+      <itunes:summary>New Music Canada Track of the Day. Guest Host, Noah Sawchuk: "Five seconds after you hit play, you are grinning, clapping along."</itunes:summary>
+      <itunes:duration>00:03:18</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>R3-10: 2009's Top Ten</title>
+      <description>Craig Norris counts down the year's top 10 songs on CBC Radio 3 while producer Pedro is building something in there.</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/r330/CBCR330_2010-01-02.mp3" length="47445436" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/r330/CBCR330_2010-01-02.mp3</guid>
+      <pubDate>Sat, 02 Jan 2010 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>Craig Norris counts down the year's top 10 songs on CBC Radio 3 while producer Pedro is building something in there.</itunes:subtitle>
+      <itunes:summary>Craig Norris counts down the year's top 10 songs on CBC Radio 3 while producer Pedro is building something in there.</itunes:summary>
+      <itunes:duration>00:49:21</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>Plants and Animals - Faerie Dance</title>
+      <description>New Music Canada Track of the Day. Lisa Christiansen: "This particular epic song has a rather hypnotic quality that just builds and builds..."</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2010-01-01.mp3" length="7678208" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2010-01-01.mp3</guid>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>New Music Canada Track of the Day. Lisa Christiansen: "This particular epic song has a rather hypnotic quality that just builds and builds..."</itunes:subtitle>
+      <itunes:summary>New Music Canada Track of the Day. Lisa Christiansen: "This particular epic song has a rather hypnotic quality that just builds and builds..."</itunes:summary>
+      <itunes:duration>00:07:55</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>Special Edition - The Artist Series featuring Lightning Dust</title>
+      <description>The Artist Series with Amber Webber and Josh Wells from Lightning Dust.  The Vancouver duo shares a playlist of side projects born from Canadian indie bands, as well as music from their roommates past and present.</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/radio3/CBCR3_2009-12-31.mp3" length="46047742" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/radio3/CBCR3_2009-12-31.mp3</guid>
+      <pubDate>Thu, 31 Dec 2009 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>The Artist Series with Amber Webber and Josh Wells from Lightning Dust.  The Vancouver duo shares a playlist of side projects born from Canadian indie bands, as well as music from their roommates past and present.</itunes:subtitle>
+      <itunes:summary>The Artist Series with Amber Webber and Josh Wells from Lightning Dust.  The Vancouver duo shares a playlist of side projects born from Canadian indie bands, as well as music from their roommates past and present.</itunes:summary>
+      <itunes:duration>00:47:53</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>New Years Resolution - Death March on the Tone Bank</title>
+      <description>New Music Canada Track of the Day. Lana: "I wonder how many people actual incorporate music into their New Year's resolutions?"</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-31.mp3" length="4203296" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-31.mp3</guid>
+      <pubDate>Thu, 31 Dec 2009 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>New Music Canada Track of the Day. Lana: "I wonder how many people actual incorporate music into their New Year's resolutions?"</itunes:subtitle>
+      <itunes:summary>New Music Canada Track of the Day. Lana: "I wonder how many people actual incorporate music into their New Year's resolutions?"</itunes:summary>
+      <itunes:duration>00:04:18</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>Attics and Cellars - Sheep + Wolves</title>
+      <description>New Music Canada Track of the Day. Guest Host, Ryan Dahle: "Jason Zumpano is the singer/songwriter of the band...he's amazing"</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-30.mp3" length="3117438" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-30.mp3</guid>
+      <pubDate>Wed, 30 Dec 2009 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>New Music Canada Track of the Day. Guest Host, Ryan Dahle: "Jason Zumpano is the singer/songwriter of the band...he's amazing"</itunes:subtitle>
+      <itunes:summary>New Music Canada Track of the Day. Guest Host, Ryan Dahle: "Jason Zumpano is the singer/songwriter of the band...he's amazing"</itunes:summary>
+      <itunes:duration>00:03:10</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>The Wooden Sky - Oslo</title>
+      <description>New Music Canada Track of the Day. Amanda Putz: "I know these songs now as well as if I had written them myself. I wish I had."</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-29.mp3" length="4842773" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-29.mp3</guid>
+      <pubDate>Tue, 29 Dec 2009 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>New Music Canada Track of the Day. Amanda Putz: "I know these songs now as well as if I had written them myself. I wish I had."</itunes:subtitle>
+      <itunes:summary>New Music Canada Track of the Day. Amanda Putz: "I know these songs now as well as if I had written them myself. I wish I had."</itunes:summary>
+      <itunes:duration>00:04:58</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>The Sunshine Show 27</title>
+      <description>This week, Mr. Johnson makes the ultimate sacrifice and as in studio on Christmas Day. He attempts to celebrate the holiday with his family, despite the distance. And there are songs.</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/thesunshineshow/CBCR3Sun_2009-12-28.mp3" length="39227223" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/thesunshineshow/CBCR3Sun_2009-12-28.mp3</guid>
+      <pubDate>Mon, 28 Dec 2009 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>This week, Mr. Johnson makes the ultimate sacrifice and as in studio on Christmas Day. He attempts to celebrate the holiday with his family, despite the distance. And there are songs.</itunes:subtitle>
+      <itunes:summary>This week, Mr. Johnson makes the ultimate sacrifice and as in studio on Christmas Day. He attempts to celebrate the holiday with his family, despite the distance. And there are songs.</itunes:summary>
+      <itunes:duration>00:40:47</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>The Magic - No Sound</title>
+      <description>New Music Canada Track of the Day. Guest Host, Gavin Gardiner from The Wooden Sky: "They referred to Sylvie as the new Stevie Nick"</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-28.mp3" length="4907139" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-28.mp3</guid>
+      <pubDate>Mon, 28 Dec 2009 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>New Music Canada Track of the Day. Guest Host, Gavin Gardiner from The Wooden Sky: "They referred to Sylvie as the new Stevie Nick"</itunes:subtitle>
+      <itunes:summary>New Music Canada Track of the Day. Guest Host, Gavin Gardiner from The Wooden Sky: "They referred to Sylvie as the new Stevie Nick"</itunes:summary>
+      <itunes:duration>00:05:02</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>R3-30: The Best of R3 30 Questions</title>
+      <description>Every week on the show, we ask the Highest Debuting artist a random question from a hat that often produces a rather revealing answer. This week, our favourite R3 30 Questions.</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/r330/CBCR330_2009-12-26.mp3" length="38613541" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/r330/CBCR330_2009-12-26.mp3</guid>
+      <pubDate>Sat, 26 Dec 2009 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>Every week on the show, we ask the Highest Debuting artist a random question from a hat that often produces a rather revealing answer. This week, our favourite R3 30 Questions.</itunes:subtitle>
+      <itunes:summary>Every week on the show, we ask the Highest Debuting artist a random question from a hat that often produces a rather revealing answer. This week, our favourite R3 30 Questions.</itunes:summary>
+      <itunes:duration>00:40:09</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>Geronimo - Just Like Water</title>
+      <description>New Music Canada Track of the Day. Lisa Christiansen: "...danceable beats to go along with all the 'Heys!'"</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-25.mp3" length="4669320" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-25.mp3</guid>
+      <pubDate>Fri, 25 Dec 2009 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>New Music Canada Track of the Day. Lisa Christiansen: "...danceable beats to go along with all the 'Heys!'"</itunes:subtitle>
+      <itunes:summary>New Music Canada Track of the Day. Lisa Christiansen: "...danceable beats to go along with all the 'Heys!'"</itunes:summary>
+      <itunes:duration>00:04:47</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>#230 - Winter Songs Podcast</title>
+      <description>Celebrating Canada's longest and darkest season with songs of understanding and endurance by Matt Mays, Hawksley Workman, the Weakerthans, Julie Doiron and many more. Brrrrrrrrrrrrr.</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/radio3/CBCR3_2009-12-24.mp3" length="54756758" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/radio3/CBCR3_2009-12-24.mp3</guid>
+      <pubDate>Thu, 24 Dec 2009 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>Celebrating Canada's longest and darkest season with songs of understanding and endurance by Matt Mays, Hawksley Workman, the Weakerthans, Julie Doiron and many more. Brrrrrrrrrrrrr.</itunes:subtitle>
+      <itunes:summary>Celebrating Canada's longest and darkest season with songs of understanding and endurance by Matt Mays, Hawksley Workman, the Weakerthans, Julie Doiron and many more. Brrrrrrrrrrrrr.</itunes:summary>
+      <itunes:duration>00:56:57</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>The Mountains &amp; The Trees - All Together Now (For The Holidays)</title>
+      <description>New Music Canada Track of the Day. Lana: "If you are looking for new holiday indie tunes, look no further."</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-24.mp3" length="3459328" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-24.mp3</guid>
+      <pubDate>Thu, 24 Dec 2009 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>New Music Canada Track of the Day. Lana: "If you are looking for new holiday indie tunes, look no further."</itunes:subtitle>
+      <itunes:summary>New Music Canada Track of the Day. Lana: "If you are looking for new holiday indie tunes, look no further."</itunes:summary>
+      <itunes:duration>00:03:31</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>Best of Sessions 2009</title>
+      <description>Best of CBC Radio 3 exclusive sessions featuring highlights from the year 2009 with live-off-the-floor performances with some pretty incredible stories  and magical moments.</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/sessions/CBCR3Sessions_2009-12-23.mp3" length="58358583" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/sessions/CBCR3Sessions_2009-12-23.mp3</guid>
+      <pubDate>Wed, 23 Dec 2009 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>Best of CBC Radio 3 exclusive sessions featuring highlights from the year 2009 with live-off-the-floor performances with some pretty incredible stories  and magical moments.</itunes:subtitle>
+      <itunes:summary>Best of CBC Radio 3 exclusive sessions featuring highlights from the year 2009 with live-off-the-floor performances with some pretty incredible stories  and magical moments.</itunes:summary>
+      <itunes:duration>01:02:44</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>Jenny Whiteley - Indoor Lightning</title>
+      <description>New Music Canada Track of the Day. Guest Host, Amy Millan: "It always reminds me of that time if you've been with somebody for a while [...] sometimes the communication can break down..."</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-23.mp3" length="4544350" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-23.mp3</guid>
+      <pubDate>Wed, 23 Dec 2009 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>New Music Canada Track of the Day. Guest Host, Amy Millan: "It always reminds me of that time if you've been with somebody for a while [...] sometimes the communication can break down..."</itunes:subtitle>
+      <itunes:summary>New Music Canada Track of the Day. Guest Host, Amy Millan: "It always reminds me of that time if you've been with somebody for a while [...] sometimes the communication can break down..."</itunes:summary>
+      <itunes:duration>00:04:39</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>Is it still possible to write a Christmas classic - Episode 1</title>
+      <description>Welcome to the first edition of CBC Radio 3’s new current affairs podcast. This week we embrace the holidays and ask the question: is it still possible to write a Christmas classic? Featuring Ron Sexsmith, Zeus, Craig Norris and Rita MacNeil.</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/extendedplay/CBCR3EP_2009-12-22.mp3" length="37958545" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/extendedplay/CBCR3EP_2009-12-22.mp3</guid>
+      <pubDate>Tue, 22 Dec 2009 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>Welcome to the first edition of CBC Radio 3’s new current affairs podcast. This week we embrace the holidays and ask the question: is it still possible to write a Christmas classic? Featuring Ron Sexsmith, Zeus, Craig Norris and Rita MacNeil.</itunes:subtitle>
+      <itunes:summary>Welcome to the first edition of CBC Radio 3’s new current affairs podcast. This week we embrace the holidays and ask the question: is it still possible to write a Christmas classic? Featuring Ron Sexsmith, Zeus, Craig Norris and Rita MacNeil.</itunes:summary>
+      <itunes:duration>00:39:30</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>The Good Lovelies - Hurry Home</title>
+      <description>New Music Canada Track of the Day. Amanda Putz: "I can finally round out that Christmas record collection with a little bluegrass seasonal affair."</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-22.mp3" length="4189503" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-22.mp3</guid>
+      <pubDate>Tue, 22 Dec 2009 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>New Music Canada Track of the Day. Amanda Putz: "I can finally round out that Christmas record collection with a little bluegrass seasonal affair."</itunes:subtitle>
+      <itunes:summary>New Music Canada Track of the Day. Amanda Putz: "I can finally round out that Christmas record collection with a little bluegrass seasonal affair."</itunes:summary>
+      <itunes:duration>00:04:17</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>The Sunshine Show 26</title>
+      <description>This week, Mr. Johnson presents a special Winter Weather forecast and another reading from his Short Story Competition. And songs from groups of musicians.</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/thesunshineshow/CBCR3Sun_2009-12-21.mp3" length="44618897" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/thesunshineshow/CBCR3Sun_2009-12-21.mp3</guid>
+      <pubDate>Mon, 21 Dec 2009 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>This week, Mr. Johnson presents a special Winter Weather forecast and another reading from his Short Story Competition. And songs from groups of musicians.</itunes:subtitle>
+      <itunes:summary>This week, Mr. Johnson presents a special Winter Weather forecast and another reading from his Short Story Competition. And songs from groups of musicians.</itunes:summary>
+      <itunes:duration>00:46:24</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>The Golden Dogs - Construction Worker</title>
+      <description>New Music Canada Track of the Day. Guest Host, Pat Sayers from Wintergloves: "Love them, they are great."</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-21.mp3" length="3183893" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-21.mp3</guid>
+      <pubDate>Mon, 21 Dec 2009 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>New Music Canada Track of the Day. Guest Host, Pat Sayers from Wintergloves: "Love them, they are great."</itunes:subtitle>
+      <itunes:summary>New Music Canada Track of the Day. Guest Host, Pat Sayers from Wintergloves: "Love them, they are great."</itunes:summary>
+      <itunes:duration>00:03:14</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>R3-30: Chart 171</title>
+      <description>We finish up our series "The Best of the 2000s" with your tops song of 2006-2008, a call to the new #1 band and this week's top 30 countdown.</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/r330/CBCR330_2009-12-19.mp3" length="58965646" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/r330/CBCR330_2009-12-19.mp3</guid>
+      <pubDate>Sat, 19 Dec 2009 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>We finish up our series "The Best of the 2000s" with your tops song of 2006-2008, a call to the new #1 band and this week's top 30 countdown.</itunes:subtitle>
+      <itunes:summary>We finish up our series "The Best of the 2000s" with your tops song of 2006-2008, a call to the new #1 band and this week's top 30 countdown.</itunes:summary>
+      <itunes:duration>01:01:21</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>#229 - Best of 2009</title>
+      <description>Our annual tradition continues: Grant Lawrence’s countdown of his top ten personal faves of the year.</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/radio3/CBCR3_2009-12-18.mp3" length="49189124" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/radio3/CBCR3_2009-12-18.mp3</guid>
+      <pubDate>Fri, 18 Dec 2009 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>Our annual tradition continues: Grant Lawrence’s countdown of his top ten personal faves of the year.</itunes:subtitle>
+      <itunes:summary>Our annual tradition continues: Grant Lawrence’s countdown of his top ten personal faves of the year.</itunes:summary>
+      <itunes:duration>00:51:09</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>Priestess - Lay Down</title>
+      <description>New Music Canada Track of the Day. Lisa Christiansen: "Trouble is, now whenever I hear it I have to concentrate real hard: green, green, red..."</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-18.mp3" length="4125555" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-18.mp3</guid>
+      <pubDate>Fri, 18 Dec 2009 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>New Music Canada Track of the Day. Lisa Christiansen: "Trouble is, now whenever I hear it I have to concentrate real hard: green, green, red..."</itunes:subtitle>
+      <itunes:summary>New Music Canada Track of the Day. Lisa Christiansen: "Trouble is, now whenever I hear it I have to concentrate real hard: green, green, red..."</itunes:summary>
+      <itunes:duration>00:04:13</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>Jasper Sloan Yip - Kiddo</title>
+      <description>New Music Canada Track of the Day. Lana: "Jasper Sloan Yip, who is our 20,000th artist!"</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-17.mp3" length="4046979" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-17.mp3</guid>
+      <pubDate>Thu, 17 Dec 2009 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>New Music Canada Track of the Day. Lana: "Jasper Sloan Yip, who is our 20,000th artist!"</itunes:subtitle>
+      <itunes:summary>New Music Canada Track of the Day. Lana: "Jasper Sloan Yip, who is our 20,000th artist!"</itunes:summary>
+      <itunes:duration>00:04:08</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>Basia Bulat Live</title>
+      <description>As she takes in the sun and the mountain scenery, indie songstress Basia Bulat captivates us with a moving performance from the Vancouver Folk Festival.</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/sessions/CBCR3Sessions_2009-12-16.mp3" length="34292910" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/sessions/CBCR3Sessions_2009-12-16.mp3</guid>
+      <pubDate>Wed, 16 Dec 2009 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>As she takes in the sun and the mountain scenery, indie songstress Basia Bulat captivates us with a moving performance from the Vancouver Folk Festival.</itunes:subtitle>
+      <itunes:summary>As she takes in the sun and the mountain scenery, indie songstress Basia Bulat captivates us with a moving performance from the Vancouver Folk Festival.</itunes:summary>
+      <itunes:duration>00:35:40</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>Jets Overhead - Addiction</title>
+      <description>New Music Canada Track of the Day. Guest Host, Jeff Mitchelmore from The Racoons: "It's just an unbelievable song live."</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-16.mp3" length="4941411" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-16.mp3</guid>
+      <pubDate>Wed, 16 Dec 2009 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>New Music Canada Track of the Day. Guest Host, Jeff Mitchelmore from The Racoons: "It's just an unbelievable song live."</itunes:subtitle>
+      <itunes:summary>New Music Canada Track of the Day. Guest Host, Jeff Mitchelmore from The Racoons: "It's just an unbelievable song live."</itunes:summary>
+      <itunes:duration>00:05:04</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>Rock Plaza Central - My Children Be Joyful</title>
+      <description>New Music Canada Track of the Day. Amanda Putz: "Come on, children, grownups, and music lovers everywhere -- be joyful."</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-15.mp3" length="7037477" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-15.mp3</guid>
+      <pubDate>Tue, 15 Dec 2009 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>New Music Canada Track of the Day. Amanda Putz: "Come on, children, grownups, and music lovers everywhere -- be joyful."</itunes:subtitle>
+      <itunes:summary>New Music Canada Track of the Day. Amanda Putz: "Come on, children, grownups, and music lovers everywhere -- be joyful."</itunes:summary>
+      <itunes:duration>00:07:15</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>The Sunshine Show 25</title>
+      <description>This week, Mr. Johnson presents a Round and About for Charlottetown, PEI, another entry in the Sunshine Show Short Story Competition and the latest on his work grievance. And musics.</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/thesunshineshow/CBCR3Sun_2009-12-14.mp3" length="36043210" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/thesunshineshow/CBCR3Sun_2009-12-14.mp3</guid>
+      <pubDate>Mon, 14 Dec 2009 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>This week, Mr. Johnson presents a Round and About for Charlottetown, PEI, another entry in the Sunshine Show Short Story Competition and the latest on his work grievance. And musics.</itunes:subtitle>
+      <itunes:summary>This week, Mr. Johnson presents a Round and About for Charlottetown, PEI, another entry in the Sunshine Show Short Story Competition and the latest on his work grievance. And musics.</itunes:summary>
+      <itunes:duration>00:37:28</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>Carbon Dating Service - Light Up The Synchrotron</title>
+      <description>New Music Canada Track of the Day. Guest Host, CBC Radio 3 Intern Lewis Kelly: "bass player Steve Reed lists one of his roles in the band as 'dungeon master.'"</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-14.mp3" length="5661555" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-14.mp3</guid>
+      <pubDate>Mon, 14 Dec 2009 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>New Music Canada Track of the Day. Guest Host, CBC Radio 3 Intern Lewis Kelly: "bass player Steve Reed lists one of his roles in the band as 'dungeon master.'"</itunes:subtitle>
+      <itunes:summary>New Music Canada Track of the Day. Guest Host, CBC Radio 3 Intern Lewis Kelly: "bass player Steve Reed lists one of his roles in the band as 'dungeon master.'"</itunes:summary>
+      <itunes:duration>00:05:49</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>R3-30: Chart 170</title>
+      <description>Part 2 of our series "The Best of the 2000s" has your picks for the top songs of 2003-2005, a call to this week's new #1 artist, and 10 songs from the top 30!</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/r330/CBCR330_2009-12-12.mp3" length="51253463" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/r330/CBCR330_2009-12-12.mp3</guid>
+      <pubDate>Sat, 12 Dec 2009 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>Part 2 of our series "The Best of the 2000s" has your picks for the top songs of 2003-2005, a call to this week's new #1 artist, and 10 songs from the top 30!</itunes:subtitle>
+      <itunes:summary>Part 2 of our series "The Best of the 2000s" has your picks for the top songs of 2003-2005, a call to this week's new #1 artist, and 10 songs from the top 30!</itunes:summary>
+      <itunes:duration>00:53:19</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>Chow-Chow - Suits Like Animals</title>
+      <description>New Music Canada Track of the Day. Lisa Christiansen: "When was the last time you went somewhere to just dance?"</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-11.mp3" length="4451563" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-11.mp3</guid>
+      <pubDate>Fri, 11 Dec 2009 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>New Music Canada Track of the Day. Lisa Christiansen: "When was the last time you went somewhere to just dance?"</itunes:subtitle>
+      <itunes:summary>New Music Canada Track of the Day. Lisa Christiansen: "When was the last time you went somewhere to just dance?"</itunes:summary>
+      <itunes:duration>00:04:33</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>Bonjay - Gimmee Gimmee (Grahmzilla remix)</title>
+      <description>New Music Canada Track of the Day. Lana: "... have since been bringing their mix of bass, beats, reggae, soul...."</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-10.mp3" length="6813560" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-10.mp3</guid>
+      <pubDate>Thu, 10 Dec 2009 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>New Music Canada Track of the Day. Lana: "... have since been bringing their mix of bass, beats, reggae, soul...."</itunes:subtitle>
+      <itunes:summary>New Music Canada Track of the Day. Lana: "... have since been bringing their mix of bass, beats, reggae, soul...."</itunes:summary>
+      <itunes:duration>00:07:01</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>#228 - The 2009 Bucky Awards</title>
+      <description>It's time for CBC Radio 3's unique year-end awards show, honouring the best in new and independent Canadian music, in such categories as "Best Song", "Best New Artist", and "Best Live Act".</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/radio3/CBCR3_2009-12-09.mp3" length="82912579" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/radio3/CBCR3_2009-12-09.mp3</guid>
+      <pubDate>Wed, 09 Dec 2009 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>It's time for CBC Radio 3's unique year-end awards show, honouring the best in new and independent Canadian music, in such categories as "Best Song", "Best New Artist", and "Best Live Act".</itunes:subtitle>
+      <itunes:summary>It's time for CBC Radio 3's unique year-end awards show, honouring the best in new and independent Canadian music, in such categories as "Best Song", "Best New Artist", and "Best Live Act".</itunes:summary>
+      <itunes:duration>01:26:17</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>Bahamas Live</title>
+      <description>This week's Sessions podcast takes us back to the 2009 Hillside Festival in Guelph, Ontario, where Afie Jurvanen (a.k.a. Bahamas) delivers a laid back performance for fans in the pouring rain.</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/sessions/CBCR3Sessions_2009-12-09.mp3" length="23359098" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/sessions/CBCR3Sessions_2009-12-09.mp3</guid>
+      <pubDate>Wed, 09 Dec 2009 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>This week's Sessions podcast takes us back to the 2009 Hillside Festival in Guelph, Ontario, where Afie Jurvanen (a.k.a. Bahamas) delivers a laid back performance for fans in the pouring rain.</itunes:subtitle>
+      <itunes:summary>This week's Sessions podcast takes us back to the 2009 Hillside Festival in Guelph, Ontario, where Afie Jurvanen (a.k.a. Bahamas) delivers a laid back performance for fans in the pouring rain.</itunes:summary>
+      <itunes:duration>00:24:26</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>Fall Horsie - The Great Ice Storm</title>
+      <description>New Music Canada Track of the Day. Craig Norris: "Maybe some of you out there have never ever experienced a good old-fashioned southwestern Ontario snowstorm..."</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-09.mp3" length="4355433" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-09.mp3</guid>
+      <pubDate>Wed, 09 Dec 2009 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>New Music Canada Track of the Day. Craig Norris: "Maybe some of you out there have never ever experienced a good old-fashioned southwestern Ontario snowstorm..."</itunes:subtitle>
+      <itunes:summary>New Music Canada Track of the Day. Craig Norris: "Maybe some of you out there have never ever experienced a good old-fashioned southwestern Ontario snowstorm..."</itunes:summary>
+      <itunes:duration>00:04:27</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>Jadea Kelly - Deirdre</title>
+      <description>New Music Canada Track of the Day. Amanda Putz: "Deirdre is her Celtic hymn about a fictional princess escaping an arranged marriage."</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-08.mp3" length="3780321" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-08.mp3</guid>
+      <pubDate>Tue, 08 Dec 2009 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>New Music Canada Track of the Day. Amanda Putz: "Deirdre is her Celtic hymn about a fictional princess escaping an arranged marriage."</itunes:subtitle>
+      <itunes:summary>New Music Canada Track of the Day. Amanda Putz: "Deirdre is her Celtic hymn about a fictional princess escaping an arranged marriage."</itunes:summary>
+      <itunes:duration>00:03:51</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>The Sunshine Show 24</title>
+      <description>This week, Mr. Johnson presents the Birthday Club, another entry to his Short Story Contest and addresses his controversial appearance on another Radio 3 show. And introduces songs.</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/thesunshineshow/CBCR3Sun_2009-12-07.mp3" length="45402988" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/thesunshineshow/CBCR3Sun_2009-12-07.mp3</guid>
+      <pubDate>Mon, 07 Dec 2009 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>This week, Mr. Johnson presents the Birthday Club, another entry to his Short Story Contest and addresses his controversial appearance on another Radio 3 show. And introduces songs.</itunes:subtitle>
+      <itunes:summary>This week, Mr. Johnson presents the Birthday Club, another entry to his Short Story Contest and addresses his controversial appearance on another Radio 3 show. And introduces songs.</itunes:summary>
+      <itunes:duration>00:47:13</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>Pat LePoidevin - What About The Mouse</title>
+      <description>New Music Canada Track of the Day. Guest Host, Martin Cathrae AKA Suckamc: "I found myself walking down the street, wanting to belt out his songs, and I think you'll feel the same way."</description>
+      <enclosure url="http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-07.mp3" length="6077425" type="audio/mpeg" />
+      <guid>http://www.cbc.ca/radio3/podcasts/trackoftheday/CBCR3Track_2009-12-07.mp3</guid>
+      <pubDate>Mon, 07 Dec 2009 00:00:00 PST</pubDate>
+      <link>http://radio3.cbc.ca/</link>
+      <category>Music</category>
+      <itunes:subtitle>New Music Canada Track of the Day. Guest Host, Martin Cathrae AKA Suckamc: "I found myself walking down the street, wanting to belt out his songs, and I think you'll feel the same way."</itunes:subtitle>
+      <itunes:summary>New Music Canada Track of the Day. Guest Host, Martin Cathrae AKA Suckamc: "I found myself walking down the street, wanting to belt out his songs, and I think you'll feel the same way."</itunes:summary>
+      <itunes:duration>00:06:15</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+  </channel>
+</rss>
