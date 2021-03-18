@@ -16,8 +16,6 @@
  */
 package com.sun.syndication.feed.module;
 
-import com.sun.syndication.feed.CopyFrom;
-
 import java.util.List;
 import java.util.Date;
 
@@ -28,7 +26,7 @@ import java.util.Date;
  * @author Alejandro Abdelnur
  *
  */
-public interface DCModule extends Module,CopyFrom {
+public interface DCModule extends Module {
 
     /**
      * URI of the Dublin Core Module (http://purl.org/dc/elements/1.1/).

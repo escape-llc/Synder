@@ -19,8 +19,6 @@ package com.sun.syndication.feed.module.impl;
 import com.sun.syndication.feed.impl.ObjectBean;
 import com.sun.syndication.feed.module.Module;
 
-import java.io.Serializable;
-
 /**
  * Base class for modules describing Metadata of feeds, default implementations.
  * Examples of such modules are the Dublin Core and Syndication modules.
@@ -28,7 +26,7 @@ import java.io.Serializable;
  * @author Alejandro Abdelnur
  *
  */
-public abstract class ModuleImpl implements Cloneable,Serializable,Module {
+public abstract class ModuleImpl implements Module {
 	private static final long serialVersionUID = 1L;
 	private ObjectBean _objBean;
     private String _uri;

@@ -33,7 +33,7 @@ import java.io.Serializable;
  * @author escape-llc
  *
  */
-public class DCSubjectImpl implements Cloneable,Serializable, DCSubject {
+public class DCSubjectImpl implements Serializable, DCSubject {
 	private static final long serialVersionUID = 1L;
 	private ObjectBean _objBean;
     private String _taxonomyUri;

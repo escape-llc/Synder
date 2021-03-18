@@ -83,9 +83,13 @@ public class DefaultContext implements Context {
 			return (T) ctor.newInstance(ctx);
 		} catch (NoSuchMethodException nsme) {
 			try {
-				return (T) mClass.newInstance();
+				return (T) mClass.getDeclaredConstructor().newInstance();
+			} catch (InvocationTargetException e) {
 			} catch (InstantiationException e) {
 			} catch (IllegalAccessException e) {
+			} catch (IllegalArgumentException e) {
+			} catch (NoSuchMethodException e) {
+			} catch (SecurityException e) {
 			}
 		} catch (IllegalArgumentException e) {
 		} catch (InstantiationException e) {

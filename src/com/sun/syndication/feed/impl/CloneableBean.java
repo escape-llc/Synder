@@ -127,7 +127,7 @@ public class CloneableBean implements Serializable, Cloneable {
     public Object beanClone() throws CloneNotSupportedException {
         Object clonedBean;
         try {
-            clonedBean = _obj.getClass().newInstance();
+            clonedBean = _obj.getClass().getDeclaredConstructor().newInstance();
             PropertyDescriptor[] pds = BeanIntrospector.getPropertyDescriptors(_obj.getClass());
             if (pds!=null) {
                 for (int i=0;i<pds.length;i++) {
@@ -157,7 +157,6 @@ public class CloneableBean implements Serializable, Cloneable {
         return clonedBean;
     }
 
-    @SuppressWarnings("unchecked")
 		private Object doClone(Object value) throws Exception {
         if (value!=null) {
             Class<?> vClass = value.getClass();
@@ -207,7 +206,7 @@ public class CloneableBean implements Serializable, Cloneable {
     @SuppressWarnings("unchecked")
 	private Object cloneCollection(Collection<?> collection) throws Exception {
         Class<?> mClass = collection.getClass();
-        Collection<Object> newColl = (Collection<Object>) mClass.newInstance();
+        Collection<Object> newColl = (Collection<Object>) mClass.getDeclaredConstructor().newInstance();
         Iterator<?> i = collection.iterator();
         while (i.hasNext()) {
             Object element = doClone(i.next());
@@ -219,7 +218,7 @@ public class CloneableBean implements Serializable, Cloneable {
     @SuppressWarnings("unchecked")
 	private Object cloneMap(Map map) throws Exception {
         Class<?> mClass = map.getClass();
-        Map<Object,Object> newMap = (Map<Object,Object>) mClass.newInstance();
+        Map<Object,Object> newMap = (Map<Object,Object>) mClass.getDeclaredConstructor().newInstance();
         Iterator<Map.Entry<Object,Object>> entries = map.entrySet().iterator();
         while (entries.hasNext()) {
             Map.Entry<Object,Object> entry = entries.next();

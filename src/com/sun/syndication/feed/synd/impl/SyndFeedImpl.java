@@ -21,6 +21,7 @@ import com.sun.syndication.feed.impl.ObjectBean;
 import com.sun.syndication.feed.impl.CopyFromHelper;
 import com.sun.syndication.feed.WireFeed;
 import com.sun.syndication.feed.module.*;
+import com.sun.syndication.feed.module.Module;
 import com.sun.syndication.feed.module.impl.ContentModuleImpl;
 import com.sun.syndication.feed.module.impl.DCModuleImpl;
 import com.sun.syndication.feed.module.impl.DCTermsModuleImpl;

@@ -73,11 +73,10 @@ public class CopyFromHelper {
             return null;
         }
         else {
-            return (CopyFrom) (_baseImplMap.get(interfaceClass)).newInstance();
+            return (CopyFrom) (_baseImplMap.get(interfaceClass)).getDeclaredConstructor().newInstance();
         }
     }
 
-    @SuppressWarnings("unchecked")
 		private Object doCopy(Object value,Class<?> baseInterface) throws Exception {
         if (value!=null) {
             Class<?> vClass = value.getClass();
@@ -103,7 +102,7 @@ public class CopyFromHelper {
                 if (value instanceof CopyFrom) {
                     CopyFrom source = (CopyFrom) value;
                     CopyFrom target = createInstance(source.getInterface());
-                    target = target == null ?  (CopyFrom) value.getClass().newInstance() : target;
+                    target = target == null ?  (CopyFrom) value.getClass().getDeclaredConstructor().newInstance() : target;
                     target.copyFrom(source);
                     value = target;
                 }
@@ -126,7 +125,6 @@ public class CopyFromHelper {
         return newArray;
     }
 
-    @SuppressWarnings("unchecked")
 		private Object doCopyCollection(Collection<?> collection,Class<?> baseInterface) throws Exception {
         // expecting SETs or LISTs only, going default implementation of them
         Collection<Object> newColl = (collection instanceof Set) ? (Collection<Object>)new HashSet<Object>() : (Collection<Object>)new ArrayList<Object>();
