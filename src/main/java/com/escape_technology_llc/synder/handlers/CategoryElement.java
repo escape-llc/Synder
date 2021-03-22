@@ -25,7 +25,7 @@ import com.sun.syndication.feed.synd.impl.SyndCategoryImpl;
 /**
  * Handler for Category element for both RSS and Atom.
  * Creates and populates a SyndCategory.
- * Captures attributes: term->Name, scheme->TaxonomyUri, domain->TaxonomyUri, label->Name, name->Name.
+ * Captures attributes: term-&gt;Name, scheme-&gt;TaxonomyUri, domain-&gt;TaxonomyUri, label-&gt;Name, name-&gt;Name.
  * Captures characters (if any) to Name if it was not set by an attribute.
  * @author escape-llc
  *

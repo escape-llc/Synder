@@ -37,7 +37,7 @@ import com.sun.syndication.feed.synd.impl.SyndFeedImpl;
 
 /**
  * Handler for RSS Channel element.
- * Captures Title, Description, pubDate->feed.PublishedDate, lastBuildDate->feed.UpdatedDate,link as add to feed.Links, Image.
+ * Captures Title, Description, pubDate-&gt;feed.PublishedDate, lastBuildDate-&gt;feed.UpdatedDate,link as add to feed.Links, Image.
  * @author escape-llc
  *
  */

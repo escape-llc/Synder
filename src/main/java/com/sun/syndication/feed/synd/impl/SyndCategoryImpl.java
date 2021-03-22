@@ -24,8 +24,6 @@ import java.io.Serializable;
 
 /**
  * Bean for categories of SyndFeedImpl feeds and entries.
- * <p>
- * 
  * @author Alejandro Abdelnur
  * @author escape-llc
  * 
@@ -44,8 +42,6 @@ public class SyndCategoryImpl implements Serializable, SyndCategory {
 
 	/**
 	 * Creates a deep 'bean' clone of the object.
-	 * <p>
-	 * 
 	 * @return a clone of the object.
 	 * @throws CloneNotSupportedException
 	 *           thrown if an element of the object cannot be cloned.
@@ -58,8 +54,6 @@ public class SyndCategoryImpl implements Serializable, SyndCategory {
 	/**
 	 * Indicates whether some other object is "equal to" this one as defined by
 	 * the Object equals() method.
-	 * <p>
-	 * 
 	 * @param other
 	 *          he reference object with which to compare.
 	 * @return <b>true</b> if 'this' object is equal to the 'other' object.
@@ -71,10 +65,7 @@ public class SyndCategoryImpl implements Serializable, SyndCategory {
 
 	/**
 	 * Returns a hashcode value for the object.
-	 * <p>
 	 * It follows the contract defined by the Object hashCode() method.
-	 * <p>
-	 * 
 	 * @return the hashcode of the bean object.
 	 * 
 	 */
@@ -84,8 +75,6 @@ public class SyndCategoryImpl implements Serializable, SyndCategory {
 
 	/**
 	 * Returns the String representation for the object.
-	 * <p>
-	 * 
 	 * @return String representation for the object.
 	 * 
 	 */
@@ -95,16 +84,12 @@ public class SyndCategoryImpl implements Serializable, SyndCategory {
 
 	/**
 	 * Default constructor. All properties are set to <b>null</b>.
-	 * <p>
-	 * 
 	 */
 	public SyndCategoryImpl() {
 	}
 
 	/**
 	 * Returns the category name.
-	 * <p>
-	 * 
 	 * @return the category name, <b>null</b> if none.
 	 * 
 	 */
@@ -114,8 +99,6 @@ public class SyndCategoryImpl implements Serializable, SyndCategory {
 
 	/**
 	 * Sets the category name.
-	 * <p>
-	 * 
 	 * @param name
 	 *          the category name to set, <b>null</b> if none.
 	 * 
@@ -126,8 +109,6 @@ public class SyndCategoryImpl implements Serializable, SyndCategory {
 
 	/**
 	 * Returns the category taxonomy URI.
-	 * <p>
-	 * 
 	 * @return the category taxonomy URI, <b>null</b> if none.
 	 * 
 	 */
@@ -137,8 +118,6 @@ public class SyndCategoryImpl implements Serializable, SyndCategory {
 
 	/**
 	 * Sets the category taxonomy URI.
-	 * <p>
-	 * 
 	 * @param taxonomyUri
 	 *          the category taxonomy URI to set, <b>null</b> if none.
 	 * 

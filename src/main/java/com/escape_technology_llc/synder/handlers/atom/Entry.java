@@ -40,8 +40,8 @@ import com.sun.syndication.feed.synd.impl.SyndEntryImpl;
 
 /**
  * Handler for Atom Entry element.
- * Captures title->TitleEx, id->Link, content->add to Contents, published->PublishedDate, updated->UpdatedDate, rights->Rights,
- * link->add to Links or Enclosures depending on REL attribute, category->add to Categories, summary->add to Contents.
+ * Captures title-&gt;TitleEx, id-&gt;Link, content-&gt;add to Contents, published-&gt;PublishedDate, updated-&gt;UpdatedDate, rights-&gt;Rights,
+ * link-&gt;add to Links or Enclosures depending on REL attribute, category-&gt;add to Categories, summary-&gt;add to Contents.
  * Authors and Contributors are captured by the Atom10 implementation.
  * @author escape-llc
  *

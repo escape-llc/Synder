@@ -41,7 +41,6 @@ import java.io.Serializable;
 
 /**
  * Bean for all types of feeds.
- * <p>
  * @author Alejandro Abdelnur
  * @author escape-llc
  */
@@ -77,7 +76,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 
 	/**
 	 * Unmodifiable Set containing the convenience properties of this class.
-	 * <p>
 	 * Convenience properties are mapped to Modules, for cloning the convenience
 	 * properties can be ignored as they will be copied as part of the module
 	 * cloning.
@@ -93,8 +91,7 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	/**
 	 * For implementations extending SyndFeedImpl to be able to use the ObjectBean
 	 * functionality with extended interfaces.
-	 * <p>
-	 * @param beanClass
+	 * @param beanClass target class.
 	 * @param convenienceProperties
 	 *          set containing the convenience properties of the SyndEntryImpl
 	 *          (the are ignored during cloning, check CloneableBean for details).
@@ -105,7 +102,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	}
 	/**
 	 * Default constructor. All properties are set to <b>null</b>.
-	 * <p>
 	 */
 	public SyndFeedImpl() {
 		this(SyndFeed.class, IGNORE_PROPERTIES);
@@ -117,7 +113,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	}
 	/**
 	 * Creates a deep 'bean' clone of the object.
-	 * <p>
 	 * @return a clone of the object.
 	 * @throws CloneNotSupportedException
 	 *           thrown if an element of the object cannot be cloned.
@@ -128,7 +123,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	/**
 	 * Indicates whether some other object is "equal to" this one as defined by
 	 * the Object equals() method.
-	 * <p>
 	 * @param other
 	 *          he reference object with which to compare.
 	 * @return <b>true</b> if 'this' object is equal to the 'other' object.
@@ -142,9 +136,7 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	}
 	/**
 	 * Returns a hashcode value for the object.
-	 * <p>
 	 * It follows the contract defined by the Object hashCode() method.
-	 * <p>
 	 * @return the hashcode of the bean object.
 	 */
 	public int hashCode() {
@@ -152,7 +144,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	}
 	/**
 	 * Returns the String representation for the object.
-	 * <p>
 	 * @return String representation for the object.
 	 */
 	public String toString() {
@@ -163,12 +154,11 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	}
 	/**
 	 * Creates a feed containing the information of the SyndFeedImpl.
-	 * <p>
 	 * The feed type of the created WireFeed is taken from the SyndFeedImpl
 	 * feedType property.
 	 * <p>
 	 * <b>Not Implemented</b>
-	 * <p>
+	 * </p>
 	 * @return NULL.
 	 */
 	public WireFeed createWireFeed() {
@@ -178,7 +168,7 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	 * Creates a feed containing the information of the SyndFeedImpl.
 	 * <p>
 	 * <b>Not Implemented</b>
-	 * <p>
+	 * </p>
 	 * @param feedType
 	 *          the feed type for the WireFeed to be created.
 	 * @return NULL.
@@ -193,12 +183,11 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	 * Returns the WireFeed this SyndFeed was created from. Will return null if
 	 * the original feed is not stored or if this SyndFeed was not created from a
 	 * WireFeed.
-	 * <p>
 	 * Note: The wire feed returned here will NOT contain any modifications done
 	 * on this SyndFeed since it was created.
 	 * <p>
 	 * <b>Not Implemented</b>
-	 * <p>
+	 * </p>
 	 * @return NULL
 	 */
 	public WireFeed originalWireFeed() {
@@ -206,7 +195,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	}
 	/**
 	 * Returns the feed type.
-	 * <p>
 	 * @return the feed type, <b>null</b> if none.
 	 */
 	public String getFeedType() {
@@ -214,7 +202,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	}
 	/**
 	 * Sets the wire feed type the feed.
-	 * <p>
 	 * @param feedType
 	 *          the feed type to set, <b>null</b> if none.
 	 */
@@ -231,7 +218,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	}
 	/**
 	 * Sets the charset encoding of a the feed. This is not set by parsers.
-	 * <p>
 	 * @param encoding
 	 *          the charset encoding of the feed.
 	 */
@@ -244,9 +230,9 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	 * How the feed URI maps to a concrete feed type (RSS or Atom) depends on the
 	 * concrete feed type. This is explained in detail in Rome documentation, <a
 	 * href="http://wiki.java.net/bin/edit/Javawsxml/Rome04URIMapping">Feed and
-	 * entry URI mapping</a>.
+	 * entry URI mapping</a>.</p>
 	 * <p>
-	 * The returned URI is a normalized URI as specified in RFC 2396bis.
+	 * The returned URI is a normalized URI as specified in RFC 2396bis.</p>
 	 * <p>
 	 * Note: The URI is the unique identifier, in the RSS 2.0/atom case this is
 	 * the GUID, for RSS 1.0 this is the URI attribute of the item. The Link is
@@ -258,8 +244,7 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	 * same item). Also, though rare, there could be multiple items with the same
 	 * link but a different URI and associated metadata which need to be treated
 	 * as distinct entities. In the RSS 1.0 case the URI must be a valid RDF URI
-	 * reference.
-	 * <p>
+	 * reference.</p>
 	 * @return the feed URI, <b>null</b> if none.
 	 */
 	public String getUri() {
@@ -271,7 +256,7 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	 * How the feed URI maps to a concrete feed type (RSS or Atom) depends on the
 	 * concrete feed type. This is explained in detail in Rome documentation, <a
 	 * href="http://wiki.java.net/bin/edit/Javawsxml/Rome04URIMapping">Feed and
-	 * entry URI mapping</a>.
+	 * entry URI mapping</a>.</p>
 	 * <p>
 	 * Note: The URI is the unique identifier, in the RSS 2.0/atom case this is
 	 * the GUID, for RSS 1.0 this is the URI attribute of the item. The Link is
@@ -283,8 +268,7 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	 * same item). Also, though rare, there could be multiple items with the same
 	 * link but a different URI and associated metadata which need to be treated
 	 * as distinct entities. In the RSS 1.0 case the URI must be a valid RDF URI
-	 * reference.
-	 * <p>
+	 * reference.</p>
 	 * @param uri
 	 *          the feed URI to set, <b>null</b> if none.
 	 */
@@ -294,7 +278,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 
 	/**
 	 * Returns the feed title.
-	 * <p>
 	 * @return the feed title, <b>null</b> if none.
 	 */
 	public String getTitle() {
@@ -304,7 +287,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	}
 	/**
 	 * Sets the feed title.  Creates <b>SyndContent</b> if necessary.
-	 * <p>
 	 * @param title
 	 *          the feed title to set, <b>null</b> if none.
 	 */
@@ -317,7 +299,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	}
 	/**
 	 * Returns the feed title as a text construct.
-	 * <p>
 	 * @return the feed title, <b>null</b> if none.
 	 */
 	public SyndContent getTitleEx() {
@@ -325,7 +306,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	}
 	/**
 	 * Sets the feed title as a text construct.
-	 * <p>
 	 * @param title
 	 *          the feed title to set, <b>null</b> if none.
 	 */
@@ -334,7 +314,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	}
 	/**
 	 * Returns the feed link.  If multiple, returns the first one.
-	 * <p>
 	 * Note: The URI is the unique identifier, in the RSS 2.0/atom case this is
 	 * the GUID, for RSS 1.0 this is the URI attribute of the item. The Link is
 	 * the URL that the item is accessible under, the URI is the permanent
@@ -346,7 +325,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	 * link but a different URI and associated metadata which need to be treated
 	 * as distinct entities. In the RSS 1.0 case the URI must be a valid RDF URI
 	 * reference.
-	 * <p>
 	 * @return the feed link, <b>null</b> if none.
 	 */
 	public String getLink() {
@@ -354,7 +332,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	}
 	/**
 	 * Sets the feed link.
-	 * <p>
 	 * Note: The URI is the unique identifier, in the RSS 2.0/atom case this is
 	 * the GUID, for RSS 1.0 this is the URI attribute of the item. The Link is
 	 * the URL that the item is accessible under, the URI is the permanent
@@ -366,7 +343,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	 * link but a different URI and associated metadata which need to be treated
 	 * as distinct entities. In the RSS 1.0 case the URI must be a valid RDF URI
 	 * reference.
-	 * <p>
 	 * @param link
 	 *          the feed link to set, <b>null</b> if none.
 	 */
@@ -377,7 +353,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	}
 	/**
 	 * Returns the feed description.
-	 * <p>
 	 * @return the feed description, <b>null</b> if none.
 	 */
 	public String getDescription() {
@@ -387,7 +362,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	}
 	/**
 	 * Sets the feed description.  Creates <b>SyndContent</b> if necessary.
-	 * <p>
 	 * @param description
 	 *          the feed description to set, <b>null</b> if none.
 	 */
@@ -400,7 +374,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	}
 	/**
 	 * Returns the feed description as a text construct.
-	 * <p>
 	 * @return the feed description, <b>null</b> if none.
 	 */
 	public SyndContent getDescriptionEx() {
@@ -408,7 +381,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	}
 	/**
 	 * Sets the feed description as a text construct.
-	 * <p>
 	 * @param description
 	 *          the feed description to set, <b>null</b> if none.
 	 */
@@ -417,7 +389,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	}
 	/**
 	 * Returns the feed published date.
-	 * <p>
 	 * @return the feed published date, <b>null</b> if none.
 	 */
 	public Date getPublishedDate() {
@@ -425,7 +396,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	}
 	/**
 	 * Sets the feed published date.
-	 * <p>
 	 * @param publishedDate
 	 *          the feed published date to set, <b>null</b> if none.
 	 */
@@ -436,7 +406,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	public void setUpdatedDate(Date updatedDate) { _updateDate = updatedDate; }
 	/**
 	 * Returns the feed copyright.
-	 * <p>
 	 * @return the feed copyright, <b>null</b> if none.
 	 */
 	public String getCopyright() {
@@ -453,7 +422,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	}
 	/**
 	 * Returns the feed image.
-	 * <p>
 	 * @return the feed image, <b>null</b> if none.
 	 */
 	public SyndImage getImage() {
@@ -461,7 +429,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	}
 	/**
 	 * Sets the feed image.
-	 * <p>
 	 * @param image
 	 *          the feed image to set, <b>null</b> if none.
 	 */
@@ -470,7 +437,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	}
 	/**
 	 * Returns the feed categories.
-	 * <p>
 	 * @return a list of SyndCategoryImpl elements with the feed categories, an
 	 *         empty list if none.
 	 */
@@ -479,7 +445,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	}
 	/**
 	 * Sets the feed categories.
-	 * <p>
 	 * @param categories
 	 *          the list of SyndCategoryImpl elements with the feed categories to
 	 *          set, an empty list or <b>null</b> if none.
@@ -489,7 +454,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	}
 	/**
 	 * Returns the feed entries.
-	 * <p>
 	 * @return a list of SyndEntryImpl elements with the feed entries, an empty
 	 *         list if none.
 	 */
@@ -498,7 +462,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	}
 	/**
 	 * Sets the feed entries.
-	 * <p>
 	 * @param entries
 	 *          the list of SyndEntryImpl elements with the feed entries to set,
 	 *          an empty list or <b>null</b> if none.
@@ -508,7 +471,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	}
 	/**
 	 * Returns the feed language.
-	 * <p>
 	 * @return the feed language, <b>null</b> if none.
 	 */
 	public String getLanguage() {
@@ -516,7 +478,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	}
 	/**
 	 * Sets the feed language.
-	 * <p>
 	 * @param language
 	 *          the feed language to set, <b>null</b> if none.
 	 */
@@ -525,7 +486,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	}
 	/**
 	 * Returns the feed modules.
-	 * <p>
 	 * @return a list of ModuleImpl elements with the feed modules, an empty list
 	 *         if none.
 	 */
@@ -537,7 +497,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	}
 	/**
 	 * Sets the feed modules.
-	 * <p>
 	 * @param modules
 	 *          the list of ModuleImpl elements with the feed modules to set, an
 	 *          empty list or <b>null</b> if none.
@@ -547,7 +506,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	}
 	/**
 	 * Returns the module identified by a given URI.
-	 * <p>
 	 * @param uri
 	 *          the URI of the ModuleImpl.
 	 * @return The module with the given URI, <b>null</b> if none.
@@ -557,7 +515,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	}
 	/**
 	 * Returns the links
-	 * <p>
 	 * @return Returns the links.
 	 */
 	public List<SyndLink> getLinks() {
@@ -565,7 +522,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	}
 	/**
 	 * Set the links.
-	 * <p>
 	 * @param links
 	 *          The links to set.
 	 */
@@ -587,7 +543,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	}
 	/**
 	 * Sets the feed author.
-	 * <p>
 	 * @param author
 	 *          the feed author to set, <b>null</b> if none.
 	 */
@@ -622,7 +577,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	}
 	/**
 	 * Returns foreign markup found at channel level.
-	 * <p>
 	 * @return Opaque object
 	 */
 	public Object getForeignMarkup() {
@@ -630,7 +584,6 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
 	}
 	/**
 	 * Sets foreign markup found at channel level.
-	 * <p>
 	 * @param foreignMarkup
 	 *          Opaque object
 	 */

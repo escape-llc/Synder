@@ -112,9 +112,9 @@ public class ToStringBean implements Serializable {
 	/**
 	 * Ctor.
 	 * Accepts explicit set of ignore properties.  These are not followed or printed.
-	 * @param beanClass
-	 * @param ignore
-	 * @param obj
+	 * @param beanClass target class.
+	 * @param ignore ignore these properties.
+	 * @param obj target object.
 	 */
 	public ToStringBean(Class<?> beanClass, Set<String> ignore, Object obj) {
 		_beanClass = beanClass;
@@ -127,9 +127,7 @@ public class ToStringBean implements Serializable {
 
 	/**
 	 * Returns the String representation of the bean given in the constructor.
-	 * <p>
 	 * It uses the Class name as the prefix.
-	 * <p>
 	 * 
 	 * @return bean object String representation.
 	 *
@@ -150,7 +148,6 @@ public class ToStringBean implements Serializable {
 
 	/**
 	 * Returns the String representation of the bean given in the constructor.
-	 * <p>
 	 * 
 	 * @param obj top-level object.
 	 * @return bean object String representation.

@@ -24,9 +24,9 @@ import com.sun.syndication.feed.synd.impl.SyndContentImpl;
 
 /**
  * Intented to capture entity-escaped or CDATA-formatted content.
- * Captures attributes: type->SyndContent.Type, else DEFAULT_TYPE.
- * Captures element localName/Name->SyndContent.Mode.
- * Captures characters->Value.
+ * Captures attributes: type-&gt;SyndContent.Type, else DEFAULT_TYPE.
+ * Captures element localName/Name-&gt;SyndContent.Mode.
+ * Captures characters-&gt;Value.
  * @author escape-llc
  *
  * @param <R> Hosting class.

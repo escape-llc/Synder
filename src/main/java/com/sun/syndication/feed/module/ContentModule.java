@@ -32,7 +32,7 @@ public interface ContentModule extends Module {
     SyndContent getEncoded();
     /**
      * Set the encoded content.
-     * @param sc
+     * @param sc source content.
      */
     void setEncoded(SyndContent sc);
 }

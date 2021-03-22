@@ -21,7 +21,7 @@ import java.util.Map;
 import com.escape_technology_llc.synder.ParseContext;
 
 /**
- * Setter fixed to Map<String,String> type.
+ * Setter fixed to Map&lt;String,String&gt; type.
  * @author escape-llc
  *
  */

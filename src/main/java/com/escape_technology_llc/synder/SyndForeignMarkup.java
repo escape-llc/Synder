@@ -50,7 +50,7 @@ public interface SyndForeignMarkup extends Cloneable {
 	String getValue();
 	/**
 	 * Set the foreign markup.
-	 * @param sx
+	 * @param sx new value.
 	 */
 	void setValue(String sx);
 	/**

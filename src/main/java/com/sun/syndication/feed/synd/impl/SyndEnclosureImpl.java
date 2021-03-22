@@ -39,8 +39,6 @@ public class SyndEnclosureImpl implements Serializable,SyndEnclosure {
 
     /**
      * Default constructor. All properties are set to <b>null</b>.
-     * <p>
-     *
      */
     public SyndEnclosureImpl() {
     }
@@ -52,7 +50,6 @@ public class SyndEnclosureImpl implements Serializable,SyndEnclosure {
 
     /**
      * Creates a deep 'bean' clone of the object.
-     * <p>
      * @return a clone of the object.
      * @throws CloneNotSupportedException thrown if an element of the object cannot be cloned.
      *
@@ -63,7 +60,6 @@ public class SyndEnclosureImpl implements Serializable,SyndEnclosure {
 
     /**
      * Indicates whether some other object is "equal to" this one as defined by the Object equals() method.
-     * <p>
      * @param other he reference object with which to compare.
      * @return <b>true</b> if 'this' object is equal to the 'other' object.
      *
@@ -74,9 +70,7 @@ public class SyndEnclosureImpl implements Serializable,SyndEnclosure {
 
     /**
      * Returns a hashcode value for the object.
-     * <p>
      * It follows the contract defined by the Object hashCode() method.
-     * <p>
      * @return the hashcode of the bean object.
      *
      */
@@ -86,7 +80,6 @@ public class SyndEnclosureImpl implements Serializable,SyndEnclosure {
 
     /**
      * Returns the String representation for the object.
-     * <p>
      * @return String representation for the object.
      *
      */
@@ -96,7 +89,6 @@ public class SyndEnclosureImpl implements Serializable,SyndEnclosure {
 
     /**
      * Returns the enclosure URL.
-     * <p/>
      *
      * @return the enclosure URL, <b>null</b> if none.
      */
@@ -106,8 +98,6 @@ public class SyndEnclosureImpl implements Serializable,SyndEnclosure {
 
     /**
      * Sets the enclosure URL.
-     * <p/>
-     *
      * @param url the enclosure URL to set, <b>null</b> if none.
      */
     public void setUrl(String url) {
@@ -116,8 +106,6 @@ public class SyndEnclosureImpl implements Serializable,SyndEnclosure {
 
     /**
      * Returns the enclosure length.
-     * <p/>
-     *
      * @return the enclosure length, <b>null</b> if none.
      */
     public long getLength() {
@@ -126,8 +114,6 @@ public class SyndEnclosureImpl implements Serializable,SyndEnclosure {
 
     /**
      * Sets the enclosure length.
-     * <p/>
-     *
      * @param length the enclosure length to set, <b>null</b> if none.
      */
     public void setLength(long length) {
@@ -136,8 +122,6 @@ public class SyndEnclosureImpl implements Serializable,SyndEnclosure {
 
     /**
      * Returns the enclosure type.
-     * <p/>
-     *
      * @return the enclosure type, <b>null</b> if none.
      */
     public String getType() {
@@ -146,8 +130,6 @@ public class SyndEnclosureImpl implements Serializable,SyndEnclosure {
 
     /**
      * Sets the enclosure type.
-     * <p/>
-     *
      * @param type the enclosure type to set, <b>null</b> if none.
      */
     public void setType(String type) {

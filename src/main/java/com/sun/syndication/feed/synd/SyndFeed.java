@@ -432,7 +432,7 @@ public interface SyndFeed extends Cloneable, CopyFrom, Extendable {
     /**
      * Get the rights.
      * Used by RFC4287.
-     * @return
+     * @return rights.
      */
     SyndContent getRights();
     /**
@@ -444,7 +444,7 @@ public interface SyndFeed extends Cloneable, CopyFrom, Extendable {
     /**
      * Get the generator.
      * Used by RFC4287.
-     * @return
+     * @return generator.
      */
     SyndLink getGenerator();
     /**
@@ -456,7 +456,7 @@ public interface SyndFeed extends Cloneable, CopyFrom, Extendable {
     /**
      * Get the logo.  This is different from ICON.
      * Used by RFC4287.
-     * @return
+     * @return logo.
      */
     SyndImage getLogo();
     /**
@@ -468,7 +468,6 @@ public interface SyndFeed extends Cloneable, CopyFrom, Extendable {
 
     /**
      * Returns the module identified by a given URI.
-     * <p>
      * @param uri the URI of the ModuleImpl.
      * @return The module with the given URI, <b>null</b> if none.
      */
@@ -476,7 +475,6 @@ public interface SyndFeed extends Cloneable, CopyFrom, Extendable {
 
     /**
      * Returns the feed modules.
-     * <p>
      * @return a list of ModuleImpl elements with the feed modules,
      *         an empty list if none.
      *
@@ -485,7 +483,6 @@ public interface SyndFeed extends Cloneable, CopyFrom, Extendable {
 
     /**
      * Sets the feed modules.
-     * <p>
      * @param modules the list of ModuleImpl elements with the feed modules to set,
      *        an empty list or <b>null</b> if none.
      *
@@ -494,7 +491,6 @@ public interface SyndFeed extends Cloneable, CopyFrom, Extendable {
 
     /**
      * Returns foreign markup found at channel level.
-     * <p>
      * @return Opaque object to discourage use
      *
      */
@@ -502,7 +498,6 @@ public interface SyndFeed extends Cloneable, CopyFrom, Extendable {
 
     /**
      * Sets foreign markup found at channel level.
-     * <p>
      * @param foreignMarkup Opaque object to discourage use
      *
      */
@@ -510,7 +505,6 @@ public interface SyndFeed extends Cloneable, CopyFrom, Extendable {
     
     /**
      * Creates a deep clone of the object.
-     * <p>
      * @return a clone of the object.
      * @throws CloneNotSupportedException thrown if an element of the object cannot be cloned.
      *

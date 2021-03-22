@@ -20,21 +20,19 @@ import java.io.Serializable;
 import java.util.Set;
 
 /**
- * Convenience class providing clone(), toString(), equals() and hashCode() functionality for Java Beans.
+ * <p>Convenience class providing clone(), toString(), equals() and hashCode() functionality for Java Beans.</p>
  * <p>
- * It works on all read/write properties, recursively.
+ * It works on all read/write properties, recursively.</p>
  * <p>
- * It uses the CloneableBean, EqualsBean and ToStringBean classes in a delegation pattern.
- * <p>
+ * It uses the CloneableBean, EqualsBean and ToStringBean classes in a delegation pattern.</p>
  * <h3>ObjectBean programming conventions</h3>
- * <P>
+ * <p>
  * All ObjectBean subclasses having properties that return collections they should never
  * return null if the property has been set to <b>null</b> or if a collection has not been set.
  * They should create and return an empty collection, this empty collection instance should
- * also be set to the corresponding property.
- * <P>
- * All ObjectBean subclasses properties should be live references.
+ * also be set to the corresponding property.</p>
  * <p>
+ * All ObjectBean subclasses properties should be live references.</p>
  * @author Alejandro Abdelnur
  *
  */
@@ -48,9 +46,10 @@ public class ObjectBean implements Serializable, Cloneable {
      * Constructor.
      * <p>
      * @param beanClass the class/interface to be used for property scanning.
+		 * @param obj target object.
      *
      */
-    public ObjectBean(Class<?> beanClass,Object obj) {
+    public ObjectBean(Class<?> beanClass, Object obj) {
         this(beanClass,obj,null);
     }
 
@@ -65,10 +64,11 @@ public class ObjectBean implements Serializable, Cloneable {
      * of them mapped to properties in the DC Module.
      * <p>
      * @param beanClass the class/interface to be used for property scanning.
+		 * @param obj target object.
      * @param ignoreProperties properties to ignore when cloning.
      *
      */
-    public ObjectBean(Class<?> beanClass,Object obj,Set<String> ignoreProperties) {
+    public ObjectBean(Class<?> beanClass, Object obj, Set<String> ignoreProperties) {
         _equalsBean = new EqualsBean(beanClass, obj);
         _toStringBean = new ToStringBean(beanClass, ignoreProperties, obj);
         _cloneableBean = new CloneableBean(obj, ignoreProperties);

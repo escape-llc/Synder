@@ -22,7 +22,7 @@ import com.escape_technology_llc.synder.ParseContext;
 import com.sun.syndication.feed.synd.SyndCategory;
 
 /**
- * Setter for type List<SyndContent>.
+ * Setter for type List&lt;SyndContent&gt;.
  * @author escape-llc
  *
  */

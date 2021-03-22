@@ -23,11 +23,11 @@ import com.escape_technology_llc.synder.setters.MapSetter;
 import com.escape_technology_llc.synder.setters.Setter;
 
 /**
- * Element handler for Map<String,String> property type with given key.
+ * Element handler for Map&lt;String,String&gt; property type with given key.
  * Uses element content as the Map value.
  * @author escape-llc
  *
- * @param <T>
+ * @param <T> host type.
  */
 public class SimpleMapElement<T> extends ElementHandler<T> {
 	final StringBuilder sb;

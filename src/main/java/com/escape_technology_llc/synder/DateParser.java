@@ -32,18 +32,18 @@ import java.util.Locale;
 
 
 /**
- * A helper class that parses Dates out of Strings with date time in RFC822 and
+ * <p>A helper class that parses Dates out of Strings with date time in RFC822 and
  * W3C DateTime formats plus variants for Atom (0.3) and RSS (0.9, 0.91, 0.92,
  * 0.93, 0.94, 1.0 and 2.0).
  * </p>
- * Uses JDK java.text.SimpleDateFormat class for parsing, using a mask for each
+ * <p>Uses JDK java.text.SimpleDateFormat class for parsing, using a mask for each
  * one of the possible formats.
  * </p>
- * Creates only as many DateFormat instances as are required to parse
+ * <p>Creates only as many DateFormat instances as are required to parse
  * the strings passed in.  This results in memory and parse-time savings, if
  * parsed dates conform to the standard.
  * </p>
- * Not thread-safe, because SimpleDateFormat.parse() is not.  Meant to be owned by a single caller.
+ * <p>Not thread-safe, because SimpleDateFormat.parse() is not.  Meant to be owned by a single caller.
  * </p>
  * @author Alejandro Abdelnur
  * @author escape-llc
@@ -152,9 +152,9 @@ public class DateParser {
 	}
 
 	/**
-	 * Parse Date String in RFC822 format.
+	 * <p>Parse Date String in RFC822 format.
 	 * </p>
-	 * Refer to the java.text.SimpleDateFormat javadocs for details on the format
+	 * <p>Refer to the java.text.SimpleDateFormat javadocs for details on the format
 	 * of each element.
 	 * </p>
 	 * 
@@ -178,9 +178,9 @@ public class DateParser {
 	}
 
 	/**
-	 * Parse Date String in W3C format.
+	 * <p>Parse Date String in W3C format.
 	 * </p>
-	 * Refer to the java.text.SimpleDateFormat javadocs for details on the format
+	 * <p>Refer to the java.text.SimpleDateFormat javadocs for details on the format
 	 * of each element.
 	 * </p>
 	 * 
@@ -222,7 +222,7 @@ public class DateParser {
 	}
 
 	/**
-	 * Parse Date String in W3C or RFC822 format.
+	 * <p>Parse Date String in W3C or RFC822 format.
 	 * </p>
 	 * 
 	 * @param sDate
@@ -244,9 +244,9 @@ public class DateParser {
 	}
 
 	/**
-	 * create a RFC822-formatted String.
+	 * <p>create a RFC822-formatted String.
 	 * </p>
-	 * Refer to the java.text.SimpleDateFormat javadocs for details on the format
+	 * <p>Refer to the java.text.SimpleDateFormat javadocs for details on the format
 	 * of each element.
 	 * </p>
 	 * 
@@ -261,9 +261,9 @@ public class DateParser {
 	}
 
 	/**
-	 * Create a W3C-formatted String.
+	 * <p>Create a W3C-formatted String.
 	 * </p>
-	 * Refer to the java.text.SimpleDateFormat javadocs for details on the format
+	 * <p>Refer to the java.text.SimpleDateFormat javadocs for details on the format
 	 * of each element.
 	 * </p>
 	 * 

@@ -25,7 +25,7 @@ import com.escape_technology_llc.synder.setters.Setter;
 /**
  * Handler for Guid element.
  * Marshals into SyndLinkImpl.
- * Captres "{usuri}element"->SyndLinkImpl.type, isPermaLink->SyndLinkImpl.rel.
+ * Captres "{usuri}element"-&gt;SyndLinkImpl.type, isPermaLink-&gt;SyndLinkImpl.rel.
  * @author escape-llc
  *
  * @param <R> Hosting class.

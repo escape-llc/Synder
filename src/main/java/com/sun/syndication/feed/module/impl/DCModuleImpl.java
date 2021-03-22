@@ -60,7 +60,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 
 	/**
 	 * Unmodifiable Set containing the convenience properties of this class.
-	 * <p>
 	 * Convenience properties are mapped to Modules, for cloning the convenience
 	 * properties can be ignored as the will be copied as part of the module
 	 * cloning.
@@ -69,7 +68,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 
 	/**
 	 * Default constructor. All properties are set to <b>null</b>.
-	 * <p>
 	 *
 	 */
 	public DCModuleImpl() {
@@ -92,8 +90,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 
 	/**
 	 * Returns the DublinCore module titles.
-	 * <p>
-	 * 
 	 * @return a list of Strings representing the DublinCore module title, an
 	 *         empty list if none.
 	 *
@@ -102,8 +98,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 
 	/**
 	 * Sets the DublinCore module titles.
-	 * <p>
-	 * 
 	 * @param titles
 	 *          the list of String representing the DublinCore module titles to
 	 *          set, an empty list or <b>null</b> if none.
@@ -114,8 +108,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 	/**
 	 * Gets the DublinCore module title. Convenience method that can be used to
 	 * obtain the first item, <b>null</b> if none.
-	 * <p>
-	 * 
 	 * @return the first DublinCore module title, <b>null</b> if none.
 	 */
 	public String getTitle() { return ((_title != null) && (_title.size() > 0)) ? _title.get(0) : null; }
@@ -123,8 +115,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 	/**
 	 * Sets the DublinCore module title. Convenience method that can be used when
 	 * there is only one title to set.
-	 * <p>
-	 * 
 	 * @param title
 	 *          the DublinCore module title to set, <b>null</b> if none.
 	 *
@@ -133,8 +123,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 
 	/**
 	 * Returns the DublinCore module creator.
-	 * <p>
-	 * 
 	 * @return a list of Strings representing the DublinCore module creator, an
 	 *         empty list if none.
 	 *
@@ -143,8 +131,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 
 	/**
 	 * Sets the DublinCore module creators.
-	 * <p>
-	 * 
 	 * @param creators
 	 *          the list of String representing the DublinCore module creators to
 	 *          set, an empty list or <b>null</b> if none.
@@ -155,8 +141,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 	/**
 	 * Gets the DublinCore module title. Convenience method that can be used to
 	 * obtain the first item, <b>null</b> if none.
-	 * <p>
-	 * 
 	 * @return the first DublinCore module title, <b>null</b> if none.
 	 */
 	public String getCreator() { return ((_creator != null) && (_creator.size() > 0)) ? _creator.get(0) : null; }
@@ -164,8 +148,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 	/**
 	 * Sets the DublinCore module creator. Convenience method that can be used
 	 * when there is only one creator to set.
-	 * <p>
-	 * 
 	 * @param creator
 	 *          the DublinCore module creator to set, <b>null</b> if none.
 	 *
@@ -174,8 +156,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 
 	/**
 	 * Returns the DublinCore module subjects.
-	 * <p>
-	 * 
 	 * @return a list of DCSubject elements with the DublinCore module subjects,
 	 *         an empty list if none.
 	 *
@@ -184,8 +164,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 
 	/**
 	 * Sets the DublinCore module subjects.
-	 * <p>
-	 * 
 	 * @param subjects
 	 *          the list of DCSubject elements with the DublinCore module subjects
 	 *          to set, an empty list or <b>null</b> if none.
@@ -196,8 +174,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 	/**
 	 * Gets the DublinCore module subject. Convenience method that can be used to
 	 * obtain the first item, <b>null</b> if none.
-	 * <p>
-	 * 
 	 * @return the first DublinCore module subject, <b>null</b> if none.
 	 */
 	public DCSubject getSubject() { return ((_subject != null) && (_subject.size() > 0)) ? _subject.get(0) : null; }
@@ -205,8 +181,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 	/**
 	 * Sets the DCSubject element. Convenience method that can be used when there
 	 * is only one subject to set.
-	 * <p>
-	 * 
 	 * @param subject
 	 *          the DublinCore module subject to set, <b>null</b> if none.
 	 *
@@ -215,8 +189,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 
 	/**
 	 * Returns the DublinCore module description.
-	 * <p>
-	 * 
 	 * @return a list of Strings representing the DublinCore module description,
 	 *         an empty list if none.
 	 *
@@ -225,8 +197,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 
 	/**
 	 * Sets the DublinCore module descriptions.
-	 * <p>
-	 * 
 	 * @param descriptions
 	 *          the list of String representing the DublinCore module descriptions
 	 *          to set, an empty list or <b>null</b> if none.
@@ -237,8 +207,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 	/**
 	 * Gets the DublinCore module description. Convenience method that can be used
 	 * to obtain the first item, <b>null</b> if none.
-	 * <p>
-	 * 
 	 * @return the first DublinCore module description, <b>null</b> if none.
 	 */
 	public String getDescription() { return ((_description != null) && (_description.size() > 0)) ? _description.get(0) : null; }
@@ -246,8 +214,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 	/**
 	 * Sets the DublinCore module description. Convenience method that can be used
 	 * when there is only one description to set.
-	 * <p>
-	 * 
 	 * @param description
 	 *          the DublinCore module description to set, <b>null</b> if none.
 	 *
@@ -256,8 +222,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 
 	/**
 	 * Returns the DublinCore module publisher.
-	 * <p>
-	 * 
 	 * @return a list of Strings representing the DublinCore module publisher, an
 	 *         empty list if none.
 	 *
@@ -266,8 +230,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 
 	/**
 	 * Sets the DublinCore module publishers.
-	 * <p>
-	 * 
 	 * @param publishers
 	 *          the list of String representing the DublinCore module publishers
 	 *          to set, an empty list or <b>null</b> if none.
@@ -278,8 +240,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 	/**
 	 * Gets the DublinCore module title. Convenience method that can be used to
 	 * obtain the first item, <b>null</b> if none.
-	 * <p>
-	 * 
 	 * @return the first DublinCore module title, <b>null</b> if none.
 	 */
 	public String getPublisher() { return ((_publisher != null) && (_publisher.size() > 0)) ? _publisher.get(0) : null; }
@@ -287,8 +247,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 	/**
 	 * Sets the DublinCore module publisher. Convenience method that can be used
 	 * when there is only one publisher to set.
-	 * <p>
-	 * 
 	 * @param publisher
 	 *          the DublinCore module publisher to set, <b>null</b> if none.
 	 *
@@ -297,8 +255,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 
 	/**
 	 * Returns the DublinCore module contributor.
-	 * <p>
-	 * 
 	 * @return a list of Strings representing the DublinCore module contributor,
 	 *         an empty list if none.
 	 *
@@ -307,8 +263,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 
 	/**
 	 * Sets the DublinCore module contributors.
-	 * <p>
-	 * 
 	 * @param contributors
 	 *          the list of String representing the DublinCore module contributors
 	 *          to set, an empty list or <b>null</b> if none.
@@ -319,8 +273,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 	/**
 	 * Gets the DublinCore module contributor. Convenience method that can be used
 	 * to obtain the first item, <b>null</b> if none.
-	 * <p>
-	 * 
 	 * @return the first DublinCore module contributor, <b>null</b> if none.
 	 */
 	public String getContributor() { return ((_contributors != null) && (_contributors.size() > 0)) ? _contributors.get(0) : null; }
@@ -328,8 +280,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 	/**
 	 * Sets the DublinCore module contributor. Convenience method that can be used
 	 * when there is only one contributor to set.
-	 * <p>
-	 * 
 	 * @param contributor
 	 *          the DublinCore module contributor to set, <b>null</b> if none.
 	 *
@@ -338,8 +288,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 
 	/**
 	 * Returns the DublinCore module date.
-	 * <p>
-	 * 
 	 * @return a list of Strings representing the DublinCore module date, an empty
 	 *         list if none.
 	 *
@@ -348,8 +296,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 
 	/**
 	 * Sets the DublinCore module dates.
-	 * <p>
-	 * 
 	 * @param dates
 	 *          the list of Date representing the DublinCore module dates to set,
 	 *          an empty list or <b>null</b> if none.
@@ -360,8 +306,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 	/**
 	 * Gets the DublinCore module date. Convenience method that can be used to
 	 * obtain the first item, <b>null</b> if none.
-	 * <p>
-	 * 
 	 * @return the first DublinCore module date, <b>null</b> if none.
 	 */
 	public Date getDate() { return ((_date != null) && (_date.size() > 0)) ? _date.get(0) : null; }
@@ -369,8 +313,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 	/**
 	 * Sets the DublinCore module date. Convenience method that can be used when
 	 * there is only one date to set.
-	 * <p>
-	 * 
 	 * @param date
 	 *          the DublinCore module date to set, <b>null</b> if none.
 	 *
@@ -379,8 +321,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 
 	/**
 	 * Returns the DublinCore module type.
-	 * <p>
-	 * 
 	 * @return a list of Strings representing the DublinCore module type, an empty
 	 *         list if none.
 	 *
@@ -389,8 +329,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 
 	/**
 	 * Sets the DublinCore module types.
-	 * <p>
-	 * 
 	 * @param types
 	 *          the list of String representing the DublinCore module types to
 	 *          set, an empty list or <b>null</b> if none.
@@ -401,8 +339,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 	/**
 	 * Gets the DublinCore module type. Convenience method that can be used to
 	 * obtain the first item, <b>null</b> if none.
-	 * <p>
-	 * 
 	 * @return the first DublinCore module type, <b>null</b> if none.
 	 */
 	public String getType() { return ((_type != null) && (_type.size() > 0)) ? _type.get(0) : null; }
@@ -410,8 +346,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 	/**
 	 * Sets the DublinCore module type. Convenience method that can be used when
 	 * there is only one type to set.
-	 * <p>
-	 * 
 	 * @param type
 	 *          the DublinCore module type to set, <b>null</b> if none.
 	 *
@@ -420,8 +354,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 
 	/**
 	 * Returns the DublinCore module format.
-	 * <p>
-	 * 
 	 * @return a list of Strings representing the DublinCore module format, an
 	 *         empty list if none.
 	 *
@@ -430,8 +362,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 
 	/**
 	 * Sets the DublinCore module formats.
-	 * <p>
-	 * 
 	 * @param formats
 	 *          the list of String representing the DublinCore module formats to
 	 *          set, an empty list or <b>null</b> if none.
@@ -442,8 +372,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 	/**
 	 * Gets the DublinCore module format. Convenience method that can be used to
 	 * obtain the first item, <b>null</b> if none.
-	 * <p>
-	 * 
 	 * @return the first DublinCore module format, <b>null</b> if none.
 	 */
 	public String getFormat() { return ((_format != null) && (_format.size() > 0)) ? _format.get(0) : null; }
@@ -451,8 +379,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 	/**
 	 * Sets the DublinCore module format. Convenience method that can be used when
 	 * there is only one format to set.
-	 * <p>
-	 * 
 	 * @param format
 	 *          the DublinCore module format to set, <b>null</b> if none.
 	 *
@@ -461,8 +387,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 
 	/**
 	 * Returns the DublinCore module identifier.
-	 * <p>
-	 * 
 	 * @return a list of Strings representing the DublinCore module identifier, an
 	 *         empty list if none.
 	 *
@@ -471,8 +395,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 
 	/**
 	 * Sets the DublinCore module identifiers.
-	 * <p>
-	 * 
 	 * @param identifiers
 	 *          the list of String representing the DublinCore module identifiers
 	 *          to set, an empty list or <b>null</b> if none.
@@ -483,8 +405,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 	/**
 	 * Gets the DublinCore module identifier. Convenience method that can be used
 	 * to obtain the first item, <b>null</b> if none.
-	 * <p>
-	 * 
 	 * @return the first DublinCore module identifier, <b>null</b> if none.
 	 */
 	public String getIdentifier() { return ((_identifier != null) && (_identifier.size() > 0)) ? _identifier.get(0) : null; }
@@ -492,8 +412,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 	/**
 	 * Sets the DublinCore module identifier. Convenience method that can be used
 	 * when there is only one identifier to set.
-	 * <p>
-	 * 
 	 * @param identifier
 	 *          the DublinCore module identifier to set, <b>null</b> if none.
 	 *
@@ -502,8 +420,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 
 	/**
 	 * Returns the DublinCore module source.
-	 * <p>
-	 * 
 	 * @return a list of Strings representing the DublinCore module source, an
 	 *         empty list if none.
 	 *
@@ -512,8 +428,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 
 	/**
 	 * Sets the DublinCore module sources.
-	 * <p>
-	 * 
 	 * @param sources
 	 *          the list of String representing the DublinCore module sources to
 	 *          set, an empty list or <b>null</b> if none.
@@ -524,8 +438,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 	/**
 	 * Gets the DublinCore module source. Convenience method that can be used to
 	 * obtain the first item, <b>null</b> if none.
-	 * <p>
-	 * 
 	 * @return the first DublinCore module source, <b>null</b> if none.
 	 */
 	public String getSource() { return ((_source != null) && (_source.size() > 0)) ? _source.get(0) : null; }
@@ -533,8 +445,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 	/**
 	 * Sets the DublinCore module source. Convenience method that can be used when
 	 * there is only one source to set.
-	 * <p>
-	 * 
 	 * @param source
 	 *          the DublinCore module source to set, <b>null</b> if none.
 	 *
@@ -543,8 +453,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 
 	/**
 	 * Returns the DublinCore module language.
-	 * <p>
-	 * 
 	 * @return a list of Strings representing the DublinCore module language, an
 	 *         empty list if none.
 	 *
@@ -553,8 +461,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 
 	/**
 	 * Sets the DublinCore module languages.
-	 * <p>
-	 * 
 	 * @param languages
 	 *          the list of String representing the DublinCore module languages to
 	 *          set, an empty list or <b>null</b> if none.
@@ -565,8 +471,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 	/**
 	 * Gets the DublinCore module language. Convenience method that can be used to
 	 * obtain the first item, <b>null</b> if none.
-	 * <p>
-	 * 
 	 * @return the first DublinCore module langauge, <b>null</b> if none.
 	 */
 	public String getLanguage() { return ((_language != null) && (_language.size() > 0)) ? _language.get(0) : null; }
@@ -574,8 +478,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 	/**
 	 * Sets the DublinCore module language. Convenience method that can be used
 	 * when there is only one language to set.
-	 * <p>
-	 * 
 	 * @param language
 	 *          the DublinCore module language to set, <b>null</b> if none.
 	 *
@@ -584,8 +486,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 
 	/**
 	 * Returns the DublinCore module relation.
-	 * <p>
-	 * 
 	 * @return a list of Strings representing the DublinCore module relation, an
 	 *         empty list if none.
 	 *
@@ -594,8 +494,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 
 	/**
 	 * Sets the DublinCore module relations.
-	 * <p>
-	 * 
 	 * @param relations
 	 *          the list of String representing the DublinCore module relations to
 	 *          set, an empty list or <b>null</b> if none.
@@ -606,8 +504,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 	/**
 	 * Gets the DublinCore module relation. Convenience method that can be used to
 	 * obtain the first item, <b>null</b> if none.
-	 * <p>
-	 * 
 	 * @return the first DublinCore module relation, <b>null</b> if none.
 	 */
 	public String getRelation() { return ((_relation != null) && (_relation.size() > 0)) ? _relation.get(0) : null; }
@@ -615,8 +511,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 	/**
 	 * Sets the DublinCore module relation. Convenience method that can be used
 	 * when there is only one relation to set.
-	 * <p>
-	 * 
 	 * @param relation
 	 *          the DublinCore module relation to set, <b>null</b> if none.
 	 *
@@ -625,8 +519,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 
 	/**
 	 * Returns the DublinCore module coverage.
-	 * <p>
-	 * 
 	 * @return a list of Strings representing the DublinCore module coverage, an
 	 *         empty list if none.
 	 *
@@ -635,8 +527,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 
 	/**
 	 * Sets the DublinCore module coverages.
-	 * <p>
-	 * 
 	 * @param coverages
 	 *          the list of String representing the DublinCore module coverages to
 	 *          set, an empty list or <b>null</b> if none.
@@ -647,8 +537,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 	/**
 	 * Gets the DublinCore module coverage. Convenience method that can be used to
 	 * obtain the first item, <b>null</b> if none.
-	 * <p>
-	 * 
 	 * @return the first DublinCore module coverage, <b>null</b> if none.
 	 */
 	public String getCoverage() { return ((_coverage != null) && (_coverage.size() > 0)) ? _coverage.get(0) : null; }
@@ -656,8 +544,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 	/**
 	 * Sets the DublinCore module coverage. Convenience method that can be used
 	 * when there is only one coverage to set.
-	 * <p>
-	 * 
 	 * @param coverage
 	 *          the DublinCore module coverage to set, <b>null</b> if none.
 	 *
@@ -666,8 +552,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 
 	/**
 	 * Returns the DublinCore module rights.
-	 * <p>
-	 * 
 	 * @return a list of Strings representing the DublinCore module rights, an
 	 *         empty list if none.
 	 *
@@ -676,8 +560,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 
 	/**
 	 * Sets the DublinCore module rights.
-	 * <p>
-	 * 
 	 * @param rights
 	 *          the list of String representing the DublinCore module rights to
 	 *          set, an empty list or <b>null</b> if none.
@@ -688,8 +570,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 	/**
 	 * Gets the DublinCore module rights. Convenience method that can be used to
 	 * obtain the first item, <b>null</b> if none.
-	 * <p>
-	 * 
 	 * @return the first DublinCore module rights, <b>null</b> if none.
 	 */
 	public String getRights() { return ((_rights != null) && (_rights.size() > 0)) ? _rights.get(0) : null; }
@@ -697,8 +577,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 	/**
 	 * Sets the DublinCore module rights. Convenience method that can be used when
 	 * there is only one rights to set.
-	 * <p>
-	 * 
 	 * @param rights
 	 *          the DublinCore module rights to set, <b>null</b> if none.
 	 *
@@ -707,8 +585,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 
 	/**
 	 * Creates a deep 'bean' clone of the object.
-	 * <p>
-	 * 
 	 * @return a clone of the object.
 	 * @throws CloneNotSupportedException
 	 *           thrown if an element of the object cannot be cloned.
@@ -719,8 +595,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 	/**
 	 * Indicates whether some other object is "equal to" this one as defined by
 	 * the Object equals() method.
-	 * <p>
-	 * 
 	 * @param other
 	 *          he reference object with which to compare.
 	 * @return <b>true</b> if 'this' object is equal to the 'other' object.
@@ -730,10 +604,7 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 
 	/**
 	 * Returns a hashcode value for the object.
-	 * <p>
 	 * It follows the contract defined by the Object hashCode() method.
-	 * <p>
-	 * 
 	 * @return the hashcode of the bean object.
 	 *
 	 */
@@ -741,8 +612,6 @@ public class DCModuleImpl extends ModuleImpl implements DCModule {
 
 	/**
 	 * Returns the String representation for the object.
-	 * <p>
-	 * 
 	 * @return String representation for the object.
 	 *
 	 */

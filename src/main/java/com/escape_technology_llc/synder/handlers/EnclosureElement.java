@@ -26,7 +26,7 @@ import com.sun.syndication.feed.synd.impl.SyndEntryImpl;
 /**
  * Element handler for "enclosure".
  * Marshals into SyndEnclosureImpl.
- * Captures attributes url->Url else href->Url, type->Type, length->Length.
+ * Captures attributes url-&gt;Url else href-&gt;Url, type-&gt;Type, length-&gt;Length.
  * @author escape-llc
  *
  */

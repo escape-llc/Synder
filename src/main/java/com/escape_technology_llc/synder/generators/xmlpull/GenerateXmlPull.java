@@ -49,7 +49,7 @@ public class GenerateXmlPull extends Generate {
 	 * @param xs Target serializer.
 	 * @param os Target stream.
 	 * @param enc Stream encoding.
-	 * @throws Exception
+	 * @throws Exception on errors.
 	 */
 	protected void generateCommon(SyndFeed sf, GeneratorImpl sgi,
 			XmlSerializer xs, OutputStream os, String enc)

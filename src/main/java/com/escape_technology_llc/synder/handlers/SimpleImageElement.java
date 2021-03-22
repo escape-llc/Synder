@@ -24,10 +24,10 @@ import com.sun.syndication.feed.synd.impl.SyndImageImpl;
 /**
  * Handler for Image element with Url as content.
  * Marshals to SyndImage.
- * Captures characters->Url.
+ * Captures characters-&gt;Url.
  * @author escape-llc
  *
- * @param <R>
+ * @param <R> host type.
  */
 public class SimpleImageElement<R> extends ElementHandler<R> {
 	final SyndImageImpl item;

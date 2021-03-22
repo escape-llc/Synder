@@ -50,7 +50,7 @@ public class DefaultGenerateContext implements GenerateContext {
 		 * @param sgi Source generator.
 		 * @param os Output stream.
 		 * @param enc Stream encoding.
-		 * @throws Exception
+		 * @throws Exception on errors.
 		 */
 		public abstract void generate(SyndFeed sf, GeneratorImpl sgi, OutputStream os, String enc) throws Exception;
 	}

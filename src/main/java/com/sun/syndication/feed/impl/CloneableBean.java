@@ -43,9 +43,7 @@ public class CloneableBean implements Serializable, Cloneable {
 
     /**
      * Default constructor.
-     * <p>
      * To be used by classes extending CloneableBean only.
-     * <p>
      *
      */
     protected CloneableBean() {
@@ -54,9 +52,7 @@ public class CloneableBean implements Serializable, Cloneable {
 
     /**
      * Creates a CloneableBean to be used in a delegation pattern.
-     * <p>
      * For example:
-     * <p>
      * <code>
      *   public class Foo implements Cloneable {
      *       private CloneableBean _cloneableBean;
@@ -81,14 +77,12 @@ public class CloneableBean implements Serializable, Cloneable {
 
     /**
      * Creates a CloneableBean to be used in a delegation pattern.
-     * <p>
      * The property names in the ignoreProperties Set will not be copied into
      * the cloned instance. This is useful for cases where the Bean has convenience
      * properties (properties that are actually references to other properties or
      * properties of properties). For example SyndFeed and SyndEntry beans have
      * convenience properties, publishedDate, author, copyright and categories all
      * of them mapped to properties in the DC Module.
-     * <p>
      * @param obj object bean to clone.
      * @param ignoreProperties properties to ignore when cloning.
      *
@@ -101,11 +95,9 @@ public class CloneableBean implements Serializable, Cloneable {
 
     /**
      * Makes a deep bean clone of the object.
-     * <p>
      * To be used by classes extending CloneableBean. Although it works also for classes using
      * CloneableBean in a delegation pattern, for correctness those classes should use the
      * @see #beanClone() beanClone method.
-     * <p>
      * @return a clone of the object  bean.
      * @throws CloneNotSupportedException thrown if the object bean could not be cloned.
      *
@@ -116,7 +108,6 @@ public class CloneableBean implements Serializable, Cloneable {
 
     /**
      * Makes a deep bean clone of the object passed in the constructor.
-     * <p>
      * To be used by classes using CloneableBean in a delegation pattern,
      * @see #CloneableBean(Object) constructor.
      *

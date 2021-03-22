@@ -31,7 +31,7 @@ public class W3CDateSetter extends Setter {
 	}
 	/**
 	 * Set the value.
-	 * String -> Date
+	 * String -&gt; Date
 	 */
 	@Override
 	public <T> void set(Object instance, T value, ParseContext ctx) {

@@ -25,11 +25,11 @@ import com.escape_technology_llc.synder.setters.Setter;
 /**
  * Handler for "link" with Simple Content as the HREF.
  * Marshals into SyndLinkImpl.
- * Captures "{usuri}element"->SyndLinkImpl.Type.
- * Captures characters->Href.
+ * Captures "{usuri}element"-&gt;SyndLinkImpl.Type.
+ * Captures characters-&gt;Href.
  * @author escape-llc
  *
- * @param <R>
+ * @param <R> host type.
  */
 public class SimpleLinkElement<R> extends LinkElement<R> {
 	final StringBuilder sb;

@@ -13,13 +13,13 @@ public interface MediaRssModule extends MediaRssOptional, Module {
     /**
      * If the entry has a media:content element, it appears here.
      * If group and content are both NULL, refer to the enclosure element.
-     * @return
+     * @return the content.
      */
     MediaContent getContent();
     /**
      * If the entry has a media:group element, it appears here.
      * If group and content are both NULL, refer to the enclosure element.
-     * @return
+     * @return the group.
      */
     MediaGroup getGroup();
 }

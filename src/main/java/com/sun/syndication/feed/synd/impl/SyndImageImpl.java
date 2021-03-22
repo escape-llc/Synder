@@ -43,8 +43,6 @@ public class SyndImageImpl implements Serializable,SyndImage {
 
     /**
      * Default constructor. All properties are set to <b>null</b>.
-     * <p>
-     *
      */
     public SyndImageImpl() {
     }
@@ -56,7 +54,6 @@ public class SyndImageImpl implements Serializable,SyndImage {
 
     /**
      * Creates a deep 'bean' clone of the object.
-     * <p>
      * @return a clone of the object.
      * @throws CloneNotSupportedException thrown if an element of the object cannot be cloned.
      *
@@ -67,7 +64,6 @@ public class SyndImageImpl implements Serializable,SyndImage {
 
     /**
      * Indicates whether some other object is "equal to" this one as defined by the Object equals() method.
-     * <p>
      * @param other he reference object with which to compare.
      * @return <b>true</b> if 'this' object is equal to the 'other' object.
      *
@@ -78,9 +74,7 @@ public class SyndImageImpl implements Serializable,SyndImage {
 
     /**
      * Returns a hashcode value for the object.
-     * <p>
      * It follows the contract defined by the Object hashCode() method.
-     * <p>
      * @return the hashcode of the bean object.
      *
      */
@@ -90,7 +84,6 @@ public class SyndImageImpl implements Serializable,SyndImage {
 
     /**
      * Returns the String representation for the object.
-     * <p>
      * @return String representation for the object.
      *
      */
@@ -100,7 +93,6 @@ public class SyndImageImpl implements Serializable,SyndImage {
 
     /**
      * Returns the image title.
-     * <p>
      * @return the image title, <b>null</b> if none.
      *
      */
@@ -110,7 +102,6 @@ public class SyndImageImpl implements Serializable,SyndImage {
 
     /**
      * Sets the image title.
-     * <p>
      * @param title the image title to set, <b>null</b> if none.
      *
      */
@@ -120,7 +111,6 @@ public class SyndImageImpl implements Serializable,SyndImage {
 
     /**
      * Returns the image URL.
-     * <p>
      * @return the image URL, <b>null</b> if none.
      *
      */
@@ -130,7 +120,6 @@ public class SyndImageImpl implements Serializable,SyndImage {
 
     /**
      * Sets the image URL.
-     * <p>
      * @param url the image URL to set, <b>null</b> if none.
      *
      */
@@ -140,7 +129,6 @@ public class SyndImageImpl implements Serializable,SyndImage {
 
     /**
      * Returns the image link.
-     * <p>
      * @return the image link, <b>null</b> if none.
      *
      */
@@ -150,7 +138,6 @@ public class SyndImageImpl implements Serializable,SyndImage {
 
     /**
      * Sets the image link.
-     * <p>
      * @param link the image link to set, <b>null</b> if none.
      *
      */
@@ -160,7 +147,6 @@ public class SyndImageImpl implements Serializable,SyndImage {
 
     /**
      * Returns the image description.
-     * <p>
      * @return the image description, <b>null</b> if none.
      *
      */
@@ -170,7 +156,6 @@ public class SyndImageImpl implements Serializable,SyndImage {
 
     /**
      * Sets the image description.
-     * <p>
      * @param description the image description to set, <b>null</b> if none.
      *
      */

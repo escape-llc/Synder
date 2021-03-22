@@ -89,6 +89,10 @@ public abstract class HandlerImpl {
 	/**
 	 * Called when this handler is selected after detect(), and before any
 	 * other ContentHandler callbacks.
+	 * @param uri the uri.
+	 * @param localName the local name.
+	 * @param name element name.
+	 * @param attributes the attributes.
 	 */
 	public void initialize(String uri, String localName, String name,
 			Attributes attributes) { current.clear(); }
@@ -112,6 +116,7 @@ public abstract class HandlerImpl {
 	 * @param localName from DefaultHandler.startElement().
 	 * @param name from DefaultHandler.startElement().
 	 * @param attributes from DefaultHandler.startElement().
+	 * @throws SAXException on errors.
 	 */
 	public void startElement(String[] path, String uri, String localName, String name, Attributes attributes) throws SAXException {
 		final SubHandler<?> tos = current.isEmpty() ? null : current.peek();
@@ -129,6 +134,7 @@ public abstract class HandlerImpl {
 	 * @param uri from DefaultHandler.endElement().
 	 * @param localName from DefaultHandler.endElement().
 	 * @param name from DefaultHandler.endElement().
+	 * @throws SAXException on errors.
 	 */
 	public void endElement(String[] path, String uri, String localName, String name) throws SAXException {
 		if(current.isEmpty()) return;
@@ -143,6 +149,7 @@ public abstract class HandlerImpl {
 	 * @param ch from DefaultHandler.characters().
 	 * @param start from DefaultHandler.characters().
 	 * @param length from DefaultHandler.characters().
+	 * @throws SAXException on errors.
 	 */
 	public void characters(String[] path, char[] ch, int start, int length) throws SAXException {
 		if(current.isEmpty()) return;

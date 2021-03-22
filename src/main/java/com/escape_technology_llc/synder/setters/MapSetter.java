@@ -47,9 +47,9 @@ public abstract class MapSetter<K,V> extends Setter {
 	 * Get the list from "property".
 	 * @param instance Host instance.
 	 * @return Value of getter.
-	 * @throws IllegalArgumentException
-	 * @throws IllegalAccessException
-	 * @throws InvocationTargetException
+	 * @throws IllegalArgumentException on errors.
+	 * @throws IllegalAccessException on errors.
+	 * @throws InvocationTargetException on errors.
 	 */
 	@SuppressWarnings("unchecked")
 	protected Map<K,V> get(Object instance) throws IllegalArgumentException, IllegalAccessException, InvocationTargetException {
@@ -57,13 +57,13 @@ public abstract class MapSetter<K,V> extends Setter {
 	}
 	/**
 	 * Create a new empty map.
-	 * @return
+	 * @return new instance.
 	 */
 	protected abstract Map<K,V> create();
 	/**
 	 * Apply the value to the list.
 	 * @param <T> Cast.
-	 * @param list Source list.
+	 * @param map Source map.
 	 * @param value Source value.
 	 * @param ctx Source of all.
 	 */

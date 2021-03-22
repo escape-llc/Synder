@@ -131,7 +131,8 @@ public interface ParseContext extends Context {
 	/**
 	 * Parse the given input.
 	 * @param is Input source.
-	 * @throws Exception 
+	 * @return new instance.
+	 * @throws Exception  on errors.
 	 */
 	SyndFeed parse(InputSource is) throws Exception;
 }

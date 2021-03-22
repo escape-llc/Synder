@@ -10,17 +10,17 @@ public interface MediaRssOptional {
     /**
      * Typically a duplicate of the item.titleEx element.
      * Default type is "text".
-     * @return
+     * @return title.
      */
     SyndContent getTitle();
     /**
      * If found, a duplicate of the item.descriptionEx element.
-     * @return
+     * @return description.
      */
     SyndContent getDescription();
     /**
      * Spec claims max 10 comma-delimited.
-     * @return
+     * @return keywords.
      */
     String getKeywords();
     /**
@@ -31,13 +31,13 @@ public interface MediaRssOptional {
     List<SyndCategory> getCategories();
     /**
      * Spec claims order-of-importance when time-coding is not at play, e.g. audio content.
-     * @return
+     * @return possibly empty list.
      */
     List<SyndImage2> getThumbnails();
     /**
      * Supposed to point to a "direct" url for media player, if content.url does not specify one.
      * SyndImage2 is used as convenience because the attributes match up.
-     * @return
+     * @return the image.
      */
     SyndImage2 getPlayer();
 }

@@ -60,7 +60,7 @@ public class DefaultParseContext implements ParseContext {
 		 * Parse the given input with the given handler.
 		 * @param is input to parse.
 		 * @param ch handler to parse with.
-		 * @throws Exception
+		 * @throws Exception on errors.
 		 */
 		public abstract void parse(InputSource is, DefaultHandler ch) throws Exception;
 		/**
@@ -69,8 +69,8 @@ public class DefaultParseContext implements ParseContext {
 		 * @param xr Parser.
 		 * @param is Input.
 		 * @param ch Handler.
-		 * @throws SAXException
-		 * @throws IOException
+		 * @throws SAXException on errors.
+		 * @throws IOException on errors.
 		 */
 		protected void parseCommon(XMLReader xr, InputSource is, DefaultHandler ch) throws SAXException, IOException {
 			xr.setFeature("http://xml.org/sax/features/namespaces", true);
@@ -169,8 +169,8 @@ public class DefaultParseContext implements ParseContext {
 	/**
 	 * Ctor.
 	 * Uses ParseSAXParser.
-	 * @param parent
-	 * @throws ClassNotFoundException 
+	 * @param parent parent context.
+	 * @throws ClassNotFoundException  on errors.
 	 */
 	public DefaultParseContext(Context parent) throws ClassNotFoundException {
 		this(parent, new ParseSAXParser(), null);
@@ -178,9 +178,9 @@ public class DefaultParseContext implements ParseContext {
 	/**
 	 * Ctor.
 	 * Uses the given parser.
-	 * @param parent
+	 * @param parent parent context.
 	 * @param px Parser implementation.
-	 * @throws ClassNotFoundException 
+	 * @throws ClassNotFoundException  on errors.
 	 */
 	public DefaultParseContext(Context parent, Parse px) throws ClassNotFoundException {
 		this(parent, px, null);
@@ -188,9 +188,9 @@ public class DefaultParseContext implements ParseContext {
 	/**
 	 * Ctor.
 	 * Uses the given options.
-	 * @param parent
+	 * @param parent parent context.
 	 * @param options Options map.
-	 * @throws ClassNotFoundException 
+	 * @throws ClassNotFoundException on errors.
 	 */
 	public DefaultParseContext(Context parent, Map<String,Object> options) throws ClassNotFoundException {
 		this(parent, new ParseSAXParser(), options);
@@ -198,10 +198,10 @@ public class DefaultParseContext implements ParseContext {
 	/**
 	 * Ctor.
 	 * Uses the given parser and options.
-	 * @param parent
+	 * @param parent parent context.
 	 * @param px Parser implementation.
 	 * @param options Options map.
-	 * @throws ClassNotFoundException 
+	 * @throws ClassNotFoundException on errors.
 	 */
 	public DefaultParseContext(Context parent, Parse px, Map<String,Object> options) throws ClassNotFoundException {
 		if(parent == null) throw new IllegalArgumentException("parent");

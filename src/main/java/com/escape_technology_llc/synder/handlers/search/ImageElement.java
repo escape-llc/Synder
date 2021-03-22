@@ -26,7 +26,7 @@ import com.escape_technology_llc.synder.setters.Setter;
 /**
  * Handler for Open Search Image element.
  * Marshals to SyndImageImpl2.
- * Creates a SyndLink: "Image"->Rel, source->Href, alt->Title, width->Width, height->Height.
+ * Creates a SyndLink: "Image"-&gt;Rel, source-&gt;Href, alt-&gt;Title, width-&gt;Width, height-&gt;Height.
  * @author escape-llc
  *
  * @param <R> Hosting class.

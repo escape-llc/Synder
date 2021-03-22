@@ -38,9 +38,9 @@ public abstract class ListSetter<X> extends Setter {
 	 * Get the list from "property".
 	 * @param instance Host instance.
 	 * @return Value of getter.
-	 * @throws IllegalArgumentException
-	 * @throws IllegalAccessException
-	 * @throws InvocationTargetException
+	 * @throws IllegalArgumentException on errors.
+	 * @throws IllegalAccessException on errors.
+	 * @throws InvocationTargetException on errors.
 	 */
 	@SuppressWarnings("unchecked")
 	protected List<X> get(Object instance) throws IllegalArgumentException, IllegalAccessException, InvocationTargetException {
@@ -48,7 +48,7 @@ public abstract class ListSetter<X> extends Setter {
 	}
 	/**
 	 * Create a new empty list.
-	 * @return
+	 * @return new instance.
 	 */
 	protected abstract List<X> create();
 	/**

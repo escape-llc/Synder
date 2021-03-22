@@ -42,12 +42,12 @@ public abstract class ModuleGeneratorImpl {
 	}
 	/**
 	 * Get the namespace URI.
-	 * @return
+	 * @return the tag.
 	 */
 	public String getTag() { return tag; }
 	/**
 	 * Get the namespace prefix.
-	 * @return
+	 * @return the prefix.
 	 */
 	public String getPrefix() { return pfx; }
 	/**
@@ -58,9 +58,10 @@ public abstract class ModuleGeneratorImpl {
 	public boolean detect(String tag) { return this.tag.equals(tag); }
 	/**
 	 * Generate output for given module.
+	 * @param <T> target type.
 	 * @param mx Source module; must match the type the generator implementation expects.
 	 * @param outputMedium Output medium; e.g. XmlSerializer.
-	 * @throws Exception
+	 * @throws Exception on errors.
 	 */
 	public abstract <T> void generate(Module mx, T outputMedium) throws Exception;
 }

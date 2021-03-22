@@ -40,7 +40,6 @@ import java.io.Serializable;
 
 /**
  * Bean for entries of SyndFeedImpl feeds.
- * <p>
  * @author Alejandro Abdelnur
  * @author escape-llc
  */
@@ -70,7 +69,6 @@ public class SyndEntryImpl implements Serializable, SyndEntry {
 
 	/**
 	 * Unmodifiable Set containing the convenience properties of this class.
-	 * <p>
 	 * Convenience properties are mapped to Modules, for cloning the convenience
 	 * properties can be ignored as the will be copied as part of the module
 	 * cloning.
@@ -90,8 +88,7 @@ public class SyndEntryImpl implements Serializable, SyndEntry {
 	/**
 	 * For implementations extending SyndEntryImpl to be able to use the
 	 * ObjectBean functionality with extended interfaces.
-	 * <p>
-	 * @param beanClass
+	 * @param beanClass target class.
 	 * @param convenienceProperties
 	 *          set containing the convenience properties of the SyndEntryImpl
 	 *          (the are ignored during cloning, check CloneableBean for details).
@@ -102,7 +99,6 @@ public class SyndEntryImpl implements Serializable, SyndEntry {
 	}
 	/**
 	 * Default constructor. All properties are set to <b>null</b>.
-	 * <p>
 	 */
 	public SyndEntryImpl() {
 		this(SyndEntry.class, CONVENIENCE_PROPERTIES);

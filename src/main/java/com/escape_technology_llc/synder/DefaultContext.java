@@ -34,8 +34,8 @@ public class DefaultContext implements Context {
 	/**
 	 * Ctor.
 	 * @param is Stream to SYNDER.PROPERTIES.  This stream is closed.
-	 * @throws IOException
-	 * @throws ClassNotFoundException
+	 * @throws IOException on errors.
+	 * @throws ClassNotFoundException on errors.
 	 */
 	public DefaultContext(InputStream is) throws IOException, ClassNotFoundException {
 		this(loadProperties(is));
@@ -43,7 +43,7 @@ public class DefaultContext implements Context {
 	/**
 	 * Ctor.
 	 * @param px Properties instance to use.  Takes ownership.
-	 * @throws ClassNotFoundException
+	 * @throws ClassNotFoundException on errors.
 	 */
 	public DefaultContext(Properties px) throws ClassNotFoundException {
 		if(px == null) throw new IllegalArgumentException("px");
@@ -54,7 +54,7 @@ public class DefaultContext implements Context {
 	 * @param ctx Source context.
 	 * @param prop Name of property.
 	 * @param hx Possibly empty list of classes.
-	 * @throws ClassNotFoundException
+	 * @throws ClassNotFoundException on errors.
 	 */
 	public static void loadClasses(Context ctx, String prop, List<Class<?>> hx) throws ClassNotFoundException {
 		final ArrayList<String> lx = new ArrayList<String>();
@@ -102,7 +102,7 @@ public class DefaultContext implements Context {
 	 * Load the input stream into PROPERTIES.
 	 * @param is input stream.
 	 * @return new PROPERTIES.
-	 * @throws IOException
+	 * @throws IOException on errors.
 	 */
 	static Properties loadProperties(InputStream is) throws IOException {
 		try {

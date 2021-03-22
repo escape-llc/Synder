@@ -23,7 +23,7 @@ import com.sun.syndication.feed.synd.SyndEnclosure;
 import com.sun.syndication.feed.synd.impl.SyndEnclosureImpl;
 
 /**
- * Setter for type List<SyndEnclosure>.
+ * Setter for type List&lt;SyndEnclosure&gt;.
  * @author escape-llc
  *
  */

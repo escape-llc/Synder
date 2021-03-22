@@ -90,7 +90,7 @@ public interface GenerateContext extends Context {
 	 * @param tag Generator tag.
 	 * @param wx Output stream.
 	 * @param enc Stream encoding.
-	 * @throws Exception
+	 * @throws Exception on errors.
 	 */
 	void generate(SyndFeed sf, String tag, OutputStream wx, String enc) throws Exception;
 }

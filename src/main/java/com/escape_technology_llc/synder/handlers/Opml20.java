@@ -25,7 +25,7 @@ import com.sun.syndication.feed.synd.impl.SyndFeedImpl;
 
 /**
  * Top-level handler for OPML 2.0 document.
- * Captures head->feed.*, outline->add to feed.Entries.  No nesting is captured, outline nodes are flattened.
+ * Captures head-&gt;feed.*, outline-&gt;add to feed.Entries.  No nesting is captured, outline nodes are flattened.
  * @author escape-llc
  *
  */

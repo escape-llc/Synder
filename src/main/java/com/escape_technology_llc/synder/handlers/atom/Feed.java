@@ -40,8 +40,8 @@ import com.sun.syndication.feed.synd.impl.SyndFeedImpl;
 
 /**
  * Handler for Atom Feed element.
- * Captures title->TitleEx, subtitle->DescriptionEx, updated->PublishedDate, generator->Generator, rights->Rights, logo->Logo,
- * link->add to Links, icon->Image, category->add to Categories.
+ * Captures title-&gt;TitleEx, subtitle-&gt;DescriptionEx, updated-&gt;PublishedDate, generator-&gt;Generator, rights-&gt;Rights, logo-&gt;Logo,
+ * link-&gt;add to Links, icon-&gt;Image, category-&gt;add to Categories.
  * Supports Foreign Markup capture to feed.ForeignMarkup.
  * Authors and Contributors are captured by the Atom10 implementation.
  * @author escape-llc

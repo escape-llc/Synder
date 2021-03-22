@@ -32,8 +32,8 @@ public class Setter {
 	 * Bind to method of type String.
 	 * @param target Source class.
 	 * @param method Method name, minus "set".
-	 * @throws SecurityException
-	 * @throws NoSuchMethodException
+	 * @throws SecurityException on errors.
+	 * @throws NoSuchMethodException on errors.
 	 */
 	public Setter(Class<?> target, String method) throws SecurityException, NoSuchMethodException {
 		mx = target.getMethod("set" + method, String.class);
@@ -44,8 +44,8 @@ public class Setter {
 	 * @param target Source class.
 	 * @param method Method name, minus "set".
 	 * @param pt Parameter class.
-	 * @throws SecurityException
-	 * @throws NoSuchMethodException
+	 * @throws SecurityException on errors.
+	 * @throws NoSuchMethodException on errors.
 	 */
 	public Setter(Class<?> target, String method, Class<?> pt) throws SecurityException, NoSuchMethodException {
 		mx = target.getMethod("set" + method, pt);

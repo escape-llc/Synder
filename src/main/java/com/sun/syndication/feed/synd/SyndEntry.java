@@ -25,21 +25,21 @@ import com.sun.syndication.feed.module.Module;
 
 /**
  * Bean interface for entries of SyndFeedImpl feeds.
- * <p>
  * @author Alejandro Abdelnur
  *
  */
 public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
 
     /**
-     * Returns the entry URI.
+     * <p>Returns the entry URI.</p>
      * <p>
      * How the entry URI maps to a concrete feed type (RSS or Atom) depends on
      * the concrete feed type. This is explained in detail in Rome documentation,
      * <a href="http://wiki.java.net/bin/edit/Javawsxml/Rome04URIMapping">Feed and entry URI mapping</a>.
+		 * </p>
      * <p>
      * The returned URI is a normalized URI as specified in RFC 2396bis.
-     * <p>
+		 * </p>
      * @return the entry URI, <b>null</b> if none.
      *
      */
@@ -51,7 +51,7 @@ public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
      * How the entry URI maps to a concrete feed type (RSS or Atom) depends on
      * the concrete feed type. This is explained in detail in Rome documentation,
      * <a href="http://wiki.java.net/bin/edit/Javawsxml/Rome04URIMapping">Feed and entry URI mapping</a>.
-     * <p>
+     * </p>
      * @param uri the entry URI to set, <b>null</b> if none.
      *
      */
@@ -59,7 +59,6 @@ public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
 
     /**
      * Returns the entry title.
-     * <p>
      * @return the entry title, <b>null</b> if none.
      *
      */
@@ -67,7 +66,6 @@ public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
 
     /**
      * Sets the entry title.
-     * <p>
      * @param title the entry title to set, <b>null</b> if none.
      *
      */
@@ -75,7 +73,6 @@ public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
 
     /**
      * Returns the entry title as a text construct.
-     * <p>
      * @return the entry title, <b>null</b> if none.
      *
      */
@@ -83,7 +80,6 @@ public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
 
     /**
      * Sets the entry title as a text construct.
-     * <p>
      * @param title the entry title to set, <b>null</b> if none.
      *
      */
@@ -91,7 +87,6 @@ public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
 
     /**
      * Returns the entry link.
-     * <p>
      * @return the entry link, <b>null</b> if none.
      *
      */
@@ -99,7 +94,6 @@ public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
 
     /**
      * Sets the entry link.
-     * <p>
      * @param link the entry link to set, <b>null</b> if none.
      *
      */
@@ -107,7 +101,6 @@ public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
 
     /**
      * Returns the entry links
-     * <p>
      * @return the entry links, <b>null</b> if none.
      *
      */
@@ -115,7 +108,6 @@ public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
 
     /**
      * Sets the entry links.
-     * <p>
      * @param links the entry links to set, <b>null</b> if none.
      *
      */
@@ -123,7 +115,6 @@ public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
 
     /**
      * Returns the entry description.
-     * <p>
      * @return the entry description, <b>null</b> if none.
      *
      */
@@ -131,7 +122,6 @@ public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
 
     /**
      * Sets the entry description.
-     * <p>
      * @param description the entry description to set, <b>null</b> if none.
      *
      */
@@ -139,7 +129,6 @@ public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
 
     /**
      * Returns the entry contents.
-     * <p>
      * @return a list of SyndContentImpl elements with the entry contents,
      *         an empty list if none.
      *
@@ -148,7 +137,6 @@ public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
 
     /**
      * Sets the entry contents.
-     * <p>
      * @param contents the list of SyndContentImpl elements with the entry contents to set,
      *        an empty list or <b>null</b> if none.
      *
@@ -157,7 +145,6 @@ public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
 
     /**
      * Returns the entry enclosures.
-     * <p>
      * @return a list of SyndEnclosure elements with the entry enclosures,
      *         an empty list if none.
      *
@@ -166,7 +153,6 @@ public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
 
     /**
      * Sets the entry enclosures.
-     * <p>
      * @param enclosures the list of SyndEnclosure elements with the entry enclosures to set,
      *        an empty list or <b>null</b> if none.
      *
@@ -175,7 +161,6 @@ public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
 
     /**
      * Returns the entry published date.
-     * <p>
      * @return the entry published date, <b>null</b> if none.
      *
      */
@@ -183,7 +168,6 @@ public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
 
     /**
      * Sets the entry published date.
-     * <p>
      * @param publishedDate the entry published date to set, <b>null</b> if none.
      *
      */
@@ -191,7 +175,6 @@ public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
 
     /**
      * Returns the entry updated date.
-     * <p>
      * @return the entry updated date, <b>null</b> if none.
      *
      */
@@ -199,7 +182,6 @@ public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
 
     /**
      * Sets the entry updated date.
-     * <p>
      * @param updatedDate the entry updated date to set, <b>null</b> if none.
      *
      */
@@ -207,7 +189,6 @@ public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
 
     /**
      * Returns the entry authors.
-     * <p>
      * @return the feed author, <b>null</b> if none.
      *
      */
@@ -215,7 +196,6 @@ public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
 
     /**
      * Sets the entry author.
-     * <p>
      * @param authors the feed author to set, <b>null</b> if none.
      *
      */
@@ -223,7 +203,6 @@ public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
     
     /**
      * Returns the name of the first entry author in the collection of authors.
-     * <p>
      * @return the feed author, <b>null</b> if none.
      *
      */
@@ -231,17 +210,14 @@ public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
 
     /**
      * Sets the entry author.
-     * <p>
      * @param author the feed author to set, <b>null</b> if none.
      */
     void setAuthor(String author);
     
     /**
      * Returns the feed author.
-     * <p>
      * For Atom feeds, this returns the contributors as a list of 
      * SyndPerson objects
-     * <p>
      * @return the feed author, <b>null</b> if none.
      *
      */
@@ -249,9 +225,7 @@ public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
 
     /**
      * Sets the feed contributors.
-     * <p>
      * Returns contributors as a list of SyndPerson objects.
-     * <p>
      * @param contributors the feed contributors to set, <b>null</b> if none.
      *
      */
@@ -259,7 +233,6 @@ public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
 
     /**
      * Returns the entry categories.
-     * <p>
      * @return a list of SyndCategoryImpl elements with the entry categories,
      *         an empty list if none.
      *
@@ -268,7 +241,6 @@ public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
 
     /**
      * Sets the entry categories.
-     * <p>
      * @param categories the list of SyndCategoryImpl elements with the entry categories to set,
      *        an empty list or <b>null</b> if none.
      *
@@ -277,7 +249,7 @@ public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
     /**
      * Gets the Rights content.
      * Used by RFC4287.
-     * @return
+     * @return instance.
      */
     SyndContent getRights();
     /**
@@ -289,9 +261,7 @@ public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
     
     /**
      * Returns the entry source.
-     * <p>
      * This returns the entry source as a SyndFeed
-     * <p>
      * @return the SyndFeed to which this entry is attributed
      * 
      */
@@ -299,7 +269,6 @@ public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
     
     /**
      * Sets the entry source feed (for use if different from containing feed)
-     * <p>
      * @param source the original SyndFeed that contained this article
      * 
      */
@@ -320,7 +289,6 @@ public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
     
     /**
      * Returns the module identified by a given URI.
-     * <p>
      * @param uri the URI of the ModuleImpl.
      * @return The module with the given URI, <b>null</b> if none.
      */
@@ -328,7 +296,6 @@ public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
 
     /**
      * Returns the entry modules.
-     * <p>
      * @return a list of ModuleImpl elements with the entry modules,
      *         an empty list if none.
      *
@@ -337,7 +304,6 @@ public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
 
     /**
      * Sets the entry modules.
-     * <p>
      * @param modules the list of ModuleImpl elements with the entry modules to set,
      *        an empty list or <b>null</b> if none.
      *
@@ -346,7 +312,6 @@ public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
 
     /**
      * Returns foreign markup found at channel level.
-     * <p>
      * @return Opaque object to discourage use
      *
      */
@@ -354,7 +319,6 @@ public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
 
     /**
      * Sets foreign markup found at channel level.
-     * <p>
      * @param foreignMarkup Opaque object to discourage use
      *
      */
@@ -362,11 +326,9 @@ public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
     
     /**
      * Creates a deep clone of the object.
-     * <p>
      * @return a clone of the object.
      * @throws CloneNotSupportedException thrown if an element of the object cannot be cloned.
      *
      */
     public Object clone() throws CloneNotSupportedException;
-
 }

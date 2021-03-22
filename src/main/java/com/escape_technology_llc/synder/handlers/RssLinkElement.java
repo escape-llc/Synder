@@ -26,7 +26,7 @@ import com.sun.syndication.feed.synd.impl.SyndLinkImpl;
 /**
  * Handler for RSS link elements with Simple Content.
  * Marshals to SyndLink.
- * Captures url->Href, "{nsuri}element"->Type.
+ * Captures url-&gt;Href, "{nsuri}element"-&gt;Type.
  * @author escape-llc
  *
  * @param <T> Hosting class.

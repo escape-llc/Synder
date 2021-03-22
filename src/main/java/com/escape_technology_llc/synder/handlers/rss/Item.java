@@ -40,8 +40,8 @@ import com.sun.syndication.feed.synd.impl.SyndEntryImpl;
 
 /**
  * Handler for RSS Item element.
- * Captures Title, author->add to Authors, description->add to Contents,pubDate->PublishedDate,link->add to Links,comment->add to Links,
- * source->add to Links,category->add to Categories,enclosure->add to Enclosures.
+ * Captures Title, author-&gt;add to Authors, description-&gt;add to Contents,pubDate-&gt;PublishedDate,link-&gt;add to Links,comment-&gt;add to Links,
+ * source-&gt;add to Links,category-&gt;add to Categories,enclosure-&gt;add to Enclosures.
  * @author escape-llc
  *
  */

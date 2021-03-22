@@ -33,7 +33,7 @@ import com.sun.syndication.feed.synd.impl.SyndFeedImpl;
 
 /**
  * Handler for OPML 2.0 opml/head Element.
- * Captures title->TitleEx, dateCreated->PublishedDate, dateModified->UpdatedDate.
+ * Captures title-&gt;TitleEx, dateCreated-&gt;PublishedDate, dateModified-&gt;UpdatedDate.
  * @author escape-llc
  *
  */

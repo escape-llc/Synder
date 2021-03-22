@@ -32,12 +32,12 @@ public interface DCTermsModule extends DCModule {
   String URI_TERMS = "http://purl.org/dc/terms/";
   /**
    * Get the list of created dates.
-   * @return
+   * @return list instance.
    */
 	List<Date> getCreatedList();
 	/**
 	 * Set the list of created dates.
-	 * @param vx
+	 * @param vx source list.
 	 */
 	void setCreatedList(List<Date> vx);
 	/**
@@ -52,12 +52,12 @@ public interface DCTermsModule extends DCModule {
 	void setCreated(Date vx);
   /**
    * Get the list of issued dates.
-   * @return
+   * @return the value.
    */
 	List<Date> getIssuedList();
 	/**
 	 * Set the list of issued dates.
-	 * @param vx
+	 * @param vx source list.
 	 */
 	void setIssuedList(List<Date> vx);
 	/**
@@ -72,12 +72,12 @@ public interface DCTermsModule extends DCModule {
 	void setIssued(Date vx);
   /**
    * Get the list of license strings.
-   * @return
+   * @return the value.
    */
 	List<String> getLicenseList();
 	/**
 	 * Set the list of license strings.
-	 * @param vx
+	 * @param vx source list.
 	 */
 	void setLicenseList(List<String> vx);
 	/**
@@ -92,12 +92,12 @@ public interface DCTermsModule extends DCModule {
 	void setLicense(String vx);
   /**
    * Get the list of modified dates.
-   * @return
+   * @return the value.
    */
 	List<Date> getModifiedList();
 	/**
 	 * Set the list of modified dates.
-	 * @param vx
+	 * @param vx source list.
 	 */
 	void setModifiedList(List<Date> vx);
 	/**

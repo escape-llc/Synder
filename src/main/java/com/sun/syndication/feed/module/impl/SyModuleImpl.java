@@ -23,7 +23,6 @@ import java.util.*;
 
 /**
  * Syndication ModuleImpl, default implementation.
- * <p>
  * 
  * @see <a href="http://web.resource.org/rss/1.0/modules/syndication/">Syndication module</a>
  * @author Alejandro Abdelnur
@@ -39,7 +38,6 @@ public class SyModuleImpl extends ModuleImpl implements SyModule {
 
 	/**
 	 * Default constructor. All properties are set to <b>null</b>.
-	 * <p>
 	 * 
 	 */
 	public SyModuleImpl() {
@@ -48,7 +46,6 @@ public class SyModuleImpl extends ModuleImpl implements SyModule {
 
 	/**
 	 * Returns the Syndication module update period.
-	 * <p>
 	 * 
 	 * @return the Syndication module update period, <b>null</b> if none.
 	 * 
@@ -59,7 +56,6 @@ public class SyModuleImpl extends ModuleImpl implements SyModule {
 
 	/**
 	 * Sets the Syndication module update period.
-	 * <p>
 	 * 
 	 * @param updatePeriod
 	 *          the Syndication module update period to set, <b>null</b> if none.
@@ -75,7 +71,6 @@ public class SyModuleImpl extends ModuleImpl implements SyModule {
 
 	/**
 	 * Returns the Syndication module update frequency.
-	 * <p>
 	 * 
 	 * @return the Syndication module update frequency, <b>null</b> if none.
 	 * 
@@ -86,7 +81,6 @@ public class SyModuleImpl extends ModuleImpl implements SyModule {
 
 	/**
 	 * Sets the Syndication module update frequency.
-	 * <p>
 	 * 
 	 * @param updateFrequency
 	 *          the Syndication module update frequency to set, <b>null</b> if
@@ -99,7 +93,6 @@ public class SyModuleImpl extends ModuleImpl implements SyModule {
 
 	/**
 	 * Returns the Syndication module update base date.
-	 * <p>
 	 * 
 	 * @return the Syndication module update base date, <b>null</b> if none.
 	 * 
@@ -110,7 +103,6 @@ public class SyModuleImpl extends ModuleImpl implements SyModule {
 
 	/**
 	 * Sets the Syndication module update base date.
-	 * <p>
 	 * 
 	 * @param updateBase
 	 *          the Syndication module update base date to set, <b>null</b> if

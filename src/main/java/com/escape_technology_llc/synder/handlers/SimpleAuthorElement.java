@@ -24,11 +24,11 @@ import com.sun.syndication.feed.synd.impl.SyndPersonImpl;
 /**
  * Handler for "link" with Simple Content as the HREF.
  * Marshals into SyndLinkImpl.
- * Captures localName->SyndLinkImpl.type.
- * Captures characters->Email, Name.
+ * Captures localName-&gt;SyndLinkImpl.type.
+ * Captures characters-&gt;Email, Name.
  * @author escape-llc
  *
- * @param <R>
+ * @param <R> host type.
  */
 public class SimpleAuthorElement<R> extends SimpleElement<R> {
 	final SyndPersonImpl item;

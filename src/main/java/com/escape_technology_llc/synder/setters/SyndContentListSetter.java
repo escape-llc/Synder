@@ -23,7 +23,7 @@ import com.sun.syndication.feed.synd.SyndContent;
 import com.sun.syndication.feed.synd.impl.SyndContentImpl;
 
 /**
- * Setter for type List<SyndContent>.
+ * Setter for type List&lt;SyndContent&gt;.
  * @author escape-llc
  *
  */

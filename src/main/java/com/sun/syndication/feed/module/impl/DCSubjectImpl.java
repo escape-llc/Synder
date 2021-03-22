@@ -27,7 +27,6 @@ import java.io.Serializable;
 
 /**
  * Subject of the Dublin Core ModuleImpl, default implementation.
- * <p>
  * @see <a href="http://web.resource.org/rss/1.0/modules/dc/">Dublin Core module</a>
  * @author Alejandro Abdelnur
  * @author escape-llc
@@ -41,8 +40,6 @@ public class DCSubjectImpl implements Serializable, DCSubject {
 
     /**
      * Default constructor. All properties are set to <b>null</b>.
-     * <p>
-     *
      */
     public DCSubjectImpl() {
     }
@@ -54,7 +51,6 @@ public class DCSubjectImpl implements Serializable, DCSubject {
 
     /**
      * Creates a deep 'bean' clone of the object.
-     * <p>
      * @return a clone of the object.
      * @throws CloneNotSupportedException thrown if an element of the object cannot be cloned.
      *
@@ -65,7 +61,6 @@ public class DCSubjectImpl implements Serializable, DCSubject {
 
     /**
      * Indicates whether some other object is "equal to" this one as defined by the Object equals() method.
-     * <p>
      * @param other he reference object with which to compare.
      * @return <b>true</b> if 'this' object is equal to the 'other' object.
      *
@@ -76,9 +71,7 @@ public class DCSubjectImpl implements Serializable, DCSubject {
 
     /**
      * Returns a hashcode value for the object.
-     * <p>
      * It follows the contract defined by the Object hashCode() method.
-     * <p>
      * @return the hashcode of the bean object.
      *
      */
@@ -88,7 +81,6 @@ public class DCSubjectImpl implements Serializable, DCSubject {
 
     /**
      * Returns the String representation for the object.
-     * <p>
      * @return String representation for the object.
      *
      */
@@ -98,7 +90,6 @@ public class DCSubjectImpl implements Serializable, DCSubject {
 
     /**
      * Returns the DublinCore subject taxonomy URI.
-     * <p>
      * @return the DublinCore subject taxonomy URI, <b>null</b> if none.
      *
      */
@@ -108,7 +99,6 @@ public class DCSubjectImpl implements Serializable, DCSubject {
 
     /**
      * Sets the DublinCore subject taxonomy URI.
-     * <p>
      * @param taxonomyUri the DublinCore subject taxonomy URI to set, <b>null</b> if none.
      *
      */
@@ -118,7 +108,6 @@ public class DCSubjectImpl implements Serializable, DCSubject {
 
     /**
      * Returns the DublinCore subject value.
-     * <p>
      * @return the DublinCore subject value, <b>null</b> if none.
      *
      */
@@ -128,7 +117,6 @@ public class DCSubjectImpl implements Serializable, DCSubject {
 
     /**
      * Sets the DublinCore subject value.
-     * <p>
      * @param value the DublinCore subject value to set, <b>null</b> if none.
      *
      */

@@ -31,8 +31,8 @@ import com.sun.syndication.feed.synd.impl.SyndLinkImpl;
 
 /**
  * Handler for OPML 2.0 outline Element.
- * Captures attributes text->Description, xmlUrl+type+title->add to Links, created->PublishedDate+CreatedDate, category->add to Categories,
- * description->Title, title->Title
+ * Captures attributes text-&gt;Description, xmlUrl+type+title-&gt;add to Links, created-&gt;PublishedDate+CreatedDate, category-&gt;add to Categories,
+ * description-&gt;Title, title-&gt;Title
  * Prefer title to description.
  * @author escape-llc
  *

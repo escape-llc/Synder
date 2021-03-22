@@ -25,7 +25,7 @@ import com.sun.syndication.feed.synd.impl.SyndLinkImpl;
 /**
  * Element handler for "{Atom}generator".
  * Marshals into SyndLinkImpl.
- * Captures attributes localName->Rel, version->Type, uri->Href, hreflang->Hreflang, content->Title
+ * Captures attributes localName-&gt;Rel, version-&gt;Type, uri-&gt;Href, hreflang-&gt;Hreflang, content-&gt;Title
  * @author escape-llc
  *
  * @param <R> Hosting class.

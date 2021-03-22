@@ -63,7 +63,7 @@ public abstract class XmlPullGeneratorImpl extends GeneratorImpl {
 	 * @param tag tag name.
 	 * @param dt Source date.
 	 * @param df Source formatter.
-	 * @throws Exception
+	 * @throws Exception on errors.
 	 */
 	protected static void dateElement(XmlSerializer xs, String nsuri,
 			String tag, Date dt, DateFormat df) throws Exception {
@@ -80,7 +80,7 @@ public abstract class XmlPullGeneratorImpl extends GeneratorImpl {
 	 * @param nsuri namespace URI.
 	 * @param tag tag name.
 	 * @param tx Source text.
-	 * @throws Exception
+	 * @throws Exception on errors.
 	 */
 	protected static void textElementOptional(XmlSerializer xs, String nsuri,
 			String tag, String tx) throws Exception {
@@ -96,7 +96,7 @@ public abstract class XmlPullGeneratorImpl extends GeneratorImpl {
 	 * @param nsuri namespace URI.
 	 * @param tag tag name.
 	 * @param tx Source text.
-	 * @throws Exception
+	 * @throws Exception on errors.
 	 */
 	protected static void textElement(XmlSerializer xs, String nsuri,
 			String tag, String tx) throws Exception {
@@ -110,7 +110,7 @@ public abstract class XmlPullGeneratorImpl extends GeneratorImpl {
 	 * @param nsuri namespace URI.
 	 * @param tag tag name.
 	 * @param tx Source text.
-	 * @throws Exception
+	 * @throws Exception on errors.
 	 */
 	protected static void cdataElement(XmlSerializer xs, String nsuri,
 			String tag, String tx) throws Exception {
@@ -124,7 +124,7 @@ public abstract class XmlPullGeneratorImpl extends GeneratorImpl {
 	 * @param lx Source list.
 	 * @param nsuri Output namespace URI.
 	 * @param tag Output tag name.
-	 * @throws Exception
+	 * @throws Exception on errors.
 	 */
 	public static void list(XmlSerializer xs, List<String> lx, String nsuri, String tag) throws Exception {
 		if(lx.size() > 0) {
@@ -135,11 +135,12 @@ public abstract class XmlPullGeneratorImpl extends GeneratorImpl {
 	}
 	/**
 	 * Generate a sequence of Date elements (in W3C format) from given list.
+	 * @param ctx The generate context.
 	 * @param xs Output medium.
 	 * @param lx Source list.
 	 * @param nsuri Output namespace URI.
 	 * @param tag Output tag name.
-	 * @throws Exception
+	 * @throws Exception on errors.
 	 */
 	public static void listDates(GenerateContext ctx, XmlSerializer xs, List<Date> lx, String nsuri, String tag) throws Exception {
 		if(lx.size() > 0) {

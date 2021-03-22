@@ -26,7 +26,7 @@ import com.escape_technology_llc.synder.SyndForeignMarkupImpl;
 
 /**
  * Setter for property ForeignMarkup, which has signature setForeignMarkup(Object)
- * but the return value is actually of type List&lt;Object>.
+ * but the return value is actually of type List&lt;Object&gt;.
  * @author escape-llc
  *
  */
