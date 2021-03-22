@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project default="javadoc">
-    <target name="javadoc">
-        <javadoc access="protected" author="true" classpath="C:\eclipse-jee-indigo-SR2-win32\eclipse\plugins\org.junit_4.8.2.v4_8_2_v20110321-1705\junit.jar;C:\java\xpp3-1.1.4.jar;C:\eclipse-jee-indigo-SR2-win32\eclipse\plugins\org.hamcrest.core_1.1.0.v20090501071000.jar" destdir="doc" doctitle="Synder" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="com.escape.synder.handlers.rss,com.escape.synder.handlers,com.sun.syndication.feed.module,com.escape.synder.handlers.atom,com.sun.syndication.feed.module.impl,com.escape.synder,com.escape.synder.handlers.search,com.sun.syndication.feed.synd.impl,com.escape.synder.generators,com.escape.proxy,com.escape.synder.setters,com.sun.syndication.feed,com.sun.syndication.feed.impl,com.escape.synder.generators.xmlpull,com.escape.synder.handlers.ns,com.sun.syndication.feed.synd" source="1.5" sourcepath="src" splitindex="true" use="true" version="true"/>
-    </target>
-</project>
