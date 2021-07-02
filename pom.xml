@@ -9,6 +9,7 @@
 	<version>1.0-SNAPSHOT</version>
 
 	<name>Synder</name>
+	<description>SAX parser and framework for Atom/RSS/SearchSuggestion/OPML XML formats including popular namespaces.</description>
 	<url>https://github.com/escape-llc/Synder</url>
 
 	<licenses>
