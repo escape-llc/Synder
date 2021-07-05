@@ -1,6 +1,8 @@
 # Synder
 Synder is an Atom/RSS/SearchSuggestion/OPML processing framework.
 
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.escape-technology-llc/Synder/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.escape-technology-llc/Synder)
+
 It is Optimized For Android, but works with Java SE/EE.
 
 Synder has a small-footprint, low memory consumption.
